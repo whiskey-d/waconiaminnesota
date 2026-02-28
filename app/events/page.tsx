@@ -2,163 +2,95 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { buildMetadata } from "../lib/metadata";
+import { getUpcomingEvents } from "../lib/events";
 
 export const metadata: Metadata = buildMetadata({
   title: "Local Events — Waconia, Minnesota",
   description:
-    "Curated discoveries in Waconia, Minnesota. From lakeside festivals to local markets, find events happening near you.",
+    "Upcoming events in Waconia, MN — Nickle Dickle Day, Farmers Market, Carver County Fair, Scarecrow Tour, and more community happenings.",
   path: "/events",
 });
 
-interface Event {
-  title: string;
-  date: string;
-  recurring: boolean;
-  venue: string;
-  description: string;
-  image: string;
-  attendees: number;
-}
-
-const events: Event[] = [
-  {
-    title: "Waconia Harvest Festival",
-    date: "September 26, 2026",
-    recurring: false,
-    venue: "City Square Park",
-    description:
-      "Annual autumn celebration featuring local vendors, live music, food trucks, and family activities. The harvest festival is Waconia's signature fall event, drawing visitors from across the metro for a full day of community fun.",
-    image: "/images/event-harvest-festival.png",
-    attendees: 342,
-  },
-  {
-    title: "Farmers Market at the Lake",
-    date: "Every Saturday",
-    recurring: true,
-    venue: "Lake Waconia Regional Park",
-    description:
-      "The best local produce, artisan crafts, fresh baked goods, and live music every Saturday morning from May through October. Support local growers and makers while enjoying the lakeside setting.",
-    image: "/images/event-farmers-market.png",
-    attendees: 128,
-  },
-  {
-    title: "Acoustic Lakeside Sessions",
-    date: "October 10, 2026",
-    recurring: false,
-    venue: "Iron Tap, Downtown Waconia",
-    description:
-      "An intimate evening of live music from local singer-songwriters. Enjoy craft cocktails and lakeside vibes as talented local musicians perform original works in an unforgettable setting.",
-    image: "/images/event-acoustic-sessions.png",
-    attendees: 64,
-  },
-  {
-    title: "Waconia Trivia Night",
-    date: "Every Wednesday",
-    recurring: true,
-    venue: "Waconia Brewing Co.",
-    description:
-      "Team trivia with prizes, craft beer specials, and a lively atmosphere. Bring your crew and compete for glory at Waconia's most popular weekly event. No registration needed.",
-    image: "/images/event-trivia-night.png",
-    attendees: 86,
-  },
-  {
-    title: "Lake Waconia Fishing Tournament",
-    date: "August 15, 2026",
-    recurring: false,
-    venue: "Lake Waconia",
-    description:
-      "Annual walleye tournament open to all skill levels. Cash prizes for biggest catch, youth divisions, and a lakeside awards ceremony. Pre-registration required.",
-    image: "/images/event-fishing-tournament.png",
-    attendees: 215,
-  },
-];
-
-const filters = ["Festivals", "Markets", "Community", "More Filters"];
+const categoryColors: Record<string, string> = {
+  Festival:      "bg-amber-100 text-amber-700",
+  Market:        "bg-emerald-100 text-emerald-700",
+  Community:     "bg-blue-100 text-blue-700",
+  Entertainment: "bg-purple-100 text-purple-700",
+  Sports:        "bg-cyan-100 text-cyan-700",
+  Holiday:       "bg-red-100 text-red-700",
+};
 
 export default function EventsPage() {
+  const events = getUpcomingEvents();
+
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
-        <div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-text-primary tracking-tight">
-            Local Events
-          </h1>
-          <p className="text-text-muted mt-2">
-            Curated discoveries in Waconia, Minnesota. From lakeside festivals
-            to local markets.
-          </p>
-        </div>
-        <div className="flex items-center gap-2 shrink-0">
-          <button className="px-4 py-2 text-sm font-medium bg-primary text-white rounded-lg">
-            List
-          </button>
-          <button className="px-4 py-2 text-sm font-medium text-text-muted bg-surface rounded-lg hover:bg-border transition-colors">
-            Calendar
-          </button>
-        </div>
+      <div className="mb-10">
+        <h1 className="text-3xl sm:text-4xl font-bold text-text-primary tracking-tight">
+          Local Events
+        </h1>
+        <p className="text-text-muted mt-2">
+          What&apos;s happening in Waconia — from lakeside festivals to weekly markets.
+        </p>
       </div>
 
       {/* Filter pills */}
       <div className="flex flex-wrap items-center gap-2 mb-10">
-        {filters.map((f) => (
-          <button
+        {["All", "Festival", "Market", "Community", "Entertainment", "Holiday"].map((f) => (
+          <span
             key={f}
-            className="px-4 py-2 text-sm font-medium text-text-muted bg-surface rounded-full hover:bg-border transition-colors"
+            className="px-4 py-2 text-sm font-medium text-text-muted bg-surface rounded-full border border-border"
           >
             {f}
-          </button>
+          </span>
         ))}
       </div>
 
       {/* Event list */}
       <div className="space-y-6">
         {events.map((event) => (
-          <div
-            key={event.title}
-            className="bg-white rounded-xl border border-border overflow-hidden hover:shadow-md transition-shadow"
+          <Link
+            key={event.slug}
+            href={`/events/${event.slug}`}
+            className="block bg-white rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all group"
           >
             <div className="flex flex-col sm:flex-row">
               {/* Image */}
-              <div className="relative w-full sm:w-72 shrink-0 aspect-[4/3] sm:aspect-auto">
+              <div className="relative w-full sm:w-64 shrink-0 aspect-[4/3] sm:aspect-auto sm:h-auto min-h-[160px]">
                 <Image
                   src={event.image}
                   alt={event.title}
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
               {/* Content */}
               <div className="flex-1 p-6 flex flex-col">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="w-10 h-10 bg-accent-light rounded-lg flex items-center justify-center shrink-0">
-                    <svg
-                      className="w-5 h-5 text-primary"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wider text-primary">
-                      {event.recurring
-                        ? event.date.toUpperCase()
-                        : event.date.toUpperCase()}
-                    </p>
-                  </div>
+                <div className="flex items-center gap-2 mb-3 flex-wrap">
+                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColors[event.category] ?? "bg-gray-100 text-gray-600"}`}>
+                    {event.category}
+                  </span>
+                  {event.free && (
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">
+                      Free
+                    </span>
+                  )}
+                  {event.recurring && (
+                    <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-blue-50 text-blue-600">
+                      Recurring
+                    </span>
+                  )}
                 </div>
 
-                <h3 className="text-xl font-bold text-text-primary mb-1">
+                <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-1">
+                  {event.recurringNote ?? event.date}
+                </p>
+
+                <h2 className="text-xl font-bold text-text-primary mb-1 group-hover:text-primary transition-colors">
                   {event.title}
-                </h3>
+                </h2>
                 <p className="text-sm text-text-muted flex items-center gap-1 mb-3">
                   📍 {event.venue}
                 </p>
@@ -167,33 +99,23 @@ export default function EventsPage() {
                 </p>
 
                 <div className="mt-auto flex items-center justify-between">
-                  {/* Attendee avatars */}
                   <div className="flex items-center gap-2">
                     <div className="flex -space-x-2">
                       {[...Array(3)].map((_, j) => (
-                        <div
-                          key={j}
-                          className="w-7 h-7 rounded-full bg-accent-light border-2 border-white flex items-center justify-center text-[10px] font-bold text-primary"
-                        >
+                        <div key={j} className="w-7 h-7 rounded-full bg-accent-light border-2 border-white flex items-center justify-center text-[10px] font-bold text-primary">
                           {String.fromCharCode(65 + j)}
                         </div>
                       ))}
                     </div>
-                    <span className="text-xs text-text-muted">
-                      +{event.attendees} interested
-                    </span>
+                    <span className="text-xs text-text-muted">+{event.attendees.toLocaleString()} interested</span>
                   </div>
-
-                  <Link
-                    href="/events"
-                    className="text-sm font-medium text-primary hover:text-primary/80 inline-flex items-center gap-1 shrink-0"
-                  >
-                    View Details <span aria-hidden="true">&rarr;</span>
-                  </Link>
+                  <span className="text-sm font-medium text-primary group-hover:text-primary/80 inline-flex items-center gap-1">
+                    View Details <span aria-hidden="true">→</span>
+                  </span>
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
