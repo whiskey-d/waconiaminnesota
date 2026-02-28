@@ -5,8 +5,6 @@ import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect, Suspense } from 'react';
 
 const GA_ID = 'G-CSMGWDBHKG';
-const ADSENSE_ID = 'ca-pub-0091095090973336';
-
 // ── Page-view tracker (fires on every client-side navigation) ────────────────
 function PageViewTracker() {
   const pathname = usePathname();
@@ -52,13 +50,6 @@ export function Analytics() {
           });
         `}
       </Script>
-
-      {/* Google AdSense */}
-      <Script
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
-        strategy="afterInteractive"
-        crossOrigin="anonymous"
-      />
 
       {/* SPA page-view tracker */}
       <Suspense fallback={null}>
