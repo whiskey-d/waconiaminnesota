@@ -36,15 +36,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <head>
-        {/* Google AdSense — must be in <head> for Auto Ads to work */}
+      <body className="font-sans bg-white min-h-screen flex flex-col">
+        {/* Google AdSense — next/script injects into <head> automatically */}
         <Script
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
           strategy="afterInteractive"
           crossOrigin="anonymous"
         />
-      </head>
-      <body className="font-sans bg-white min-h-screen flex flex-col">
         <Analytics />
         <SiteHeader />
         <main className="flex-1">{children}</main>
