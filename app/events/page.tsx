@@ -23,13 +23,12 @@ interface Event {
 const events: Event[] = [
   {
     title: "Waconia Harvest Festival",
-    date: "September 24, 2025",
+    date: "September 26, 2026",
     recurring: false,
     venue: "City Square Park",
     description:
       "Annual autumn celebration featuring local vendors, live music, food trucks, and family activities. The harvest festival is Waconia's signature fall event, drawing visitors from across the metro for a full day of community fun.",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+    image: "/images/event-harvest-festival.png",
     attendees: 342,
   },
   {
@@ -39,41 +38,37 @@ const events: Event[] = [
     venue: "Lake Waconia Regional Park",
     description:
       "The best local produce, artisan crafts, fresh baked goods, and live music every Saturday morning from May through October. Support local growers and makers while enjoying the lakeside setting.",
-    image:
-      "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=400",
+    image: "/images/event-farmers-market.png",
     attendees: 128,
   },
   {
     title: "Acoustic Lakeside Sessions",
-    date: "October 12, 2025",
+    date: "October 10, 2026",
     recurring: false,
-    venue: "The Dockside Cafe",
+    venue: "Iron Tap, Downtown Waconia",
     description:
       "An intimate evening of live music from local singer-songwriters. Enjoy craft cocktails and lakeside vibes as talented local musicians perform original works in an unforgettable setting.",
-    image:
-      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400",
+    image: "/images/event-acoustic-sessions.png",
     attendees: 64,
   },
   {
     title: "Waconia Trivia Night",
     date: "Every Wednesday",
     recurring: true,
-    venue: "Waconia Brewing Co",
+    venue: "Waconia Brewing Co.",
     description:
       "Team trivia with prizes, craft beer specials, and a lively atmosphere. Bring your crew and compete for glory at Waconia's most popular weekly event. No registration needed.",
-    image:
-      "https://images.unsplash.com/photo-1559526324-593bc073d938?w=400",
+    image: "/images/event-trivia-night.png",
     attendees: 86,
   },
   {
     title: "Lake Waconia Fishing Tournament",
-    date: "August 16, 2025",
+    date: "August 15, 2026",
     recurring: false,
     venue: "Lake Waconia",
     description:
       "Annual walleye tournament open to all skill levels. Cash prizes for biggest catch, youth divisions, and a lakeside awards ceremony. Pre-registration required.",
-    image:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400",
+    image: "/images/event-fishing-tournament.png",
     attendees: 215,
   },
 ];
