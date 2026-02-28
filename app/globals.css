@@ -2,29 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    @apply bg-surface text-body antialiased;
-  }
+body {
+  @apply text-text-primary antialiased;
 }
 
 @layer components {
   .gradient-overlay {
     background: linear-gradient(
       to bottom,
-      rgba(15, 23, 42, 0.6) 0%,
-      rgba(15, 23, 42, 0.4) 50%,
-      rgba(15, 23, 42, 0.7) 100%
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 40%,
+      rgba(0, 0, 0, 0.7) 100%
     );
   }
 
-  .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  .drop-cap::first-letter {
+    @apply float-left text-6xl font-bold leading-none mr-3 mt-1 text-primary;
   }
 }
