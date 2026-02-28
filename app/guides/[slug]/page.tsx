@@ -168,6 +168,16 @@ export default async function GuidePage({ params }: PageProps) {
                           <p className="text-sm text-text-muted leading-relaxed">
                             {card.body}
                           </p>
+                          {card.link && (
+                            <a
+                              href={card.link.href}
+                              target={card.link.href.startsWith('http') ? '_blank' : '_self'}
+                              rel={card.link.href.startsWith('http') ? 'noopener' : undefined}
+                              className="mt-3 inline-block text-sm font-medium text-blue-600 hover:underline"
+                            >
+                              {card.link.label}
+                            </a>
+                          )}
                         </div>
                       ))}
                     </div>

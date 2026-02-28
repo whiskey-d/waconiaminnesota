@@ -131,6 +131,23 @@ export const guides: Guide[] = [
         body: "Lake Waconia supports an impressive variety of game fish. Walleye is the primary target species and the lake is regularly stocked by the MN DNR. Largemouth bass thrive in the extensive weed cover along the shoreline. Northern pike patrol the weed edges and can reach impressive sizes. Bluegill and crappie provide excellent panfish action, especially in spring and early summer. The lake also holds a small but growing population of muskie, making it a sleeper destination for trophy hunters willing to put in the time.",
       },
       {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🗺️",
+            title: "Depth Charts & DNR Data",
+            body: "View Lake Waconia's official depth charts, fish survey reports, and DNR data on MN Fishing Lakes — the most complete Minnesota lake database online.",
+            link: { label: "View on MN Fishing Lakes →", href: "https://mnfishinglakes.com/lakes/lake-9" },
+          },
+          {
+            icon: "🏙️",
+            title: "Plan Your Visit",
+            body: "After a great day on the water, Waconia's downtown has you covered — waterfront dining, local breweries, and seasonal events all within minutes of the boat launch.",
+            link: { label: "Explore Waconia →", href: "/directory" },
+          },
+        ],
+      },
+      {
         type: "cta",
         ctaTitle: "Ready for the Ultimate Catch?",
         ctaDescription:
