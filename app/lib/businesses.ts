@@ -68,8 +68,7 @@ export const businesses: Business[] = [
       liveEvents: "Occasional live music on weekends",
       outdoorSeating: "Sidewalk patio, summer only",
     },
-    image:
-      "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80",
+    image: "/images/dining-iron-tap.png",
   },
   {
     slug: "waconia-brewing-company",
@@ -117,8 +116,7 @@ export const businesses: Business[] = [
       liveEvents: "Live music Fridays, trivia Wednesdays",
       outdoorSeating: "Large seasonal patio with fire pits",
     },
-    image:
-      "https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80",
+    image: "/images/brewing-waconia.png",
   },
   {
     slug: "emagine-waconia",

@@ -7,8 +7,8 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative h-[85vh] min-h-[600px]">
         <Image
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80"
-          alt="Lake Waconia at sunset with calm waters and scenic shoreline"
+          src="/images/hero-lake-waconia.png"
+          alt="Aerial view of Lake Waconia Minnesota at golden hour sunset with marina and tree-lined shoreline"
           fill
           className="object-cover"
           priority
@@ -92,8 +92,8 @@ export default function HomePage() {
           <div className="group rounded-2xl overflow-hidden border border-border bg-white hover:shadow-lg transition-shadow">
             <div className="relative aspect-[16/10] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=600"
-                alt="Boats on Lake Waconia at sunset"
+                src="/images/boating-lake-waconia.png"
+                alt="Family on a pontoon boat on Lake Waconia Minnesota on a sunny summer afternoon"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -123,8 +123,8 @@ export default function HomePage() {
           <div className="group rounded-2xl overflow-hidden border border-border bg-white hover:shadow-lg transition-shadow">
             <div className="relative aspect-[16/10] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600"
-                alt="Fishing on Lake Waconia"
+                src="/images/fishing-lake-waconia.png"
+                alt="Walleye fisherman casting from a boat on Lake Waconia Minnesota at dawn"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -174,11 +174,9 @@ export default function HomePage() {
                   className="flex items-center justify-between bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors group"
                 >
                   <div>
-                    <h3 className="text-white font-semibold">
-                      Lola&apos;s Lakehouse
-                    </h3>
+                    <h3 className="text-white font-semibold">Iron Tap</h3>
                     <p className="text-sm text-gray-400">
-                      Upscale lakeside dining with panoramic views
+                      Downtown&apos;s favorite burger &amp; craft cocktails
                     </p>
                   </div>
                   <span className="text-primary group-hover:translate-x-1 transition-transform">
@@ -186,13 +184,13 @@ export default function HomePage() {
                   </span>
                 </Link>
                 <Link
-                  href="/directory/iron-tap"
+                  href="/directory/waconia-brewing-company"
                   className="flex items-center justify-between bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors group"
                 >
                   <div>
-                    <h3 className="text-white font-semibold">Iron Tap</h3>
+                    <h3 className="text-white font-semibold">Waconia Brewing Co.</h3>
                     <p className="text-sm text-gray-400">
-                      Downtown&apos;s favorite burger &amp; craft cocktails
+                      Award-winning craft brewery &amp; taproom since 2014
                     </p>
                   </div>
                   <span className="text-primary group-hover:translate-x-1 transition-transform">
@@ -205,16 +203,16 @@ export default function HomePage() {
               <div className="relative h-80 w-full">
                 <div className="absolute top-0 right-0 w-3/4 h-64 rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=80"
-                    alt="Fine dining plate with garnish"
+                    src="/images/dining-iron-tap.png"
+                    alt="Craft burgers and beer at Iron Tap restaurant in downtown Waconia Minnesota"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 w-2/3 h-52 rounded-2xl overflow-hidden shadow-2xl border-4 border-navy">
                   <Image
-                    src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80"
-                    alt="Craft cocktails and appetizers"
+                    src="/images/brewing-waconia.png"
+                    alt="Craft beer flight at Waconia Brewing Company taproom"
                     fill
                     className="object-cover"
                   />
@@ -231,8 +229,8 @@ export default function HomePage() {
           <div className="relative">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&q=80"
-                alt="Forest and nature conservation area near Lake Waconia"
+                src="/images/conservation-lake-waconia.png"
+                alt="Native prairie wildflowers along the Lake Waconia Minnesota shoreline conservation area"
                 fill
                 className="object-cover"
               />
