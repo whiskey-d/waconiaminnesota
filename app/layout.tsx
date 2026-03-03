@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "./components/SiteHeader";
@@ -11,8 +10,6 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 });
-
-const ADSENSE_ID = "ca-pub-0091095090973336";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://waconiaminnesota.org"),
@@ -36,14 +33,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <head>
-        {/* Google AdSense — must be in <head> for Auto Ads to work */}
-        <Script
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
-      </head>
       <body className="font-sans bg-white min-h-screen flex flex-col">
         <Analytics />
         <SiteHeader />
