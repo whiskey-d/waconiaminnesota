@@ -22,7 +22,7 @@ export interface GuideSection {
   quote?: string;
   attribution?: string;
   photos?: { src: string; alt: string }[];
-  cards?: { title: string; body: string; icon: string }[];
+  cards?: { title: string; body: string; icon: string; link?: { label: string; href: string } }[];
   ctaTitle?: string;
   ctaDescription?: string;
   buttons?: { label: string; href: string; variant: "primary" | "outline" }[];
