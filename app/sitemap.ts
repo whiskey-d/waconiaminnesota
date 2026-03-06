@@ -31,7 +31,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: SITE_URL, lastModified: new Date(), changeFrequency: "daily" as const, priority: 1 },
     { url: `${SITE_URL}/directory`, lastModified: new Date(), changeFrequency: "daily" as const, priority: 0.9 },
     { url: `${SITE_URL}/events`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.8 },
-    { url: `${SITE_URL}/guides/lake-waconia`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.9 },
     { url: `${SITE_URL}/hotels`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${SITE_URL}/foreclosures`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.75 },
     ...guidePages,
