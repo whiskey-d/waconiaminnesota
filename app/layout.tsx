@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "WaconiaGuide",
   },
+  verification: {
+    other: {
+      "google-adsense-account": ["ca-pub-0091095090973336"],
+    },
+  },
 };
 
 export default function RootLayout({
