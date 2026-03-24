@@ -53,10 +53,10 @@ export function Analytics() {
         `}
       </Script>
 
-      {/* Google AdSense */}
+      {/* Google AdSense — must load in <head> for Auto Ads & crawler detection */}
       <Script
         src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         crossOrigin="anonymous"
       />
 
