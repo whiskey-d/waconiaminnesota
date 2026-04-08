@@ -16,7 +16,7 @@ export interface Guide {
 }
 
 export interface GuideSection {
-  type: "text" | "heading" | "pullquote" | "photoGrid" | "infoCards" | "cta";
+  type: "text" | "richText" | "heading" | "pullquote" | "photoGrid" | "infoCards" | "cta";
   heading?: string;
   body?: string;
   quote?: string;
@@ -127,8 +127,8 @@ export const guides: Guide[] = [
         heading: "Species Guide",
       },
       {
-        type: "text",
-        body: "Lake Waconia supports an impressive variety of game fish. Walleye is the primary target species and the lake is regularly stocked by the MN DNR. Largemouth bass thrive in the extensive weed cover along the shoreline. Northern pike patrol the weed edges and can reach impressive sizes. Bluegill and crappie provide excellent panfish action, especially in spring and early summer. The lake also holds a small but growing population of muskie, making it a sleeper destination for trophy hunters willing to put in the time.",
+        type: "richText",
+        body: "Lake Waconia supports an impressive variety of game fish. Walleye is the primary target species and the lake is regularly stocked by the MN DNR — review complete <a href=\"https://mnfishingclaudecode.vercel.app/lakes/lake-waconia\" target=\"_blank\" rel=\"noopener noreferrer\">Lake Waconia fish survey reports and DNR stocking history</a> on MN Fishing Lakes. Largemouth bass thrive in the extensive weed cover along the shoreline. Northern pike patrol the weed edges and can reach impressive sizes. Bluegill and crappie provide excellent panfish action, especially in spring and early summer. The lake also holds a small but growing population of muskie, making it a sleeper destination for trophy hunters willing to put in the time.",
       },
       {
         type: "infoCards",
@@ -137,13 +137,34 @@ export const guides: Guide[] = [
             icon: "🗺️",
             title: "Depth Charts & DNR Data",
             body: "View Lake Waconia's official depth charts, fish survey reports, and DNR data on MN Fishing Lakes — the most complete Minnesota lake database online.",
-            link: { label: "View on MN Fishing Lakes →", href: "https://mnfishinglakes.com/lakes/lake-9" },
+            link: { label: "View Lake Waconia Fishing Data →", href: "https://mnfishingclaudecode.vercel.app/lakes/lake-waconia" },
           },
           {
             icon: "🏙️",
             title: "Plan Your Visit",
             body: "After a great day on the water, Waconia's downtown has you covered — waterfront dining, local breweries, and seasonal events all within minutes of the boat launch.",
             link: { label: "Explore Waconia →", href: "/directory" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Lake Waconia Fishing Resources",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "📍",
+            title: "Interactive Lake Map & Depth Data",
+            body: "Explore Lake Waconia's interactive depth chart, underwater structure, weed bed locations, and public access points. Includes current DNR fish survey results and seasonal fishing reports specific to Lake Waconia.",
+            link: { label: "View Lake Waconia on MN Fishing Lakes →", href: "https://mnfishingclaudecode.vercel.app/lakes/lake-waconia" },
+          },
+          {
+            icon: "🐟",
+            title: "Minnesota Lake Fishing Directory",
+            body: "MN Fishing Lakes is Minnesota's most comprehensive lake database — species profiles, DNR survey archives, fishing access maps, and angler reports across 1,000+ Minnesota lakes.",
+            link: { label: "Browse MN Fishing Lakes →", href: "https://www.mnfishinglakes.com/" },
           },
         ],
       },
@@ -262,6 +283,27 @@ export const guides: Guide[] = [
       {
         type: "text",
         body: "Lake Waconia is located in Carver County, approximately 35 miles west of Minneapolis via Highway 5. The main public access is at Lake Waconia Regional Park on the south shore. Downtown Waconia's restaurants, breweries, and shops are just a five-minute drive from the lake, making it easy to combine a day on the water with an evening downtown.",
+      },
+      {
+        type: "heading",
+        heading: "Fishing & Lake Data Resources",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🎣",
+            title: "Lake Waconia Depth Charts & Fish Surveys",
+            body: "Planning a fishing trip? Access Lake Waconia's depth charts, DNR fish survey reports, species breakdowns, and seasonal fishing tips — all in one place.",
+            link: { label: "View Lake Waconia Fishing Data →", href: "https://mnfishingclaudecode.vercel.app/lakes/lake-waconia" },
+          },
+          {
+            icon: "📊",
+            title: "Minnesota Lake Fishing Database",
+            body: "The go-to resource for Minnesota anglers. Browse fishing reports, interactive lake maps, and DNR data for lakes across the entire state.",
+            link: { label: "Explore MN Fishing Lakes →", href: "https://www.mnfishinglakes.com/" },
+          },
+        ],
       },
       {
         type: "cta",

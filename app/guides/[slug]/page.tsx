@@ -110,6 +110,19 @@ export default async function GuidePage({ params }: PageProps) {
                     </p>
                   );
                 }
+                case "richText": {
+                  const useDropCapRich = isFirstParagraph;
+                  if (isFirstParagraph) isFirstParagraph = false;
+                  return (
+                    <p
+                      key={i}
+                      className={`text-text-muted leading-relaxed [&_a]:text-primary [&_a]:font-medium [&_a]:underline-offset-2 [&_a]:hover:underline ${
+                        useDropCapRich ? "drop-cap" : ""
+                      }`}
+                      dangerouslySetInnerHTML={{ __html: section.body ?? "" }}
+                    />
+                  );
+                }
                 case "heading":
                   return (
                     <h2
