@@ -7,7 +7,8 @@ const navLinks = [
   { href: "/", label: "Discover" },
   { href: "/directory", label: "Eat & Drink" },
   { href: "/events", label: "Events" },
-  { href: "/guides/lake-waconia-fishing", label: "Guides" },
+  { href: "/guides", label: "Guides" },
+  { href: "/hotels", label: "Stay" },
 ];
 
 export function SiteHeader() {
@@ -41,31 +42,11 @@ export function SiteHeader() {
 
           {/* Right side */}
           <div className="hidden md:flex items-center gap-3">
-            <div className="relative">
-              <svg
-                className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-              <input
-                type="text"
-                placeholder="Search..."
-                className="pl-9 pr-4 py-2 text-sm border border-border rounded-full bg-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary w-48"
-              />
-            </div>
             <Link
               href="/events"
               className="bg-primary text-white text-sm font-medium px-5 py-2 rounded-full hover:bg-primary/90 transition-colors"
             >
-              Subscribe
+              What&apos;s On
             </Link>
           </div>
 
@@ -103,9 +84,10 @@ export function SiteHeader() {
             <div className="pt-3 border-t border-border">
               <Link
                 href="/events"
+                onClick={() => setMobileOpen(false)}
                 className="block bg-primary text-white text-sm font-medium px-5 py-2 rounded-full text-center hover:bg-primary/90 transition-colors"
               >
-                Subscribe
+                What&apos;s On
               </Link>
             </div>
           </div>

@@ -54,7 +54,7 @@ export default async function GuidePage({ params }: PageProps) {
             <div className="mb-4">
               <Breadcrumb
                 items={[
-                  { label: "Guides", href: "/guides/lake-waconia-fishing" },
+                  { label: "Guides", href: "/guides" },
                   { label: guide.title },
                 ]}
               />

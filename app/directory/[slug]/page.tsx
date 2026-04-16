@@ -250,7 +250,7 @@ export default async function BusinessDetailPage({ params }: PageProps) {
                 <div className="h-40 bg-surface">
                   <iframe
                     title={`Map of ${biz.name}`}
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-93.80%2C44.84%2C-93.77%2C44.86&layer=mapnik&marker=44.8522%2C-93.7872"
+                    src={`https://www.openstreetmap.org/export/embed.html?bbox=${(biz.lng - 0.008).toFixed(4)}%2C${(biz.lat - 0.004).toFixed(4)}%2C${(biz.lng + 0.008).toFixed(4)}%2C${(biz.lat + 0.004).toFixed(4)}&layer=mapnik&marker=${biz.lat}%2C${biz.lng}`}
                     className="w-full h-full border-0"
                     loading="lazy"
                   />
@@ -367,7 +367,10 @@ export default async function BusinessDetailPage({ params }: PageProps) {
         </section>
       </div>
 
-      {/* JSON-LD LocalBusiness */}
+      {/* JSON-LD LocalBusiness — no aggregateRating because the review count
+          and star rating are editorial summaries of third-party sources, not
+          first-party reviews on this site. Shipping them as Schema.org
+          aggregateRating is a Google-manual-action risk. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -383,16 +386,15 @@ export default async function BusinessDetailPage({ params }: PageProps) {
               addressRegion: "MN",
               postalCode: "55387",
             },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: biz.lat,
+              longitude: biz.lng,
+            },
             telephone: biz.phone || undefined,
             url: biz.website
               ? `https://${biz.website}`
               : `${SITE_URL}/directory/${biz.slug}`,
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: biz.rating,
-              ratingCount:
-                parseInt(biz.reviewCount.replace(/[^\d]/g, ""), 10) || 100,
-            },
           }),
         }}
       />

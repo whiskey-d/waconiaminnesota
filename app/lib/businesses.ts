@@ -9,6 +9,8 @@ export interface Business {
   shortDescription: string;
   description: string;
   address: string;
+  lat: number;
+  lng: number;
   phone: string;
   website: string;
   hours: { day: string; hours: string }[];
@@ -35,6 +37,8 @@ export const businesses: Business[] = [
     description:
       "Downtown Waconia's standout dinner spot. Known for the Father Bob Burger, craft cocktails, rotating taps, and a lively atmosphere that brings the community together night after night.",
     address: "224 W Main St, Waconia, MN 55387",
+    lat: 44.8497,
+    lng: -93.7877,
     phone: "(952) 442-4700",
     website: "irontapwaconia.com",
     hours: [
@@ -68,7 +72,7 @@ export const businesses: Business[] = [
       liveEvents: "Occasional live music on weekends",
       outdoorSeating: "Sidewalk patio, summer only",
     },
-    image: "/images/dining-iron-tap.png",
+    image: "/images/dining-iron-tap.webp",
   },
   {
     slug: "waconia-brewing-company",
@@ -82,6 +86,8 @@ export const businesses: Business[] = [
     description:
       "Founded in 2014 by two local families, Waconia Brewing Company has become the cornerstone of the downtown scene. Award-winning brewery combining a passion for craft beer with a deep love for community.",
     address: "255 W Main St, Waconia, MN 55387",
+    lat: 44.8498,
+    lng: -93.7886,
     phone: "(952) 442-3115",
     website: "waconiabrewing.com",
     hours: [
@@ -116,7 +122,7 @@ export const businesses: Business[] = [
       liveEvents: "Live music Fridays, trivia Wednesdays",
       outdoorSeating: "Large seasonal patio with fire pits",
     },
-    image: "/images/brewing-waconia.png",
+    image: "/images/brewing-waconia.webp",
   },
   {
     slug: "emagine-waconia",
@@ -130,6 +136,8 @@ export const businesses: Business[] = [
     description:
       "Luxury movie theater with fully reclining leather seats, EMAX large-format screen, full bar and food service delivered right to your seat.",
     address: "325 Bevens St, Waconia, MN 55387",
+    lat: 44.8590,
+    lng: -93.7842,
     phone: "(952) 300-5555",
     website: "emagine-entertainment.com",
     hours: [
@@ -177,6 +185,8 @@ export const businesses: Business[] = [
     description:
       "Waconia's most beloved breakfast spot. All-day breakfast with fresh ingredients, unique egg dishes, and a welcoming atmosphere that has made it a community staple for years.",
     address: "Downtown Waconia, MN 55387",
+    lat: 44.8502,
+    lng: -93.7870,
     phone: "(952) 442-2255",
     website: "",
     hours: [
@@ -223,6 +233,8 @@ export const businesses: Business[] = [
     description:
       "Waconia's go-to entertainment venue combining bowling lanes with a full bar and scratch kitchen. Great for groups, date nights, and family outings.",
     address: "Waconia, MN 55387",
+    lat: 44.8515,
+    lng: -93.7858,
     phone: "(952) 442-2800",
     website: "",
     hours: [
@@ -269,6 +281,8 @@ export const businesses: Business[] = [
     description:
       "Convenient walk-in hair salon offering affordable haircuts for the whole family. Online check-in lets you skip the wait.",
     address: "875 Marketplace Dr, Waconia, MN 55387",
+    lat: 44.8627,
+    lng: -93.7898,
     phone: "(952) 442-6226",
     website: "greatclips.com",
     hours: [
@@ -315,6 +329,8 @@ export const businesses: Business[] = [
     description:
       "Aldi offers high-quality groceries at everyday low prices. Known for efficient shopping, quality private-label products, and a streamlined store layout.",
     address: "875 Marketplace Dr, Waconia, MN 55387",
+    lat: 44.8624,
+    lng: -93.7891,
     phone: "",
     website: "aldi.us",
     hours: [
@@ -361,6 +377,8 @@ export const businesses: Business[] = [
     description:
       "Waconia's premier hotel offering comfortable rooms, complimentary breakfast, and easy access to Lake Waconia and downtown attractions.",
     address: "493 Holiday Dr, Waconia, MN 55387",
+    lat: 44.8622,
+    lng: -93.7944,
     phone: "(952) 442-0000",
     website: "",
     hours: [
@@ -407,6 +425,8 @@ export const businesses: Business[] = [
     description:
       "Waconia Deputy Registrar handles vehicle tabs, titles, registration, driver's licenses and state IDs for Carver County residents. Faster service than metro locations.",
     address: "217 Vine St S, Waconia, MN 55387",
+    lat: 44.8507,
+    lng: -93.7872,
     phone: "(952) 442-4545",
     website: "co.carver.mn.us",
     hours: [

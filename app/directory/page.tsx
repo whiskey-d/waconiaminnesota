@@ -186,7 +186,8 @@ export default function DirectoryPage() {
         </div>
       </div>
 
-      {/* JSON-LD */}
+      {/* JSON-LD — ItemList without aggregateRating (ratings are per-business
+          and surfaced on each detail page via LocalBusiness schema). */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -194,22 +195,12 @@ export default function DirectoryPage() {
             "@context": "https://schema.org",
             "@type": "ItemList",
             name: "Waconia Business Directory",
-            description:
-              "Local businesses in Waconia, Minnesota",
+            description: "Local businesses in Waconia, Minnesota",
             itemListElement: businesses.slice(0, 8).map((biz, i) => ({
               "@type": "ListItem",
               position: i + 1,
-              item: {
-                "@type": "LocalBusiness",
-                name: biz.name,
-                address: biz.address,
-                telephone: biz.phone || undefined,
-                aggregateRating: {
-                  "@type": "AggregateRating",
-                  ratingValue: biz.rating,
-                  ratingCount: parseInt(biz.reviewCount.replace(/[^\d]/g, ""), 10) || 100,
-                },
-              },
+              url: `https://waconiaminnesota.org/directory/${biz.slug}`,
+              name: biz.name,
             })),
           }),
         }}

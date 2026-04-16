@@ -59,7 +59,7 @@ export default function HotelsPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
       {/* Header */}
-      <div className="mb-10">
+      <div className="mb-6">
         <h1 className="text-3xl sm:text-4xl font-bold text-text-primary tracking-tight">
           Hotels &amp; Lodging Near Waconia, MN
         </h1>
@@ -68,6 +68,15 @@ export default function HotelsPage() {
           perfect place to stay for your Lake Waconia visit.
         </p>
       </div>
+
+      {/* FTC affiliate disclosure */}
+      <p className="text-xs text-text-muted bg-surface border border-border rounded-lg px-4 py-3 mb-10">
+        <span className="font-semibold text-text-primary">Advertising disclosure:</span>{" "}
+        Booking links on this page are affiliate links to Expedia and Airbnb.
+        If you book through them, WaconiaGuide may earn a commission at no
+        additional cost to you. We recommend lodging based on local knowledge,
+        not commission rates.
+      </p>
 
       {/* Expedia search CTA */}
       <div className="bg-primary/10 border border-primary/20 rounded-2xl p-6 mb-10 flex flex-col sm:flex-row items-center justify-between gap-4">
