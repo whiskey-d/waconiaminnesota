@@ -13,7 +13,7 @@ export default function ForeclosuresPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
       {/* Header */}
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-3xl sm:text-4xl font-bold text-text-primary tracking-tight">
           Foreclosures in Waconia, MN
         </h1>
@@ -23,6 +23,15 @@ export default function ForeclosuresPage() {
           foreclosure database.
         </p>
       </div>
+
+      {/* FTC affiliate disclosure */}
+      <p className="text-xs text-text-muted bg-surface border border-border rounded-lg px-4 py-3 mb-8">
+        <span className="font-semibold text-text-primary">Advertising disclosure:</span>{" "}
+        Foreclosure listings on this page are provided by Foreclosure.com via
+        an affiliate relationship. WaconiaGuide may earn a referral fee if you
+        subscribe — this does not affect the price you pay or the data
+        displayed.
+      </p>
 
       {/* Foreclosure.com Widget */}
       <div className="bg-surface rounded-2xl border border-border p-6 mb-10">

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { events, getEventBySlug } from "../../lib/events";
-import { buildMetadata } from "../../lib/metadata";
+import { buildMetadata, SITE_URL } from "../../lib/metadata";
 import { Breadcrumb } from "../../components/Breadcrumb";
 
 interface Props {
@@ -136,6 +136,50 @@ export default async function EventDetailPage({ params }: Props) {
 
         </div>
       </div>
+
+      {/* JSON-LD Event */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Event",
+            name: event.title,
+            description: event.description,
+            startDate: event.dateSort,
+            eventStatus: "https://schema.org/EventScheduled",
+            eventAttendanceMode:
+              "https://schema.org/OfflineEventAttendanceMode",
+            location: {
+              "@type": "Place",
+              name: event.venue,
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: event.address,
+                addressLocality: "Waconia",
+                addressRegion: "MN",
+                postalCode: "55387",
+                addressCountry: "US",
+              },
+            },
+            offers: event.free
+              ? {
+                  "@type": "Offer",
+                  price: "0",
+                  priceCurrency: "USD",
+                  availability: "https://schema.org/InStock",
+                  url: `${SITE_URL}/events/${event.slug}`,
+                }
+              : undefined,
+            organizer: event.website
+              ? { "@type": "Organization", url: event.website }
+              : undefined,
+            image: event.image.startsWith("http")
+              ? event.image
+              : `${SITE_URL}${event.image}`,
+          }),
+        }}
+      />
     </div>
   );
 }

@@ -128,16 +128,16 @@ export const guides: Guide[] = [
       },
       {
         type: "richText",
-        body: "Lake Waconia supports an impressive variety of game fish. Walleye is the primary target species and the lake is regularly stocked by the MN DNR — review complete <a href=\"https://mnfishingclaudecode.vercel.app/lakes/lake-waconia\" target=\"_blank\" rel=\"noopener noreferrer\">Lake Waconia fish survey reports and DNR stocking history</a> on MN Fishing Lakes. Largemouth bass thrive in the extensive weed cover along the shoreline. Northern pike patrol the weed edges and can reach impressive sizes. Bluegill and crappie provide excellent panfish action, especially in spring and early summer. The lake also holds a small but growing population of muskie, making it a sleeper destination for trophy hunters willing to put in the time.",
+        body: "Lake Waconia supports an impressive variety of game fish. Walleye is the primary target species and the lake is regularly stocked by the MN DNR — review the complete <a href=\"https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900\" target=\"_blank\" rel=\"noopener noreferrer\">Lake Waconia fish survey reports and DNR stocking history</a> on the Minnesota DNR LakeFinder. Largemouth bass thrive in the extensive weed cover along the shoreline. Northern pike patrol the weed edges and can reach impressive sizes. Bluegill and crappie provide excellent panfish action, especially in spring and early summer. The lake also holds a small but growing population of muskie, making it a sleeper destination for trophy hunters willing to put in the time.",
       },
       {
         type: "infoCards",
         cards: [
           {
             icon: "🗺️",
-            title: "Depth Charts & DNR Data",
-            body: "View Lake Waconia's official depth charts, fish survey reports, and DNR data on MN Fishing Lakes — the most complete Minnesota lake database online.",
-            link: { label: "View Lake Waconia Fishing Data →", href: "https://mnfishingclaudecode.vercel.app/lakes/lake-waconia" },
+            title: "Depth Charts & DNR Survey Data",
+            body: "View Lake Waconia's official depth charts, fish survey reports, and stocking history on the Minnesota DNR's LakeFinder — the state's authoritative source for lake data.",
+            link: { label: "MN DNR Lake Waconia →", href: "https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900" },
           },
           {
             icon: "🏙️",
@@ -156,14 +156,14 @@ export const guides: Guide[] = [
         cards: [
           {
             icon: "📍",
-            title: "Interactive Lake Map & Depth Data",
-            body: "Explore Lake Waconia's interactive depth chart, underwater structure, weed bed locations, and public access points. Includes current DNR fish survey results and seasonal fishing reports specific to Lake Waconia.",
-            link: { label: "View Lake Waconia on MN Fishing Lakes →", href: "https://mnfishingclaudecode.vercel.app/lakes/lake-waconia" },
+            title: "Lake Waconia Depth Map & Survey",
+            body: "Minnesota DNR's LakeFinder has the official depth contour map, fish survey results, and public access points for Lake Waconia (DOW 10-0059-00).",
+            link: { label: "MN DNR LakeFinder →", href: "https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900" },
           },
           {
             icon: "🐟",
-            title: "Minnesota Lake Fishing Directory",
-            body: "MN Fishing Lakes is Minnesota's most comprehensive lake database — species profiles, DNR survey archives, fishing access maps, and angler reports across 1,000+ Minnesota lakes.",
+            title: "More Minnesota Fishing Lakes",
+            body: "MN Fishing Lakes aggregates species profiles, DNR survey archives, access maps, and angler reports across Minnesota lakes — a useful companion to the DNR LakeFinder.",
             link: { label: "Browse MN Fishing Lakes →", href: "https://www.mnfishinglakes.com/" },
           },
         ],
@@ -294,13 +294,13 @@ export const guides: Guide[] = [
           {
             icon: "🎣",
             title: "Lake Waconia Depth Charts & Fish Surveys",
-            body: "Planning a fishing trip? Access Lake Waconia's depth charts, DNR fish survey reports, species breakdowns, and seasonal fishing tips — all in one place.",
-            link: { label: "View Lake Waconia Fishing Data →", href: "https://mnfishingclaudecode.vercel.app/lakes/lake-waconia" },
+            body: "Planning a fishing trip? The MN DNR LakeFinder has Lake Waconia's depth charts, fish survey reports, species breakdowns, and stocking history — the authoritative source.",
+            link: { label: "MN DNR Lake Waconia →", href: "https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900" },
           },
           {
             icon: "📊",
             title: "Minnesota Lake Fishing Database",
-            body: "The go-to resource for Minnesota anglers. Browse fishing reports, interactive lake maps, and DNR data for lakes across the entire state.",
+            body: "An independent resource aggregating fishing reports, interactive lake maps, and DNR data across Minnesota lakes — useful companion to the LakeFinder.",
             link: { label: "Explore MN Fishing Lakes →", href: "https://www.mnfishinglakes.com/" },
           },
         ],

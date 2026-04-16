@@ -1,17 +1,31 @@
 import Link from "next/link";
 
-const exploreLinks = [
-  { href: "/directory", label: "Best of Waconia" },
-  { href: "/guides/lake-waconia", label: "Lake Life" },
-  { href: "/directory", label: "Downtown Directory" },
-  { href: "/directory", label: "Submit a Listing" },
+interface FooterLink {
+  href: string;
+  label: string;
+  external?: boolean;
+}
+
+const exploreLinks: FooterLink[] = [
+  { href: "/directory", label: "Business Directory" },
+  { href: "/guides", label: "Waconia Guides" },
+  { href: "/hotels", label: "Where to Stay" },
+  { href: "/foreclosures", label: "Real Estate" },
 ];
 
-const communityLinks = [
+const communityLinks: FooterLink[] = [
   { href: "/events", label: "Events Calendar" },
-  { href: "/guides/lake-waconia-fishing", label: "Local News" },
-  { href: "/directory", label: "Chamber of Commerce" },
-  { href: "/directory", label: "Visitor Center" },
+  { href: "/guides/lake-waconia-fishing", label: "Fishing Guide" },
+  {
+    href: "https://destinationwaconia.org",
+    label: "Chamber of Commerce",
+    external: true,
+  },
+  {
+    href: "https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900",
+    label: "MN DNR Lake Waconia",
+    external: true,
+  },
 ];
 
 export function SiteFooter() {
@@ -42,12 +56,23 @@ export function SiteFooter() {
             <ul className="space-y-3">
               {exploreLinks.map((link) => (
                 <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-gray-300 hover:text-white transition-colors"
-                  >
-                    {link.label}
-                  </Link>
+                  {link.external ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -61,12 +86,23 @@ export function SiteFooter() {
             <ul className="space-y-3">
               {communityLinks.map((link) => (
                 <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-gray-300 hover:text-white transition-colors"
-                  >
-                    {link.label}
-                  </Link>
+                  {link.external ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -98,29 +134,13 @@ export function SiteFooter() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-500">
-            &copy; {new Date().getFullYear()} WaconiaGuide. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} WaconiaGuide. An independent guide
+            to Waconia, Minnesota.
           </p>
-          <div className="flex items-center gap-6">
-            <Link
-              href="/"
-              className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/"
-              className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
-            >
-              Terms of Service
-            </Link>
-            <Link
-              href="/"
-              className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
-            >
-              Accessibility
-            </Link>
-          </div>
+          <p className="text-xs text-gray-500">
+            Some links on this site are affiliate links — we may earn a
+            commission at no cost to you.
+          </p>
         </div>
       </div>
     </footer>

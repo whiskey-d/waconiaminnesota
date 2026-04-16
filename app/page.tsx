@@ -7,9 +7,10 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative h-[85vh] min-h-[600px]">
         <Image
-          src="/images/hero-lake-waconia.png"
+          src="/images/hero-lake-waconia.webp"
           alt="Aerial view of Lake Waconia Minnesota at golden hour sunset with marina and tree-lined shoreline"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />
@@ -38,7 +39,7 @@ export default function HomePage() {
                 href="/guides/lake-waconia-fishing"
                 className="border-2 border-white/80 hover:bg-white/10 text-white font-medium px-8 py-3.5 rounded-full transition-colors"
               >
-                View Live Webcam
+                Fishing Guide
               </Link>
             </div>
           </div>
@@ -92,7 +93,7 @@ export default function HomePage() {
           <div className="group rounded-2xl overflow-hidden border border-border bg-white hover:shadow-lg transition-shadow">
             <div className="relative aspect-[16/10] overflow-hidden">
               <Image
-                src="/images/boating-lake-waconia.png"
+                src="/images/boating-lake-waconia.webp"
                 alt="Family on a pontoon boat on Lake Waconia Minnesota on a sunny summer afternoon"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -123,7 +124,7 @@ export default function HomePage() {
           <div className="group rounded-2xl overflow-hidden border border-border bg-white hover:shadow-lg transition-shadow">
             <div className="relative aspect-[16/10] overflow-hidden">
               <Image
-                src="/images/fishing-lake-waconia.png"
+                src="/images/fishing-lake-waconia.webp"
                 alt="Walleye fisherman casting from a boat on Lake Waconia Minnesota at dawn"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -203,7 +204,7 @@ export default function HomePage() {
               <div className="relative h-80 w-full">
                 <div className="absolute top-0 right-0 w-3/4 h-64 rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/dining-iron-tap.png"
+                    src="/images/dining-iron-tap.webp"
                     alt="Craft burgers and beer at Iron Tap restaurant in downtown Waconia Minnesota"
                     fill
                     className="object-cover"
@@ -211,7 +212,7 @@ export default function HomePage() {
                 </div>
                 <div className="absolute bottom-0 left-0 w-2/3 h-52 rounded-2xl overflow-hidden shadow-2xl border-4 border-navy">
                   <Image
-                    src="/images/brewing-waconia.png"
+                    src="/images/brewing-waconia.webp"
                     alt="Craft beer flight at Waconia Brewing Company taproom"
                     fill
                     className="object-cover"
@@ -229,7 +230,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/conservation-lake-waconia.png"
+                src="/images/conservation-lake-waconia.webp"
                 alt="Native prairie wildflowers along the Lake Waconia Minnesota shoreline conservation area"
                 fill
                 className="object-cover"
@@ -344,15 +345,6 @@ export default function HomePage() {
             url: "https://waconiaminnesota.org",
             description:
               "Your definitive guide to Waconia, Minnesota. Discover local dining, events, lake activities, and everything that makes this lakeside community unique.",
-            potentialAction: {
-              "@type": "SearchAction",
-              target: {
-                "@type": "EntryPoint",
-                urlTemplate:
-                  "https://waconiaminnesota.org/directory?q={search_term_string}",
-              },
-              "query-input": "required name=search_term_string",
-            },
           }),
         }}
       />
