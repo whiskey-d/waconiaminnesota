@@ -250,52 +250,82 @@ export default async function GuidePage({ params }: PageProps) {
           {/* Right sidebar */}
           <aside className="space-y-6">
             <div className="sticky top-20 space-y-6">
-              {/* Lake Map & Access */}
-              <div className="bg-white rounded-xl border border-border overflow-hidden">
-                <div className="h-40 bg-surface">
-                  <iframe
-                    title="Lake Waconia Map"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-93.83%2C44.83%2C-93.74%2C44.87&layer=mapnik&marker=44.8522%2C-93.7872"
-                    className="w-full h-full border-0"
-                    loading="lazy"
-                  />
+              {/* Lake Map & Access — only on lake-related guides */}
+              {guide.sidebarMap && (
+                <div className="bg-white rounded-xl border border-border overflow-hidden">
+                  <div className="h-40 bg-surface">
+                    <iframe
+                      title="Lake Waconia Map"
+                      src="https://www.openstreetmap.org/export/embed.html?bbox=-93.83%2C44.83%2C-93.74%2C44.87&layer=mapnik&marker=44.8522%2C-93.7872"
+                      className="w-full h-full border-0"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-bold text-text-primary mb-4">
+                      Lake Map &amp; Access
+                    </h3>
+                    <Link
+                      href="/directory"
+                      className="block w-full bg-primary hover:bg-primary/90 text-white text-sm font-medium py-2.5 rounded-lg text-center transition-colors mb-4"
+                    >
+                      View Full Map
+                    </Link>
+                    <table className="w-full text-sm">
+                      <tbody>
+                        <tr className="border-b border-border">
+                          <td className="py-2 text-text-muted">Public Access</td>
+                          <td className="py-2 text-text-primary font-medium text-right">
+                            {guide.sidebarMap.publicAccess}
+                          </td>
+                        </tr>
+                        <tr className="border-b border-border">
+                          <td className="py-2 text-text-muted">
+                            Boat Launch Fee
+                          </td>
+                          <td className="py-2 text-text-primary font-medium text-right">
+                            {guide.sidebarMap.boatLaunchFee}
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="py-2 text-text-muted">Water Clarity</td>
+                          <td className="py-2 font-medium text-right text-open-green">
+                            {guide.sidebarMap.waterClarity}
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-                <div className="p-5">
+              )}
+
+              {/* Generic facts sidebar — used on non-lake guides */}
+              {guide.sidebarFacts && guide.sidebarFacts.length > 0 && (
+                <div className="bg-white rounded-xl border border-border p-5">
                   <h3 className="font-bold text-text-primary mb-4">
-                    Lake Map &amp; Access
+                    Quick Facts
                   </h3>
-                  <Link
-                    href="/directory"
-                    className="block w-full bg-primary hover:bg-primary/90 text-white text-sm font-medium py-2.5 rounded-lg text-center transition-colors mb-4"
-                  >
-                    View Full Map
-                  </Link>
                   <table className="w-full text-sm">
                     <tbody>
-                      <tr className="border-b border-border">
-                        <td className="py-2 text-text-muted">Public Access</td>
-                        <td className="py-2 text-text-primary font-medium text-right">
-                          {guide.sidebarMap.publicAccess}
-                        </td>
-                      </tr>
-                      <tr className="border-b border-border">
-                        <td className="py-2 text-text-muted">
-                          Boat Launch Fee
-                        </td>
-                        <td className="py-2 text-text-primary font-medium text-right">
-                          {guide.sidebarMap.boatLaunchFee}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="py-2 text-text-muted">Water Clarity</td>
-                        <td className="py-2 font-medium text-right text-open-green">
-                          {guide.sidebarMap.waterClarity}
-                        </td>
-                      </tr>
+                      {guide.sidebarFacts.map((f, i) => (
+                        <tr
+                          key={f.label}
+                          className={
+                            i < guide.sidebarFacts!.length - 1
+                              ? "border-b border-border"
+                              : ""
+                          }
+                        >
+                          <td className="py-2 text-text-muted">{f.label}</td>
+                          <td className="py-2 text-text-primary font-medium text-right">
+                            {f.value}
+                          </td>
+                        </tr>
+                      ))}
                     </tbody>
                   </table>
                 </div>
-              </div>
+              )}
 
               {/* Related Guides */}
               <div className="bg-white rounded-xl border border-border p-5">

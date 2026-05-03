@@ -10,11 +10,12 @@ export interface Guide {
   authorSlug?: string;          // links to /about#author-<slug>
   stats: { label: string; value: string }[];
   content: GuideSection[];
-  sidebarMap: {
+  sidebarMap?: {
     publicAccess: string;
     boatLaunchFee: string;
     waterClarity: string;
   };
+  sidebarFacts?: { label: string; value: string }[];
   relatedGuides: { title: string; readTime: string; href: string }[];
   faqs?: { question: string; answer: string }[];
 }
@@ -394,6 +395,877 @@ export const guides: Guide[] = [
       {
         question: "What does 'Waconia' mean?",
         answer: "'Waconia' is derived from the Dakota word 'Wakonja' (also spelled Wakhanyeza or similar), generally translated as 'fountain' or 'spring of water' — a reference to the lake's clear spring-fed waters.",
+      },
+    ],
+  },
+  // ────────────────────────────────────────────────────────────────────
+  // Phase 4 guides — added 2026-05-03
+  // ────────────────────────────────────────────────────────────────────
+  {
+    slug: "coney-island-lake-waconia",
+    title: "Coney Island of Lake Waconia: The 'Coney Island of the West'",
+    metaDescription:
+      "The forgotten resort island in Lake Waconia. How a 31-acre island became a Gilded-Age destination, what's there today, and how to visit.",
+    heroImage:
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Island Size", value: "31 Acres" },
+      { label: "Resort Era", value: "1884–1919" },
+      { label: "Status Today", value: "Public Park" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Sit down at any Waconia bar and someone will tell you about the island. Coney Island of Lake Waconia — also called Coney Island of the West — is a 31-acre wooded island in the middle of Lake Waconia that, between 1884 and the late 1910s, was one of the most popular tourist destinations in the upper Midwest. Today it sits quiet in the lake, accessible only by boat, with the foundations of its hotel days still visible under a century of forest growth.",
+      },
+      {
+        type: "heading",
+        heading: "The Resort Era (1884–1919)",
+      },
+      {
+        type: "text",
+        body: "In 1884 a partnership of investors purchased the island and began converting it into a Minnesota resort modeled on its New York namesake. Within a decade Coney Island of the West had a 60-room hotel, dance pavilion, restaurant, picnic grounds, and a steamboat dock. Visitors arrived by train at the Waconia depot, then transferred to a lake steamboat that ran across to the island. At its peak the island hosted thousands of visitors during summer weekends — many of them families from Minneapolis and St. Paul escaping the city heat.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "It was the destination — not Minnetonka, not the St. Croix. For three decades, if you said you were going to 'the lake', you meant Coney Island of Waconia.",
+        attribution: "Carver County Historical Society",
+      },
+      {
+        type: "heading",
+        heading: "Decline and Quiet Years",
+      },
+      {
+        type: "text",
+        body: "The resort's fortunes turned in the 1910s. The automobile changed Minnesota tourism — families now drove to dozens of competing lakes rather than taking the train and ferry to a single island. World War I drained tourism and labor, the dance pavilion burned in a fire, and Prohibition (which arrived in Minnesota ahead of the federal amendment) cut deeply into the hotel's revenue model. By the early 1920s the resort had effectively closed. The hotel was demolished in 1965 after decades of disuse.",
+      },
+      {
+        type: "heading",
+        heading: "Coney Island Today",
+      },
+      {
+        type: "text",
+        body: "The island today is part of the Lake Waconia Regional Park system, managed by Carver County. There's no hotel, no pavilion, no dock services — just a wooded island with old foundations, walking paths, and primitive picnic areas. The island is open to the public during daylight hours but is reachable only by boat. Many Lake Waconia visitors paddle over by kayak or stop briefly during a pontoon tour. Carver County offers occasional ranger-led trips during summer.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🚣",
+            title: "How to Visit",
+            body: "Bring your own boat, kayak, or paddleboard. Launch from the city ramp on the east shore (closest, ~1 mile crossing) or the Lake Waconia Regional Park ramp on the south shore (~1.5 mile crossing).",
+          },
+          {
+            icon: "📜",
+            title: "See the Archives",
+            body: "The Carver County Historical Society in Waconia holds the most complete public archive of Coney Island resort photos, brochures, and ephemera.",
+            link: { label: "Visit the Historical Society →", href: "/directory/carver-county-historical-society" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Practical Notes",
+      },
+      {
+        type: "text",
+        body: "There are no restrooms, no drinking water, and no concessions on the island today. Pack everything in and pack everything out. Wear shoes — the foundations of the old hotel and pavilion can be sharp. The island can be buggy in midsummer; bring repellent. Always check the weather before crossing — the lake can get choppy quickly when storms move in.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan Your Lake Waconia Day",
+        ctaDescription:
+          "Pair an island visit with downtown Waconia — the round trip plus dinner makes for a perfect full day on the lake.",
+        buttons: [
+          { label: "Lake Waconia Guide", href: "/guides/lake-waconia", variant: "primary" },
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Size", value: "31 acres" },
+      { label: "Manager", value: "Carver County" },
+      { label: "Access", value: "Boat only" },
+      { label: "Hotel demolished", value: "1965" },
+      { label: "Cost to visit", value: "Free" },
+    ],
+    relatedGuides: [
+      { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
+      { title: "Waconia History", readTime: "9 min read", href: "/guides/waconia-history" },
+      { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
+    ],
+    faqs: [
+      {
+        question: "Can you visit Coney Island of Lake Waconia?",
+        answer: "Yes — the island is part of the Lake Waconia Regional Park system and is open to the public during daylight hours. It is accessible only by private boat, kayak, or paddleboard; there is no public ferry or dock service.",
+      },
+      {
+        question: "Why was it called the 'Coney Island of the West'?",
+        answer: "The marketing borrowed the name from New York's Coney Island, then America's most famous resort. From 1884 through the late 1910s, the Waconia island operated a 60-room hotel, dance pavilion, restaurant, and steamboat service — a Minnesota equivalent of a coastal resort, hence 'of the West'.",
+      },
+      {
+        question: "Is the old hotel still there?",
+        answer: "No. The Coney Island hotel was demolished in 1965 after decades of disuse. Today only foundation remnants remain, surrounded by forest. The Carver County Historical Society in Waconia holds the most complete photo archive of the resort era.",
+      },
+      {
+        question: "How big is Coney Island of Lake Waconia?",
+        answer: "The island is approximately 31 acres, sitting in the middle of Lake Waconia's 3,080 acres. It is the largest island on the lake.",
+      },
+    ],
+  },
+  {
+    slug: "things-to-do-waconia",
+    title: "Things to Do in Waconia, Minnesota — A Local's Complete Guide",
+    metaDescription:
+      "The definitive list of things to do in Waconia, MN — Lake Waconia activities, breweries and wineries, dining, events, and seasonal favorites by a local.",
+    heroImage:
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "From Minneapolis", value: "35 Miles" },
+      { label: "Lake Size", value: "3,080 Acres" },
+      { label: "Annual Events", value: "12+" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Waconia punches above its weight. For a town of about 13,500 it has a 3,080-acre lake, a working winery on the water, an estate winery + brewery on the farmland west of town, a craft distillery, a luxury cinema, and one of Minnesota's longest-running county fairs. Whether you're here for an afternoon, a weekend, or thinking about moving — this is the local-first guide to what's worth doing.",
+      },
+      {
+        type: "heading",
+        heading: "On the Water",
+      },
+      {
+        type: "text",
+        body: "The lake is the centerpiece. In summer, rent a pontoon, kayak, or paddleboard from Lake Waconia Marine and spend the afternoon circling Coney Island. The Lake Waconia Regional Park beach on the south shore is the family swim spot — sandy, gradual entry, lifeguards in season. Anglers can launch from any of three free public ramps; walleye, bass, and pike all fish well here. In winter the lake transforms — ice fishing, snowmobiling, and the Crappie Contest in February draw crowds from across the metro.",
+      },
+      {
+        type: "heading",
+        heading: "Drink Local",
+      },
+      {
+        type: "text",
+        body: "Waconia is now a legitimate destination on Minnesota's craft beverage map. Waconia Brewing Co. anchors downtown with rotating taps and a seasonal patio. Schram Vineyards Winery & Brewery — fifteen minutes west — has estate wines, in-house beer, live music many weekends, and heated igloos in winter. Sovereign Estate Wine sits directly on Lake Waconia with one of the most photogenic patios in the state. J. Carver Distillery rounds out the spirits side with a small-batch cocktail room.",
+      },
+      {
+        type: "heading",
+        heading: "Eat Downtown",
+      },
+      {
+        type: "text",
+        body: "Iron Tap is the dinner default — the Father Bob Burger has a cult following. Egg-Cetera Cafe is the local breakfast institution; expect a wait on weekends. Lola's Lakehouse Eatery offers a casual lake-view patio when you want to eat looking at the water. Mucho Mexican is the family go-to for fajitas and margaritas, and Mocha Monkey is the morning coffee stop.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🎬",
+            title: "Movies & Bowling",
+            body: "Emagine Waconia is a luxury cinema with reclining leather seats, food and drink at your seat, and a large-format EMAX screen. Pair it with bowling at Garage for a classic small-town night out.",
+            link: { label: "Things-to-do listings →", href: "/directory/things-to-do" },
+          },
+          {
+            icon: "📜",
+            title: "History & Museum",
+            body: "The Carver County Historical Society downtown is small but rich — Dakota artifacts, Coney Island resort archives, agricultural history.",
+            link: { label: "Historical Society →", href: "/directory/carver-county-historical-society" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Annual Events",
+      },
+      {
+        type: "text",
+        body: "Anchor your trip to one of Waconia's signature events if you can. Nickle Dickle Day (September) is the flagship community festival — free, all day, downtown. The Carver County Fair (August) runs five days of livestock shows, demolition derby, midway rides, and live music. The Tree Lighting in the Park (Black Friday) kicks off the holiday season at the City Square Park gazebo. The Scarecrow Tour (October) turns the whole town into an outdoor art gallery for ten days.",
+      },
+      {
+        type: "heading",
+        heading: "Golf, Parks & Trails",
+      },
+      {
+        type: "text",
+        body: "Island View Golf Club is the local 18-hole course — rolling fairways and lake views toward Lake Waconia. The Lake Waconia Regional Park offers miles of hiking and biking trails, a swimming beach, and groomed cross-country ski trails in winter. City Square Park downtown is the heart of community events year-round.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Build Your Itinerary",
+        ctaDescription:
+          "Browse the directory by category to plan a perfect Waconia day or weekend.",
+        buttons: [
+          { label: "Browse Directory", href: "/directory", variant: "primary" },
+          { label: "See Events", href: "/events", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Best season", value: "May–October" },
+      { label: "Family-friendly?", value: "Yes" },
+      { label: "Lake activity", value: "Year-round" },
+      { label: "Drive from MSP", value: "~45 min" },
+    ],
+    relatedGuides: [
+      { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
+      { title: "Coney Island of Lake Waconia", readTime: "5 min read", href: "/guides/coney-island-lake-waconia" },
+      { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
+    ],
+    faqs: [
+      {
+        question: "What are the best things to do in Waconia, MN?",
+        answer: "The headline activities in Waconia are: Lake Waconia (boating, fishing, swimming at the Regional Park), Schram Vineyards Winery & Brewery, Sovereign Estate Wine on the lakefront, Waconia Brewing Co. downtown, Iron Tap and Lola's Lakehouse for dining, the Emagine Waconia luxury cinema, the Carver County Historical Society, and seasonal events like Nickle Dickle Day, the Carver County Fair, and the Scarecrow Tour.",
+      },
+      {
+        question: "Is Waconia worth visiting?",
+        answer: "Yes — especially as a day trip or weekend from the Twin Cities. Waconia offers a 3,080-acre lake, four destination beverage producers (brewery, two wineries, distillery), strong dining, and a walkable downtown, all within 45 minutes of Minneapolis.",
+      },
+      {
+        question: "How long should I spend in Waconia?",
+        answer: "An afternoon is enough to walk downtown, visit a brewery or winery, and have dinner. A full day adds the lake or a hike. A weekend lets you cover both wineries, the lake, and a major event if you time it right.",
+      },
+      {
+        question: "Is there free parking in downtown Waconia?",
+        answer: "Yes — downtown Waconia has free street parking and free public lots. The City Square Park area has the largest concentration of free parking near restaurants, breweries, and shops.",
+      },
+    ],
+  },
+  {
+    slug: "lake-waconia-regional-park",
+    title: "Lake Waconia Regional Park: Beach, Trails & Activities",
+    metaDescription:
+      "Complete guide to Lake Waconia Regional Park — swimming beach, boat ramp, hiking trails, picnic shelters, and seasonal activities on the south shore.",
+    heroImage:
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Park Size", value: "245 Acres" },
+      { label: "Beach Open", value: "May–Sep" },
+      { label: "Boat Launch", value: "Free" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Lake Waconia Regional Park is the public face of Lake Waconia — 245 acres on the south shore managed by Carver County. The park is a free-to-enter, year-round destination with a swimming beach, boat ramp, picnic shelters, hiking and biking trails, and groomed cross-country ski trails in winter. For most visitors, this is where you actually meet the lake.",
+      },
+      {
+        type: "heading",
+        heading: "The Beach",
+      },
+      {
+        type: "text",
+        body: "The Lake Waconia Regional Park beach is the headline feature for families. The entry is sandy and gradual, the swimming area is roped off, and lifeguards are on duty during posted summer hours (typically Memorial Day through Labor Day, with reduced staffing in shoulder months). The grass area above the beach has picnic tables, restrooms, and a playground. There is no admission fee, though parking can fill on hot summer Saturdays — arrive before 11am or after 4pm for the easiest spot.",
+      },
+      {
+        type: "heading",
+        heading: "Boat Ramp",
+      },
+      {
+        type: "text",
+        body: "The park's boat ramp is the largest of three on the lake. It's free (state-managed) and open during the open-water season. Trailer parking is generous. The ramp is plowed and maintained for ice fishing access throughout the winter as well. Note: Lake Waconia is an Aquatic Invasive Species checkpoint — clean, drain, and dry your boat before launching.",
+      },
+      {
+        type: "heading",
+        heading: "Trails",
+      },
+      {
+        type: "text",
+        body: "The park has approximately five miles of multi-use trails winding through prairie, oak savanna, and lakeshore. The trails are mostly flat — friendly for kids, casual cyclists, and trail runners. In winter the trails are groomed for cross-country skiing (classic and skate). The park connects to the broader Carver County trail system for longer rides.",
+      },
+      {
+        type: "heading",
+        heading: "Picnic Shelters & Group Use",
+      },
+      {
+        type: "text",
+        body: "Three picnic shelters are available to reserve through Carver County Parks. Reservations open in spring and fill quickly for summer Saturdays. Walk-in tables are scattered along the beach lawn for casual lunches. Charcoal grills are available at the shelters; bring your own fuel.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🏖",
+            title: "Beach Hours",
+            body: "The swim beach is open dawn to dusk seasonally. Lifeguard hours are posted at the entrance and on Carver County Parks' website.",
+          },
+          {
+            icon: "🐕",
+            title: "Dogs",
+            body: "Dogs are allowed on park trails on a leash. Dogs are NOT allowed on the swim beach itself during the season.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Winter Use",
+      },
+      {
+        type: "text",
+        body: "The park doesn't close in winter. Cross-country ski trails are groomed regularly, the boat ramp is plowed for ice fishing access, and the lakeside roads see snowshoers and walkers throughout the season. The view of the frozen lake from the upper trails on a clear winter morning is one of the underrated experiences in the western suburbs.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan Your Park Visit",
+        ctaDescription:
+          "Pair the park with downtown Waconia — the drive between is five minutes.",
+        buttons: [
+          { label: "Lake Waconia Guide", href: "/guides/lake-waconia", variant: "primary" },
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Manager", value: "Carver County" },
+      { label: "Park entry", value: "Free" },
+      { label: "Boat launch", value: "Free" },
+      { label: "Dogs", value: "Trails only" },
+      { label: "Open year-round", value: "Yes" },
+    ],
+    relatedGuides: [
+      { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
+      { title: "Lake Waconia Boat Rentals", readTime: "5 min read", href: "/guides/lake-waconia-boat-rentals" },
+      { title: "Lake Waconia Fishing", readTime: "12 min read", href: "/guides/lake-waconia-fishing" },
+    ],
+    faqs: [
+      {
+        question: "Is Lake Waconia Regional Park free?",
+        answer: "Yes. Park entry, beach access, and the boat ramp are all free. Picnic shelter reservations carry a small fee through Carver County Parks.",
+      },
+      {
+        question: "What are the hours of Lake Waconia Regional Park?",
+        answer: "The park is open daily from dawn to dusk year-round. Lifeguard hours at the swim beach are posted seasonally — typically late morning through early evening from Memorial Day through Labor Day.",
+      },
+      {
+        question: "Are dogs allowed at Lake Waconia Regional Park?",
+        answer: "Dogs are allowed on the park's trails on a leash. They are not allowed on the swim beach during the swim season.",
+      },
+      {
+        question: "Where is Lake Waconia Regional Park?",
+        answer: "Lake Waconia Regional Park is on the south shore of Lake Waconia in Waconia, Minnesota — approximately five minutes from downtown Waconia and 35 miles west of Minneapolis.",
+      },
+    ],
+  },
+  {
+    slug: "lake-waconia-boat-rentals",
+    title: "Lake Waconia Boat Rentals: Pontoons, Kayaks & SUPs",
+    metaDescription:
+      "Where to rent a pontoon, kayak, or paddleboard on Lake Waconia. Local rental options, prices, what to bring, and reservation tips.",
+    heroImage: "/images/boating-lake-waconia.webp",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Pontoon (full day)", value: "$400–$600" },
+      { label: "Kayak (per hour)", value: "$15–$25" },
+      { label: "Public Ramps", value: "3 Free" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Renting a boat on Lake Waconia is the quickest way to understand why locals are protective of this place. With 3,080 acres of open water, three free public boat launches, and a handful of local rental options, getting on the water is straightforward — but summer demand is intense. This guide covers what's available, how to book, and what to know before you launch.",
+      },
+      {
+        type: "heading",
+        heading: "Pontoon Rentals",
+      },
+      {
+        type: "text",
+        body: "Pontoons are the most popular rental on Lake Waconia. Lake Waconia Marine handles most of the local pontoon rental traffic and is the operator most locals recommend. Expect a four-hour minimum for short rentals, with full-day rentals running roughly $400–$600 depending on boat size and time of year. Operator licenses required by Minnesota law: anyone born after July 1, 1987 must have a valid Minnesota Watercraft Operator's Permit to legally operate the rental.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "Reserve weekend pontoon rentals at least three weeks ahead in July and August. Holiday weekends — Memorial Day, July 4th, Labor Day — book out by mid-spring.",
+        attribution: "Local rental advice",
+      },
+      {
+        type: "heading",
+        heading: "Kayaks & Paddleboards",
+      },
+      {
+        type: "text",
+        body: "Kayaks and paddleboards (SUPs) are easier to rent on shorter notice. Hourly rentals typically run $15–$25 for kayaks and $20–$30 for SUPs depending on operator and season. The most common pickup point is near the Lake Waconia Regional Park beach on the south shore. For the calmest paddling water, head into the protected bays along the north shore early in the morning before the wind picks up.",
+      },
+      {
+        type: "heading",
+        heading: "Where to Launch",
+      },
+      {
+        type: "text",
+        body: "Three free public ramps on Lake Waconia: the city ramp on the east shore (Lake Drive), the Lake Waconia Regional Park ramp on the south shore (best for trailered boats and parking), and a smaller access on the northwest end. All three are state-managed, all are free, and the city ramp is open 24 hours during the open-water season.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "📋",
+            title: "Bring with You",
+            body: "Driver's license, Minnesota Watercraft Operator's Permit (if born after July 1, 1987), payment method, sun protection, drinking water, and snacks. Most rentals include life jackets but bring extras for kids if you have them.",
+          },
+          {
+            icon: "🌿",
+            title: "AIS Compliance",
+            body: "Lake Waconia is an Aquatic Invasive Species checkpoint. Clean, drain, and dry rental equipment is the operator's responsibility, but if you trailer your own boat in, you're responsible for inspection.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Best Times to Be on the Lake",
+      },
+      {
+        type: "text",
+        body: "Mornings (before 10am) are the calmest — flat water, fewer boats, ideal for paddling and fishing. Mid-afternoon Saturdays and Sundays in July are peak chaos with wakeboard, ski, and tube traffic; if you want a quieter pontoon experience, weekday afternoons or Sunday evenings are dramatically calmer. Sunset cruises from 7pm onward are arguably the highlight of any Lake Waconia rental — west-facing views with the sun dropping over the western shore.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan Your Rental Day",
+        ctaDescription:
+          "Reservations close out fast. Book early, and pair your rental with dinner at Lola's Lakehouse or Sovereign Estate Wine on the south shore.",
+        buttons: [
+          { label: "Marina Listing", href: "/directory/lake-waconia-marine", variant: "primary" },
+          { label: "Lake Waconia Guide", href: "/guides/lake-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarMap: {
+      publicAccess: "3 Locations",
+      boatLaunchFee: "None — State",
+      waterClarity: "Excellent",
+    },
+    relatedGuides: [
+      { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
+      { title: "Lake Waconia Fishing Guide", readTime: "12 min read", href: "/guides/lake-waconia-fishing" },
+      { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
+    ],
+    faqs: [
+      {
+        question: "Can you rent a pontoon on Lake Waconia?",
+        answer: "Yes. Lake Waconia Marine is the primary local pontoon rental operator. Full-day pontoon rentals run roughly $400–$600 depending on boat size and season. Reserve weekend rentals at least three weeks ahead in July and August.",
+      },
+      {
+        question: "Do you need a license to drive a pontoon on Lake Waconia?",
+        answer: "Anyone born after July 1, 1987 must hold a valid Minnesota Watercraft Operator's Permit to operate a motorized boat in Minnesota. The permit is earned through a free online course and exam administered by the MN DNR.",
+      },
+      {
+        question: "Where can you rent kayaks on Lake Waconia?",
+        answer: "Kayak and paddleboard rentals are typically available near the Lake Waconia Regional Park beach on the south shore during summer. Hourly rentals run $15–$25 for kayaks, $20–$30 for paddleboards.",
+      },
+      {
+        question: "Are there any free public boat launches on Lake Waconia?",
+        answer: "Yes — all three Lake Waconia boat launches are free and state-managed: the city ramp (east shore), Lake Waconia Regional Park ramp (south shore), and a smaller access on the northwest end of the lake.",
+      },
+    ],
+  },
+  {
+    slug: "lake-waconia-ice-fishing",
+    title: "Lake Waconia Ice Fishing: Walleye, Crappie & Safety Guide",
+    metaDescription:
+      "Complete Lake Waconia ice fishing guide — walleye and panfish hotspots, ice safety thresholds, gear list, and the Lake Waconia Crappie Contest.",
+    heroImage:
+      "https://images.unsplash.com/photo-1518182170546-07661fd94144?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Safe Ice (foot)", value: "4+ Inches" },
+      { label: "Target Depth", value: "15–25 Feet" },
+      { label: "Season", value: "Dec–March" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Lake Waconia is one of the Twin Cities metro's premier ice fishing destinations. Once safe ice forms — typically by mid-December — the lake transforms into a winter walleye and panfish factory. Walleye, perch, crappie, and bluegill all bite consistently through the season, and the lake's three plowed access points keep getting on the ice manageable even after major snowfalls.",
+      },
+      {
+        type: "heading",
+        heading: "Ice Safety — Read This First",
+      },
+      {
+        type: "text",
+        body: "Ice safety is non-negotiable. Always measure ice yourself; conditions vary significantly across Lake Waconia thanks to springs, current, and pressure ridges. Standard MN DNR guidance for new clear ice: 4 inches minimum for foot traffic, 5–7 inches for snowmobile or ATV, 8–12 inches for a small car or pickup, 12–15 inches for a medium truck. White or layered ice should be doubled. Early and late in the season, fish from a portable shelter near shore — the deep middle of the lake is the last to freeze and the first to weaken.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "If you have to ask whether the ice is safe, it isn't. Ask a local at the bait shop, drill test holes as you walk, and never go alone the first time on the ice.",
+        attribution: "Lake Waconia regular",
+      },
+      {
+        type: "heading",
+        heading: "Walleye: The Marquee Bite",
+      },
+      {
+        type: "text",
+        body: "Lake Waconia's walleye are the headline winter species. Target the 15-to-25-foot breaklines — the transition from the shallow flats to the deeper basin holds fish through the season. Tip-ups baited with fathead minnows produce consistent action; jigging spoons (Buck-Shot Rattle Spoons, Slender Spoons) tipped with a minnow head trigger reaction strikes from active fish. Best windows: first hour of light at dawn, last hour at dusk. Through the day, the south basin and the deep flats off the east shore both produce.",
+      },
+      {
+        type: "heading",
+        heading: "Panfish: Crappie & Bluegill",
+      },
+      {
+        type: "text",
+        body: "Lake Waconia's panfish action gets less hype than the walleye but is consistently strong. Crappie suspend in 18-to-25 feet over deeper basins — find them on a flasher and drop a small jigging Rapala or tungsten jig with a waxworm. Bluegill stack in the soft-bottom flats in 8-to-15 feet, especially near submerged vegetation transitions. Light line (4 lb fluorocarbon) and tiny tungsten ice jigs make a real difference for the bigger 'gills.",
+      },
+      {
+        type: "heading",
+        heading: "The Lake Waconia Crappie Contest",
+      },
+      {
+        type: "text",
+        body: "The annual Lake Waconia Crappie Contest is one of the metro's most popular ice fishing tournaments — typically held in February. Hundreds of anglers, family-friendly, with prizes for the largest crappies and a strong community feel. Check destinationwaconia.org and the contest's social pages closer to the date for the current year's specifics.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🎣",
+            title: "Recommended Gear",
+            body: "Ice rod (24–30\"), 4–8 lb fluorocarbon, fathead minnows, tungsten ice jigs, Buck-Shot Rattle Spoons, tip-ups for walleye, flasher (Vexilar/Marcum/Garmin), portable shelter, ice cleats, spud bar.",
+          },
+          {
+            icon: "🌿",
+            title: "Conservation Note",
+            body: "Lake Waconia is an Aquatic Invasive Species checkpoint year-round. Clean, drain, and dry rods, augers, and equipment between lakes. Pack out all trash — winter trash on the ice ends up in the lake at thaw.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Access in Winter",
+      },
+      {
+        type: "text",
+        body: "All three Lake Waconia public access points are plowed throughout the ice season. The south shore Regional Park ramp typically has the best parking and most consistent plowing after storms. The city ramp on the east shore is closer to downtown — handy if you're combining a fishing trip with food and beer.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Get on the Ice",
+        ctaDescription:
+          "Pair an early ice morning with breakfast at Egg-Cetera Cafe and a fresh pour at Waconia Brewing — the perfect winter loop.",
+        buttons: [
+          { label: "Lake Waconia Fishing", href: "/guides/lake-waconia-fishing", variant: "primary" },
+          { label: "MN DNR LakeFinder", href: "https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarMap: {
+      publicAccess: "3 Plowed",
+      boatLaunchFee: "None",
+      waterClarity: "Excellent",
+    },
+    relatedGuides: [
+      { title: "Lake Waconia Fishing", readTime: "12 min read", href: "/guides/lake-waconia-fishing" },
+      { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
+      { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
+    ],
+    faqs: [
+      {
+        question: "When is Lake Waconia safe for ice fishing?",
+        answer: "Lake Waconia typically has safe new clear ice by mid-December and remains safe through early March in a normal winter. Always measure ice yourself — Minnesota DNR guidance is 4 inches minimum for foot traffic, 5–7 inches for snowmobile or ATV, and 8–12 inches before driving any vehicle on the ice.",
+      },
+      {
+        question: "What fish are biting in Lake Waconia in winter?",
+        answer: "Walleye, perch, crappie, and bluegill all bite consistently on Lake Waconia through the ice season. Walleye is the marquee species; target 15-to-25-foot breaklines with tip-ups and minnows or jigging spoons.",
+      },
+      {
+        question: "Is there an ice fishing tournament on Lake Waconia?",
+        answer: "Yes — the Lake Waconia Crappie Contest is held annually, typically in February. It is one of the most popular ice fishing tournaments in the Twin Cities metro and is family-friendly.",
+      },
+      {
+        question: "Do you need a special license to ice fish in Minnesota?",
+        answer: "A valid Minnesota fishing license is required for anglers age 16 and older. There is no separate ice fishing license, but if you use multiple lines (a tip-up plus a rod, for example) you must follow the Minnesota DNR's rules on legal lines per angler.",
+      },
+    ],
+  },
+  {
+    slug: "waconia-history",
+    title: "Waconia, Minnesota: A Local History (Dakota Roots to Today)",
+    metaDescription:
+      "The history of Waconia, Minnesota — the meaning of the Dakota name, German settlement in the 1850s, the Coney Island resort era, and the modern lakeside city.",
+    heroImage:
+      "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Founded", value: "1856" },
+      { label: "Incorporated", value: "1882" },
+      { label: "Population (2020)", value: "13,500+" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Waconia is older than Minnesota statehood. The Dakota people knew the lake first; German immigrants founded the modern town in 1856; the Gilded Age turned the island in the middle of the lake into a national resort; and the postwar decades transformed Waconia from a sleepy farm-and-lake town into one of the fastest-growing communities in Carver County. This is the short, honest version.",
+      },
+      {
+        type: "heading",
+        heading: "The Name: Dakota Origins",
+      },
+      {
+        type: "text",
+        body: "The name 'Waconia' derives from the Dakota language, generally translated as 'fountain' or 'spring of water' — a reference to the lake's clear, spring-fed character. The Dakota lived in this region for centuries before European contact, and Lake Waconia was a known seasonal site. Place-name scholars note variations of the spelling (Wakonja, Waconda, Wakhanyeza) across early sources, all pointing to the same root meaning.",
+      },
+      {
+        type: "heading",
+        heading: "Settlement: 1856 Onward",
+      },
+      {
+        type: "text",
+        body: "German immigrants — chiefly from northern German states and Bohemia — began arriving in the Lake Waconia area in 1856, two years before Minnesota became a state. They platted a townsite on the south shore in 1857. The community grew slowly through the 1860s, anchored by farming and the construction of grain elevators, churches, and a small commercial district along what is now Main Street. The town was officially incorporated as the Village of Waconia in 1882.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "By 1880 Waconia had churches, mills, a brewery, and a downtown that any Carver County farmer recognized as a real town — but the lake was about to make it nationally famous.",
+        attribution: "Carver County Historical Society",
+      },
+      {
+        type: "heading",
+        heading: "The Coney Island Resort Era (1884–1919)",
+      },
+      {
+        type: "text",
+        body: "In 1884 investors bought the 31-acre island in the middle of Lake Waconia and developed it into a Gilded-Age resort modeled on New York's Coney Island. At its peak, Coney Island of the West hosted a 60-room hotel, dance pavilion, restaurant, and steamboat service from the Waconia depot. Tourists arrived by train from Minneapolis and St. Paul, transferred to a lake steamer, and spent summer weekends on the island. The resort declined sharply after 1915 as automobiles, World War I, and Prohibition reshaped Minnesota tourism. (See our dedicated Coney Island guide for the full story.)",
+      },
+      {
+        type: "heading",
+        heading: "Mid-Century Waconia: Farming, Faith, and the Fair",
+      },
+      {
+        type: "text",
+        body: "After the resort era closed, Waconia returned to its agricultural roots. The Carver County Fair — first held in 1910 — anchored the summer calendar. Lutheran and Catholic churches anchored community life through the Depression and the war years. The lake remained a local recreation hub, but the national-tourism era was over. The town's population stayed under 1,500 through the 1950s.",
+      },
+      {
+        type: "heading",
+        heading: "Modern Growth (1980s to Today)",
+      },
+      {
+        type: "text",
+        body: "Highway upgrades, suburbanization of the Twin Cities, and Ridgeview Medical Center's expansion turned Waconia from a small farm town into one of Carver County's fastest-growing cities. Population roughly tripled between 1990 and 2020. Downtown reinvented itself with a new generation of independent restaurants, breweries, wineries, and distilleries. Today the city sits at over 13,500 residents — still small enough to walk downtown, big enough to support the craft economy that defines its modern identity.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "📜",
+            title: "See the Archives",
+            body: "The Carver County Historical Society in Waconia holds the most complete public archive on local history — Dakota artifacts, settler-era ephemera, the Coney Island archive, and rotating exhibits.",
+            link: { label: "Visit the Historical Society →", href: "/directory/carver-county-historical-society" },
+          },
+          {
+            icon: "🏝",
+            title: "Coney Island Deep Dive",
+            body: "For the full story of the resort era, see our dedicated guide to Coney Island of Lake Waconia.",
+            link: { label: "Read the guide →", href: "/guides/coney-island-lake-waconia" },
+          },
+        ],
+      },
+      {
+        type: "cta",
+        ctaTitle: "Visit Waconia Today",
+        ctaDescription:
+          "The history is still here — in the buildings, the lake, the Carver County Fair. Walk downtown, then walk the south shore.",
+        buttons: [
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "primary" },
+          { label: "Lake Waconia Guide", href: "/guides/lake-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Founded", value: "1856" },
+      { label: "Incorporated", value: "1882" },
+      { label: "County", value: "Carver" },
+      { label: "ZIP code", value: "55387" },
+      { label: "Name origin", value: "Dakota" },
+    ],
+    relatedGuides: [
+      { title: "Coney Island of Lake Waconia", readTime: "5 min read", href: "/guides/coney-island-lake-waconia" },
+      { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+    ],
+    faqs: [
+      {
+        question: "What does Waconia mean?",
+        answer: "'Waconia' derives from the Dakota language, generally translated as 'fountain' or 'spring of water' — a reference to Lake Waconia's clear, spring-fed waters. Variations of the spelling appear across early sources but all point to the same root meaning.",
+      },
+      {
+        question: "When was Waconia founded?",
+        answer: "Waconia was settled by German immigrants in 1856, two years before Minnesota became a state. The original townsite was platted on the south shore of Lake Waconia in 1857, and the community was officially incorporated as the Village of Waconia in 1882.",
+      },
+      {
+        question: "What is Waconia, MN known for historically?",
+        answer: "Three eras stand out. The Dakota knew the lake first and gave Waconia its name. German settlers founded the modern town in 1856 and built the agricultural community that defined it through 1900. The Coney Island of the West resort on the island in Lake Waconia made the town nationally known between 1884 and the late 1910s. After the resort era, Waconia returned to a farming economy and grew steadily into the modern lakeside city of 13,500+ today.",
+      },
+      {
+        question: "Is Waconia in Carver County?",
+        answer: "Yes. Waconia is in Carver County, Minnesota, and is the county's third-largest city (after Chaska and Chanhassen). The Carver County Historical Society and Carver County Fairgrounds are both located in Waconia.",
+      },
+    ],
+  },
+  {
+    slug: "moving-to-waconia",
+    title: "Moving to Waconia, MN: A Local's Relocation Guide",
+    metaDescription:
+      "Everything to know before moving to Waconia, Minnesota — neighborhoods, schools (District 110), commute, taxes, healthcare, and the real cost of lakeside living.",
+    heroImage:
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Population", value: "13,500+" },
+      { label: "Drive to MSP", value: "~45 min" },
+      { label: "School District", value: "ISD 110" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Waconia is on a lot of relocation shortlists — strong school district, big lake, walkable downtown, fast-growing but not overbuilt. This is the local-first relocation guide: what's actually true about commuting, schools, neighborhoods, healthcare, and the cost of living before you sign anything.",
+      },
+      {
+        type: "heading",
+        heading: "Where to Live in Waconia",
+      },
+      {
+        type: "text",
+        body: "Waconia's neighborhoods divide loosely into four character types. (1) Historic downtown / older south side — walkable to Main Street, small lots, classic homes from 1900–1960. (2) South-shore lakefront / lake-adjacent — the highest property values, with direct or near-direct Lake Waconia frontage. (3) North-side suburban developments (around the Marketplace shopping area) — newer construction from 2000–2020, larger lots, family-oriented. (4) Rural fringe / agricultural transition — homes on acreage outside the city limits, often with hobby farms or vineyard-adjacent parcels.",
+      },
+      {
+        type: "heading",
+        heading: "Schools (ISD 110)",
+      },
+      {
+        type: "text",
+        body: "Waconia students attend Independent School District 110 — Waconia Public Schools. The district consistently ranks well among Minnesota suburban districts, with Waconia High School, Waconia Middle School, and three elementary schools (Bayview, Southview, and Clearwater). The district is a major draw for families relocating from the metro. Private school options nearby include St. Joseph's Catholic School (PreK–8) in Waconia and several other parochial schools in surrounding communities.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "The schools are why most families move here. The lake is why they stay.",
+        attribution: "Local realtor",
+      },
+      {
+        type: "heading",
+        heading: "Commuting",
+      },
+      {
+        type: "text",
+        body: "Waconia is a 45-minute drive (off-peak) to downtown Minneapolis via Highway 5 and I-494. In peak rush hour the same drive can stretch to 60–70 minutes. There is no light rail or commuter rail to Waconia. SouthWest Transit operates limited park-and-ride buses from nearby Chaska and Chanhassen, which are 8 and 12 miles east respectively. Most Waconia commuters drive. If your job is in the western or southwestern metro (Eden Prairie, Chaska, Chanhassen, Minnetonka), the commute is much friendlier — 25–40 minutes door to door.",
+      },
+      {
+        type: "heading",
+        heading: "Healthcare",
+      },
+      {
+        type: "text",
+        body: "Ridgeview Medical Center, headquartered in Waconia, is the regional hospital — full-service emergency, surgery, women's health, and a network of primary care and specialty clinics across the area. It's also one of the city's largest employers. For specialty care beyond Ridgeview's scope, residents typically travel to the Twin Cities (Mayo, M Health Fairview, Allina, HealthPartners networks).",
+      },
+      {
+        type: "heading",
+        heading: "Taxes & Cost of Living",
+      },
+      {
+        type: "text",
+        body: "Carver County has property tax rates in line with the broader Twin Cities metro. The city of Waconia's tax levy is published annually by the city. Minnesota state income tax applies (4 brackets, top rate 9.85%); sales tax in Waconia is the state rate plus local option (combined typically 7.375%). Cost of living overall sits below the Minneapolis metro average — housing is the main reason — though lakefront properties price closer to metro standards.",
+      },
+      {
+        type: "heading",
+        heading: "Day-to-Day Life",
+      },
+      {
+        type: "text",
+        body: "Waconia has Coborn's and Aldi for full grocery shopping, Westside Liquor for wine and beer, the Carver County Library branch, and the full constellation of national chains along the Marketplace. Downtown Waconia is the social and cultural center — restaurants, breweries, City Square Park events, the Thursday farmers market in summer. The lake is genuinely usable: downtown to a public boat ramp is five minutes by car.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🏠",
+            title: "Browse Real Estate",
+            body: "We aggregate foreclosure and distressed-sale listings on a separate page — useful as one input among many in your search.",
+            link: { label: "Waconia Foreclosures →", href: "/foreclosures" },
+          },
+          {
+            icon: "🏨",
+            title: "Visit Before You Move",
+            body: "Spend a weekend before deciding. AmeriVu Inn or a lakefront Airbnb both work; we cover lodging in detail in our hotels guide.",
+            link: { label: "Where to Stay →", href: "/hotels" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "What Locals Tell First-Time Buyers",
+      },
+      {
+        type: "text",
+        body: "Three things consistently come up when we talk to people who moved here in the last five years. First, lake-adjacent doesn't have to mean lake-frontage — homes within a five-minute walk to a public access point have most of the lake lifestyle for a fraction of the price. Second, the Highway 5 commute is the single biggest variable; test it at your specific work hours before signing. Third, winters are real winters — invest in snow removal infrastructure (a snowblower, a service contract, or both) before December.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan a Scouting Trip",
+        ctaDescription:
+          "Spend a weekend exploring downtown, the lake, and the school district before deciding.",
+        buttons: [
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "primary" },
+          { label: "Where to Stay", href: "/hotels", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "School district", value: "ISD 110" },
+      { label: "Hospital", value: "Ridgeview" },
+      { label: "Commute to MSP", value: "~45 min" },
+      { label: "Sales tax", value: "~7.375%" },
+      { label: "ZIP code", value: "55387" },
+    ],
+    relatedGuides: [
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+      { title: "Waconia History", readTime: "9 min read", href: "/guides/waconia-history" },
+      { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
+    ],
+    faqs: [
+      {
+        question: "Is Waconia, MN a good place to live?",
+        answer: "Waconia consistently ranks well for Twin Cities suburban living thanks to a strong school district (ISD 110), a 3,080-acre recreational lake, a walkable downtown, and a regional hospital (Ridgeview). The trade-off is a 45-minute drive to downtown Minneapolis and limited public transit options.",
+      },
+      {
+        question: "What school district is Waconia in?",
+        answer: "Waconia is served by Independent School District 110 (Waconia Public Schools), which includes Waconia High School, Waconia Middle School, and three elementary schools — Bayview, Southview, and Clearwater. The district consistently ranks among the stronger suburban districts in Minnesota.",
+      },
+      {
+        question: "How long is the drive from Waconia to Minneapolis?",
+        answer: "Approximately 45 minutes off-peak from Waconia to downtown Minneapolis via Highway 5 and I-494. In peak rush hour the drive can stretch to 60–70 minutes. Test your specific commute hours before relocating.",
+      },
+      {
+        question: "What is the population of Waconia, MN?",
+        answer: "Waconia has approximately 13,500 residents and is one of the fastest-growing cities in Carver County. The 2020 Census put the city at 13,461; the population has continued to grow modestly since.",
+      },
+      {
+        question: "Is Waconia expensive to live in?",
+        answer: "Cost of living in Waconia sits below the broader Minneapolis-St. Paul metro average, mainly driven by housing. Lakefront properties price closer to metro standards. Property tax rates are in line with the rest of Carver County, and Minnesota state income tax applies.",
       },
     ],
   },
