@@ -123,6 +123,14 @@ export function SiteFooter() {
             <ul className="space-y-2">
               <li>
                 <Link
+                  href="/best-of-waconia"
+                  className="text-sm text-gray-300 hover:text-white transition-colors"
+                >
+                  Best of Waconia →
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/guides/things-to-do-waconia"
                   className="text-sm text-gray-300 hover:text-white transition-colors"
                 >

@@ -368,6 +368,27 @@ export default async function GuidePage({ params }: PageProps) {
                 </ul>
               </div>
 
+              {/* Glossary terms — entity-rich cross-link to /glossary anchors */}
+              {guide.glossaryTerms && guide.glossaryTerms.length > 0 && (
+                <div className="bg-white rounded-xl border border-border p-5">
+                  <h3 className="font-bold text-text-primary mb-3">
+                    Related Glossary Terms
+                  </h3>
+                  <ul className="space-y-2">
+                    {guide.glossaryTerms.map((g) => (
+                      <li key={g.anchor}>
+                        <Link
+                          href={`/glossary#${g.anchor}`}
+                          className="text-sm text-primary hover:underline"
+                        >
+                          {g.term} →
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               {/* Local-knowledge CTA */}
               <div className="bg-accent-light rounded-xl p-5">
                 <h3 className="font-bold text-text-primary mb-2">
@@ -418,6 +439,8 @@ export default async function GuidePage({ params }: PageProps) {
               ? guide.heroImage
               : `${SITE_URL}${guide.heroImage}`,
             mainEntityOfPage: `${SITE_URL}/guides/${guide.slug}`,
+            ...(guide.keywords ? { keywords: guide.keywords.join(", ") } : {}),
+            ...(guide.articleSection ? { articleSection: guide.articleSection } : {}),
             speakable: {
               "@type": "SpeakableSpecification",
               cssSelector: ["h1", ".guide-faq"],
@@ -441,6 +464,99 @@ export default async function GuidePage({ params }: PageProps) {
                   text: f.answer,
                 },
               })),
+            }),
+          }}
+        />
+      )}
+
+      {/* HowTo schema — emitted only when the guide is procedural. AI engines
+          and Google rich-results both surface HowTo content. */}
+      {guide.howTo && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "HowTo",
+              name: guide.howTo.name,
+              description: guide.howTo.description,
+              ...(guide.howTo.totalTime ? { totalTime: guide.howTo.totalTime } : {}),
+              ...(guide.howTo.estimatedCost
+                ? {
+                    estimatedCost: {
+                      "@type": "MonetaryAmount",
+                      currency: guide.howTo.estimatedCost.currency,
+                      value: guide.howTo.estimatedCost.value,
+                    },
+                  }
+                : {}),
+              ...(guide.howTo.tools && guide.howTo.tools.length > 0
+                ? {
+                    tool: guide.howTo.tools.map((t) => ({
+                      "@type": "HowToTool",
+                      name: t,
+                    })),
+                  }
+                : {}),
+              step: guide.howTo.steps.map((s, i) => ({
+                "@type": "HowToStep",
+                position: i + 1,
+                name: s.name,
+                text: s.text,
+              })),
+              mainEntityOfPage: `${SITE_URL}/guides/${guide.slug}`,
+            }),
+          }}
+        />
+      )}
+
+      {/* TouristAttraction for the things-to-do hub. Marks Waconia as a
+          discoverable destination entity. */}
+      {guide.slug === "things-to-do-waconia" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "TouristDestination",
+              "@id": `${SITE_URL}/guides/things-to-do-waconia#destination`,
+              name: "Waconia, Minnesota",
+              description:
+                "Lakeside city of approximately 13,500 in Carver County, Minnesota — destination for boating and fishing on Lake Waconia, four destination craft-beverage producers, downtown dining, and the historic Coney Island of Lake Waconia.",
+              url: `${SITE_URL}/guides/things-to-do-waconia`,
+              touristType: ["Family", "Couple", "Outdoor enthusiast", "Foodie"],
+              includesAttraction: [
+                {
+                  "@type": "TouristAttraction",
+                  name: "Lake Waconia",
+                  url: `${SITE_URL}/guides/lake-waconia`,
+                },
+                {
+                  "@type": "TouristAttraction",
+                  name: "Coney Island of Lake Waconia",
+                  url: `${SITE_URL}/guides/coney-island-lake-waconia`,
+                },
+                {
+                  "@type": "TouristAttraction",
+                  name: "Lake Waconia Regional Park",
+                  url: `${SITE_URL}/guides/lake-waconia-regional-park`,
+                },
+                {
+                  "@type": "TouristAttraction",
+                  name: "Waconia Brewing Co.",
+                  url: `${SITE_URL}/directory/waconia-brewing-company`,
+                },
+                {
+                  "@type": "TouristAttraction",
+                  name: "Schram Vineyards Winery & Brewery",
+                  url: `${SITE_URL}/directory/schram-vineyards`,
+                },
+                {
+                  "@type": "TouristAttraction",
+                  name: "Sovereign Estate Wine",
+                  url: `${SITE_URL}/directory/sovereign-estate-wine`,
+                },
+              ],
             }),
           }}
         />

@@ -29,74 +29,94 @@ Started 2026-05-03.
 ## Phase 3 — Directory expansion + categories
 
 - [x] 3.1 Category landing pages (6 categories with ItemList schema)
-- [x] 3.2 Removed decorative pagination; single page until count exceeds ~50
+- [x] 3.2 Removed decorative pagination
 - [x] 3.3 Expanded directory from 9 → 23 listings
 
-## Phase 4 — Topical authority guides (round 1)
+## Phase 4 — Topical authority guides (round 1, 7 guides)
 
-- [x] 4.1 `/guides/coney-island-lake-waconia`
-- [x] 4.2 `/guides/things-to-do-waconia`
-- [x] 4.3 `/guides/lake-waconia-regional-park`
-- [x] 4.4 `/guides/lake-waconia-boat-rentals`
-- [x] 4.5 `/guides/lake-waconia-ice-fishing`
-- [x] 4.6 `/guides/waconia-history`
-- [x] 4.7 `/guides/moving-to-waconia`
+All complete: Coney Island, Things to Do, Regional Park, Boat Rentals, Ice
+Fishing, Waconia History, Moving to Waconia.
 
 ## Round 5 — Page-level FAQ retrofit + cleanup
 
-- [x] 5.0 Removed non-functional newsletter UI (footer + guide sidebar);
-      replaced with directory/correction CTAs
-- [x] 5.1 FAQ + FAQPage schema on `/events`
-- [x] 5.2 FAQ + FAQPage schema on `/hotels`
-- [x] 5.3 FAQ + FAQPage schema on `/foreclosures`
-- [x] 5.4 FAQ + FAQPage schema on `/directory`
-- [x] 5.5 `Place` + `BodyOfWater` schema for Lake Waconia (with `sameAs` to
-      DNR LakeFinder + Wikipedia) on the canonical lake guide
+- [x] 5.0 Removed dead newsletter UI
+- [x] 5.1–5.4 FAQ + FAQPage schema on /events, /hotels, /foreclosures, /directory
+- [x] 5.5 `Place` + `BodyOfWater` schema for Lake Waconia
 
-## Round 6 — Topical authority guides (round 2) + glossary
+## Round 6 — Topical authority guides (round 2, 5 guides + glossary)
 
-- [x] 6.1 `/guides/waconia-schools` — ISD 110 deep dive
-- [x] 6.2 `/guides/getting-to-waconia` — drive routes, MSP airport, parking
-- [x] 6.3 `/guides/waconia-parks` — full city + county park inventory
-- [x] 6.4 `/guides/lake-waconia-depth-map` — bathymetry, DOW data, structure
-- [x] 6.5 `/guides/lake-waconia-vs-lake-minnetonka` — comparison, citation magnet
-- [x] 6.6 `/glossary` — local terms (Waconia, Coney Island, ISD 110, AIS,
-      DOW, etc.) with `DefinedTermSet` JSON-LD
+- [x] 6.1 `/guides/waconia-schools`
+- [x] 6.2 `/guides/getting-to-waconia`
+- [x] 6.3 `/guides/waconia-parks`
+- [x] 6.4 `/guides/lake-waconia-depth-map`
+- [x] 6.5 `/guides/lake-waconia-vs-lake-minnetonka`
+- [x] 6.6 `/glossary` with DefinedTermSet JSON-LD
+
+## Round 7 — Functional + entity-rich schema
+
+- [x] 7.1 `/events.ics` calendar export route (force-static, RFC 5545
+      compliant with VTIMEZONE references and recurring RRULEs); "Add to
+      Calendar" CTA on the events index
+- [x] 7.2 Custom `/not-found` page with branded 404 + popular-link redirects
+      and `robots: noindex,nofollow`
+- [x] 7.3 `HowTo` JSON-LD on the boat-rentals and ice-fishing guides — six-
+      and seven-step structured procedures with tools, totalTime, and
+      estimatedCost
+- [x] 7.4 `TouristDestination` + nested `TouristAttraction` schema on the
+      things-to-do guide
+- [x] 7.5 `keywords` + `articleSection` enriched on the 6 highest-value guides
+
+## Round 8 — Seasonal landing pages
+
+- [x] 8.1 `/guides/waconia-summer`
+- [x] 8.2 `/guides/waconia-winter`
+- [x] 8.3 `/guides/waconia-fall`
+
+## Round 9 — Hub + entity cross-linking
+
+- [x] 9.1 `/best-of-waconia` annual editorial hub (12 picks, ItemList JSON-LD,
+      year-stamped 2026, refreshable annually) — promoted in footer
+- [x] 9.2 `glossaryTerms` field on Guide + sidebar rail rendering anchor
+      links to `/glossary#term`. Populated on the 6 highest-value guides
+      (lake-waconia, lake-waconia-fishing, coney-island, things-to-do,
+      moving-to-waconia, waconia-history)
 
 ## Deferred (next round)
 
-- [s] Newsletter capture wiring — confirmed deferred; not implementing yet
-- [s] Outreach / backlink campaigns (per user request)
+- [s] Newsletter capture wiring — confirmed deferred
+- [s] Outreach / backlink campaigns
 - [s] favicon.ico and apple-touch-icon.png — need raster export from
-      favicon.svg (180x180 PNG, 32x32/16x16 ICO)
-- [s] Real `?page=` directory pagination — single-page works until ~50 businesses
+      favicon.svg
+- [s] Real `?page=` directory pagination — single-page works until ~50
 - [ ] Replace remaining Unsplash hero images with locally-shot WebP
-- [ ] Hire/credit a named human author with sameAs (LinkedIn / X) — bigger
+- [ ] Hire/credit a named human author with `sameAs` (LinkedIn / X) — bigger
       E-E-A-T lift than the generic "Editorial" byline
+- [ ] OpenStreetMap → interactive map upgrade (Mapbox or Leaflet)
+- [ ] Per-guide dynamic OG images via Next's `opengraph-image.tsx` route
+      (current OG is the hero image — fine but generic)
+- [ ] Expand `keywords` + `articleSection` to remaining 8 guides
+- [ ] Glossary rail on remaining guides (currently 6/17 guides have it)
 - [ ] Restaurants vs breweries comparison guide (parallel to lake comparison)
-- [ ] Seasonal landing pages: `/guides/waconia-summer`, `/guides/waconia-winter`,
-      `/guides/waconia-fall` — each with seasonal events + activities
-- [ ] OpenStreetMap → interactive map upgrade (Mapbox or Leaflet) for the
-      directory map
-- [ ] `Recipe`/`HowTo` schema where applicable (ice fishing how-to could ship)
-- [ ] Add ICS calendar export for events page
+- [ ] More directory listings (Schram Haus Brewery, additional restaurants
+      and services as inventory grows)
 
-## Current site shape (after rounds 5+6)
+## Current site shape (after rounds 7+8+9)
 
 - Home + 6 sections (directory, events, guides, hotels, foreclosures)
-- Trust pages: about, contact, glossary (3)
+- Trust pages: about, contact, glossary, best-of-waconia (4)
 - Directory: 23 businesses across 6 category landing pages
-- Guides: 14 long-form pieces (2 original + 7 round 1 + 5 round 2)
-- Events: 7 recurring/annual
-- Total static routes: ~63
+- Guides: 17 long-form pieces
+- Events: 7 recurring/annual + ICS export
+- Custom 404
+- Total static routes: ~70+
 
-## Schema coverage
+## Schema coverage (cumulative)
 
-Every public page now ships at least one of:
 `Organization`, `WebSite`, `BreadcrumbList`, `Article`, `FAQPage`, `Event`,
 `EventSeries`, `LocalBusiness`, `ItemList`, `AboutPage`, `ContactPage`,
 `ContactPoint`, `Place`, `BodyOfWater`, `DefinedTermSet`, `DefinedTerm`,
-`Speakable`.
+`Speakable`, `HowTo`, `HowToStep`, `HowToTool`, `MonetaryAmount`,
+`TouristDestination`, `TouristAttraction`.
 
 ## Notes on accuracy
 
@@ -106,6 +126,5 @@ against each business's official source. Guide content is editorial — figures
 sourced from MN DNR LakeFinder (DOW 10-0059-00), Carver County Historical
 Society, Carver County, and Destination Waconia where applicable.
 
-Lake Waconia name etymology: "spring of water" / "fountain" from Dakota — see
-the Waconia History guide and the Carver County Historical Society for
-authoritative sourcing.
+Lake Waconia name etymology: "spring of water" / "fountain" from Dakota.
+Best-of list refresh cadence: annually (year stamp in title and URL meta).
