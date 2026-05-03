@@ -11,6 +11,8 @@ const exploreLinks: FooterLink[] = [
   { href: "/guides", label: "Waconia Guides" },
   { href: "/hotels", label: "Where to Stay" },
   { href: "/foreclosures", label: "Real Estate" },
+  { href: "/about", label: "About WaconiaGuide" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const communityLinks: FooterLink[] = [

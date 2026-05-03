@@ -5,21 +5,37 @@ import { notFound } from "next/navigation";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import {
   businesses,
+  CATEGORIES,
   getBusinessBySlug,
+  getBusinessesByCategory,
+  getCategoryBySlug,
   getRelatedBusinesses,
+  type CategorySlug,
 } from "../../lib/businesses";
 import { SITE_URL, buildMetadata } from "../../lib/metadata";
+import { CategoryPage } from "../CategoryPage";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return businesses.map((b) => ({ slug: b.slug }));
+  return [
+    ...businesses.map((b) => ({ slug: b.slug })),
+    ...CATEGORIES.map((c) => ({ slug: c.slug })),
+  ];
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
+  const category = getCategoryBySlug(slug);
+  if (category) {
+    return buildMetadata({
+      title: `${category.label} in Waconia, MN`,
+      description: category.shortDescription,
+      path: `/directory/${category.slug}`,
+    });
+  }
   const biz = getBusinessBySlug(slug);
   if (!biz) return {};
   return buildMetadata({
@@ -39,8 +55,16 @@ function isOpenNow(hours: { day: string; hours: string }[]): boolean {
   return todayHours !== "Closed";
 }
 
-export default async function BusinessDetailPage({ params }: PageProps) {
+export default async function DirectorySlugPage({ params }: PageProps) {
   const { slug } = await params;
+
+  // Branch: category landing page or business detail page.
+  const category = getCategoryBySlug(slug);
+  if (category) {
+    const items = getBusinessesByCategory(slug as CategorySlug);
+    return <CategoryPage category={category} businesses={items} />;
+  }
+
   const biz = getBusinessBySlug(slug);
   if (!biz) notFound();
 

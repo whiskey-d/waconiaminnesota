@@ -334,20 +334,92 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* JSON-LD */}
+      {/* FAQ — visible content + FAQPage schema. AI engines and Google
+          People Also Ask both pull from these. */}
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <h2 className="text-3xl font-bold text-text-primary tracking-tight mb-8 text-center">
+          Frequently Asked Questions
+        </h2>
+        <dl className="space-y-6">
+          {homepageFaqs.map((faq) => (
+            <div
+              key={faq.question}
+              className="bg-surface rounded-xl p-6 border border-border"
+            >
+              <dt className="font-semibold text-text-primary mb-2">
+                {faq.question}
+              </dt>
+              <dd className="text-text-muted leading-relaxed">{faq.answer}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      {/* JSON-LD: WebSite + SearchAction */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
+            "@id": "https://waconiaminnesota.org#website",
             name: "WaconiaGuide",
             url: "https://waconiaminnesota.org",
             description:
               "Your definitive guide to Waconia, Minnesota. Discover local dining, events, lake activities, and everything that makes this lakeside community unique.",
+            publisher: { "@id": "https://waconiaminnesota.org#organization" },
+            inLanguage: "en-US",
+          }),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: homepageFaqs.map((f) => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
           }),
         }}
       />
     </>
   );
 }
+
+const homepageFaqs = [
+  {
+    question: "Where is Waconia, Minnesota?",
+    answer:
+      "Waconia is a lakeside city in Carver County, Minnesota, about 35 miles west of downtown Minneapolis via Highway 5. It sits on the south shore of Lake Waconia.",
+  },
+  {
+    question: "What is Waconia known for?",
+    answer:
+      "Waconia is best known for Lake Waconia (3,080 acres — one of the largest lakes in the Twin Cities metro), its historic downtown, the annual Carver County Fair, Nickle Dickle Day, Waconia Brewing Company, and the historic Coney Island of Lake Waconia.",
+  },
+  {
+    question: "What does the name 'Waconia' mean?",
+    answer:
+      "'Waconia' is derived from the Dakota language, generally translated as 'fountain' or 'spring of water' — a reference to the lake's clear spring-fed waters.",
+  },
+  {
+    question: "How big is Lake Waconia?",
+    answer:
+      "Lake Waconia covers 3,080 acres with a maximum depth of 37 feet and over 12 miles of shoreline. The DNR lake number is DOW 10-0059-00.",
+  },
+  {
+    question: "What are the best things to do in Waconia?",
+    answer:
+      "Top activities include boating and fishing on Lake Waconia, swimming at Lake Waconia Regional Park, dining downtown at Iron Tap and Egg-Cetera Cafe, craft beer at Waconia Brewing Co., wine and cocktails at Schram Vineyards, the Carver County Fair, and seasonal events like Nickle Dickle Day, the Scarecrow Tour, and Tree Lighting in the Park.",
+  },
+  {
+    question: "What is the population of Waconia, MN?",
+    answer:
+      "Waconia has a population of approximately 13,500 residents and continues to be one of the fastest-growing communities in Carver County.",
+  },
+];
