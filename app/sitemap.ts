@@ -49,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/foreclosures`, lastModified: LAST_CONTENT_UPDATE, changeFrequency: "weekly" as const, priority: 0.75 },
     { url: `${SITE_URL}/about`, lastModified: LAST_CONTENT_UPDATE, changeFrequency: "monthly" as const, priority: 0.6 },
     { url: `${SITE_URL}/contact`, lastModified: LAST_CONTENT_UPDATE, changeFrequency: "yearly" as const, priority: 0.4 },
+    { url: `${SITE_URL}/glossary`, lastModified: LAST_CONTENT_UPDATE, changeFrequency: "monthly" as const, priority: 0.6 },
     ...guidePages,
     ...eventPages,
     ...businessPages,

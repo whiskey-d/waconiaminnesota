@@ -113,6 +113,26 @@ export default function DirectoryPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="border-t border-border pt-12 pb-4">
+        <h2 className="text-2xl font-bold text-text-primary tracking-tight mb-6">
+          Frequently Asked Questions
+        </h2>
+        <dl className="space-y-5">
+          {DIRECTORY_FAQS.map((faq) => (
+            <div
+              key={faq.question}
+              className="bg-surface rounded-xl p-6 border border-border"
+            >
+              <dt className="font-semibold text-text-primary mb-2">
+                {faq.question}
+              </dt>
+              <dd className="text-text-muted leading-relaxed">{faq.answer}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
       {/* JSON-LD — full ItemList of every business */}
       <script
         type="application/ld+json"
@@ -132,6 +152,49 @@ export default function DirectoryPage() {
           }),
         }}
       />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: DIRECTORY_FAQS.map((f) => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
+          }),
+        }}
+      />
     </div>
   );
 }
+
+const DIRECTORY_FAQS = [
+  {
+    question: "What are the best restaurants in Waconia, MN?",
+    answer:
+      "Iron Tap is the downtown dinner standout (the Father Bob Burger is a local legend). Egg-Cetera Cafe is the beloved breakfast spot. Lola's Lakehouse Eatery offers casual lakeside dining with a patio on Lake Waconia. Mocha Monkey is the local coffee shop. Mucho Mexican handles family Mexican. See the Restaurants category for the full list.",
+  },
+  {
+    question: "What breweries and wineries are in Waconia?",
+    answer:
+      "Waconia has four destination beverage producers: Waconia Brewing Co. (downtown craft brewery), Schram Vineyards Winery & Brewery (estate winery + brewery west of town), Sovereign Estate Wine (lakefront winery on Lake Waconia), and J. Carver Distillery (small-batch craft spirits). All are open to the public during posted hours.",
+  },
+  {
+    question: "Is there a hospital in Waconia?",
+    answer:
+      "Yes — Ridgeview Medical Center is the regional hospital, headquartered in Waconia at 500 South Maple Street. It offers a 24/7 emergency department, surgery, women's health, primary care, and specialty clinics for the broader Carver County area.",
+  },
+  {
+    question: "Where is the DMV in Waconia, MN?",
+    answer:
+      "The Waconia Deputy Registrar handles vehicle tabs, titles, registration, and driver's licenses for Carver County residents at 217 Vine Street S in downtown Waconia. Hours are 8am–4:30pm most weekdays, with extended hours Wednesdays and Saturday-morning service.",
+  },
+  {
+    question: "Is there a movie theater in Waconia?",
+    answer:
+      "Yes — Emagine Waconia at 325 Bevens Street is a luxury cinema with fully reclining leather seats, an EMAX large-format screen, full bar service, and food delivery to your seat. Reserved seating online; Tuesdays are discounted.",
+  },
+];

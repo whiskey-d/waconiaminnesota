@@ -13,6 +13,7 @@ const exploreLinks: FooterLink[] = [
   { href: "/foreclosures", label: "Real Estate" },
   { href: "/about", label: "About WaconiaGuide" },
   { href: "/contact", label: "Contact" },
+  { href: "/glossary", label: "Glossary" },
 ];
 
 const communityLinks: FooterLink[] = [
@@ -110,24 +111,41 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Visit Waconia */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
-              Newsletter
+              Plan a Visit
             </h3>
-            <p className="text-sm text-gray-400 mb-4">
-              Get the latest Waconia stories delivered weekly.
+            <p className="text-sm text-gray-400 mb-4 leading-relaxed">
+              Start with our most popular guides — written by locals, updated
+              when things change.
             </p>
-            <div className="flex gap-2">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="flex-1 px-4 py-2 text-sm bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/50"
-              />
-              <button className="px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors shrink-0">
-                Join
-              </button>
-            </div>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/guides/things-to-do-waconia"
+                  className="text-sm text-gray-300 hover:text-white transition-colors"
+                >
+                  Things to Do in Waconia →
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/guides/lake-waconia"
+                  className="text-sm text-gray-300 hover:text-white transition-colors"
+                >
+                  Lake Waconia Guide →
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-sm text-gray-300 hover:text-white transition-colors"
+                >
+                  Send a Tip or Correction →
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

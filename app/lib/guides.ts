@@ -1269,6 +1269,655 @@ export const guides: Guide[] = [
       },
     ],
   },
+  // ────────────────────────────────────────────────────────────────────
+  // Round 6 guides — added 2026-05-03
+  // ────────────────────────────────────────────────────────────────────
+  {
+    slug: "waconia-schools",
+    title: "Waconia Schools (ISD 110): A Local's Guide for Parents",
+    metaDescription:
+      "Independent School District 110 — Waconia Public Schools. High school, middle school, three elementaries, ratings, boundaries, and what local parents say.",
+    heroImage:
+      "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "District", value: "ISD 110" },
+      { label: "Schools", value: "5 Public" },
+      { label: "Enrollment", value: "~3,800" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Waconia students attend Independent School District 110 (Waconia Public Schools), one of the most consistently well-regarded suburban districts in the western Twin Cities. The district serves Waconia and parts of the surrounding townships with one high school, one middle school, three elementary schools, and a Community Education program. For relocating families, ISD 110 is one of the top reasons people choose Waconia over comparable lake towns.",
+      },
+      {
+        type: "heading",
+        heading: "The Schools",
+      },
+      {
+        type: "text",
+        body: "Waconia High School (grades 9–12) is the district's flagship, located on the south side of town. Waconia Middle School (grades 6–8) sits on the same campus area. The three elementary schools — Bayview, Southview, and Clearwater — split the district's K-5 students by neighborhood boundary. Bayview is on the south side near the lake, Southview anchors the southwest, and Clearwater serves the north and northwest growth areas. The district also operates Waconia Learning Center for alternative pathways and Community Education programming.",
+      },
+      {
+        type: "heading",
+        heading: "Boundaries (How to Tell Which Elementary)",
+      },
+      {
+        type: "text",
+        body: "Elementary boundaries are set by the district and revisited as the city grows. Roughly: Bayview Elementary serves the south side and lakefront neighborhoods; Southview Elementary covers the south-central and southwest neighborhoods; Clearwater Elementary handles the north side and the newer northwest developments. Boundaries change — verify with the district's enrollment office before signing on a house if elementary assignment is critical to your decision.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "If schools are the deciding factor, walk into the district office and ask about boundary lines for the specific street you're considering. They'll tell you straight.",
+        attribution: "Local relocation advice",
+      },
+      {
+        type: "heading",
+        heading: "Activities & Athletics",
+      },
+      {
+        type: "text",
+        body: "Waconia High School competes in the Wright County Conference and fields the typical Minnesota slate — football, basketball, hockey (boys and girls), volleyball, soccer, baseball, softball, wrestling, golf, tennis, track, cross country, and Nordic skiing. Hockey is a particular point of community pride; Friday night football and the WHS hockey games are well-attended local traditions. The arts program runs strong in band, choir, and theater.",
+      },
+      {
+        type: "heading",
+        heading: "Private & Parochial Options",
+      },
+      {
+        type: "text",
+        body: "St. Joseph's Catholic School in Waconia offers PreK through 8th grade in a faith-based setting and is a long-standing alternative for Catholic families. Several other parochial and private school options exist in nearby Chaska, Mound, and Excelsior — all within a 15-to-20-minute drive. Open enrollment to neighboring public districts (Minnetrista, Watertown-Mayer, Norwood Young America) is also possible, though most Waconia families stay in ISD 110.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🏫",
+            title: "Verify Boundaries",
+            body: "Boundaries shift as the district grows. Always confirm elementary assignment with the district enrollment office before relying on a search-result map.",
+          },
+          {
+            icon: "📚",
+            title: "Community Education",
+            body: "ISD 110's Community Education program runs after-school enrichment, adult learning, summer camps, early childhood, and family events year-round.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "What Parents Tell Us",
+      },
+      {
+        type: "text",
+        body: "Three themes come up in conversations with Waconia parents. First, the small-town size means teachers and administrators know students by name — a stark contrast to larger metro districts. Second, the activity participation rate is high; it's normal for kids to be in two or three sports plus an arts program. Third, the community wraps around the schools — Friday night football, the WHS musical, hockey games, and graduation are genuine town events.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan a School Visit",
+        ctaDescription:
+          "Combine a school tour with a weekend exploring Waconia — downtown, the lake, the parks. Get a feel for the place beyond the website.",
+        buttons: [
+          { label: "Moving to Waconia", href: "/guides/moving-to-waconia", variant: "primary" },
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "District", value: "ISD 110" },
+      { label: "High school", value: "Waconia HS" },
+      { label: "Middle school", value: "Waconia MS" },
+      { label: "Elementary schools", value: "3" },
+      { label: "Conference", value: "Wright County" },
+      { label: "Mascot", value: "Wildcats" },
+    ],
+    relatedGuides: [
+      { title: "Moving to Waconia", readTime: "8 min read", href: "/guides/moving-to-waconia" },
+      { title: "Waconia History", readTime: "9 min read", href: "/guides/waconia-history" },
+      { title: "Waconia Parks", readTime: "5 min read", href: "/guides/waconia-parks" },
+    ],
+    faqs: [
+      {
+        question: "What school district is Waconia in?",
+        answer: "Waconia is served by Independent School District 110 — Waconia Public Schools. The district includes Waconia High School (9–12), Waconia Middle School (6–8), and three elementary schools (Bayview, Southview, and Clearwater).",
+      },
+      {
+        question: "How many schools are in Waconia, MN?",
+        answer: "Five public schools in ISD 110: one high school, one middle school, and three elementary schools. There is also one Catholic K-8 school (St. Joseph's) and Waconia Learning Center for alternative pathways.",
+      },
+      {
+        question: "Is Waconia a good school district?",
+        answer: "ISD 110 is consistently ranked among the stronger suburban Minnesota districts. Test scores, graduation rates, and post-secondary placement are strong, and the district is a primary draw for families relocating to Carver County.",
+      },
+      {
+        question: "What are the Waconia High School colors and mascot?",
+        answer: "Waconia High School's mascot is the Wildcats; the school colors are blue and gold. WHS competes in the Wright County Conference.",
+      },
+      {
+        question: "What elementary school will my child attend in Waconia?",
+        answer: "Elementary assignment depends on neighborhood boundary. Bayview serves the south side and lakefront, Southview covers south-central and southwest, Clearwater serves the north and northwest. Boundaries change as the district grows — verify with ISD 110's enrollment office before relying on online maps.",
+      },
+    ],
+  },
+  {
+    slug: "getting-to-waconia",
+    title: "Getting to Waconia, MN: Drive from Minneapolis (and Beyond)",
+    metaDescription:
+      "How to drive to Waconia, MN from Minneapolis-St. Paul, the airport, and surrounding cities. Routes, times, traffic patterns, and parking once you arrive.",
+    heroImage:
+      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "From Minneapolis", value: "~45 min" },
+      { label: "From MSP Airport", value: "~50 min" },
+      { label: "Distance", value: "35 Miles W" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Waconia sits 35 miles due west of downtown Minneapolis, in Carver County. Most visitors drive — there is no commuter rail, no light rail, and no direct bus from Minneapolis. The driving experience varies dramatically by time of day, so this is the practical guide: which route, when to leave, and where to park once you arrive.",
+      },
+      {
+        type: "heading",
+        heading: "From Downtown Minneapolis (~45 min off-peak)",
+      },
+      {
+        type: "text",
+        body: "The default route is Highway 7 west to Highway 5, which becomes Waconia's east-west spine. Allow 45 minutes off-peak; in evening rush hour from downtown, plan on 60 to 75 minutes. An alternate route via I-394 west to Highway 5 south works similarly and avoids stoplights through the western suburbs but adds a few miles.",
+      },
+      {
+        type: "heading",
+        heading: "From MSP Airport (~50 min)",
+      },
+      {
+        type: "text",
+        body: "From Minneapolis-St. Paul International Airport, take I-494 west to Highway 5 west. Highway 5 turns into the main road through Eden Prairie, Chanhassen, Chaska, and finally Waconia. Allow 50 minutes off-peak; up to 75 in heavy traffic. Rideshare to Waconia from MSP runs roughly $70–$95 depending on time and demand.",
+      },
+      {
+        type: "heading",
+        heading: "From Surrounding Cities",
+      },
+      {
+        type: "text",
+        body: "From Chaska it's an 8-mile, 10-minute drive on Highway 5 west. From Excelsior it's a 12-mile, 18-minute drive via Highway 7 west. From Mound it's similar — about 15 minutes around the south end of Lake Minnetonka. From St. Cloud it's roughly an hour south on Highway 25. From Mankato it's about 90 minutes north via Highway 169 to Highway 5 east.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🚗",
+            title: "Avoid Friday Afternoons",
+            body: "The drive west from Minneapolis on summer Friday afternoons can stretch past 90 minutes. Leave before 2pm or after 7pm if you can.",
+          },
+          {
+            icon: "🅿️",
+            title: "Free Downtown Parking",
+            body: "Downtown Waconia has free street parking and free public lots. The City Square Park area has the largest concentration of free spots near restaurants and breweries.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Public Transit",
+      },
+      {
+        type: "text",
+        body: "There is no public transit directly into Waconia. SouthWest Transit operates park-and-ride buses from Chaska and Chanhassen (8–12 miles east) into downtown Minneapolis, but you'd need a car or rideshare to reach those park-and-ride lots first. For day visitors without a car, the most realistic options are renting a car at MSP or taking a rideshare.",
+      },
+      {
+        type: "heading",
+        heading: "Parking Once You're Here",
+      },
+      {
+        type: "text",
+        body: "Parking in Waconia is generally easy and free. Downtown street parking is free with no meters. Several free public lots sit just off Main Street near City Square Park. Lake Waconia Regional Park has a large free lot that does fill on summer weekends — arrive before 11am or after 4pm for an easy spot. Schram Vineyards and Sovereign Estate Wine both have on-site lots; expect a short walk on event nights.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "You're Almost Here",
+        ctaDescription:
+          "Once you arrive, start with the things-to-do guide — it covers the headline destinations in walking and driving distance.",
+        buttons: [
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "primary" },
+          { label: "Where to Stay", href: "/hotels", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Distance from MSP", value: "35 miles" },
+      { label: "Drive from MSP", value: "~50 min" },
+      { label: "Drive from downtown", value: "~45 min" },
+      { label: "Public transit", value: "None direct" },
+      { label: "Parking", value: "Free" },
+    ],
+    relatedGuides: [
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+      { title: "Where to Stay", readTime: "5 min read", href: "/hotels" },
+      { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
+    ],
+    faqs: [
+      {
+        question: "How far is Waconia from Minneapolis?",
+        answer: "Waconia is approximately 35 miles west of downtown Minneapolis. Off-peak driving time is about 45 minutes via Highway 7 to Highway 5 or via I-394 to Highway 5. Peak rush hour can extend the drive to 60–75 minutes.",
+      },
+      {
+        question: "How do I get to Waconia from MSP Airport?",
+        answer: "From Minneapolis-St. Paul International Airport, drive I-494 west to Highway 5 west. The drive takes approximately 50 minutes off-peak. Rideshare from MSP to Waconia runs roughly $70–$95 depending on time and demand.",
+      },
+      {
+        question: "Is there a bus or train to Waconia?",
+        answer: "No. There is no commuter rail, light rail, or direct public transit to Waconia. SouthWest Transit serves Chaska and Chanhassen (8–12 miles east), but reaching those stations from Waconia still requires a car. Most visitors drive or take a rideshare.",
+      },
+      {
+        question: "How long is the drive from Chaska to Waconia?",
+        answer: "Chaska to Waconia is approximately 8 miles, a 10–12 minute drive west on Highway 5.",
+      },
+      {
+        question: "Is parking free in downtown Waconia?",
+        answer: "Yes — downtown Waconia has free street parking with no meters and several free public lots near City Square Park. Lake Waconia Regional Park also has a free lot, though it fills on summer weekends.",
+      },
+    ],
+  },
+  {
+    slug: "waconia-parks",
+    title: "Waconia Parks: A Complete Guide to Every Public Park",
+    metaDescription:
+      "Every park in Waconia, MN — Lake Waconia Regional Park, City Square Park, Bayview Park, Coney Island, neighborhood parks, and trail connections.",
+    heroImage:
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Public Parks", value: "15+" },
+      { label: "Largest Park", value: "245 Ac" },
+      { label: "Trail Miles", value: "10+" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Waconia is a parks-rich city for its size. Between the city park system, Carver County's Lake Waconia Regional Park, and the historic island in the lake itself, residents can string together a full day outdoors without leaving town. This guide covers every park worth knowing — what's there, who it's for, and when to go.",
+      },
+      {
+        type: "heading",
+        heading: "Lake Waconia Regional Park (245 acres)",
+      },
+      {
+        type: "text",
+        body: "The headline park. Run by Carver County on the south shore of Lake Waconia. Swimming beach with lifeguards in summer, free boat ramp, picnic shelters (reservable), playground, restrooms, and roughly five miles of multi-use trails. In winter the trails are groomed for cross-country skiing. Free entry, free parking, year-round access. See our dedicated guide for more.",
+      },
+      {
+        type: "heading",
+        heading: "City Square Park (downtown)",
+      },
+      {
+        type: "text",
+        body: "The community heart of downtown Waconia. The gazebo at City Square Park is where the Tree Lighting kicks off the holiday season every Black Friday, where Nickle Dickle Day spreads out across the surrounding blocks every September, and where summer concerts and casual gatherings happen all year. Open lawns, picnic tables, mature shade trees, free public parking around the perimeter.",
+      },
+      {
+        type: "heading",
+        heading: "Bayview Park",
+      },
+      {
+        type: "text",
+        body: "A neighborhood park on the southeast side, near Bayview Elementary. Playground, ballfields, and walking paths. Quieter than the regional park, but a steady favorite for families with elementary-age kids. Hosts youth sports leagues throughout the spring and summer.",
+      },
+      {
+        type: "heading",
+        heading: "Coney Island of Lake Waconia",
+      },
+      {
+        type: "text",
+        body: "Technically part of the Lake Waconia Regional Park system, Coney Island is the 31-acre wooded island in the middle of the lake — historic site of the 'Coney Island of the West' resort from 1884 to the late 1910s. Today it's open to the public during daylight hours but accessible only by boat. Bring everything in, take everything out. See our dedicated Coney Island guide for the full backstory.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🌳",
+            title: "Neighborhood Parks",
+            body: "Waconia's smaller neighborhood parks include Cardinal, Heritage, Peavey, Reitz, and Schmiesing — each with playgrounds and small open spaces serving the surrounding neighborhoods.",
+          },
+          {
+            icon: "🚴",
+            title: "Trail Connections",
+            body: "The Lake Waconia Regional Park trails connect to the broader Carver County trail system, with longer routes available for cyclists and trail runners willing to leave town.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Trail Network",
+      },
+      {
+        type: "text",
+        body: "Beyond Lake Waconia Regional Park, the city operates a growing network of paved trails connecting downtown to neighborhoods on the north and south sides. The Carver County system extends these connections out to Chaska, Victoria, and the broader Three Rivers regional trail network. Spring through fall, the trail loop around the south side of Lake Waconia is one of the better casual rides in the western metro.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Spend a Day in the Parks",
+        ctaDescription:
+          "Pair a morning at Lake Waconia Regional Park with afternoon downtown at City Square Park — the perfect Waconia day.",
+        buttons: [
+          { label: "Lake Waconia Regional Park", href: "/guides/lake-waconia-regional-park", variant: "primary" },
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Park system", value: "City + County" },
+      { label: "Largest park", value: "245 ac (Regional)" },
+      { label: "Park entry", value: "Free" },
+      { label: "Beach", value: "Regional Park" },
+      { label: "Dogs", value: "Trails only" },
+    ],
+    relatedGuides: [
+      { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
+      { title: "Coney Island of Lake Waconia", readTime: "5 min read", href: "/guides/coney-island-lake-waconia" },
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+    ],
+    faqs: [
+      {
+        question: "What is the biggest park in Waconia, MN?",
+        answer: "Lake Waconia Regional Park, at 245 acres, is by far the largest. It's managed by Carver County and sits on the south shore of Lake Waconia, with a swimming beach, free boat ramp, picnic shelters, and miles of multi-use trails.",
+      },
+      {
+        question: "Where is City Square Park in Waconia?",
+        answer: "City Square Park is in downtown Waconia, anchored by a gazebo, mature shade trees, open lawns, and picnic tables. It's the venue for the annual Tree Lighting, Nickle Dickle Day's downtown footprint, and summer community gatherings.",
+      },
+      {
+        question: "Can you visit Coney Island of Lake Waconia?",
+        answer: "Yes. The 31-acre island is part of the Lake Waconia Regional Park system, open to the public during daylight hours, and accessible only by boat, kayak, or paddleboard. There are no facilities — pack in, pack out.",
+      },
+      {
+        question: "Are dogs allowed in Waconia parks?",
+        answer: "Dogs on a leash are allowed on Waconia park trails and in most park grass areas. Dogs are not allowed on the swim beach at Lake Waconia Regional Park during the swim season.",
+      },
+      {
+        question: "Is there a fee to use Waconia parks?",
+        answer: "No. Waconia city parks and Lake Waconia Regional Park are all free to enter. Picnic shelter reservations carry a small fee through Carver County Parks; everything else is free.",
+      },
+    ],
+  },
+  {
+    slug: "lake-waconia-depth-map",
+    title: "Lake Waconia Depth Map, Bathymetry & DNR Data (DOW 10-0059-00)",
+    metaDescription:
+      "Lake Waconia depth map and bathymetry — maximum depth, average depth, key structure, basin shape, and how to read the official MN DNR LakeFinder data.",
+    heroImage:
+      "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Max Depth", value: "37 Feet" },
+      { label: "Surface Area", value: "3,080 Acres" },
+      { label: "DNR Number", value: "10-0059-00" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "If you're fishing, navigating, or just curious about Lake Waconia's underwater shape, the official MN DNR bathymetric survey is the source. This guide breaks down what the depth map shows — maximum depth, basin structure, where the breaklines are, what's stocked — and how to read it without needing a degree in limnology.",
+      },
+      {
+        type: "heading",
+        heading: "The Numbers",
+      },
+      {
+        type: "text",
+        body: "Lake Waconia covers 3,080 acres with a maximum depth of 37 feet. The average depth is significantly shallower — closer to 15 feet across the basin — which is why the lake supports such productive walleye and panfish populations. Water clarity is consistently strong (Secchi disk readings often exceed 12 feet), reflecting the lake's spring-fed character and active conservation work. The official MN DNR lake number is DOW 10-0059-00.",
+      },
+      {
+        type: "heading",
+        heading: "Basin Structure",
+      },
+      {
+        type: "text",
+        body: "Lake Waconia has two main basins separated by Coney Island and a series of underwater humps and bars. The east basin (closer to downtown Waconia) tends to be slightly deeper and holds the bulk of the deep-water structure. The west basin is broader and shallower, with extensive cabbage weed beds along the perimeter — prime largemouth bass and northern pike habitat. The submerged sunken island off the south shore is a recognized walleye magnet in fall.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "Read the bathymetric map before launching. Lake Waconia's productive structure is hidden — the breaklines that hold fish aren't visible from the surface, but they're consistent year over year.",
+        attribution: "Local angler",
+      },
+      {
+        type: "heading",
+        heading: "Key Structure for Anglers",
+      },
+      {
+        type: "text",
+        body: "The 8-to-12-foot gravel reefs on the north shore are spring walleye spawning grounds. The deep weed edges along the west basin in 12-to-18 feet hold bass and pike all summer. The 15-to-25-foot breaklines around Coney Island and the south basin are the prime walleye trolling and jigging zone. The sunken island off the south shore — 18-to-22 feet on the top, dropping to 30+ on the perimeter — is fall walleye gold.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "📍",
+            title: "Official DNR Map",
+            body: "Download the official Lake Waconia bathymetric map and fish survey report from the Minnesota DNR LakeFinder. Free, regularly updated.",
+            link: { label: "MN DNR LakeFinder →", href: "https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900" },
+          },
+          {
+            icon: "🐟",
+            title: "Fish Survey Data",
+            body: "DNR survey reports show population estimates for walleye, bass, pike, panfish, and others — useful context for choosing target species in any given year.",
+            link: { label: "View Survey →", href: "https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Reading the Bathymetric Map",
+      },
+      {
+        type: "text",
+        body: "DNR depth maps use contour lines connecting points of equal depth. Closely-spaced contours mean a steep drop (a breakline — fish-holding structure). Widely-spaced contours mean a gentle slope (fewer concentration points). Look for the contour lines around Coney Island and the south basin sunken island — the tight spacing is what makes those spots produce. Bathymetric layers are also available in most modern fish-finder mapping systems (Navionics, LakeMaster, etc.).",
+      },
+      {
+        type: "heading",
+        heading: "Stocking & Conservation",
+      },
+      {
+        type: "text",
+        body: "Lake Waconia is regularly stocked with walleye fry and fingerlings by the MN DNR — the stocking history is published in the LakeFinder report. The lake is also an active Aquatic Invasive Species (AIS) checkpoint; clean, drain, and dry equipment is the law and a real conservation issue, not just a sign at the launch.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Pair the Map with the Fishing Guide",
+        ctaDescription:
+          "Knowing the bathymetry is half the battle. Our seasonal fishing guide covers what to throw and where, broken down by structure type.",
+        buttons: [
+          { label: "Lake Waconia Fishing Guide", href: "/guides/lake-waconia-fishing", variant: "primary" },
+          { label: "Ice Fishing Guide", href: "/guides/lake-waconia-ice-fishing", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarMap: {
+      publicAccess: "3 Locations",
+      boatLaunchFee: "None — State",
+      waterClarity: "Excellent",
+    },
+    relatedGuides: [
+      { title: "Lake Waconia Fishing Guide", readTime: "12 min read", href: "/guides/lake-waconia-fishing" },
+      { title: "Lake Waconia Ice Fishing", readTime: "7 min read", href: "/guides/lake-waconia-ice-fishing" },
+      { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
+    ],
+    faqs: [
+      {
+        question: "How deep is Lake Waconia?",
+        answer: "Lake Waconia has a maximum depth of 37 feet. The average depth is closer to 15 feet across the lake's 3,080-acre surface. The Minnesota DNR lake number is DOW 10-0059-00.",
+      },
+      {
+        question: "Where can I find a depth map of Lake Waconia?",
+        answer: "The official Lake Waconia bathymetric (depth) map and fish survey report are published free on the Minnesota DNR LakeFinder website (search DOW 10-0059-00). Modern fish-finder mapping systems like Navionics and LakeMaster also include Lake Waconia bathymetry.",
+      },
+      {
+        question: "Is Lake Waconia a clear lake?",
+        answer: "Yes. Lake Waconia is one of the clearer lakes in the Twin Cities metro. Secchi disk water-clarity readings often exceed 12 feet, reflecting the lake's spring-fed character and ongoing watershed conservation work.",
+      },
+      {
+        question: "Where are the deepest parts of Lake Waconia?",
+        answer: "The deepest water sits in the east basin (closer to downtown Waconia) and along the breaklines around Coney Island. The submerged sunken island off the south shore drops from 18-to-22 feet on top to 30+ feet on the perimeter — a recognized walleye magnet in fall.",
+      },
+    ],
+  },
+  {
+    slug: "lake-waconia-vs-lake-minnetonka",
+    title: "Lake Waconia vs Lake Minnetonka: Which Is Right for You?",
+    metaDescription:
+      "Lake Waconia or Lake Minnetonka? Side-by-side comparison of size, fishing, boating, beaches, dining, lodging, and the kind of trip each lake is best for.",
+    heroImage:
+      "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Lake Waconia", value: "3,080 Ac" },
+      { label: "Lake Minnetonka", value: "14,500+ Ac" },
+      { label: "Distance Apart", value: "~12 mi" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Lake Waconia and Lake Minnetonka are the two best-known recreational lakes in the western Twin Cities — but they offer very different experiences. Minnetonka is bigger, busier, more developed, and harder to access. Waconia is smaller, calmer, more accessible, and increasingly the locals' choice. This is the honest side-by-side, written by people who spend time on both.",
+      },
+      {
+        type: "heading",
+        heading: "Size & Character",
+      },
+      {
+        type: "text",
+        body: "Lake Minnetonka covers 14,500+ acres across more than 20 interconnected bays — by far the largest lake in the metro. It's heavily developed; most of the shoreline is private homes, marinas, and commercial property. Lake Waconia covers 3,080 acres in a single, mostly open basin (with one major island — Coney Island). Waconia's shoreline is a mix of lakefront homes, public park, and undeveloped natural shore, with much less commercial intensity. If Minnetonka is the metro's destination party lake, Waconia is the metro's quieter neighbor.",
+      },
+      {
+        type: "heading",
+        heading: "Public Access",
+      },
+      {
+        type: "text",
+        body: "This is one of Waconia's biggest advantages. Lake Waconia has three free, state-managed public boat launches; Lake Waconia Regional Park has a large free public swim beach and ample parking. Minnetonka has public access too, but the launches are more crowded, parking is harder, and the public beach options are smaller and more contested. If you don't own lakefront, Waconia is dramatically easier to actually use.",
+      },
+      {
+        type: "heading",
+        heading: "Boating",
+      },
+      {
+        type: "text",
+        body: "Minnetonka offers the largest boating playground in the metro — multiple bays, dozens of restaurants accessible by boat, more variety. Waconia offers more open, contiguous water for skiing, wakeboarding, and pontoon cruising without the bay-to-bay navigation. Summer Saturday traffic on Minnetonka can feel like rush hour; Waconia's traffic is lighter even on holiday weekends. Both lakes have strong rental markets — pontoons, kayaks, paddleboards.",
+      },
+      {
+        type: "heading",
+        heading: "Fishing",
+      },
+      {
+        type: "text",
+        body: "Both lakes are productive, but Waconia is the angler's choice. Waconia is a top-tier walleye lake by metro standards, regularly stocked by the DNR, with a well-known winter walleye and Crappie Contest tradition. Minnetonka holds bass and muskie populations and gets more fishing pressure overall but is also more crowded and more politically managed. For consistent walleye action with less fishing pressure, Waconia wins.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "Minnetonka is for the boat-up restaurant scene. Waconia is for the lake itself. Pick based on what you actually want from the day.",
+        attribution: "Western metro local",
+      },
+      {
+        type: "heading",
+        heading: "Dining & Lakefront Restaurants",
+      },
+      {
+        type: "text",
+        body: "Minnetonka has the bigger boat-up restaurant scene by far — Lord Fletcher's, Maynard's, Bayside, and a dozen others all sit on the water with dock space. Waconia's lakefront dining is smaller in scope: Lola's Lakehouse Eatery is the casual lake-view choice, Sovereign Estate Wine has the most elegant lakeside patio in the area. Both downtowns have strong land-based restaurant scenes, but Waconia's craft beverage cluster (Waconia Brewing, Schram, Sovereign, J. Carver) is a destination in its own right.",
+      },
+      {
+        type: "heading",
+        heading: "Lodging",
+      },
+      {
+        type: "text",
+        body: "Minnetonka has more chain hotel options in adjacent Wayzata and Excelsior. Waconia has a single in-town hotel (AmeriVu Inn). For lakefront short-term rentals, both lakes have active Airbnb and VRBO inventories — Minnetonka properties tend to be pricier and book further out; Waconia lakefront rentals are more affordable but still book months ahead for July 4th and other peak weekends.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🏖",
+            title: "Best Public Beach",
+            body: "Lake Waconia Regional Park's swim beach (free, lifeguards in summer, ample parking) is a genuinely better public beach experience than most options on Lake Minnetonka.",
+          },
+          {
+            icon: "🍷",
+            title: "Best Lakeside Patio",
+            body: "Sovereign Estate Wine on Lake Waconia is one of the most photogenic lakeside wine patios in the state — west-facing for sunsets.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Quick Verdict",
+      },
+      {
+        type: "text",
+        body: "Pick Lake Minnetonka if: you want the boat-up restaurant tour, you have a boat (or wealthy friends with one), or you're chasing the social scene. Pick Lake Waconia if: you want easier access, less crowded water, better walleye fishing, a real public beach, and a craft beverage cluster on land. Many western-metro locals do both — Minnetonka for the social Saturday, Waconia for the quiet Sunday.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan a Lake Waconia Day",
+        ctaDescription:
+          "Easy access, free beach, top walleye fishing, and a craft beverage scene. Start with the lake guide.",
+        buttons: [
+          { label: "Lake Waconia Guide", href: "/guides/lake-waconia", variant: "primary" },
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Waconia size", value: "3,080 ac" },
+      { label: "Minnetonka size", value: "14,500+ ac" },
+      { label: "Waconia max depth", value: "37 ft" },
+      { label: "Minnetonka max depth", value: "113 ft" },
+      { label: "Distance apart", value: "~12 miles" },
+    ],
+    relatedGuides: [
+      { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
+      { title: "Lake Waconia Boat Rentals", readTime: "5 min read", href: "/guides/lake-waconia-boat-rentals" },
+      { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
+    ],
+    faqs: [
+      {
+        question: "Is Lake Waconia bigger than Lake Minnetonka?",
+        answer: "No. Lake Minnetonka is significantly larger at 14,500+ acres across more than 20 bays. Lake Waconia is 3,080 acres in a single mostly-open basin. Minnetonka is the largest lake in the Twin Cities metro; Waconia is one of the larger ones.",
+      },
+      {
+        question: "Which lake is better for fishing — Waconia or Minnetonka?",
+        answer: "Lake Waconia is generally considered the stronger walleye fishery, with regular DNR stocking and less fishing pressure than Minnetonka. Minnetonka holds productive bass and muskie populations. For walleye, Waconia. For trophy bass and muskie variety with more accessible boat-up dining, Minnetonka.",
+      },
+      {
+        question: "Which lake has better public beach access?",
+        answer: "Lake Waconia. Lake Waconia Regional Park's swim beach is free, has lifeguards in summer, ample parking, and is a meaningfully better public beach experience than most options on Lake Minnetonka, where most shoreline is private.",
+      },
+      {
+        question: "How far apart are Lake Waconia and Lake Minnetonka?",
+        answer: "Roughly 12 miles. Driving from downtown Waconia to the south shore of Lake Minnetonka takes about 20 minutes via Highway 7.",
+      },
+      {
+        question: "Should I visit Lake Waconia or Lake Minnetonka?",
+        answer: "If you want easier public access, less crowded water, top walleye fishing, and a craft beverage scene on land, choose Lake Waconia. If you want the boat-up restaurant scene, more variety in bays, and the metro's most-developed lake culture, choose Lake Minnetonka. Many locals do both.",
+      },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string): Guide | undefined {

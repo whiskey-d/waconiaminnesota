@@ -368,24 +368,21 @@ export default async function GuidePage({ params }: PageProps) {
                 </ul>
               </div>
 
-              {/* Join Community */}
+              {/* Local-knowledge CTA */}
               <div className="bg-accent-light rounded-xl p-5">
                 <h3 className="font-bold text-text-primary mb-2">
-                  Join the Community
+                  Spotted a mistake?
                 </h3>
                 <p className="text-sm text-text-muted mb-4">
-                  Get weekly fishing reports, local tips, and event updates.
+                  Hours changed? Closed for the season? Tell us — we update
+                  the page when readers flag a change.
                 </p>
-                <div className="flex gap-2">
-                  <input
-                    type="email"
-                    placeholder="your@email.com"
-                    className="flex-1 px-3 py-2 text-sm border border-border rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary/20"
-                  />
-                  <button className="px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors shrink-0">
-                    Join
-                  </button>
-                </div>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 bg-primary text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-primary/90 transition-colors"
+                >
+                  Send a correction →
+                </Link>
               </div>
             </div>
           </aside>
@@ -444,6 +441,40 @@ export default async function GuidePage({ params }: PageProps) {
                   text: f.answer,
                 },
               })),
+            }),
+          }}
+        />
+      )}
+
+      {/* Place / BodyOfWater entity for the canonical Lake Waconia guide.
+          Establishes the lake as a structured entity Google can connect to
+          knowledge-graph queries ("how big is Lake Waconia"). */}
+      {guide.slug === "lake-waconia" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["Place", "BodyOfWater"],
+              "@id": `${SITE_URL}/guides/lake-waconia#lake`,
+              name: "Lake Waconia",
+              alternateName: ["Wakonja", "Lake Waconia, Minnesota"],
+              description:
+                "Lake Waconia is a 3,080-acre lake in Carver County, Minnesota — one of the largest lakes in the Twin Cities metropolitan area. The Minnesota DNR lake number is DOW 10-0059-00.",
+              url: `${SITE_URL}/guides/lake-waconia`,
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 44.8522,
+                longitude: -93.7872,
+              },
+              containedInPlace: {
+                "@type": "AdministrativeArea",
+                name: "Carver County, Minnesota",
+              },
+              sameAs: [
+                "https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900",
+                "https://en.wikipedia.org/wiki/Lake_Waconia",
+              ],
             }),
           }}
         />
