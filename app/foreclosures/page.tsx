@@ -127,15 +127,79 @@ export default function ForeclosuresPage() {
         </a>
       </div>
 
+      {/* FAQ */}
+      <section className="mt-12 pt-10 border-t border-border">
+        <h2 className="text-2xl font-bold text-text-primary tracking-tight mb-6">
+          Frequently Asked Questions
+        </h2>
+        <dl className="space-y-5">
+          {FORECLOSURE_FAQS.map((faq) => (
+            <div
+              key={faq.question}
+              className="bg-surface rounded-xl p-6 border border-border"
+            >
+              <dt className="font-semibold text-text-primary mb-2">
+                {faq.question}
+              </dt>
+              <dd className="text-text-muted leading-relaxed">{faq.answer}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
       {/* Internal links */}
       <div className="mt-10 pt-8 border-t border-border">
         <h3 className="font-semibold text-text-primary mb-4">More Waconia Real Estate</h3>
         <div className="flex flex-wrap gap-3">
-          <Link href="/directory/amerivu-inn-suites" className="text-sm text-primary hover:underline">Hotels & Lodging</Link>
+          <Link href="/guides/moving-to-waconia" className="text-sm text-primary hover:underline">Moving to Waconia</Link>
+          <Link href="/hotels" className="text-sm text-primary hover:underline">Hotels & Lodging</Link>
           <Link href="/guides/lake-waconia" className="text-sm text-primary hover:underline">Lake Waconia Guide</Link>
           <Link href="/directory" className="text-sm text-primary hover:underline">Business Directory</Link>
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: FORECLOSURE_FAQS.map((f) => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
+          }),
+        }}
+      />
     </div>
   );
 }
+
+const FORECLOSURE_FAQS = [
+  {
+    question: "Are there foreclosures in Waconia, MN?",
+    answer:
+      "Yes — foreclosure activity in Waconia and the broader Carver County market is updated daily through Foreclosure.com. Inventory varies; bank-owned (REO), short sale, and pre-foreclosure listings all appear in the live feed embedded above.",
+  },
+  {
+    question: "How do I buy a foreclosed home in Waconia?",
+    answer:
+      "Get pre-approved for financing first — foreclosure deals move fast. Budget for repairs since most foreclosures are sold as-is. Order a full inspection before closing, check for HOA liens and unpaid back taxes, and work with a Waconia-area Realtor experienced with distressed properties.",
+  },
+  {
+    question: "Are foreclosures cheaper than regular home sales in Waconia?",
+    answer:
+      "Foreclosed homes in Waconia and Carver County typically list 10–30% below comparable market value, but the trade-offs are real: as-is condition, deferred maintenance, faster closing timelines, and competitive bidding. Net savings vary widely by property.",
+  },
+  {
+    question: "What is Carver County's foreclosure process?",
+    answer:
+      "Most Minnesota foreclosures proceed by advertisement (a non-judicial process). The lender records a notice of foreclosure, the property is sold at a sheriff's sale, and the borrower has a redemption period (usually six months) before title transfers. Short sales and REO listings sit at different points in this timeline.",
+  },
+  {
+    question: "Where else should I search for Waconia real estate?",
+    answer:
+      "In addition to the foreclosure feed above, MLS sites (Realtor.com, Zillow, Redfin), the Carver County property records, and local Waconia Realtors all provide active listings. Combine multiple sources — no single feed catches every distressed property.",
+  },
+];

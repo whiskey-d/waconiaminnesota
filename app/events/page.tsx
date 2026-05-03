@@ -48,7 +48,7 @@ export default function EventsPage() {
       </div>
 
       {/* Event list */}
-      <div className="space-y-6">
+      <div className="space-y-6 mb-16">
         {events.map((event) => (
           <Link
             key={event.slug}
@@ -118,6 +118,69 @@ export default function EventsPage() {
           </Link>
         ))}
       </div>
+
+      {/* FAQ — Event-specific common questions */}
+      <section className="border-t border-border pt-12 pb-4">
+        <h2 className="text-2xl font-bold text-text-primary tracking-tight mb-6">
+          Frequently Asked Questions
+        </h2>
+        <dl className="space-y-5">
+          {EVENTS_FAQS.map((faq) => (
+            <div
+              key={faq.question}
+              className="bg-surface rounded-xl p-6 border border-border"
+            >
+              <dt className="font-semibold text-text-primary mb-2">
+                {faq.question}
+              </dt>
+              <dd className="text-text-muted leading-relaxed">{faq.answer}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: EVENTS_FAQS.map((f) => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
+          }),
+        }}
+      />
     </div>
   );
 }
+
+const EVENTS_FAQS = [
+  {
+    question: "When is Nickle Dickle Day in Waconia?",
+    answer:
+      "Nickle Dickle Day is held annually on the third Saturday of September at City Square Park in downtown Waconia. The main event runs 9am to 5pm, and the Nickle Dickle Street Dance kicks off Friday evening at 7pm.",
+  },
+  {
+    question: "When is the Carver County Fair?",
+    answer:
+      "The Carver County Fair is held annually for five days in mid-August at the Carver County Fairgrounds in Waconia. The 2026 fair runs August 12–16. The fair has run for over 114 years.",
+  },
+  {
+    question: "When does the Waconia Farmers Market run?",
+    answer:
+      "The Waconia Farmers Market & Flea Market runs every Thursday from 4–7pm, June through September, in the Waconia Square parking lot at 224 First Street.",
+  },
+  {
+    question: "Are Waconia events free?",
+    answer:
+      "Most signature Waconia events are free, including Nickle Dickle Day, the Farmers Market, the Scarecrow Tour, Sister Saturday, and the Tree Lighting in the Park. The Carver County Fair charges admission. Trivia Night at Waconia Brewing Co. is free to play.",
+  },
+  {
+    question: "Where is the Tree Lighting in the Park?",
+    answer:
+      "The Waconia Tree Lighting is held at the City Square Park Gazebo on the Friday after Thanksgiving (Black Friday) at 6pm. Free hot cocoa, fire pits, and the official lighting of the community Christmas tree.",
+  },
+];

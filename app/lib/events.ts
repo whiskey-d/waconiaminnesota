@@ -2,9 +2,14 @@ export interface Event {
   slug: string;
   title: string;
   date: string;
-  dateSort: string; // YYYY-MM-DD for sorting
+  dateSort: string; // YYYY-MM-DD — start date
+  endDateSort?: string; // YYYY-MM-DD — end date (multi-day events)
+  startTime?: string; // HH:MM (24h, local) — defaults to 00:00
+  endTime?: string;   // HH:MM (24h, local) — defaults to 23:59
   recurring: boolean;
   recurringNote?: string;
+  recurrencePattern?: "weekly" | "annual";
+  recurrenceByDay?: "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday" | "Saturday" | "Sunday";
   venue: string;
   address: string;
   description: string;
@@ -23,8 +28,11 @@ export const events: Event[] = [
     title: 'Nickle Dickle Day',
     date: 'September 19, 2026',
     dateSort: '2026-09-19',
+    startTime: '09:00',
+    endTime: '17:00',
     recurring: true,
     recurringNote: 'Annual — every September',
+    recurrencePattern: 'annual',
     venue: 'City Square Park',
     address: 'City Square Park, Waconia, MN 55387',
     description: "Waconia's beloved annual street festival — free fun for all ages in the heart of downtown.",
@@ -47,8 +55,13 @@ export const events: Event[] = [
     title: 'Waconia Farmers Market & Flea Market',
     date: 'Every Thursday',
     dateSort: '2026-06-05',
+    endDateSort: '2026-09-25',
+    startTime: '16:00',
+    endTime: '19:00',
     recurring: true,
     recurringNote: 'Every Thursday, 4–7pm · June through September',
+    recurrencePattern: 'weekly',
+    recurrenceByDay: 'Thursday',
     venue: 'Waconia Square Parking Lot',
     address: '224 First St, Waconia, MN 55387',
     description: 'Fresh local produce, artisan goods, and flea market finds every Thursday evening all summer long.',
@@ -70,8 +83,12 @@ export const events: Event[] = [
     title: 'Carver County Fair',
     date: 'August 12–16, 2026',
     dateSort: '2026-08-12',
+    endDateSort: '2026-08-16',
+    startTime: '09:00',
+    endTime: '22:00',
     recurring: true,
     recurringNote: 'Annual — every August',
+    recurrencePattern: 'annual',
     venue: 'Carver County Fairgrounds',
     address: 'Carver County Fairgrounds, Waconia, MN 55387',
     description: '114 years of agriculture and community — five days of livestock shows, live music, rides, and classic fair fun.',
@@ -95,8 +112,11 @@ export const events: Event[] = [
     title: 'Sister Saturday',
     date: 'May 9, 2026',
     dateSort: '2026-05-09',
+    startTime: '09:00',
+    endTime: '17:00',
     recurring: true,
     recurringNote: 'Annual — every May',
+    recurrencePattern: 'annual',
     venue: 'Downtown Waconia',
     address: 'Downtown Waconia, MN 55387',
     description: 'Deals and steals all over downtown Waconia — a spring shopping celebration with specials at participating businesses.',
@@ -119,8 +139,10 @@ export const events: Event[] = [
     title: 'Scarecrow Tour',
     date: 'October 8–18, 2026',
     dateSort: '2026-10-08',
+    endDateSort: '2026-10-18',
     recurring: true,
     recurringNote: 'Annual — every October',
+    recurrencePattern: 'annual',
     venue: 'All around Waconia',
     address: 'Waconia, MN 55387',
     description: 'Creatively crafted scarecrows placed all over Waconia — tour them all and vote for your favorite.',
@@ -143,8 +165,11 @@ export const events: Event[] = [
     title: 'Tree Lighting in the Park',
     date: 'November 27, 2026',
     dateSort: '2026-11-27',
+    startTime: '18:00',
+    endTime: '20:00',
     recurring: true,
     recurringNote: 'Annual — Black Friday evening',
+    recurrencePattern: 'annual',
     venue: 'City Square Park Gazebo',
     address: 'City Square Park Gazebo, Waconia, MN 55387',
     description: 'Kick off the holiday season at the City Square Park Gazebo — family fun, cocoa, warm fires, and the official tree lighting.',
@@ -166,9 +191,13 @@ export const events: Event[] = [
     slug: 'waconia-trivia-night',
     title: 'Waconia Trivia Night',
     date: 'Every Wednesday',
-    dateSort: '2026-03-01',
+    dateSort: '2026-03-04',
+    startTime: '19:00',
+    endTime: '21:00',
     recurring: true,
     recurringNote: 'Every Wednesday evening',
+    recurrencePattern: 'weekly',
+    recurrenceByDay: 'Wednesday',
     venue: 'Waconia Brewing Co.',
     address: '255 W Main St, Waconia, MN 55387',
     description: "Team trivia with prizes and craft beer specials — Waconia's most popular weekly event.",
@@ -196,4 +225,12 @@ export function getUpcomingEvents(): Event[] {
   return [...events]
     .filter(e => e.recurring || e.dateSort >= today)
     .sort((a, b) => a.dateSort.localeCompare(b.dateSort));
+}
+
+/**
+ * Build an ISO 8601 datetime string in Central Time for Schema.org.
+ * Uses -05:00 (CST) — close enough for SEO; Google parses both CST/CDT.
+ */
+export function toIsoDateTime(date: string, time?: string): string {
+  return `${date}T${time ?? "00:00"}:00-05:00`;
 }

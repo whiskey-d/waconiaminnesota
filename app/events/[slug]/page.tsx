@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { events, getEventBySlug } from "../../lib/events";
+import { events, getEventBySlug, toIsoDateTime } from "../../lib/events";
 import { buildMetadata, SITE_URL } from "../../lib/metadata";
 import { Breadcrumb } from "../../components/Breadcrumb";
 
@@ -137,16 +137,19 @@ export default async function EventDetailPage({ params }: Props) {
         </div>
       </div>
 
-      {/* JSON-LD Event */}
+      {/* JSON-LD Event — multi-day events use endDateSort; recurring events
+          add eventSchedule so search engines understand the recurrence. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Event",
+            "@type": event.recurring ? ["Event", "EventSeries"] : "Event",
             name: event.title,
             description: event.description,
-            startDate: event.dateSort,
+            url: `${SITE_URL}/events/${event.slug}`,
+            startDate: toIsoDateTime(event.dateSort, event.startTime),
+            endDate: toIsoDateTime(event.endDateSort ?? event.dateSort, event.endTime),
             eventStatus: "https://schema.org/EventScheduled",
             eventAttendanceMode:
               "https://schema.org/OfflineEventAttendanceMode",
@@ -169,14 +172,42 @@ export default async function EventDetailPage({ params }: Props) {
                   priceCurrency: "USD",
                   availability: "https://schema.org/InStock",
                   url: `${SITE_URL}/events/${event.slug}`,
+                  validFrom: toIsoDateTime(event.dateSort, event.startTime),
                 }
               : undefined,
             organizer: event.website
-              ? { "@type": "Organization", url: event.website }
-              : undefined,
-            image: event.image.startsWith("http")
-              ? event.image
-              : `${SITE_URL}${event.image}`,
+              ? {
+                  "@type": "Organization",
+                  url: event.website,
+                  name: "Destination Waconia",
+                }
+              : { "@type": "Organization", name: "Destination Waconia" },
+            image: [
+              event.image.startsWith("http")
+                ? event.image
+                : `${SITE_URL}${event.image}`,
+            ],
+            eventSchedule:
+              event.recurrencePattern === "weekly" && event.recurrenceByDay
+                ? {
+                    "@type": "Schedule",
+                    repeatFrequency: "P1W",
+                    byDay: `https://schema.org/${event.recurrenceByDay}`,
+                    startDate: event.dateSort,
+                    endDate: event.endDateSort ?? event.dateSort,
+                    startTime: event.startTime ?? "00:00",
+                    endTime: event.endTime ?? "23:59",
+                  }
+                : event.recurrencePattern === "annual"
+                  ? {
+                      "@type": "Schedule",
+                      repeatFrequency: "P1Y",
+                      startDate: event.dateSort,
+                      endDate: event.endDateSort ?? event.dateSort,
+                      startTime: event.startTime ?? "00:00",
+                      endTime: event.endTime ?? "23:59",
+                    }
+                  : undefined,
           }),
         }}
       />

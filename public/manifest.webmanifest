@@ -1,0 +1,17 @@
+{
+  "name": "WaconiaGuide",
+  "short_name": "WaconiaGuide",
+  "description": "Your definitive guide to Waconia, Minnesota — Lake Waconia, dining, events, and community.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a6fba",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ]
+}

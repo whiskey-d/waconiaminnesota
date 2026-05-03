@@ -175,16 +175,75 @@ export default function HotelsPage() {
         </div>
       </div>
 
+      {/* FAQ */}
+      <section className="border-t border-border pt-12 pb-4 mb-10">
+        <h2 className="text-2xl font-bold text-text-primary tracking-tight mb-6">
+          Frequently Asked Questions
+        </h2>
+        <dl className="space-y-5">
+          {HOTELS_FAQS.map((faq) => (
+            <div
+              key={faq.question}
+              className="bg-surface rounded-xl p-6 border border-border"
+            >
+              <dt className="font-semibold text-text-primary mb-2">
+                {faq.question}
+              </dt>
+              <dd className="text-text-muted leading-relaxed">{faq.answer}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
       {/* Internal links */}
       <div className="pt-6 border-t border-border">
         <h3 className="font-semibold text-text-primary mb-4">Plan Your Waconia Visit</h3>
         <div className="flex flex-wrap gap-3">
           <Link href="/guides/lake-waconia" className="text-sm text-primary hover:underline">Lake Waconia Guide</Link>
+          <Link href="/guides/things-to-do-waconia" className="text-sm text-primary hover:underline">Things to Do</Link>
           <Link href="/events" className="text-sm text-primary hover:underline">Local Events</Link>
           <Link href="/directory" className="text-sm text-primary hover:underline">Restaurants & Bars</Link>
           <Link href="/foreclosures" className="text-sm text-primary hover:underline">Buy a Home in Waconia</Link>
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: HOTELS_FAQS.map((f) => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
+          }),
+        }}
+      />
     </div>
   );
 }
+
+const HOTELS_FAQS = [
+  {
+    question: "Is there a hotel in Waconia, MN?",
+    answer:
+      "Yes — AmeriVu Inn & Suites at 493 Holiday Drive is the only hotel located in Waconia. It offers complimentary breakfast, free parking, and is pet-friendly. For more chain hotel options, Chaska is eight miles east and has a Hampton Inn, Comfort Inn, and Best Western, all about a 10-minute drive from downtown Waconia.",
+  },
+  {
+    question: "Are there lakefront Airbnbs on Lake Waconia?",
+    answer:
+      "Yes, lakefront short-term rentals are available on Lake Waconia through Airbnb and VRBO, including properties with private docks, lake access, and full kitchens. These book out months in advance for July 4th weekend and other summer holidays — reserve early.",
+  },
+  {
+    question: "When should I book hotels for a Lake Waconia weekend?",
+    answer:
+      "Book summer weekends 4–6 weeks ahead. Lake weekends, the Carver County Fair (mid-August), Nickle Dickle Day (third Saturday of September), and the July 4th holiday week all fill quickly. Lakefront Airbnbs for July 4th typically book 3–6 months out.",
+  },
+  {
+    question: "Are Waconia hotels pet-friendly?",
+    answer:
+      "AmeriVu Inn & Suites in Waconia is pet-friendly — the best in-town option for travelers with dogs. Many Lake Waconia Airbnbs are also pet-friendly; filter for the pet-friendly amenity in the booking platform.",
+  },
+];

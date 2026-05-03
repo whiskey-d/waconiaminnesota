@@ -2,24 +2,15 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumb } from "../components/Breadcrumb";
-import { businesses } from "../lib/businesses";
+import { businesses, CATEGORIES } from "../lib/businesses";
 import { buildMetadata } from "../lib/metadata";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Explore the Best of Waconia — Directory",
+  title: "Waconia Business Directory — Restaurants, Breweries & More",
   description:
-    "From lakeside dining to charming boutique shops, discover the heart of Minnesota's hidden gem. Browse Waconia's best businesses.",
+    "Browse local businesses in Waconia, MN — restaurants, breweries and wineries, things to do, services, shopping, and lodging. Curated by locals.",
   path: "/directory",
 });
-
-const categories = [
-  { label: "All Categories", value: "all" },
-  { label: "🍽 Dining", value: "DINING" },
-  { label: "🍸 Bars", value: "BARS" },
-  { label: "🛍 Retail", value: "RETAIL" },
-  { label: "🌿 Wellness", value: "WELLNESS" },
-  { label: "⚙ Filters", value: "filters" },
-];
 
 const categoryColors: Record<string, string> = {
   DINING: "bg-primary",
@@ -29,165 +20,120 @@ const categoryColors: Record<string, string> = {
 };
 
 export default function DirectoryPage() {
-  const today = new Date().toLocaleDateString("en-US", {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-
   return (
-    <>
-      <div className="flex flex-col lg:flex-row min-h-screen">
-        {/* Left: Listings */}
-        <div className="flex-1 lg:w-3/5">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8">
-            <Breadcrumb items={[{ label: "Directory" }]} />
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <Breadcrumb items={[{ label: "Directory" }]} />
 
-            <div className="flex items-center gap-3 mt-4 text-sm text-text-muted">
-              <span className="inline-flex items-center gap-1">
-                📍 Waconia, MN
-              </span>
-              <span className="inline-flex items-center gap-1">
-                📅 {today}
-              </span>
-            </div>
-
-            <h1 className="text-3xl sm:text-4xl font-bold text-text-primary tracking-tight mt-4 mb-2">
-              Explore the Best of Waconia
-            </h1>
-            <p className="text-text-muted leading-relaxed mb-8">
-              From lakeside dining to charming boutique shops, discover the
-              heart of Minnesota&apos;s hidden gem.
-            </p>
-
-            {/* Filter pills */}
-            <div className="flex flex-wrap items-center gap-2 mb-8">
-              {categories.map((cat, i) => (
-                <button
-                  key={cat.value}
-                  className={`px-4 py-2 text-sm font-medium rounded-full transition-colors ${
-                    i === 0
-                      ? "bg-primary text-white"
-                      : "bg-surface text-text-muted hover:bg-border"
-                  }`}
-                >
-                  {cat.label}
-                </button>
-              ))}
-              <div className="ml-auto">
-                <button className="px-4 py-2 text-sm font-medium text-text-muted bg-surface rounded-full hover:bg-border transition-colors">
-                  Sort ↕
-                </button>
-              </div>
-            </div>
-
-            {/* Business Cards Grid */}
-            <div className="grid sm:grid-cols-2 gap-6 mb-12">
-              {businesses.slice(0, 8).map((biz) => (
-                <Link
-                  key={biz.slug}
-                  href={`/directory/${biz.slug}`}
-                  className="group block bg-white rounded-xl border border-border overflow-hidden hover:shadow-lg transition-shadow"
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={biz.image}
-                      alt={biz.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <span
-                      className={`absolute top-3 left-3 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider ${
-                        categoryColors[biz.category] ?? "bg-gray-500"
-                      }`}
-                    >
-                      {biz.category}
-                    </span>
-                    <button
-                      className="absolute top-3 right-3 w-8 h-8 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors"
-                      aria-label={`Save ${biz.name}`}
-                    >
-                      <svg
-                        className="w-4 h-4 text-text-muted"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <div className="p-4">
-                    <div className="flex items-center justify-between mb-1">
-                      <h3 className="font-semibold text-text-primary group-hover:text-primary transition-colors">
-                        {biz.name}
-                      </h3>
-                      <span className="flex items-center gap-1 text-sm text-text-muted">
-                        ⭐ {biz.rating}
-                      </span>
-                    </div>
-                    <p className="text-sm text-text-muted line-clamp-2 mb-2">
-                      {biz.shortDescription}
-                    </p>
-                    <p className="text-xs text-text-muted flex items-center gap-1">
-                      📍 {biz.address}
-                    </p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-
-            {/* Pagination */}
-            <div className="flex items-center justify-center gap-2 pb-12">
-              <button className="w-10 h-10 rounded-full border border-border text-text-muted hover:bg-surface transition-colors text-sm">
-                &larr;
-              </button>
-              <button className="w-10 h-10 rounded-full bg-primary text-white text-sm font-medium">
-                1
-              </button>
-              <button className="w-10 h-10 rounded-full border border-border text-text-muted hover:bg-surface transition-colors text-sm">
-                2
-              </button>
-              <button className="w-10 h-10 rounded-full border border-border text-text-muted hover:bg-surface transition-colors text-sm">
-                3
-              </button>
-              <span className="text-text-muted text-sm">...</span>
-              <button className="w-10 h-10 rounded-full border border-border text-text-muted hover:bg-surface transition-colors text-sm">
-                &rarr;
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Right: Map */}
-        <div className="hidden lg:block lg:w-2/5 sticky top-16 h-[calc(100vh-4rem)]">
-          <div className="h-full bg-surface relative">
-            <iframe
-              title="Map of Waconia, Minnesota"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-93.83%2C44.83%2C-93.74%2C44.87&layer=mapnik&marker=44.8522%2C-93.7872"
-              className="w-full h-full border-0"
-              loading="lazy"
-            />
-            <div className="absolute top-4 left-4 bg-white rounded-lg shadow-lg px-4 py-2 text-sm">
-              <p className="font-medium text-text-primary">
-                Showing {businesses.slice(0, 8).length} results in Waconia
-              </p>
-              <button className="text-primary text-xs font-medium hover:underline">
-                Search here
-              </button>
-            </div>
-          </div>
-        </div>
+      <div className="flex items-center gap-3 mt-4 text-sm text-text-muted">
+        <span className="inline-flex items-center gap-1">📍 Waconia, MN</span>
+        <span>·</span>
+        <span>{businesses.length} listings</span>
       </div>
 
-      {/* JSON-LD — ItemList without aggregateRating (ratings are per-business
-          and surfaced on each detail page via LocalBusiness schema). */}
+      <h1 className="text-3xl sm:text-4xl font-bold text-text-primary tracking-tight mt-4 mb-3">
+        Waconia Business Directory
+      </h1>
+      <p className="text-text-muted leading-relaxed max-w-2xl mb-10">
+        From lakeside dining to estate wineries to the only hotel in town —
+        every Waconia business worth knowing, organized by what you&apos;re
+        looking for.
+      </p>
+
+      {/* Category landings */}
+      <section className="mb-14">
+        <h2 className="text-xl font-bold text-text-primary mb-4">
+          Browse by category
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          {CATEGORIES.map((cat) => (
+            <Link
+              key={cat.slug}
+              href={`/directory/${cat.slug}`}
+              className="group bg-white rounded-xl border border-border p-5 hover:shadow-md hover:border-primary/30 transition-all"
+            >
+              <span className="text-2xl mb-2 block">{cat.emoji}</span>
+              <h3 className="font-semibold text-text-primary group-hover:text-primary transition-colors">
+                {cat.label}
+              </h3>
+              <p className="text-xs text-text-muted mt-1 line-clamp-2">
+                {cat.shortDescription}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* All listings grid */}
+      <section className="mb-12">
+        <div className="flex items-end justify-between mb-6">
+          <h2 className="text-xl font-bold text-text-primary">All Listings</h2>
+          <p className="text-sm text-text-muted">
+            {businesses.length} businesses
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {businesses.map((biz) => (
+            <Link
+              key={biz.slug}
+              href={`/directory/${biz.slug}`}
+              className="group block bg-white rounded-xl border border-border overflow-hidden hover:shadow-lg transition-shadow"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src={biz.image}
+                  alt={biz.name}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span
+                  className={`absolute top-3 left-3 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider ${
+                    categoryColors[biz.category] ?? "bg-gray-500"
+                  }`}
+                >
+                  {biz.category}
+                </span>
+              </div>
+              <div className="p-4">
+                <div className="flex items-center justify-between mb-1">
+                  <h3 className="font-semibold text-text-primary group-hover:text-primary transition-colors">
+                    {biz.name}
+                  </h3>
+                  <span className="flex items-center gap-1 text-sm text-text-muted">
+                    ⭐ {biz.rating}
+                  </span>
+                </div>
+                <p className="text-sm text-text-muted line-clamp-2 mb-2">
+                  {biz.shortDescription}
+                </p>
+                <p className="text-xs text-text-muted">📍 {biz.address}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="border-t border-border pt-12 pb-4">
+        <h2 className="text-2xl font-bold text-text-primary tracking-tight mb-6">
+          Frequently Asked Questions
+        </h2>
+        <dl className="space-y-5">
+          {DIRECTORY_FAQS.map((faq) => (
+            <div
+              key={faq.question}
+              className="bg-surface rounded-xl p-6 border border-border"
+            >
+              <dt className="font-semibold text-text-primary mb-2">
+                {faq.question}
+              </dt>
+              <dd className="text-text-muted leading-relaxed">{faq.answer}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      {/* JSON-LD — full ItemList of every business */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -196,7 +142,8 @@ export default function DirectoryPage() {
             "@type": "ItemList",
             name: "Waconia Business Directory",
             description: "Local businesses in Waconia, Minnesota",
-            itemListElement: businesses.slice(0, 8).map((biz, i) => ({
+            numberOfItems: businesses.length,
+            itemListElement: businesses.map((biz, i) => ({
               "@type": "ListItem",
               position: i + 1,
               url: `https://waconiaminnesota.org/directory/${biz.slug}`,
@@ -205,6 +152,49 @@ export default function DirectoryPage() {
           }),
         }}
       />
-    </>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: DIRECTORY_FAQS.map((f) => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
+          }),
+        }}
+      />
+    </div>
   );
 }
+
+const DIRECTORY_FAQS = [
+  {
+    question: "What are the best restaurants in Waconia, MN?",
+    answer:
+      "Iron Tap is the downtown dinner standout (the Father Bob Burger is a local legend). Egg-Cetera Cafe is the beloved breakfast spot. Lola's Lakehouse Eatery offers casual lakeside dining with a patio on Lake Waconia. Mocha Monkey is the local coffee shop. Mucho Mexican handles family Mexican. See the Restaurants category for the full list.",
+  },
+  {
+    question: "What breweries and wineries are in Waconia?",
+    answer:
+      "Waconia has four destination beverage producers: Waconia Brewing Co. (downtown craft brewery), Schram Vineyards Winery & Brewery (estate winery + brewery west of town), Sovereign Estate Wine (lakefront winery on Lake Waconia), and J. Carver Distillery (small-batch craft spirits). All are open to the public during posted hours.",
+  },
+  {
+    question: "Is there a hospital in Waconia?",
+    answer:
+      "Yes — Ridgeview Medical Center is the regional hospital, headquartered in Waconia at 500 South Maple Street. It offers a 24/7 emergency department, surgery, women's health, primary care, and specialty clinics for the broader Carver County area.",
+  },
+  {
+    question: "Where is the DMV in Waconia, MN?",
+    answer:
+      "The Waconia Deputy Registrar handles vehicle tabs, titles, registration, and driver's licenses for Carver County residents at 217 Vine Street S in downtown Waconia. Hours are 8am–4:30pm most weekdays, with extended hours Wednesdays and Saturday-morning service.",
+  },
+  {
+    question: "Is there a movie theater in Waconia?",
+    answer:
+      "Yes — Emagine Waconia at 325 Bevens Street is a luxury cinema with fully reclining leather seats, an EMAX large-format screen, full bar service, and food delivery to your seat. Reserved seating online; Tuesdays are discounted.",
+  },
+];

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { guides, getGuideBySlug } from "../../lib/guides";
-import { SITE_URL } from "../../lib/metadata";
+import { SITE_URL, buildMetadata } from "../../lib/metadata";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -18,16 +18,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
   if (!guide) return {};
-  return {
+  return buildMetadata({
     title: guide.title,
     description: guide.metaDescription,
-    alternates: { canonical: `${SITE_URL}/guides/${guide.slug}` },
-    openGraph: {
-      title: guide.title,
-      description: guide.metaDescription,
-      type: "article",
-    },
-  };
+    path: `/guides/${guide.slug}`,
+    ogImage: guide.heroImage,
+    ogType: "article",
+  });
 }
 
 export default async function GuidePage({ params }: PageProps) {
@@ -228,57 +225,107 @@ export default async function GuidePage({ params }: PageProps) {
                   return null;
               }
             })}
+
+            {guide.faqs && guide.faqs.length > 0 && (
+              <section className="guide-faq pt-8 border-t border-border">
+                <h2 className="text-2xl font-bold text-text-primary tracking-tight mb-6">
+                  Frequently Asked Questions
+                </h2>
+                <dl className="space-y-5">
+                  {guide.faqs.map((faq) => (
+                    <div key={faq.question}>
+                      <dt className="font-semibold text-text-primary mb-2">
+                        {faq.question}
+                      </dt>
+                      <dd className="text-text-muted leading-relaxed">
+                        {faq.answer}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+            )}
           </article>
 
           {/* Right sidebar */}
           <aside className="space-y-6">
             <div className="sticky top-20 space-y-6">
-              {/* Lake Map & Access */}
-              <div className="bg-white rounded-xl border border-border overflow-hidden">
-                <div className="h-40 bg-surface">
-                  <iframe
-                    title="Lake Waconia Map"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-93.83%2C44.83%2C-93.74%2C44.87&layer=mapnik&marker=44.8522%2C-93.7872"
-                    className="w-full h-full border-0"
-                    loading="lazy"
-                  />
+              {/* Lake Map & Access — only on lake-related guides */}
+              {guide.sidebarMap && (
+                <div className="bg-white rounded-xl border border-border overflow-hidden">
+                  <div className="h-40 bg-surface">
+                    <iframe
+                      title="Lake Waconia Map"
+                      src="https://www.openstreetmap.org/export/embed.html?bbox=-93.83%2C44.83%2C-93.74%2C44.87&layer=mapnik&marker=44.8522%2C-93.7872"
+                      className="w-full h-full border-0"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-bold text-text-primary mb-4">
+                      Lake Map &amp; Access
+                    </h3>
+                    <Link
+                      href="/directory"
+                      className="block w-full bg-primary hover:bg-primary/90 text-white text-sm font-medium py-2.5 rounded-lg text-center transition-colors mb-4"
+                    >
+                      View Full Map
+                    </Link>
+                    <table className="w-full text-sm">
+                      <tbody>
+                        <tr className="border-b border-border">
+                          <td className="py-2 text-text-muted">Public Access</td>
+                          <td className="py-2 text-text-primary font-medium text-right">
+                            {guide.sidebarMap.publicAccess}
+                          </td>
+                        </tr>
+                        <tr className="border-b border-border">
+                          <td className="py-2 text-text-muted">
+                            Boat Launch Fee
+                          </td>
+                          <td className="py-2 text-text-primary font-medium text-right">
+                            {guide.sidebarMap.boatLaunchFee}
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="py-2 text-text-muted">Water Clarity</td>
+                          <td className="py-2 font-medium text-right text-open-green">
+                            {guide.sidebarMap.waterClarity}
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-                <div className="p-5">
+              )}
+
+              {/* Generic facts sidebar — used on non-lake guides */}
+              {guide.sidebarFacts && guide.sidebarFacts.length > 0 && (
+                <div className="bg-white rounded-xl border border-border p-5">
                   <h3 className="font-bold text-text-primary mb-4">
-                    Lake Map &amp; Access
+                    Quick Facts
                   </h3>
-                  <Link
-                    href="/directory"
-                    className="block w-full bg-primary hover:bg-primary/90 text-white text-sm font-medium py-2.5 rounded-lg text-center transition-colors mb-4"
-                  >
-                    View Full Map
-                  </Link>
                   <table className="w-full text-sm">
                     <tbody>
-                      <tr className="border-b border-border">
-                        <td className="py-2 text-text-muted">Public Access</td>
-                        <td className="py-2 text-text-primary font-medium text-right">
-                          {guide.sidebarMap.publicAccess}
-                        </td>
-                      </tr>
-                      <tr className="border-b border-border">
-                        <td className="py-2 text-text-muted">
-                          Boat Launch Fee
-                        </td>
-                        <td className="py-2 text-text-primary font-medium text-right">
-                          {guide.sidebarMap.boatLaunchFee}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="py-2 text-text-muted">Water Clarity</td>
-                        <td className="py-2 font-medium text-right text-open-green">
-                          {guide.sidebarMap.waterClarity}
-                        </td>
-                      </tr>
+                      {guide.sidebarFacts.map((f, i) => (
+                        <tr
+                          key={f.label}
+                          className={
+                            i < guide.sidebarFacts!.length - 1
+                              ? "border-b border-border"
+                              : ""
+                          }
+                        >
+                          <td className="py-2 text-text-muted">{f.label}</td>
+                          <td className="py-2 text-text-primary font-medium text-right">
+                            {f.value}
+                          </td>
+                        </tr>
+                      ))}
                     </tbody>
                   </table>
                 </div>
-              </div>
+              )}
 
               {/* Related Guides */}
               <div className="bg-white rounded-xl border border-border p-5">
@@ -321,31 +368,28 @@ export default async function GuidePage({ params }: PageProps) {
                 </ul>
               </div>
 
-              {/* Join Community */}
+              {/* Local-knowledge CTA */}
               <div className="bg-accent-light rounded-xl p-5">
                 <h3 className="font-bold text-text-primary mb-2">
-                  Join the Community
+                  Spotted a mistake?
                 </h3>
                 <p className="text-sm text-text-muted mb-4">
-                  Get weekly fishing reports, local tips, and event updates.
+                  Hours changed? Closed for the season? Tell us — we update
+                  the page when readers flag a change.
                 </p>
-                <div className="flex gap-2">
-                  <input
-                    type="email"
-                    placeholder="your@email.com"
-                    className="flex-1 px-3 py-2 text-sm border border-border rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary/20"
-                  />
-                  <button className="px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors shrink-0">
-                    Join
-                  </button>
-                </div>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 bg-primary text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-primary/90 transition-colors"
+                >
+                  Send a correction →
+                </Link>
               </div>
             </div>
           </aside>
         </div>
       </div>
 
-      {/* JSON-LD Article */}
+      {/* JSON-LD Article — ISO dates, real publisher entity, optional FAQPage */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -354,20 +398,87 @@ export default async function GuidePage({ params }: PageProps) {
             "@type": "Article",
             headline: guide.title,
             description: guide.metaDescription,
-            dateModified: guide.updatedDate,
+            datePublished: guide.publishedIso,
+            dateModified: guide.updatedIso,
             author: {
               "@type": "Organization",
               name: guide.author,
+              url: guide.authorSlug
+                ? `${SITE_URL}/about#author-${guide.authorSlug}`
+                : `${SITE_URL}/about`,
             },
             publisher: {
               "@type": "Organization",
+              "@id": `${SITE_URL}#organization`,
               name: "WaconiaGuide",
               url: SITE_URL,
+              logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.svg` },
             },
+            image: guide.heroImage.startsWith("http")
+              ? guide.heroImage
+              : `${SITE_URL}${guide.heroImage}`,
             mainEntityOfPage: `${SITE_URL}/guides/${guide.slug}`,
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", ".guide-faq"],
+            },
           }),
         }}
       />
+
+      {guide.faqs && guide.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: guide.faqs.map((f) => ({
+                "@type": "Question",
+                name: f.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: f.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
+
+      {/* Place / BodyOfWater entity for the canonical Lake Waconia guide.
+          Establishes the lake as a structured entity Google can connect to
+          knowledge-graph queries ("how big is Lake Waconia"). */}
+      {guide.slug === "lake-waconia" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["Place", "BodyOfWater"],
+              "@id": `${SITE_URL}/guides/lake-waconia#lake`,
+              name: "Lake Waconia",
+              alternateName: ["Wakonja", "Lake Waconia, Minnesota"],
+              description:
+                "Lake Waconia is a 3,080-acre lake in Carver County, Minnesota — one of the largest lakes in the Twin Cities metropolitan area. The Minnesota DNR lake number is DOW 10-0059-00.",
+              url: `${SITE_URL}/guides/lake-waconia`,
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 44.8522,
+                longitude: -93.7872,
+              },
+              containedInPlace: {
+                "@type": "AdministrativeArea",
+                name: "Carver County, Minnesota",
+              },
+              sameAs: [
+                "https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900",
+                "https://en.wikipedia.org/wiki/Lake_Waconia",
+              ],
+            }),
+          }}
+        />
+      )}
     </>
   );
 }
