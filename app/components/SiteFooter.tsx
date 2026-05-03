@@ -14,6 +14,8 @@ const exploreLinks: FooterLink[] = [
   { href: "/about", label: "About WaconiaGuide" },
   { href: "/contact", label: "Contact" },
   { href: "/glossary", label: "Glossary" },
+  { href: "/faqs", label: "All FAQs" },
+  { href: "/changelog", label: "Changelog" },
 ];
 
 const communityLinks: FooterLink[] = [

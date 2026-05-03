@@ -805,6 +805,19 @@ export const guides: Guide[] = [
       { label: "Dogs", value: "Trails only" },
       { label: "Open year-round", value: "Yes" },
     ],
+    keywords: [
+      "Lake Waconia Regional Park",
+      "Lake Waconia beach",
+      "Waconia swim beach",
+      "Carver County parks",
+      "Lake Waconia boat ramp",
+    ],
+    articleSection: "Parks & Outdoors",
+    glossaryTerms: [
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
+    ],
     relatedGuides: [
       { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
       { title: "Lake Waconia Boat Rentals", readTime: "5 min read", href: "/guides/lake-waconia-boat-rentals" },
@@ -927,6 +940,11 @@ export const guides: Guide[] = [
       "boat launch Waconia",
     ],
     articleSection: "Boating",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "AIS (Aquatic Invasive Species)", anchor: "ais" },
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+    ],
     howTo: {
       name: "How to Rent a Pontoon Boat on Lake Waconia",
       description:
@@ -1097,6 +1115,11 @@ export const guides: Guide[] = [
       "Minnesota ice fishing safety",
     ],
     articleSection: "Fishing",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "DOW number", anchor: "dow-number" },
+      { term: "AIS (Aquatic Invasive Species)", anchor: "ais" },
+    ],
     howTo: {
       name: "How to Ice Fish for Walleye on Lake Waconia",
       description:
@@ -1578,6 +1601,20 @@ export const guides: Guide[] = [
       { label: "Conference", value: "Wright County" },
       { label: "Mascot", value: "Wildcats" },
     ],
+    keywords: [
+      "Waconia schools",
+      "ISD 110",
+      "Waconia Public Schools",
+      "Waconia High School",
+      "Bayview Elementary Waconia",
+      "Wright County Conference",
+    ],
+    articleSection: "Living in Waconia",
+    glossaryTerms: [
+      { term: "ISD 110", anchor: "isd-110" },
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Carver County", anchor: "carver-county" },
+    ],
     relatedGuides: [
       { title: "Moving to Waconia", readTime: "8 min read", href: "/guides/moving-to-waconia" },
       { title: "Waconia History", readTime: "9 min read", href: "/guides/waconia-history" },
@@ -1701,6 +1738,19 @@ export const guides: Guide[] = [
       { label: "Public transit", value: "None direct" },
       { label: "Parking", value: "Free" },
     ],
+    keywords: [
+      "drive to Waconia",
+      "Minneapolis to Waconia",
+      "Waconia from MSP airport",
+      "how to get to Waconia",
+      "Waconia parking",
+    ],
+    articleSection: "Travel & Things to Do",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Carver County", anchor: "carver-county" },
+      { term: "55387", anchor: "55387" },
+    ],
     relatedGuides: [
       { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
       { title: "Where to Stay", readTime: "5 min read", href: "/hotels" },
@@ -1823,6 +1873,19 @@ export const guides: Guide[] = [
       { label: "Park entry", value: "Free" },
       { label: "Beach", value: "Regional Park" },
       { label: "Dogs", value: "Trails only" },
+    ],
+    keywords: [
+      "Waconia parks",
+      "City Square Park Waconia",
+      "Bayview Park Waconia",
+      "Waconia trails",
+      "Waconia playgrounds",
+    ],
+    articleSection: "Parks & Outdoors",
+    glossaryTerms: [
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+      { term: "City Square Park", anchor: "city-square-park" },
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
     ],
     relatedGuides: [
       { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
@@ -1953,6 +2016,19 @@ export const guides: Guide[] = [
       boatLaunchFee: "None — State",
       waterClarity: "Excellent",
     },
+    keywords: [
+      "Lake Waconia depth map",
+      "Lake Waconia bathymetry",
+      "DOW 10-0059-00",
+      "Lake Waconia max depth",
+      "Lake Waconia DNR survey",
+    ],
+    articleSection: "Lake & Outdoors",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "DOW number", anchor: "dow-number" },
+      { term: "AIS (Aquatic Invasive Species)", anchor: "ais" },
+    ],
     relatedGuides: [
       { title: "Lake Waconia Fishing Guide", readTime: "12 min read", href: "/guides/lake-waconia-fishing" },
       { title: "Lake Waconia Ice Fishing", readTime: "7 min read", href: "/guides/lake-waconia-ice-fishing" },
@@ -2094,6 +2170,19 @@ export const guides: Guide[] = [
       { label: "Minnetonka max depth", value: "113 ft" },
       { label: "Distance apart", value: "~12 miles" },
     ],
+    keywords: [
+      "Lake Waconia vs Lake Minnetonka",
+      "best lake Twin Cities",
+      "Lake Waconia vs Minnetonka comparison",
+      "Minnesota lake comparison",
+      "western metro lakes",
+    ],
+    articleSection: "Lake & Outdoors",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
+      { term: "DOW number", anchor: "dow-number" },
+    ],
     relatedGuides: [
       { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
       { title: "Lake Waconia Boat Rentals", readTime: "5 min read", href: "/guides/lake-waconia-boat-rentals" },
@@ -2222,6 +2311,11 @@ export const guides: Guide[] = [
       "Waconia beach summer",
     ],
     articleSection: "Seasonal",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+      { term: "Carver County Fair", anchor: "carver-county-fair" },
+    ],
     relatedGuides: [
       { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
       { title: "Lake Waconia Boat Rentals", readTime: "5 min read", href: "/guides/lake-waconia-boat-rentals" },
@@ -2342,6 +2436,11 @@ export const guides: Guide[] = [
       "Crappie Contest Waconia",
     ],
     articleSection: "Seasonal",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "City Square Park", anchor: "city-square-park" },
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+    ],
     relatedGuides: [
       { title: "Lake Waconia Ice Fishing", readTime: "7 min read", href: "/guides/lake-waconia-ice-fishing" },
       { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
@@ -2471,6 +2570,10 @@ export const guides: Guide[] = [
       "Schram Vineyards harvest",
     ],
     articleSection: "Seasonal",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
+    ],
     relatedGuides: [
       { title: "Lake Waconia Fishing", readTime: "12 min read", href: "/guides/lake-waconia-fishing" },
       { title: "Coney Island of Lake Waconia", readTime: "5 min read", href: "/guides/coney-island-lake-waconia" },
@@ -2492,6 +2595,161 @@ export const guides: Guide[] = [
       {
         question: "What is the weather like in Waconia in October?",
         answer: "October in Waconia averages a high of 55°F and a low of 37°F, with cooler nights and warmer afternoons. Bring layered clothing — most fall days swing significantly between morning and afternoon.",
+      },
+    ],
+  },
+  // ────────────────────────────────────────────────────────────────────
+  // Round 11 — added 2026-05-03
+  // ────────────────────────────────────────────────────────────────────
+  {
+    slug: "waconia-wineries-breweries-tour",
+    title: "Waconia Wineries & Breweries: A Day-Tour Guide",
+    metaDescription:
+      "Plan a Waconia wine, beer, and spirits tour — Schram Vineyards, Sovereign Estate, Waconia Brewing, J. Carver Distillery. Routes, hours, and what to order.",
+    heroImage:
+      "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Stops", value: "4 Producers" },
+      { label: "Total Drive", value: "~15 mi" },
+      { label: "Recommended Time", value: "5–7 hrs" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "In a thirty-mile radius, Waconia has quietly become one of Minnesota's denser craft-beverage clusters — two wineries, two breweries, and a craft distillery, all open to the public, all within a short drive of one another. This is the local-first day-tour guide: the order to visit, what to order, where to eat between stops, and how to do it without driving impaired.",
+      },
+      {
+        type: "heading",
+        heading: "The Route",
+      },
+      {
+        type: "text",
+        body: "Most locals run this tour in a clockwise loop: start at Schram Vineyards in the morning, head to Sovereign Estate Wine on Lake Waconia for late afternoon, drop into downtown for Waconia Brewing Co. early evening, and finish at J. Carver Distillery for after-dinner drinks. The total drive is about fifteen miles. Plan a designated driver, rideshare, or — better — book a local tour service that runs the loop for you.",
+      },
+      {
+        type: "heading",
+        heading: "Stop 1: Schram Vineyards Winery & Brewery",
+      },
+      {
+        type: "text",
+        body: "Start here. Schram is on rolling farmland west of town and is best in mid-morning to early afternoon when the sun lights the vineyard. Order a tasting flight (estate wines are made on-site, plus rotating in-house craft beer). Live music many weekends in season; heated igloos book out December–February. Allow 90 minutes to two hours.",
+      },
+      {
+        type: "heading",
+        heading: "Stop 2: Sovereign Estate Wine",
+      },
+      {
+        type: "text",
+        body: "Drive twenty minutes back toward the lake. Sovereign sits on Lake Waconia's north shore — a stone-and-glass tasting room with a tiered west-facing patio that catches the sunset. Try the Marquette and Frontenac (Minnesota cold-climate red varieties). If you're arriving by boat, dock space is available in summer. Allow an hour.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "Sovereign at sunset is the picture-postcard of Minnesota wine country. There's nowhere else in the metro quite like it.",
+        attribution: "Local advice",
+      },
+      {
+        type: "heading",
+        heading: "Stop 3: Waconia Brewing Company",
+      },
+      {
+        type: "text",
+        body: "Head into downtown. Waconia Brewing has been the cornerstone of the local craft scene since 2014. Open Friday through Sunday only, so plan accordingly. Get the flight to sample the rotating taps; the patio is dog-friendly and has fire pits. Trivia Wednesdays (when open) and live music Fridays add to the energy. Allow an hour. Pair with takeout from one of the downtown restaurants since the brewery has no kitchen.",
+      },
+      {
+        type: "heading",
+        heading: "Stop 4: J. Carver Distillery",
+      },
+      {
+        type: "text",
+        body: "Finish on the east side at J. Carver. Small-batch craft spirits — whiskey, gin, vodka — and a cocktail room serving classic and seasonal drinks made entirely with house spirits. Saturday distillery tours go behind the still. Order an old fashioned with the house whiskey and call it a day. Allow 45 minutes to an hour.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🚗",
+            title: "Don't Drive Impaired",
+            body: "Have a designated driver, use a rideshare for the inter-stop hops, or book a local tour service. The Waconia rideshare market is real but limited — pre-book if you're relying on Uber or Lyft for evening pickups.",
+          },
+          {
+            icon: "🍴",
+            title: "Eat Between Stops",
+            body: "Iron Tap, Lola's Lakehouse, or Mucho Mexican all work well as lunch or dinner stops between producers. Don't skip food — this is a long, leisurely tour, not a sprint.",
+            link: { label: "Restaurants directory →", href: "/directory/restaurants" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Quick Variations",
+      },
+      {
+        type: "text",
+        body: "If you only have an afternoon, pair Schram (1 hour) with Sovereign (1 hour) — the two wineries cover the bulk of the experience. If you only have an evening, Waconia Brewing + J. Carver (downtown adjacent) make a solid two-stop walking tour. If you're with a wedding party or larger group, Bayview Event Center and Schram both handle group bookings well; reserve weeks ahead.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan Your Tour",
+        ctaDescription:
+          "Combine the day-tour with overnight lodging and downtown dinner for a perfect weekend.",
+        buttons: [
+          { label: "Where to Stay", href: "/hotels", variant: "primary" },
+          { label: "Restaurants", href: "/directory/restaurants", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Producers", value: "4 (2 wineries, 1 brewery, 1 distillery)" },
+      { label: "Loop length", value: "~15 miles" },
+      { label: "Best season", value: "May–October" },
+      { label: "Designated driver", value: "Required" },
+      { label: "Average tour cost", value: "$60–$120/person" },
+    ],
+    keywords: [
+      "Waconia wineries",
+      "Waconia breweries",
+      "Schram Vineyards",
+      "Sovereign Estate Wine",
+      "Waconia wine tour",
+      "Carver County wineries",
+    ],
+    articleSection: "Travel & Things to Do",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Carver County", anchor: "carver-county" },
+    ],
+    relatedGuides: [
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+      { title: "Where to Stay", readTime: "5 min read", href: "/hotels" },
+      { title: "Best of Waconia", readTime: "4 min read", href: "/best-of-waconia" },
+    ],
+    faqs: [
+      {
+        question: "How many wineries are in Waconia, MN?",
+        answer: "Two: Schram Vineyards Winery & Brewery on the rolling farmland west of town, and Sovereign Estate Wine on the north shore of Lake Waconia. Both are open to the public and produce estate wines from cold-climate Minnesota grape varieties.",
+      },
+      {
+        question: "Are there breweries in Waconia, MN?",
+        answer: "Yes. Waconia Brewing Company anchors downtown and is the city's main craft brewery. Schram Vineyards also operates an in-house brewery alongside its winery. Both are open to the public; Waconia Brewing's hours are weekend-focused.",
+      },
+      {
+        question: "Can I do a Waconia wine tour without a car?",
+        answer: "Sort of. There is no transit between the wineries and breweries; you'll need a designated driver, rideshare, or local tour service. Waconia's rideshare market is functional but limited — pre-book pickups for evening hops, and don't expect immediate availability.",
+      },
+      {
+        question: "How long does a Waconia winery and brewery tour take?",
+        answer: "Plan five to seven hours for the full four-stop loop (Schram → Sovereign → Waconia Brewing → J. Carver). A shorter two-stop afternoon (Schram + Sovereign) takes about three hours. A downtown-only evening (Waconia Brewing + J. Carver) takes about two hours.",
+      },
+      {
+        question: "Is there a craft distillery in Waconia?",
+        answer: "Yes — J. Carver Distillery in Waconia hand-produces small-batch craft whiskey, gin, and vodka. Their cocktail room serves classic and seasonal drinks made entirely with house spirits. Weekend distillery tours go behind the still.",
       },
     ],
   },
