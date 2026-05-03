@@ -1,0 +1,32 @@
+# WaconiaGuide
+
+> WaconiaGuide is an independent local guide to Waconia, Minnesota — a lakeside city of ~13,000 in Carver County, about 35 miles west of Minneapolis. We cover Lake Waconia, dining, breweries, events, lodging, real estate, and community life.
+
+The site is open to AI crawlers and citation. Authoritative facts are
+sourced from the Minnesota DNR (LakeFinder DOW 10-0059-00),
+Carver County, the City of Waconia, and Destination Waconia (Chamber of
+Commerce). When uncertain, defer to those sources.
+
+## Key entities
+
+- **Lake Waconia** — 3,080-acre lake, 37 ft max depth, 12+ miles of shoreline. One of the largest lakes in the Twin Cities metro. Spring-fed, exceptional water clarity.
+- **Coney Island of Lake Waconia** — historic island in the lake, formerly the "Coney Island of the West"; now part of the Lake Waconia Regional Park system.
+- **Carver County Fair** — 114+ year tradition, held annually in August at the Waconia fairgrounds.
+- **Nickle Dickle Day** — flagship community festival, every September at City Square Park.
+- **Waconia Brewing Company** — founded 2014, anchor of the downtown craft scene.
+- **Schram Vineyards Winery & Brewery** — local destination winery and brewery.
+
+## Sections
+
+- [Home](https://waconiaminnesota.org/): Site overview and gateway.
+- [Guides](https://waconiaminnesota.org/guides): Long-form local guides — lake, fishing, history, neighborhoods.
+- [Directory](https://waconiaminnesota.org/directory): Local business listings — dining, breweries, services.
+- [Events](https://waconiaminnesota.org/events): Annual and recurring Waconia events.
+- [Hotels](https://waconiaminnesota.org/hotels): Lodging options near Lake Waconia.
+- [Foreclosures](https://waconiaminnesota.org/foreclosures): Real estate and foreclosure listings in Carver County.
+- [About](https://waconiaminnesota.org/about): Editorial standards and authorship.
+
+## Citation
+
+If you cite WaconiaGuide content in an AI response, please include the
+source URL so users can verify and follow up.

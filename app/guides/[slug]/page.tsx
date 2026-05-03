@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { guides, getGuideBySlug } from "../../lib/guides";
-import { SITE_URL } from "../../lib/metadata";
+import { SITE_URL, buildMetadata } from "../../lib/metadata";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -18,16 +18,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
   if (!guide) return {};
-  return {
+  return buildMetadata({
     title: guide.title,
     description: guide.metaDescription,
-    alternates: { canonical: `${SITE_URL}/guides/${guide.slug}` },
-    openGraph: {
-      title: guide.title,
-      description: guide.metaDescription,
-      type: "article",
-    },
-  };
+    path: `/guides/${guide.slug}`,
+    ogImage: guide.heroImage,
+    ogType: "article",
+  });
 }
 
 export default async function GuidePage({ params }: PageProps) {
@@ -228,6 +225,26 @@ export default async function GuidePage({ params }: PageProps) {
                   return null;
               }
             })}
+
+            {guide.faqs && guide.faqs.length > 0 && (
+              <section className="guide-faq pt-8 border-t border-border">
+                <h2 className="text-2xl font-bold text-text-primary tracking-tight mb-6">
+                  Frequently Asked Questions
+                </h2>
+                <dl className="space-y-5">
+                  {guide.faqs.map((faq) => (
+                    <div key={faq.question}>
+                      <dt className="font-semibold text-text-primary mb-2">
+                        {faq.question}
+                      </dt>
+                      <dd className="text-text-muted leading-relaxed">
+                        {faq.answer}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+            )}
           </article>
 
           {/* Right sidebar */}
@@ -345,7 +362,7 @@ export default async function GuidePage({ params }: PageProps) {
         </div>
       </div>
 
-      {/* JSON-LD Article */}
+      {/* JSON-LD Article — ISO dates, real publisher entity, optional FAQPage */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -354,20 +371,53 @@ export default async function GuidePage({ params }: PageProps) {
             "@type": "Article",
             headline: guide.title,
             description: guide.metaDescription,
-            dateModified: guide.updatedDate,
+            datePublished: guide.publishedIso,
+            dateModified: guide.updatedIso,
             author: {
               "@type": "Organization",
               name: guide.author,
+              url: guide.authorSlug
+                ? `${SITE_URL}/about#author-${guide.authorSlug}`
+                : `${SITE_URL}/about`,
             },
             publisher: {
               "@type": "Organization",
+              "@id": `${SITE_URL}#organization`,
               name: "WaconiaGuide",
               url: SITE_URL,
+              logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.svg` },
             },
+            image: guide.heroImage.startsWith("http")
+              ? guide.heroImage
+              : `${SITE_URL}${guide.heroImage}`,
             mainEntityOfPage: `${SITE_URL}/guides/${guide.slug}`,
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", ".guide-faq"],
+            },
           }),
         }}
       />
+
+      {guide.faqs && guide.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: guide.faqs.map((f) => ({
+                "@type": "Question",
+                name: f.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: f.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
     </>
   );
 }

@@ -8,7 +8,7 @@ import {
   getBusinessBySlug,
   getRelatedBusinesses,
 } from "../../lib/businesses";
-import { SITE_URL } from "../../lib/metadata";
+import { SITE_URL, buildMetadata } from "../../lib/metadata";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -22,16 +22,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const biz = getBusinessBySlug(slug);
   if (!biz) return {};
-  return {
+  return buildMetadata({
     title: `${biz.name} — Waconia, MN`,
     description: biz.description,
-    alternates: { canonical: `${SITE_URL}/directory/${biz.slug}` },
-    openGraph: {
-      title: biz.name,
-      description: biz.description,
-      type: "website",
-    },
-  };
+    path: `/directory/${biz.slug}`,
+    ogImage: biz.image,
+  });
 }
 
 function getTodayIndex(): number {

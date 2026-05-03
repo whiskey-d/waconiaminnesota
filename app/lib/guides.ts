@@ -3,8 +3,11 @@ export interface Guide {
   title: string;
   metaDescription: string;
   heroImage: string;
-  updatedDate: string;
+  updatedDate: string;          // human-readable, e.g. "January 5, 2025"
+  updatedIso: string;           // ISO 8601, e.g. "2025-01-05"
+  publishedIso: string;         // ISO 8601 first-published date
   author: string;
+  authorSlug?: string;          // links to /about#author-<slug>
   stats: { label: string; value: string }[];
   content: GuideSection[];
   sidebarMap: {
@@ -13,6 +16,7 @@ export interface Guide {
     waterClarity: string;
   };
   relatedGuides: { title: string; readTime: string; href: string }[];
+  faqs?: { question: string; answer: string }[];
 }
 
 export interface GuideSection {
@@ -37,7 +41,10 @@ export const guides: Guide[] = [
     heroImage:
       "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1600",
     updatedDate: "December 15, 2024",
-    author: "WaconiaGuide Staff",
+    updatedIso: "2024-12-15",
+    publishedIso: "2024-08-01",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
     stats: [
       { label: "Surface Area", value: "3,080 Acres" },
       { label: "Max Depth", value: "37 Feet" },
@@ -195,14 +202,36 @@ export const guides: Guide[] = [
         href: "/guides/lake-waconia",
       },
       {
-        title: "Best Restaurants in Waconia",
-        readTime: "5 min read",
-        href: "/directory",
+        title: "Lake Waconia Ice Fishing",
+        readTime: "7 min read",
+        href: "/guides/lake-waconia-ice-fishing",
       },
       {
-        title: "Waconia Events Calendar",
-        readTime: "3 min read",
-        href: "/events",
+        title: "Lake Waconia Boat Rentals",
+        readTime: "5 min read",
+        href: "/guides/lake-waconia-boat-rentals",
+      },
+    ],
+    faqs: [
+      {
+        question: "What fish are in Lake Waconia?",
+        answer: "Lake Waconia (DOW 10-0059-00) supports walleye, largemouth bass, northern pike, muskie, bluegill, crappie, and yellow perch. Walleye is the most-sought species and is regularly stocked by the Minnesota DNR.",
+      },
+      {
+        question: "Do you need a license to fish Lake Waconia?",
+        answer: "Yes. A valid Minnesota fishing license is required for all anglers age 16 and older. Licenses can be purchased online at the MN DNR website or at sporting goods retailers in Waconia and Carver County.",
+      },
+      {
+        question: "Are there public boat launches on Lake Waconia?",
+        answer: "Yes — Lake Waconia has three free public boat launches: the city ramp off Lake Drive on the east shore, the Lake Waconia Regional Park ramp on the south shore, and a third access point on the northwest end of the lake.",
+      },
+      {
+        question: "When is ice fishing safe on Lake Waconia?",
+        answer: "Lake Waconia typically has safe ice from mid-December through early March. Always check ice thickness yourself — at least 4 inches of new clear ice is the minimum for foot traffic, 8–12 inches for snowmobiles or ATVs.",
+      },
+      {
+        question: "What is the best time of year to fish Lake Waconia?",
+        answer: "Spring (post ice-out through early June) is prime walleye season. Summer is best for bass and muskie. Fall delivers trophy walleye on deep structure. Winter ice fishing produces consistent walleye and panfish action.",
       },
     ],
   },
@@ -214,7 +243,10 @@ export const guides: Guide[] = [
     heroImage:
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80",
     updatedDate: "January 5, 2025",
-    author: "WaconiaGuide Staff",
+    updatedIso: "2025-01-05",
+    publishedIso: "2024-08-01",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
     stats: [
       { label: "Surface Area", value: "3,080 Acres" },
       { label: "Max Depth", value: "37 Feet" },
@@ -332,14 +364,36 @@ export const guides: Guide[] = [
         href: "/guides/lake-waconia-fishing",
       },
       {
-        title: "Best Restaurants in Waconia",
-        readTime: "5 min read",
-        href: "/directory",
+        title: "Lake Waconia Regional Park",
+        readTime: "6 min read",
+        href: "/guides/lake-waconia-regional-park",
       },
       {
-        title: "Waconia Events Calendar",
-        readTime: "3 min read",
-        href: "/events",
+        title: "Coney Island of Lake Waconia",
+        readTime: "5 min read",
+        href: "/guides/coney-island-lake-waconia",
+      },
+    ],
+    faqs: [
+      {
+        question: "How big is Lake Waconia?",
+        answer: "Lake Waconia covers 3,080 acres with a maximum depth of 37 feet and over 12 miles of shoreline. It is one of the largest lakes in the Twin Cities metropolitan area.",
+      },
+      {
+        question: "Where is Lake Waconia located?",
+        answer: "Lake Waconia is located in Waconia, Minnesota, in Carver County — approximately 35 miles west of downtown Minneapolis via Highway 5.",
+      },
+      {
+        question: "Can you swim in Lake Waconia?",
+        answer: "Yes. Lake Waconia Regional Park on the south shore features a public swimming beach with a gradual sandy entry, lifeguards during summer months, picnic shelters, restrooms, and a playground. The beach is typically open Memorial Day through Labor Day.",
+      },
+      {
+        question: "Is there an island in Lake Waconia?",
+        answer: "Yes — Coney Island of Lake Waconia, historically called the 'Coney Island of the West', sits in the middle of the lake. In the late 1800s and early 1900s it was a popular Minnesota resort destination. Today the island is part of the Lake Waconia Regional Park system.",
+      },
+      {
+        question: "What does 'Waconia' mean?",
+        answer: "'Waconia' is derived from the Dakota word 'Wakonja' (also spelled Wakhanyeza or similar), generally translated as 'fountain' or 'spring of water' — a reference to the lake's clear spring-fed waters.",
       },
     ],
   },
