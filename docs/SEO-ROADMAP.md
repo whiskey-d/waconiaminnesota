@@ -3,6 +3,10 @@
 Living progress tracker for waconiaminnesota.org SEO/GEO work.
 Started 2026-05-03.
 
+> **Maintaining the site over time?** See **[`QUARTERLY-REFRESH.md`](./QUARTERLY-REFRESH.md)**
+> for the runbook and **[`CONTENT-INVENTORY.md`](./CONTENT-INVENTORY.md)** for
+> the full content cadence map. Run `npm run staleness` to flag stale guides.
+
 ## Status legend
 - [ ] = not started
 - [~] = in progress
