@@ -26,13 +26,21 @@ export default function EventsPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
       {/* Header */}
-      <div className="mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-text-primary tracking-tight">
-          Local Events
-        </h1>
-        <p className="text-text-muted mt-2">
-          What&apos;s happening in Waconia — from lakeside festivals to weekly markets.
-        </p>
+      <div className="mb-8 flex items-start justify-between gap-4 flex-wrap">
+        <div>
+          <h1 className="text-3xl sm:text-4xl font-bold text-text-primary tracking-tight">
+            Local Events
+          </h1>
+          <p className="text-text-muted mt-2">
+            What&apos;s happening in Waconia — from lakeside festivals to weekly markets.
+          </p>
+        </div>
+        <a
+          href="/events.ics"
+          className="inline-flex items-center gap-2 border border-border hover:border-primary/40 text-text-primary text-sm font-medium px-4 py-2 rounded-full transition-colors"
+        >
+          📅 Add to Calendar
+        </a>
       </div>
 
       {/* Filter pills */}

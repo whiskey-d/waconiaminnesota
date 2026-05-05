@@ -14,6 +14,8 @@ const exploreLinks: FooterLink[] = [
   { href: "/about", label: "About WaconiaGuide" },
   { href: "/contact", label: "Contact" },
   { href: "/glossary", label: "Glossary" },
+  { href: "/faqs", label: "All FAQs" },
+  { href: "/changelog", label: "Changelog" },
 ];
 
 const communityLinks: FooterLink[] = [
@@ -121,6 +123,14 @@ export function SiteFooter() {
               when things change.
             </p>
             <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/best-of-waconia"
+                  className="text-sm text-gray-300 hover:text-white transition-colors"
+                >
+                  Best of Waconia →
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/guides/things-to-do-waconia"

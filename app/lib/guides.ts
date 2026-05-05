@@ -18,6 +18,17 @@ export interface Guide {
   sidebarFacts?: { label: string; value: string }[];
   relatedGuides: { title: string; readTime: string; href: string }[];
   faqs?: { question: string; answer: string }[];
+  howTo?: {
+    name: string;
+    description: string;
+    totalTime?: string; // ISO 8601 duration, e.g. "PT2H"
+    estimatedCost?: { value: string; currency: string };
+    tools?: string[];
+    steps: { name: string; text: string }[];
+  };
+  keywords?: string[];
+  articleSection?: string;
+  glossaryTerms?: { term: string; anchor: string }[];
 }
 
 export interface GuideSection {
@@ -196,6 +207,21 @@ export const guides: Guide[] = [
       boatLaunchFee: "None — State",
       waterClarity: "Excellent",
     },
+    keywords: [
+      "Lake Waconia fishing",
+      "Lake Waconia walleye",
+      "Lake Waconia bass fishing",
+      "Lake Waconia muskie",
+      "Carver County fishing",
+      "DOW 10-0059-00",
+    ],
+    articleSection: "Fishing",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "DOW number", anchor: "dow-number" },
+      { term: "AIS (Aquatic Invasive Species)", anchor: "ais" },
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+    ],
     relatedGuides: [
       {
         title: "Lake Waconia Complete Guide",
@@ -358,6 +384,22 @@ export const guides: Guide[] = [
       boatLaunchFee: "None — State",
       waterClarity: "Excellent",
     },
+    keywords: [
+      "Lake Waconia",
+      "Lake Waconia Minnesota",
+      "Carver County lakes",
+      "things to do Lake Waconia",
+      "Lake Waconia boating",
+      "Lake Waconia swimming",
+    ],
+    articleSection: "Lake & Outdoors",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+      { term: "DOW number", anchor: "dow-number" },
+      { term: "AIS (Aquatic Invasive Species)", anchor: "ais" },
+    ],
     relatedGuides: [
       {
         title: "Lake Waconia Fishing Guide",
@@ -495,6 +537,19 @@ export const guides: Guide[] = [
       { label: "Hotel demolished", value: "1965" },
       { label: "Cost to visit", value: "Free" },
     ],
+    keywords: [
+      "Coney Island of the West",
+      "Coney Island Lake Waconia",
+      "Waconia island history",
+      "Minnesota resort history",
+      "Lake Waconia island",
+    ],
+    articleSection: "History",
+    glossaryTerms: [
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+    ],
     relatedGuides: [
       { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
       { title: "Waconia History", readTime: "9 min read", href: "/guides/waconia-history" },
@@ -615,6 +670,22 @@ export const guides: Guide[] = [
       { label: "Lake activity", value: "Year-round" },
       { label: "Drive from MSP", value: "~45 min" },
     ],
+    keywords: [
+      "things to do in Waconia",
+      "Waconia Minnesota activities",
+      "Waconia day trip",
+      "best of Waconia",
+      "Waconia weekend",
+      "Minneapolis day trips",
+    ],
+    articleSection: "Travel & Things to Do",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
+      { term: "Nickle Dickle Day", anchor: "nickle-dickle" },
+      { term: "Carver County Fair", anchor: "carver-county-fair" },
+    ],
     relatedGuides: [
       { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
       { title: "Coney Island of Lake Waconia", readTime: "5 min read", href: "/guides/coney-island-lake-waconia" },
@@ -734,6 +805,19 @@ export const guides: Guide[] = [
       { label: "Dogs", value: "Trails only" },
       { label: "Open year-round", value: "Yes" },
     ],
+    keywords: [
+      "Lake Waconia Regional Park",
+      "Lake Waconia beach",
+      "Waconia swim beach",
+      "Carver County parks",
+      "Lake Waconia boat ramp",
+    ],
+    articleSection: "Parks & Outdoors",
+    glossaryTerms: [
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
+    ],
     relatedGuides: [
       { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
       { title: "Lake Waconia Boat Rentals", readTime: "5 min read", href: "/guides/lake-waconia-boat-rentals" },
@@ -847,6 +931,58 @@ export const guides: Guide[] = [
       publicAccess: "3 Locations",
       boatLaunchFee: "None — State",
       waterClarity: "Excellent",
+    },
+    keywords: [
+      "Lake Waconia boat rentals",
+      "pontoon rental Waconia MN",
+      "kayak rental Lake Waconia",
+      "Lake Waconia paddleboard",
+      "boat launch Waconia",
+    ],
+    articleSection: "Boating",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "AIS (Aquatic Invasive Species)", anchor: "ais" },
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+    ],
+    howTo: {
+      name: "How to Rent a Pontoon Boat on Lake Waconia",
+      description:
+        "Step-by-step guide to renting and launching a pontoon on Lake Waconia, Minnesota.",
+      totalTime: "PT4H",
+      estimatedCost: { value: "500", currency: "USD" },
+      tools: [
+        "Driver's license",
+        "Minnesota Watercraft Operator's Permit (if born after July 1, 1987)",
+        "Sun protection",
+        "Drinking water",
+      ],
+      steps: [
+        {
+          name: "Reserve early",
+          text: "Reserve a pontoon at Lake Waconia Marine at least three weeks ahead for July and August weekends. Holiday weekends book out by mid-spring.",
+        },
+        {
+          name: "Verify your operator's permit",
+          text: "Anyone born after July 1, 1987 must hold a Minnesota Watercraft Operator's Permit, earned through a free MN DNR online course. Bring physical or digital proof on rental day.",
+        },
+        {
+          name: "Arrive at the marina",
+          text: "Arrive 15 minutes before your reservation. Bring a driver's license and payment method. The operator will brief you on the boat and provide life jackets.",
+        },
+        {
+          name: "Comply with AIS rules",
+          text: "Lake Waconia is an Aquatic Invasive Species checkpoint. The marina inspects rental equipment; if you're trailering your own boat in, the inspection is your responsibility.",
+        },
+        {
+          name: "Plan your route",
+          text: "From the south shore launch, head out toward Coney Island for the classic Lake Waconia loop. Mornings are calmest. Sunset cruises are the highlight.",
+        },
+        {
+          name: "Return on time",
+          text: "Late returns typically incur a per-hour penalty. Refuel at the marina pump or the closest gas station before returning the boat to avoid surcharges.",
+        },
+      ],
     },
     relatedGuides: [
       { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
@@ -970,6 +1106,67 @@ export const guides: Guide[] = [
       publicAccess: "3 Plowed",
       boatLaunchFee: "None",
       waterClarity: "Excellent",
+    },
+    keywords: [
+      "Lake Waconia ice fishing",
+      "Lake Waconia walleye winter",
+      "ice fishing Carver County",
+      "Lake Waconia Crappie Contest",
+      "Minnesota ice fishing safety",
+    ],
+    articleSection: "Fishing",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "DOW number", anchor: "dow-number" },
+      { term: "AIS (Aquatic Invasive Species)", anchor: "ais" },
+    ],
+    howTo: {
+      name: "How to Ice Fish for Walleye on Lake Waconia",
+      description:
+        "Practical step-by-step approach to ice fishing Lake Waconia for walleye in safe early/mid-season ice conditions.",
+      totalTime: "PT3H",
+      tools: [
+        "Ice rod (24–30\")",
+        "4–8 lb fluorocarbon line",
+        "Fathead minnows",
+        "Buck-Shot Rattle Spoons or jigging spoons",
+        "Tip-ups",
+        "Flasher (Vexilar / Marcum / Garmin)",
+        "Portable shelter",
+        "Spud bar or auger",
+        "Ice cleats",
+        "Minnesota fishing license",
+      ],
+      steps: [
+        {
+          name: "Check ice safety yourself",
+          text: "Always measure ice before walking on it. MN DNR guidance: 4 inches new clear ice for foot traffic, 5–7 inches for snowmobile or ATV, 8–12 inches before driving any vehicle on the ice. White or layered ice should be doubled.",
+        },
+        {
+          name: "Pick the right depth",
+          text: "Target the 15-to-25-foot breakline transitions. The south basin and the deep flats off the east shore both produce. Use the DNR LakeFinder bathymetric map (DOW 10-0059-00) to locate structure before walking out.",
+        },
+        {
+          name: "Drill multiple holes",
+          text: "Drill 4–6 holes across a depth gradient (e.g., 12, 15, 18, 22, 25 feet). This lets you find which depth fish are using that day without re-drilling.",
+        },
+        {
+          name: "Set tip-ups with minnows",
+          text: "Run tip-ups baited with fathead minnows at the deeper holes for passive walleye coverage. Set the tip-up so the bait sits 6–12 inches above the bottom.",
+        },
+        {
+          name: "Jig actively at the rest",
+          text: "Use a flasher to find suspended fish. Work jigging spoons (tipped with a minnow head) with sharp pops followed by long pauses — most strikes come on the pause.",
+        },
+        {
+          name: "Fish dawn and dusk windows",
+          text: "Walleye bite hardest in the first hour of light and last hour of dusk. Plan your trip so you're set up before either window.",
+        },
+        {
+          name: "Pack out everything",
+          text: "Trash on the ice ends up in the lake at thaw. Lake Waconia is an active AIS checkpoint; clean and dry equipment between lakes.",
+        },
+      ],
     },
     relatedGuides: [
       { title: "Lake Waconia Fishing", readTime: "12 min read", href: "/guides/lake-waconia-fishing" },
@@ -1097,6 +1294,20 @@ export const guides: Guide[] = [
       { label: "County", value: "Carver" },
       { label: "ZIP code", value: "55387" },
       { label: "Name origin", value: "Dakota" },
+    ],
+    keywords: [
+      "Waconia history",
+      "Waconia name meaning",
+      "Dakota Wakonja",
+      "Coney Island of the West",
+      "Carver County history",
+    ],
+    articleSection: "History",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
+      { term: "Carver County", anchor: "carver-county" },
     ],
     relatedGuides: [
       { title: "Coney Island of Lake Waconia", readTime: "5 min read", href: "/guides/coney-island-lake-waconia" },
@@ -1241,6 +1452,22 @@ export const guides: Guide[] = [
       { label: "Sales tax", value: "~7.375%" },
       { label: "ZIP code", value: "55387" },
     ],
+    keywords: [
+      "moving to Waconia",
+      "Waconia MN relocation",
+      "Waconia neighborhoods",
+      "Waconia schools",
+      "Waconia commute",
+      "ISD 110",
+    ],
+    articleSection: "Living in Waconia",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "ISD 110", anchor: "isd-110" },
+      { term: "Carver County", anchor: "carver-county" },
+      { term: "Ridgeview Medical Center", anchor: "ridgeview" },
+      { term: "55387", anchor: "55387" },
+    ],
     relatedGuides: [
       { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
       { title: "Waconia History", readTime: "9 min read", href: "/guides/waconia-history" },
@@ -1374,6 +1601,20 @@ export const guides: Guide[] = [
       { label: "Conference", value: "Wright County" },
       { label: "Mascot", value: "Wildcats" },
     ],
+    keywords: [
+      "Waconia schools",
+      "ISD 110",
+      "Waconia Public Schools",
+      "Waconia High School",
+      "Bayview Elementary Waconia",
+      "Wright County Conference",
+    ],
+    articleSection: "Living in Waconia",
+    glossaryTerms: [
+      { term: "ISD 110", anchor: "isd-110" },
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Carver County", anchor: "carver-county" },
+    ],
     relatedGuides: [
       { title: "Moving to Waconia", readTime: "8 min read", href: "/guides/moving-to-waconia" },
       { title: "Waconia History", readTime: "9 min read", href: "/guides/waconia-history" },
@@ -1497,6 +1738,19 @@ export const guides: Guide[] = [
       { label: "Public transit", value: "None direct" },
       { label: "Parking", value: "Free" },
     ],
+    keywords: [
+      "drive to Waconia",
+      "Minneapolis to Waconia",
+      "Waconia from MSP airport",
+      "how to get to Waconia",
+      "Waconia parking",
+    ],
+    articleSection: "Travel & Things to Do",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Carver County", anchor: "carver-county" },
+      { term: "55387", anchor: "55387" },
+    ],
     relatedGuides: [
       { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
       { title: "Where to Stay", readTime: "5 min read", href: "/hotels" },
@@ -1619,6 +1873,19 @@ export const guides: Guide[] = [
       { label: "Park entry", value: "Free" },
       { label: "Beach", value: "Regional Park" },
       { label: "Dogs", value: "Trails only" },
+    ],
+    keywords: [
+      "Waconia parks",
+      "City Square Park Waconia",
+      "Bayview Park Waconia",
+      "Waconia trails",
+      "Waconia playgrounds",
+    ],
+    articleSection: "Parks & Outdoors",
+    glossaryTerms: [
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+      { term: "City Square Park", anchor: "city-square-park" },
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
     ],
     relatedGuides: [
       { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
@@ -1749,6 +2016,19 @@ export const guides: Guide[] = [
       boatLaunchFee: "None — State",
       waterClarity: "Excellent",
     },
+    keywords: [
+      "Lake Waconia depth map",
+      "Lake Waconia bathymetry",
+      "DOW 10-0059-00",
+      "Lake Waconia max depth",
+      "Lake Waconia DNR survey",
+    ],
+    articleSection: "Lake & Outdoors",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "DOW number", anchor: "dow-number" },
+      { term: "AIS (Aquatic Invasive Species)", anchor: "ais" },
+    ],
     relatedGuides: [
       { title: "Lake Waconia Fishing Guide", readTime: "12 min read", href: "/guides/lake-waconia-fishing" },
       { title: "Lake Waconia Ice Fishing", readTime: "7 min read", href: "/guides/lake-waconia-ice-fishing" },
@@ -1890,6 +2170,19 @@ export const guides: Guide[] = [
       { label: "Minnetonka max depth", value: "113 ft" },
       { label: "Distance apart", value: "~12 miles" },
     ],
+    keywords: [
+      "Lake Waconia vs Lake Minnetonka",
+      "best lake Twin Cities",
+      "Lake Waconia vs Minnetonka comparison",
+      "Minnesota lake comparison",
+      "western metro lakes",
+    ],
+    articleSection: "Lake & Outdoors",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
+      { term: "DOW number", anchor: "dow-number" },
+    ],
     relatedGuides: [
       { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
       { title: "Lake Waconia Boat Rentals", readTime: "5 min read", href: "/guides/lake-waconia-boat-rentals" },
@@ -1915,6 +2208,548 @@ export const guides: Guide[] = [
       {
         question: "Should I visit Lake Waconia or Lake Minnetonka?",
         answer: "If you want easier public access, less crowded water, top walleye fishing, and a craft beverage scene on land, choose Lake Waconia. If you want the boat-up restaurant scene, more variety in bays, and the metro's most-developed lake culture, choose Lake Minnetonka. Many locals do both.",
+      },
+    ],
+  },
+  // ────────────────────────────────────────────────────────────────────
+  // Round 8 seasonal landing guides — added 2026-05-03
+  // ────────────────────────────────────────────────────────────────────
+  {
+    slug: "waconia-summer",
+    title: "Summer in Waconia, Minnesota: The Local's Season Guide",
+    metaDescription:
+      "Everything to do in Waconia, MN during summer — Lake Waconia, the beach, the farmers market, the Carver County Fair, fishing, dining, and seasonal events.",
+    heroImage:
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Beach Open", value: "Memorial–Labor" },
+      { label: "Avg High (July)", value: "82°F" },
+      { label: "Lake Temp", value: "75°F+" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Summer is when Waconia hits its full identity. The lake is warm, the patios are open, every weekend has a festival, and the long Minnesota days mean you can fish at sunrise, swim in the afternoon, and watch the sunset over the lake from a winery patio — all in the same Saturday. This is the local-first guide to the best summer weeks of the year.",
+      },
+      {
+        type: "heading",
+        heading: "On the Water",
+      },
+      {
+        type: "text",
+        body: "Lake Waconia is the centerpiece. The Lake Waconia Regional Park beach opens Memorial Day weekend with lifeguards on duty through Labor Day. Pontoon, kayak, and paddleboard rentals from Lake Waconia Marine handle the busiest weeks of the year. Three free public boat launches, three free public beaches and access points, water clarity that holds through the warm months. For evening cruises, the sunset window from 7:30 to 9:00pm in mid-summer is unbeatable.",
+      },
+      {
+        type: "heading",
+        heading: "Summer Events Calendar",
+      },
+      {
+        type: "text",
+        body: "The Waconia Farmers Market runs every Thursday from 4 to 7pm, June through September, in the Waconia Square parking lot. The Carver County Fair lands in mid-August at the fairgrounds — five days of livestock shows, tractor pulls, demolition derby, midway, and live music. Schram Vineyards and Sovereign Estate Wine both host live music many weekends through the summer. Watch the events calendar for the Lake Waconia Crappie Contest's summer fishing tournament announcements.",
+      },
+      {
+        type: "heading",
+        heading: "Eating & Drinking Outside",
+      },
+      {
+        type: "text",
+        body: "Summer is patio season. Lola's Lakehouse Eatery has the only true lake-view patio in town. Iron Tap's sidewalk patio downtown is the after-work standby. Waconia Brewing Co. sets up its outdoor beer garden with fire pits. Schram Vineyards' vineyard lawn and Sovereign Estate Wine's tiered lake patio both deliver scenic outdoor sipping. Mocha Monkey's sidewalk seating handles the morning rotation.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🏖",
+            title: "Best Beach Day",
+            body: "Lake Waconia Regional Park beach. Free, sandy entry, lifeguards on duty. Arrive before 11am or after 4pm to avoid weekend parking pressure.",
+            link: { label: "Park Guide →", href: "/guides/lake-waconia-regional-park" },
+          },
+          {
+            icon: "🚣",
+            title: "Best Sunset",
+            body: "Pontoon rental from Lake Waconia Marine, west-facing on the open lake at 7:30pm. Or grab a Sovereign Estate Wine reservation.",
+            link: { label: "Boat Rentals →", href: "/guides/lake-waconia-boat-rentals" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Summer Fishing",
+      },
+      {
+        type: "text",
+        body: "Summer transforms Lake Waconia into a bass and muskie playground. The thermocline sets up around 18 feet, concentrating walleye on the breaklines. The west bay's cabbage weed beds hold muskie throughout the summer. Topwater bass action at dawn and dusk along the dock lines is reliable. See the full seasonal breakdown in our fishing guide.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan Your Summer in Waconia",
+        ctaDescription:
+          "Browse the directory by category, lock in events on your calendar, and reserve lake gear early — the best weeks fill fast.",
+        buttons: [
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "primary" },
+          { label: "Subscribe to Events", href: "/events.ics", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Beach season", value: "Memorial–Labor" },
+      { label: "Avg July high", value: "82°F" },
+      { label: "Avg July low", value: "62°F" },
+      { label: "Lake temp peak", value: "75°F+" },
+      { label: "Sunset (mid-Jun)", value: "9:03pm" },
+    ],
+    keywords: [
+      "Waconia summer",
+      "Lake Waconia summer",
+      "things to do summer Waconia",
+      "Waconia July events",
+      "Waconia beach summer",
+    ],
+    articleSection: "Seasonal",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+      { term: "Carver County Fair", anchor: "carver-county-fair" },
+    ],
+    relatedGuides: [
+      { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
+      { title: "Lake Waconia Boat Rentals", readTime: "5 min read", href: "/guides/lake-waconia-boat-rentals" },
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+    ],
+    faqs: [
+      {
+        question: "When does the Lake Waconia beach open?",
+        answer: "The Lake Waconia Regional Park beach opens Memorial Day weekend and stays open through Labor Day. Lifeguard hours are posted at the entrance and on the Carver County Parks website.",
+      },
+      {
+        question: "When is the Carver County Fair?",
+        answer: "The Carver County Fair is held annually for five days in mid-August at the Carver County Fairgrounds in Waconia. The 2026 fair runs August 12–16.",
+      },
+      {
+        question: "When is the Waconia Farmers Market?",
+        answer: "Every Thursday from 4 to 7pm, June through September, in the Waconia Square parking lot at 224 First Street.",
+      },
+      {
+        question: "Is Lake Waconia warm enough to swim in summer?",
+        answer: "Yes. Lake Waconia surface temperatures peak in the mid-to-upper 70s°F from late June through August. The Lake Waconia Regional Park beach has gradual sandy entry, ideal for families.",
+      },
+    ],
+  },
+  {
+    slug: "waconia-winter",
+    title: "Winter in Waconia, Minnesota: Ice Fishing, Skiing & Tree Lighting",
+    metaDescription:
+      "Winter in Waconia, MN — ice fishing on Lake Waconia, the Crappie Contest, cross-country ski trails, the Tree Lighting in the Park, and indoor escapes.",
+    heroImage:
+      "https://images.unsplash.com/photo-1518182170546-07661fd94144?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Avg High (Jan)", value: "23°F" },
+      { label: "Snow Avg", value: "50 inches" },
+      { label: "Ice Season", value: "Dec–Mar" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Winter in Waconia isn't a quiet season — it's a different one. The lake freezes over and becomes a 3,080-acre walking, fishing, and snowmobiling surface. The Tree Lighting in the Park kicks off the holidays the night after Thanksgiving. Cross-country skiers run the groomed regional park trails. Inside, the breweries, wineries, and cocktail rooms turn into the social anchors of cold weekends. This is the guide to making the most of the off-season.",
+      },
+      {
+        type: "heading",
+        heading: "Ice Fishing on Lake Waconia",
+      },
+      {
+        type: "text",
+        body: "Lake Waconia is one of the metro's best ice fishing destinations. Walleye, perch, crappie, and bluegill all bite consistently through the season. The annual Lake Waconia Crappie Contest, typically held in February, is one of the most popular tournaments in the western Twin Cities. All three public access points are plowed throughout the season. Always check ice yourself; conditions vary across the lake.",
+      },
+      {
+        type: "heading",
+        heading: "Cross-Country Skiing",
+      },
+      {
+        type: "text",
+        body: "The Lake Waconia Regional Park trails are groomed regularly through the winter for both classic and skate skiing. The trail network runs through prairie, oak savanna, and lakeshore — a quieter, more scenic ski than the busier metro park systems. Day-use parking is plowed; bring your own equipment.",
+      },
+      {
+        type: "heading",
+        heading: "Tree Lighting & Holiday Events",
+      },
+      {
+        type: "text",
+        body: "The Tree Lighting in the Park is Waconia's official kickoff to the holiday season. On the Friday after Thanksgiving (Black Friday) at 6pm, the community gathers at the City Square Park Gazebo for free hot cocoa, fire pits, and the official lighting of the community Christmas tree. Dress warmly. Surrounding downtown businesses run holiday hours and seasonal specials throughout December.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🥶",
+            title: "Igloos at Schram",
+            body: "Schram Vineyards Winery & Brewery's heated, see-through igloos book out weeks ahead from December through February. Reserved seating for 4–6, with food and drink service.",
+          },
+          {
+            icon: "🎬",
+            title: "Indoor Escapes",
+            body: "Emagine Waconia's reclining-seat luxury cinema and Garage Bowling & Bar are the local cold-weather defaults. Iron Tap and Waconia Brewing Co. handle the rest of the indoor evening rotation.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Practical Winter Notes",
+      },
+      {
+        type: "text",
+        body: "Lake Waconia typically has safe new clear ice by mid-December and remains safe through early March in a normal winter. MN DNR safety guidance: 4 inches new clear ice for foot traffic, 5–7 inches for snowmobile or ATV, 8–12 inches before driving any vehicle. Bring layered clothing and waterproof outer shells; the wind off the open lake is real. Most winter visitors keep emergency hand warmers and an extra pair of gloves in the car as a default.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Build Your Winter Day",
+        ctaDescription:
+          "An afternoon ski + an igloo wine reservation + a Crappie Contest dawn = a complete Waconia winter weekend.",
+        buttons: [
+          { label: "Ice Fishing Guide", href: "/guides/lake-waconia-ice-fishing", variant: "primary" },
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Avg Jan high", value: "23°F" },
+      { label: "Avg Jan low", value: "5°F" },
+      { label: "Snow average", value: "50 in/yr" },
+      { label: "Ice fishing", value: "Dec–March" },
+      { label: "Ski trails", value: "Groomed" },
+    ],
+    keywords: [
+      "Waconia winter",
+      "Lake Waconia ice fishing",
+      "Waconia Christmas",
+      "Tree Lighting Waconia",
+      "cross-country skiing Waconia",
+      "Crappie Contest Waconia",
+    ],
+    articleSection: "Seasonal",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "City Square Park", anchor: "city-square-park" },
+      { term: "Lake Waconia Regional Park", anchor: "regional-park" },
+    ],
+    relatedGuides: [
+      { title: "Lake Waconia Ice Fishing", readTime: "7 min read", href: "/guides/lake-waconia-ice-fishing" },
+      { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+    ],
+    faqs: [
+      {
+        question: "When is the Lake Waconia Crappie Contest?",
+        answer: "The Lake Waconia Crappie Contest is held annually, typically in February. Hundreds of anglers compete, prizes go to the largest crappies, and the event is family-friendly. Check destinationwaconia.org or the contest's social pages closer to the date for the current year's specifics.",
+      },
+      {
+        question: "When does the Tree Lighting in the Park happen?",
+        answer: "The Tree Lighting in the Park is held annually on the Friday after Thanksgiving (Black Friday) at 6pm at the City Square Park Gazebo in downtown Waconia. Free hot cocoa, fire pits, festive music, and the official lighting of the community Christmas tree.",
+      },
+      {
+        question: "Are the cross-country ski trails at Lake Waconia Regional Park groomed?",
+        answer: "Yes. Carver County grooms the Lake Waconia Regional Park trails regularly through the winter for both classic and skate cross-country skiing.",
+      },
+      {
+        question: "Is Lake Waconia ice fishing safe in early December?",
+        answer: "Lake Waconia typically has safe new clear ice by mid-December, but always measure ice yourself. MN DNR guidance is 4 inches minimum for foot traffic. Conditions vary across the lake — drill test holes as you walk and never go alone the first time on the ice.",
+      },
+    ],
+  },
+  {
+    slug: "waconia-fall",
+    title: "Fall in Waconia, Minnesota: Trophy Walleye, Scarecrows & Cool-Weather Patios",
+    metaDescription:
+      "Autumn in Waconia, MN — fall walleye, the Scarecrow Tour, harvest at Schram Vineyards, fall colors on Coney Island, and the best cold-weather patios.",
+    heroImage:
+      "https://images.unsplash.com/photo-1503416997304-7f8bf166c121?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Peak Color", value: "Mid–Late Oct" },
+      { label: "Avg High (Oct)", value: "55°F" },
+      { label: "Trophy Walleye", value: "Oct–Nov" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Fall is the underrated season in Waconia. The walleye bite turns trophy-grade. The hardwoods around Coney Island light up in mid-October. The Scarecrow Tour turns the whole town into an outdoor art gallery. Schram Vineyards is in harvest. The patios stay open with fire pits well into November. If you can only visit Waconia once, October is the smart bet.",
+      },
+      {
+        type: "heading",
+        heading: "Trophy Walleye Time",
+      },
+      {
+        type: "text",
+        body: "Autumn is trophy walleye season on Lake Waconia. As water temperatures drop, walleye move from summer patterns to fall feeding binges, staging on deep structure and rock piles before winter sets in. Crankbaits worked along the 15-to-25-foot breaklines are deadly effective. Focus on the main lake points and the deep sunken island off the south shore. Pre-spawn staging areas see heavy concentrations of fish; many anglers catch their personal-best walleye during the October and November bite.",
+      },
+      {
+        type: "heading",
+        heading: "Scarecrow Tour",
+      },
+      {
+        type: "text",
+        body: "The Waconia Scarecrow Tour is a beloved fall tradition that runs 10 days in mid-October, with creatively designed scarecrows placed at businesses and landmarks throughout the city. Self-guided walking or driving tour, vote for your favorite. Free, family-friendly, and a great excuse to combine downtown lunch and dinner with a stroll through every neighborhood.",
+      },
+      {
+        type: "heading",
+        heading: "Fall Colors",
+      },
+      {
+        type: "text",
+        body: "Peak color around Lake Waconia typically lands mid-to-late October, depending on the year. The hardwood stand on Coney Island turns first; the south shore around Lake Waconia Regional Park follows a week later. The most photogenic fall view is from the south shore looking across the lake toward Coney Island in the late afternoon golden hour. Bring a camera and budget time for the slow drive around the lake's perimeter.",
+      },
+      {
+        type: "heading",
+        heading: "Vineyard Harvest",
+      },
+      {
+        type: "text",
+        body: "Schram Vineyards Winery & Brewery is in harvest mode through September and into October. Tasting-room visits during harvest are particularly worthwhile — fresh pressings on tap, the vineyard in full late-season color, and the heated igloos start opening up by mid-October. Sovereign Estate Wine on the lakefront pairs naturally with a fall lake-shore walk.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🍂",
+            title: "Best Fall Photo",
+            body: "South shore of Lake Waconia, late afternoon, mid-to-late October. Coney Island and the north shore line up in peak color across the lake.",
+          },
+          {
+            icon: "🎃",
+            title: "Free Family Outing",
+            body: "The Scarecrow Tour, a self-guided walk or drive, is the best free fall family outing in town. Grab a downtown coffee, walk the route, vote for your favorite.",
+            link: { label: "Event Details →", href: "/events/scarecrow-tour-2026" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Cold-Weather Patios",
+      },
+      {
+        type: "text",
+        body: "Most Waconia patios stay open with fire pits well into November. Waconia Brewing Co.'s outdoor beer garden, Iron Tap's sidewalk patio (briefly), and Schram Vineyards' fire-pit lawn all carry the season. By early November, the heated igloos at Schram start booking out for the winter months.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan a Fall Weekend",
+        ctaDescription:
+          "Pair a Saturday morning walleye trip with the Scarecrow Tour in the afternoon and Schram Vineyards for sunset.",
+        buttons: [
+          { label: "Lake Waconia Fishing", href: "/guides/lake-waconia-fishing", variant: "primary" },
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Peak color", value: "Mid–late Oct" },
+      { label: "Avg Oct high", value: "55°F" },
+      { label: "Avg Oct low", value: "37°F" },
+      { label: "Trophy walleye", value: "Oct–Nov" },
+      { label: "Scarecrow Tour", value: "Oct 8–18 (2026)" },
+    ],
+    keywords: [
+      "Waconia fall",
+      "Lake Waconia fall colors",
+      "Scarecrow Tour Waconia",
+      "fall walleye Lake Waconia",
+      "Waconia October events",
+      "Schram Vineyards harvest",
+    ],
+    articleSection: "Seasonal",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
+    ],
+    relatedGuides: [
+      { title: "Lake Waconia Fishing", readTime: "12 min read", href: "/guides/lake-waconia-fishing" },
+      { title: "Coney Island of Lake Waconia", readTime: "5 min read", href: "/guides/coney-island-lake-waconia" },
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+    ],
+    faqs: [
+      {
+        question: "When is peak fall color in Waconia, MN?",
+        answer: "Peak fall color around Lake Waconia and Carver County typically lands mid-to-late October, depending on the year. The hardwoods on Coney Island and around the south shore deliver the most photogenic views.",
+      },
+      {
+        question: "When is the Waconia Scarecrow Tour?",
+        answer: "The Waconia Scarecrow Tour runs 10 days every October. The 2026 dates are October 8–18. Self-guided walking or driving tour with creatively designed scarecrows placed at businesses and landmarks throughout Waconia. Free.",
+      },
+      {
+        question: "Is fall a good time to fish Lake Waconia?",
+        answer: "Yes. Fall is trophy walleye time on Lake Waconia. Walleye stage on deep structure and rock piles before winter, and the October–November bite is when many anglers catch their personal-best walleye. Target 15-to-25-foot breaklines with crankbaits.",
+      },
+      {
+        question: "What is the weather like in Waconia in October?",
+        answer: "October in Waconia averages a high of 55°F and a low of 37°F, with cooler nights and warmer afternoons. Bring layered clothing — most fall days swing significantly between morning and afternoon.",
+      },
+    ],
+  },
+  // ────────────────────────────────────────────────────────────────────
+  // Round 11 — added 2026-05-03
+  // ────────────────────────────────────────────────────────────────────
+  {
+    slug: "waconia-wineries-breweries-tour",
+    title: "Waconia Wineries & Breweries: A Day-Tour Guide",
+    metaDescription:
+      "Plan a Waconia wine, beer, and spirits tour — Schram Vineyards, Sovereign Estate, Waconia Brewing, J. Carver Distillery. Routes, hours, and what to order.",
+    heroImage:
+      "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=1600&q=80",
+    updatedDate: "May 3, 2026",
+    updatedIso: "2026-05-03",
+    publishedIso: "2026-05-03",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Stops", value: "4 Producers" },
+      { label: "Total Drive", value: "~15 mi" },
+      { label: "Recommended Time", value: "5–7 hrs" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "In a thirty-mile radius, Waconia has quietly become one of Minnesota's denser craft-beverage clusters — two wineries, two breweries, and a craft distillery, all open to the public, all within a short drive of one another. This is the local-first day-tour guide: the order to visit, what to order, where to eat between stops, and how to do it without driving impaired.",
+      },
+      {
+        type: "heading",
+        heading: "The Route",
+      },
+      {
+        type: "text",
+        body: "Most locals run this tour in a clockwise loop: start at Schram Vineyards in the morning, head to Sovereign Estate Wine on Lake Waconia for late afternoon, drop into downtown for Waconia Brewing Co. early evening, and finish at J. Carver Distillery for after-dinner drinks. The total drive is about fifteen miles. Plan a designated driver, rideshare, or — better — book a local tour service that runs the loop for you.",
+      },
+      {
+        type: "heading",
+        heading: "Stop 1: Schram Vineyards Winery & Brewery",
+      },
+      {
+        type: "text",
+        body: "Start here. Schram is on rolling farmland west of town and is best in mid-morning to early afternoon when the sun lights the vineyard. Order a tasting flight (estate wines are made on-site, plus rotating in-house craft beer). Live music many weekends in season; heated igloos book out December–February. Allow 90 minutes to two hours.",
+      },
+      {
+        type: "heading",
+        heading: "Stop 2: Sovereign Estate Wine",
+      },
+      {
+        type: "text",
+        body: "Drive twenty minutes back toward the lake. Sovereign sits on Lake Waconia's north shore — a stone-and-glass tasting room with a tiered west-facing patio that catches the sunset. Try the Marquette and Frontenac (Minnesota cold-climate red varieties). If you're arriving by boat, dock space is available in summer. Allow an hour.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "Sovereign at sunset is the picture-postcard of Minnesota wine country. There's nowhere else in the metro quite like it.",
+        attribution: "Local advice",
+      },
+      {
+        type: "heading",
+        heading: "Stop 3: Waconia Brewing Company",
+      },
+      {
+        type: "text",
+        body: "Head into downtown. Waconia Brewing has been the cornerstone of the local craft scene since 2014. Open Friday through Sunday only, so plan accordingly. Get the flight to sample the rotating taps; the patio is dog-friendly and has fire pits. Trivia Wednesdays (when open) and live music Fridays add to the energy. Allow an hour. Pair with takeout from one of the downtown restaurants since the brewery has no kitchen.",
+      },
+      {
+        type: "heading",
+        heading: "Stop 4: J. Carver Distillery",
+      },
+      {
+        type: "text",
+        body: "Finish on the east side at J. Carver. Small-batch craft spirits — whiskey, gin, vodka — and a cocktail room serving classic and seasonal drinks made entirely with house spirits. Saturday distillery tours go behind the still. Order an old fashioned with the house whiskey and call it a day. Allow 45 minutes to an hour.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🚗",
+            title: "Don't Drive Impaired",
+            body: "Have a designated driver, use a rideshare for the inter-stop hops, or book a local tour service. The Waconia rideshare market is real but limited — pre-book if you're relying on Uber or Lyft for evening pickups.",
+          },
+          {
+            icon: "🍴",
+            title: "Eat Between Stops",
+            body: "Iron Tap, Lola's Lakehouse, or Mucho Mexican all work well as lunch or dinner stops between producers. Don't skip food — this is a long, leisurely tour, not a sprint.",
+            link: { label: "Restaurants directory →", href: "/directory/restaurants" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Quick Variations",
+      },
+      {
+        type: "text",
+        body: "If you only have an afternoon, pair Schram (1 hour) with Sovereign (1 hour) — the two wineries cover the bulk of the experience. If you only have an evening, Waconia Brewing + J. Carver (downtown adjacent) make a solid two-stop walking tour. If you're with a wedding party or larger group, Bayview Event Center and Schram both handle group bookings well; reserve weeks ahead.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan Your Tour",
+        ctaDescription:
+          "Combine the day-tour with overnight lodging and downtown dinner for a perfect weekend.",
+        buttons: [
+          { label: "Where to Stay", href: "/hotels", variant: "primary" },
+          { label: "Restaurants", href: "/directory/restaurants", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Producers", value: "4 (2 wineries, 1 brewery, 1 distillery)" },
+      { label: "Loop length", value: "~15 miles" },
+      { label: "Best season", value: "May–October" },
+      { label: "Designated driver", value: "Required" },
+      { label: "Average tour cost", value: "$60–$120/person" },
+    ],
+    keywords: [
+      "Waconia wineries",
+      "Waconia breweries",
+      "Schram Vineyards",
+      "Sovereign Estate Wine",
+      "Waconia wine tour",
+      "Carver County wineries",
+    ],
+    articleSection: "Travel & Things to Do",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Carver County", anchor: "carver-county" },
+    ],
+    relatedGuides: [
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+      { title: "Where to Stay", readTime: "5 min read", href: "/hotels" },
+      { title: "Best of Waconia", readTime: "4 min read", href: "/best-of-waconia" },
+    ],
+    faqs: [
+      {
+        question: "How many wineries are in Waconia, MN?",
+        answer: "Two: Schram Vineyards Winery & Brewery on the rolling farmland west of town, and Sovereign Estate Wine on the north shore of Lake Waconia. Both are open to the public and produce estate wines from cold-climate Minnesota grape varieties.",
+      },
+      {
+        question: "Are there breweries in Waconia, MN?",
+        answer: "Yes. Waconia Brewing Company anchors downtown and is the city's main craft brewery. Schram Vineyards also operates an in-house brewery alongside its winery. Both are open to the public; Waconia Brewing's hours are weekend-focused.",
+      },
+      {
+        question: "Can I do a Waconia wine tour without a car?",
+        answer: "Sort of. There is no transit between the wineries and breweries; you'll need a designated driver, rideshare, or local tour service. Waconia's rideshare market is functional but limited — pre-book pickups for evening hops, and don't expect immediate availability.",
+      },
+      {
+        question: "How long does a Waconia winery and brewery tour take?",
+        answer: "Plan five to seven hours for the full four-stop loop (Schram → Sovereign → Waconia Brewing → J. Carver). A shorter two-stop afternoon (Schram + Sovereign) takes about three hours. A downtown-only evening (Waconia Brewing + J. Carver) takes about two hours.",
+      },
+      {
+        question: "Is there a craft distillery in Waconia?",
+        answer: "Yes — J. Carver Distillery in Waconia hand-produces small-batch craft whiskey, gin, and vodka. Their cocktail room serves classic and seasonal drinks made entirely with house spirits. Weekend distillery tours go behind the still.",
       },
     ],
   },
