@@ -687,9 +687,9 @@ export const guides: Guide[] = [
       { term: "Carver County Fair", anchor: "carver-county-fair" },
     ],
     relatedGuides: [
+      { title: "Best Restaurants in Waconia", readTime: "6 min read", href: "/guides/best-restaurants-in-waconia" },
       { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
       { title: "Coney Island of Lake Waconia", readTime: "5 min read", href: "/guides/coney-island-lake-waconia" },
-      { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
     ],
     faqs: [
       {
@@ -2726,8 +2726,8 @@ export const guides: Guide[] = [
       { term: "Carver County", anchor: "carver-county" },
     ],
     relatedGuides: [
+      { title: "Best Restaurants in Waconia", readTime: "6 min read", href: "/guides/best-restaurants-in-waconia" },
       { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
-      { title: "Where to Stay", readTime: "5 min read", href: "/hotels" },
       { title: "Best of Waconia", readTime: "4 min read", href: "/best-of-waconia" },
     ],
     faqs: [
@@ -2750,6 +2750,168 @@ export const guides: Guide[] = [
       {
         question: "Is there a craft distillery in Waconia?",
         answer: "Yes — J. Carver Distillery in Waconia hand-produces small-batch craft whiskey, gin, and vodka. Their cocktail room serves classic and seasonal drinks made entirely with house spirits. Weekend distillery tours go behind the still.",
+      },
+    ],
+  },
+  {
+    slug: "best-restaurants-in-waconia",
+    title: "Best Restaurants in Waconia, MN (2026): A Local's Picks",
+    metaDescription:
+      "The best restaurants in Waconia, Minnesota — where to eat downtown and on Lake Waconia. Local picks for dinner, breakfast, lakeside patios, and craft beer, with prices and what to order.",
+    heroImage:
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80",
+    updatedDate: "June 24, 2026",
+    updatedIso: "2026-06-24",
+    publishedIso: "2026-06-24",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Restaurants Reviewed", value: "11" },
+      { label: "Price Range", value: "$ – $$$" },
+      { label: "Best For", value: "Lake + Downtown" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "The best restaurants in Waconia, Minnesota cluster in two places: along West Main Street downtown and on the south shore of Lake Waconia. For a sit-down dinner, Iron Tap is the local standout; for a meal with a lake view, it's Lola's Lakehouse; for breakfast, Egg-Cetera Cafe wins almost every time. Below is a local's guide to where to eat in Waconia — organized by the way people actually search for it: best overall, best on the water, best breakfast, best craft beer and wine, and best casual family spots — with price levels and what to order at each.",
+      },
+      {
+        type: "heading",
+        heading: "Best Restaurant in Waconia: Iron Tap",
+      },
+      {
+        type: "richText",
+        body: "If you only have one dinner in Waconia, make it <a href=\"/directory/iron-tap\">Iron Tap</a> (224 W Main St, $$). It's the most consistently recommended restaurant in town — modern American plates, craft cocktails, and rotating taps in a warm, lively downtown room. Order the Father Bob Burger, the signature that put the place on the map. Happy hour runs weekday afternoons, and weekend tables fill fast in summer, so reserve ahead.",
+      },
+      {
+        type: "heading",
+        heading: "Best Lakeside Dining: Lola's Lakehouse",
+      },
+      {
+        type: "richText",
+        body: "Waconia is a lake town, and <a href=\"/directory/lolas-lakehouse\">Lola's Lakehouse Eatery</a> (201 Lake St E, $$) is the easiest place to eat with the water in view. It's one of the few true sit-down restaurants in town with a real Lake Waconia view and a sprawling patio that fills first on summer evenings. American comfort plates and rotating seafood specials, including a lake-classic walleye dinner. There's a public dock steps away, so you can arrive by boat. For a wine-country version of the same idea, <a href=\"/directory/sovereign-estate-wine\">Sovereign Estate Wine</a> ($$$) serves cold-climate estate wines on a west-facing lakefront patio built for sunset — book the last seating.",
+      },
+      {
+        type: "heading",
+        heading: "Best Breakfast & Brunch: Egg-Cetera Cafe",
+      },
+      {
+        type: "richText",
+        body: "<a href=\"/directory/egg-cetera-cafe\">Egg-Cetera Cafe</a> ($) is Waconia's most beloved breakfast spot — all-day breakfast, fresh ingredients, and rotating specialty omelets worth ordering. It's a community staple, which means the wait can stretch past 30 minutes by 9am on Saturdays; arrive early. For coffee and a from-scratch pastry instead of a full sit-down breakfast, <a href=\"/directory/mocha-monkey\">Mocha Monkey</a> ($) on West Main is the local coffeehouse, with reliable Wi-Fi if you're working.",
+      },
+      {
+        type: "heading",
+        heading: "Best Craft Beer, Wine & Spirits",
+      },
+      {
+        type: "richText",
+        body: "Waconia punches well above its weight on craft beverages. <a href=\"/directory/waconia-brewing-company\">Waconia Brewing Co.</a> ($$) anchors downtown with award-winning beer, a big patio with fire pits, and live music on Fridays — no kitchen, but you can order delivery in. <a href=\"/directory/schram-haus-brewery\">Schram Haus Brewery</a> ($$) is the second downtown taproom. Just outside town, <a href=\"/directory/schram-vineyards\">Schram Vineyards Winery &amp; Brewery</a> ($$) pours estate wines and house beer with sweeping views (and heated igloos in winter), and <a href=\"/directory/j-carver-distillery\">J. Carver Distillery</a> ($$) makes small-batch whiskey, gin, and vodka with a full cocktail room. Want to string several together? See our <a href=\"/guides/waconia-wineries-breweries-tour\">Waconia wineries &amp; breweries tour</a>.",
+      },
+      {
+        type: "heading",
+        heading: "Best Casual & Family Spots",
+      },
+      {
+        type: "richText",
+        body: "For an easy family meal, <a href=\"/directory/mucho-mexican\">Mucho Mexican Restaurant</a> ($$) does generous fajitas, enchiladas, and margaritas with mix-and-match family combos. <a href=\"/directory/lakeside-tavern-waconia\">Lakeside Tavern</a> ($$) is the classic neighborhood pub — burgers, wings, and a Friday cod fry that's a genuine Waconia weekend tradition. And <a href=\"/directory/garage-bowling-bar\">Garage Bowling &amp; Bar</a> ($$) pairs a scratch kitchen with bowling lanes, which makes it the default for groups, birthdays, and rainy-day afternoons with kids.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🍔",
+            title: "What to Order",
+            body: "Iron Tap: the Father Bob Burger. Lola's: the walleye dinner. Egg-Cetera: the specialty omelet of the day. Lakeside Tavern: the Friday fish fry. Waconia Brewing: a 4-pour flight.",
+          },
+          {
+            icon: "🗺️",
+            title: "Find Hours & Directions",
+            body: "Hours shift seasonally, especially for the lakeside and craft-beverage spots. Always confirm on the listing before you go.",
+            link: { label: "Browse the Waconia dining directory →", href: "/directory/restaurants" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Where to Eat in Waconia, at a Glance",
+      },
+      {
+        type: "richText",
+        body: "<strong>Special-occasion dinner:</strong> Iron Tap (downtown) or Sovereign Estate Wine (lakefront). <strong>Lunch on the water:</strong> Lola's Lakehouse. <strong>Breakfast:</strong> Egg-Cetera Cafe. <strong>Coffee &amp; remote work:</strong> Mocha Monkey. <strong>Craft beer:</strong> Waconia Brewing Co. or Schram Haus. <strong>Wine with a view:</strong> Sovereign Estate or Schram Vineyards. <strong>Family &amp; groups:</strong> Mucho Mexican, Lakeside Tavern, or Garage Bowling &amp; Bar. Prices run from $ (Egg-Cetera, Mocha Monkey) through $$ for most of downtown, up to $$$ at Sovereign Estate.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan the Rest of Your Waconia Day",
+        ctaDescription:
+          "Pair dinner with the lake, the breweries, or a downtown stroll — here's everything else worth doing in town.",
+        buttons: [
+          { label: "Things to Do in Waconia", href: "/guides/things-to-do-waconia", variant: "primary" },
+          { label: "Browse the Directory", href: "/directory", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Restaurant district", value: "W Main St + Lake St" },
+      { label: "Best overall", value: "Iron Tap" },
+      { label: "Best lake view", value: "Lola's Lakehouse" },
+      { label: "Best breakfast", value: "Egg-Cetera Cafe" },
+      { label: "Price range", value: "$ – $$$" },
+    ],
+    keywords: [
+      "best restaurants in Waconia",
+      "where to eat in Waconia MN",
+      "Waconia restaurants",
+      "Lake Waconia dining",
+      "Waconia breakfast",
+      "Waconia breweries",
+      "Iron Tap Waconia",
+    ],
+    articleSection: "Dining",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+    ],
+    relatedGuides: [
+      {
+        title: "Things to Do in Waconia",
+        readTime: "7 min read",
+        href: "/guides/things-to-do-waconia",
+      },
+      {
+        title: "Waconia Wineries & Breweries Tour",
+        readTime: "6 min read",
+        href: "/guides/waconia-wineries-breweries-tour",
+      },
+      {
+        title: "Lake Waconia Complete Guide",
+        readTime: "8 min read",
+        href: "/guides/lake-waconia",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best restaurant in Waconia, MN?",
+        answer:
+          "Iron Tap (224 W Main St) is the most consistently recommended restaurant in Waconia — modern American food, craft cocktails, and a lively downtown atmosphere. Its Father Bob Burger is the signature dish. For dining with a Lake Waconia view, Lola's Lakehouse Eatery is the top pick.",
+      },
+      {
+        question: "Where can you eat on Lake Waconia?",
+        answer:
+          "Lola's Lakehouse Eatery (201 Lake St E) is the main sit-down restaurant with a true Lake Waconia view and a large lakeside patio, with a public dock steps away. Sovereign Estate Wine, on the north shore, serves estate wines and small plates on a west-facing lakefront patio that's ideal for sunset.",
+      },
+      {
+        question: "What is the best breakfast in Waconia?",
+        answer:
+          "Egg-Cetera Cafe is Waconia's most popular breakfast spot, serving all-day breakfast and rotating specialty omelets. Expect a wait on weekend mornings. For coffee and from-scratch pastries, Mocha Monkey on West Main Street is the local coffeehouse.",
+      },
+      {
+        question: "Does Waconia have good breweries and wineries?",
+        answer:
+          "Yes. Waconia Brewing Co. and Schram Haus Brewery anchor downtown, while Schram Vineyards (winery and brewery) and Sovereign Estate Wine (lakefront winery) sit just outside town. J. Carver Distillery rounds it out with small-batch spirits and a cocktail room. Together they make Waconia a notable craft-beverage destination in the Twin Cities metro.",
+      },
+      {
+        question: "Are Waconia restaurants family-friendly?",
+        answer:
+          "Many are. Mucho Mexican Restaurant offers family combos, Lakeside Tavern is a casual neighborhood pub with a Friday fish fry, and Garage Bowling & Bar pairs a scratch kitchen with bowling lanes — a popular choice for families and groups.",
       },
     ],
   },

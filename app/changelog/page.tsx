@@ -17,6 +17,14 @@ interface ChangelogEntry {
 
 const ENTRIES: ChangelogEntry[] = [
   {
+    date: "2026-06-24",
+    highlights: [
+      "Added /guides/best-restaurants-in-waconia — a local's dining roundup (best overall, lakeside, breakfast, craft beer & wine, family) cross-linked to 11 directory listings.",
+      "Added deliberate, CLS-safe in-content ad placements on the guide template (configurable via app/lib/adSlots.ts; Auto Ads remains the fallback).",
+      "Published docs/CONTENT-STRATEGY.md — GEO/SEO content & AdSense monetization roadmap.",
+    ],
+  },
+  {
     date: "2026-05-03",
     highlights: [
       "Launched /best-of-waconia annual editorial hub (12 picks, year-stamped 2026).",

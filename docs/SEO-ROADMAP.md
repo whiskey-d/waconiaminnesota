@@ -96,6 +96,23 @@ Ice Fishing, Waconia History, Moving to Waconia.
 - [x] 11.3 `/changelog` page — chronological list of site updates
       (transparency + freshness signal)
 
+## Round 12 — Monetization + dining content (GEO/SEO growth)
+
+- [x] 12.0 `docs/CONTENT-STRATEGY.md` — GEO/SEO content + AdSense revenue plan
+- [x] 12.1 Deliberate in-content ad placements on the guide template
+      (`app/components/InContentAd.tsx` + `app/lib/adSlots.ts`). CLS-safe,
+      renders nothing until real slot IDs are added; Auto Ads stays the
+      fallback. **First manual ad inventory on the site** (was Auto-Ads-only).
+- [x] 12.2 `/guides/best-restaurants-in-waconia` — dining roundup (best
+      overall, lakeside, breakfast, craft beer & wine, family), cross-linked
+      to 11 directory listings. New `Dining` articleSection. **19 guides total.**
+
+### Round 12 — next up (from CONTENT-STRATEGY.md)
+- [ ] Fill real AdSense slot IDs into `app/lib/adSlots.ts` (user action)
+- [ ] `cost-of-living-in-waconia` + `waconia-neighborhoods` (real-estate cluster, high RPM)
+- [ ] `nickle-dickle-day` event guide (ship before the September spike)
+- [ ] Human "Waconia facts" page as a GEO citation magnet
+
 ## Deferred (next round)
 
 - [s] Newsletter capture wiring — confirmed deferred

@@ -8,7 +8,7 @@ const SITE_URL = "https://waconiaminnesota.org";
 // Bump this when structural site content changes (new pages, major edits).
 // Using a stable date per deploy avoids the "everything changed today" signal
 // that blanket `new Date()` timestamps send to crawlers.
-const LAST_CONTENT_UPDATE = new Date("2026-05-03");
+const LAST_CONTENT_UPDATE = new Date("2026-06-24");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const businessPages = businesses.map((b) => ({
