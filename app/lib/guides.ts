@@ -687,9 +687,9 @@ export const guides: Guide[] = [
       { term: "Carver County Fair", anchor: "carver-county-fair" },
     ],
     relatedGuides: [
+      { title: "Best Restaurants in Waconia", readTime: "6 min read", href: "/guides/best-restaurants-in-waconia" },
       { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
       { title: "Coney Island of Lake Waconia", readTime: "5 min read", href: "/guides/coney-island-lake-waconia" },
-      { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
     ],
     faqs: [
       {
@@ -1469,9 +1469,9 @@ export const guides: Guide[] = [
       { term: "55387", anchor: "55387" },
     ],
     relatedGuides: [
-      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
-      { title: "Waconia History", readTime: "9 min read", href: "/guides/waconia-history" },
-      { title: "Lake Waconia Complete Guide", readTime: "8 min read", href: "/guides/lake-waconia" },
+      { title: "Cost of Living in Waconia", readTime: "6 min read", href: "/guides/cost-of-living-in-waconia" },
+      { title: "Waconia Neighborhoods", readTime: "6 min read", href: "/guides/waconia-neighborhoods" },
+      { title: "Waconia Schools (ISD 110)", readTime: "6 min read", href: "/guides/waconia-schools" },
     ],
     faqs: [
       {
@@ -2575,7 +2575,7 @@ export const guides: Guide[] = [
       { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
     ],
     relatedGuides: [
-      { title: "Lake Waconia Fishing", readTime: "12 min read", href: "/guides/lake-waconia-fishing" },
+      { title: "Nickle Dickle Day", readTime: "5 min read", href: "/guides/nickle-dickle-day" },
       { title: "Coney Island of Lake Waconia", readTime: "5 min read", href: "/guides/coney-island-lake-waconia" },
       { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
     ],
@@ -2726,8 +2726,8 @@ export const guides: Guide[] = [
       { term: "Carver County", anchor: "carver-county" },
     ],
     relatedGuides: [
+      { title: "Best Restaurants in Waconia", readTime: "6 min read", href: "/guides/best-restaurants-in-waconia" },
       { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
-      { title: "Where to Stay", readTime: "5 min read", href: "/hotels" },
       { title: "Best of Waconia", readTime: "4 min read", href: "/best-of-waconia" },
     ],
     faqs: [
@@ -2750,6 +2750,586 @@ export const guides: Guide[] = [
       {
         question: "Is there a craft distillery in Waconia?",
         answer: "Yes — J. Carver Distillery in Waconia hand-produces small-batch craft whiskey, gin, and vodka. Their cocktail room serves classic and seasonal drinks made entirely with house spirits. Weekend distillery tours go behind the still.",
+      },
+    ],
+  },
+  {
+    slug: "best-restaurants-in-waconia",
+    title: "Best Restaurants in Waconia, MN (2026): A Local's Picks",
+    metaDescription:
+      "The best restaurants in Waconia, Minnesota — where to eat downtown and on Lake Waconia. Local picks for dinner, breakfast, lakeside patios, and craft beer, with prices and what to order.",
+    heroImage:
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80",
+    updatedDate: "June 24, 2026",
+    updatedIso: "2026-06-24",
+    publishedIso: "2026-06-24",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Restaurants Reviewed", value: "11" },
+      { label: "Price Range", value: "$ – $$$" },
+      { label: "Best For", value: "Lake + Downtown" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "The best restaurants in Waconia, Minnesota cluster in two places: along West Main Street downtown and on the south shore of Lake Waconia. For a sit-down dinner, Iron Tap is the local standout; for a meal with a lake view, it's Lola's Lakehouse; for breakfast, Egg-Cetera Cafe wins almost every time. Below is a local's guide to where to eat in Waconia — organized by the way people actually search for it: best overall, best on the water, best breakfast, best craft beer and wine, and best casual family spots — with price levels and what to order at each.",
+      },
+      {
+        type: "heading",
+        heading: "Best Restaurant in Waconia: Iron Tap",
+      },
+      {
+        type: "richText",
+        body: "If you only have one dinner in Waconia, make it <a href=\"/directory/iron-tap\">Iron Tap</a> (224 W Main St, $$). It's the most consistently recommended restaurant in town — modern American plates, craft cocktails, and rotating taps in a warm, lively downtown room. Order the Father Bob Burger, the signature that put the place on the map. Happy hour runs weekday afternoons, and weekend tables fill fast in summer, so reserve ahead.",
+      },
+      {
+        type: "heading",
+        heading: "Best Lakeside Dining: Lola's Lakehouse",
+      },
+      {
+        type: "richText",
+        body: "Waconia is a lake town, and <a href=\"/directory/lolas-lakehouse\">Lola's Lakehouse Eatery</a> (201 Lake St E, $$) is the easiest place to eat with the water in view. It's one of the few true sit-down restaurants in town with a real Lake Waconia view and a sprawling patio that fills first on summer evenings. American comfort plates and rotating seafood specials, including a lake-classic walleye dinner. There's a public dock steps away, so you can arrive by boat. For a wine-country version of the same idea, <a href=\"/directory/sovereign-estate-wine\">Sovereign Estate Wine</a> ($$$) serves cold-climate estate wines on a west-facing lakefront patio built for sunset — book the last seating.",
+      },
+      {
+        type: "heading",
+        heading: "Best Breakfast & Brunch: Egg-Cetera Cafe",
+      },
+      {
+        type: "richText",
+        body: "<a href=\"/directory/egg-cetera-cafe\">Egg-Cetera Cafe</a> ($) is Waconia's most beloved breakfast spot — all-day breakfast, fresh ingredients, and rotating specialty omelets worth ordering. It's a community staple, which means the wait can stretch past 30 minutes by 9am on Saturdays; arrive early. For coffee and a from-scratch pastry instead of a full sit-down breakfast, <a href=\"/directory/mocha-monkey\">Mocha Monkey</a> ($) on West Main is the local coffeehouse, with reliable Wi-Fi if you're working.",
+      },
+      {
+        type: "heading",
+        heading: "Best Craft Beer, Wine & Spirits",
+      },
+      {
+        type: "richText",
+        body: "Waconia punches well above its weight on craft beverages. <a href=\"/directory/waconia-brewing-company\">Waconia Brewing Co.</a> ($$) anchors downtown with award-winning beer, a big patio with fire pits, and live music on Fridays — no kitchen, but you can order delivery in. <a href=\"/directory/schram-haus-brewery\">Schram Haus Brewery</a> ($$) is the second downtown taproom. Just outside town, <a href=\"/directory/schram-vineyards\">Schram Vineyards Winery &amp; Brewery</a> ($$) pours estate wines and house beer with sweeping views (and heated igloos in winter), and <a href=\"/directory/j-carver-distillery\">J. Carver Distillery</a> ($$) makes small-batch whiskey, gin, and vodka with a full cocktail room. Want to string several together? See our <a href=\"/guides/waconia-wineries-breweries-tour\">Waconia wineries &amp; breweries tour</a>.",
+      },
+      {
+        type: "heading",
+        heading: "Best Casual & Family Spots",
+      },
+      {
+        type: "richText",
+        body: "For an easy family meal, <a href=\"/directory/mucho-mexican\">Mucho Mexican Restaurant</a> ($$) does generous fajitas, enchiladas, and margaritas with mix-and-match family combos. <a href=\"/directory/lakeside-tavern-waconia\">Lakeside Tavern</a> ($$) is the classic neighborhood pub — burgers, wings, and a Friday cod fry that's a genuine Waconia weekend tradition. And <a href=\"/directory/garage-bowling-bar\">Garage Bowling &amp; Bar</a> ($$) pairs a scratch kitchen with bowling lanes, which makes it the default for groups, birthdays, and rainy-day afternoons with kids.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🍔",
+            title: "What to Order",
+            body: "Iron Tap: the Father Bob Burger. Lola's: the walleye dinner. Egg-Cetera: the specialty omelet of the day. Lakeside Tavern: the Friday fish fry. Waconia Brewing: a 4-pour flight.",
+          },
+          {
+            icon: "🗺️",
+            title: "Find Hours & Directions",
+            body: "Hours shift seasonally, especially for the lakeside and craft-beverage spots. Always confirm on the listing before you go.",
+            link: { label: "Browse the Waconia dining directory →", href: "/directory/restaurants" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Where to Eat in Waconia, at a Glance",
+      },
+      {
+        type: "richText",
+        body: "<strong>Special-occasion dinner:</strong> Iron Tap (downtown) or Sovereign Estate Wine (lakefront). <strong>Lunch on the water:</strong> Lola's Lakehouse. <strong>Breakfast:</strong> Egg-Cetera Cafe. <strong>Coffee &amp; remote work:</strong> Mocha Monkey. <strong>Craft beer:</strong> Waconia Brewing Co. or Schram Haus. <strong>Wine with a view:</strong> Sovereign Estate or Schram Vineyards. <strong>Family &amp; groups:</strong> Mucho Mexican, Lakeside Tavern, or Garage Bowling &amp; Bar. Prices run from $ (Egg-Cetera, Mocha Monkey) through $$ for most of downtown, up to $$$ at Sovereign Estate.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan the Rest of Your Waconia Day",
+        ctaDescription:
+          "Pair dinner with the lake, the breweries, or a downtown stroll — here's everything else worth doing in town.",
+        buttons: [
+          { label: "Things to Do in Waconia", href: "/guides/things-to-do-waconia", variant: "primary" },
+          { label: "Browse the Directory", href: "/directory", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Restaurant district", value: "W Main St + Lake St" },
+      { label: "Best overall", value: "Iron Tap" },
+      { label: "Best lake view", value: "Lola's Lakehouse" },
+      { label: "Best breakfast", value: "Egg-Cetera Cafe" },
+      { label: "Price range", value: "$ – $$$" },
+    ],
+    keywords: [
+      "best restaurants in Waconia",
+      "where to eat in Waconia MN",
+      "Waconia restaurants",
+      "Lake Waconia dining",
+      "Waconia breakfast",
+      "Waconia breweries",
+      "Iron Tap Waconia",
+    ],
+    articleSection: "Dining",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+    ],
+    relatedGuides: [
+      {
+        title: "Things to Do in Waconia",
+        readTime: "7 min read",
+        href: "/guides/things-to-do-waconia",
+      },
+      {
+        title: "Waconia Wineries & Breweries Tour",
+        readTime: "6 min read",
+        href: "/guides/waconia-wineries-breweries-tour",
+      },
+      {
+        title: "Lake Waconia Complete Guide",
+        readTime: "8 min read",
+        href: "/guides/lake-waconia",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best restaurant in Waconia, MN?",
+        answer:
+          "Iron Tap (224 W Main St) is the most consistently recommended restaurant in Waconia — modern American food, craft cocktails, and a lively downtown atmosphere. Its Father Bob Burger is the signature dish. For dining with a Lake Waconia view, Lola's Lakehouse Eatery is the top pick.",
+      },
+      {
+        question: "Where can you eat on Lake Waconia?",
+        answer:
+          "Lola's Lakehouse Eatery (201 Lake St E) is the main sit-down restaurant with a true Lake Waconia view and a large lakeside patio, with a public dock steps away. Sovereign Estate Wine, on the north shore, serves estate wines and small plates on a west-facing lakefront patio that's ideal for sunset.",
+      },
+      {
+        question: "What is the best breakfast in Waconia?",
+        answer:
+          "Egg-Cetera Cafe is Waconia's most popular breakfast spot, serving all-day breakfast and rotating specialty omelets. Expect a wait on weekend mornings. For coffee and from-scratch pastries, Mocha Monkey on West Main Street is the local coffeehouse.",
+      },
+      {
+        question: "Does Waconia have good breweries and wineries?",
+        answer:
+          "Yes. Waconia Brewing Co. and Schram Haus Brewery anchor downtown, while Schram Vineyards (winery and brewery) and Sovereign Estate Wine (lakefront winery) sit just outside town. J. Carver Distillery rounds it out with small-batch spirits and a cocktail room. Together they make Waconia a notable craft-beverage destination in the Twin Cities metro.",
+      },
+      {
+        question: "Are Waconia restaurants family-friendly?",
+        answer:
+          "Many are. Mucho Mexican Restaurant offers family combos, Lakeside Tavern is a casual neighborhood pub with a Friday fish fry, and Garage Bowling & Bar pairs a scratch kitchen with bowling lanes — a popular choice for families and groups.",
+      },
+    ],
+  },
+  {
+    slug: "cost-of-living-in-waconia",
+    title: "Cost of Living in Waconia, MN (2026): What It Really Costs",
+    metaDescription:
+      "A local's breakdown of the cost of living in Waconia, Minnesota — housing, property taxes, groceries, utilities, transportation, and income tax — and how it compares to the Twin Cities metro.",
+    heroImage:
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1600&q=80",
+    updatedDate: "June 24, 2026",
+    updatedIso: "2026-06-24",
+    publishedIso: "2026-06-24",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Vs. MSP Metro", value: "Below avg." },
+      { label: "Combined Sales Tax", value: "~7.375%" },
+      { label: "ZIP", value: "55387" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "The cost of living in Waconia, Minnesota sits below the broader Minneapolis–St. Paul metro average, and housing is the main reason. You trade a 45-minute commute for more home per dollar than you'd get closer in — though true Lake Waconia frontage prices back up toward metro levels. Below is a category-by-category breakdown of what living in Waconia actually costs: housing, property taxes, groceries, utilities, transportation, and income tax. Figures that move year to year are flagged with where to check the current number — we don't publish stale dollar amounts as fact.",
+      },
+      {
+        type: "heading",
+        heading: "Housing — the biggest variable",
+      },
+      {
+        type: "text",
+        body: "Housing is where Waconia's cost of living is decided. The market splits into four bands: older homes on the historic south side (the most affordable entry point), newer suburban construction on the north side around the Marketplace area (mid-range, family-sized lots), rural-fringe homes on acreage outside the city limits, and lakefront or lake-adjacent property on Lake Waconia (the top of the market). Lake frontage carries a significant premium; a home a five-minute walk from a public access point costs a fraction of one with private shoreline. Because prices shift with the market, check live listings on the MLS, Zillow, or Redfin and the Carver County assessor for assessed values rather than trusting a fixed median figure.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🏠",
+            title: "Check Current Prices",
+            body: "Home prices move quarter to quarter. We track distressed and foreclosure listings as one data point; pair it with the live MLS for an accurate read.",
+            link: { label: "Waconia Foreclosures →", href: "/foreclosures" },
+          },
+          {
+            icon: "🌊",
+            title: "The Lakefront Premium",
+            body: "Lake-adjacent doesn't have to mean lake-frontage. Homes near a public access point capture most of the lifestyle for far less than private shoreline.",
+            link: { label: "Lake Waconia Guide →", href: "/guides/lake-waconia" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Property taxes",
+      },
+      {
+        type: "text",
+        body: "Carver County property tax rates run in line with the broader Twin Cities metro — neither a bargain nor an outlier. Your bill is a function of the county, city, and school-district (ISD 110) levies plus your property's assessed value. The city of Waconia publishes its levy annually, and Carver County's assessor maintains parcel-level valuations. For an exact estimate, pull the specific parcel's record from the Carver County property tax portal rather than applying a blanket percentage.",
+      },
+      {
+        type: "heading",
+        heading: "Groceries & everyday spending",
+      },
+      {
+        type: "text",
+        body: "Day-to-day costs are unremarkable in the best way — Waconia has full-service grocery at Coborn's and Aldi, Westside Liquor for beer and wine, and the full lineup of national chains along the Marketplace, so you're paying typical outer-metro prices, not a rural markup. The combined sales tax in Waconia is about 7.375% (Minnesota state rate plus local option). Note that Minnesota does not tax most clothing or groceries, which softens the everyday bill compared with many states.",
+      },
+      {
+        type: "heading",
+        heading: "Utilities & winter costs",
+      },
+      {
+        type: "text",
+        body: "Budget for real Minnesota winters. Heating runs November through March, and snow removal is a genuine line item — a snowblower, a seasonal plow contract, or both. Electricity, natural gas, water, and sewer track regional norms; the seasonal swing in heating is the main thing that surprises people relocating from warmer states. Internet and the usual subscriptions are standard metro-adjacent pricing.",
+      },
+      {
+        type: "heading",
+        heading: "Transportation",
+      },
+      {
+        type: "text",
+        body: "Waconia is a car-dependent community — factor that into the math. There's no light rail or commuter rail, and transit is limited to SouthWest Transit park-and-ride options from Chaska and Chanhassen to the east. Most households run two vehicles. Fuel and your time on the Highway 5 corridor are the real transportation costs; if your job sits in the western or southwestern metro (Eden Prairie, Chaska, Chanhassen, Minnetonka), the commute — and the cost — drops considerably.",
+      },
+      {
+        type: "heading",
+        heading: "Income tax",
+      },
+      {
+        type: "text",
+        body: "Minnesota state income tax applies and is on the higher side nationally — four brackets topping out at 9.85%. That's a statewide reality, not specific to Waconia, but it belongs in any honest cost-of-living picture for the area. There's no separate city income tax.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "People come for the price-per-square-foot and the schools. The commute and the heating bill are what they underestimate.",
+        attribution: "Local advice",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Thinking About Moving Here?",
+        ctaDescription:
+          "Our full relocation guide covers schools, neighborhoods, healthcare, and the commute in depth.",
+        buttons: [
+          { label: "Moving to Waconia", href: "/guides/moving-to-waconia", variant: "primary" },
+          { label: "Waconia Neighborhoods", href: "/guides/waconia-neighborhoods", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Cost vs. metro", value: "Below average" },
+      { label: "Sales tax", value: "~7.375%" },
+      { label: "State income tax", value: "Up to 9.85%" },
+      { label: "City income tax", value: "None" },
+      { label: "ZIP code", value: "55387" },
+    ],
+    keywords: [
+      "cost of living in Waconia",
+      "Waconia MN cost of living",
+      "Waconia property taxes",
+      "Waconia housing costs",
+      "is Waconia expensive",
+      "Carver County cost of living",
+    ],
+    articleSection: "Living in Waconia",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Carver County", anchor: "carver-county" },
+      { term: "55387", anchor: "55387" },
+    ],
+    relatedGuides: [
+      { title: "Moving to Waconia", readTime: "8 min read", href: "/guides/moving-to-waconia" },
+      { title: "Waconia Neighborhoods", readTime: "6 min read", href: "/guides/waconia-neighborhoods" },
+      { title: "Waconia Schools (ISD 110)", readTime: "6 min read", href: "/guides/waconia-schools" },
+    ],
+    faqs: [
+      {
+        question: "Is Waconia, MN expensive to live in?",
+        answer:
+          "Overall, cost of living in Waconia sits below the broader Minneapolis–St. Paul metro average, mainly because of housing. The trade-off is a car-dependent lifestyle and a 45-minute commute to downtown Minneapolis. Lakefront property on Lake Waconia is the exception — it prices closer to metro standards.",
+      },
+      {
+        question: "What is the sales tax in Waconia, MN?",
+        answer:
+          "The combined sales tax in Waconia is approximately 7.375% — the Minnesota state rate plus a local option. Minnesota does not tax most clothing or groceries, which lowers everyday spending relative to many other states.",
+      },
+      {
+        question: "How much are property taxes in Waconia?",
+        answer:
+          "Carver County property tax rates are in line with the broader Twin Cities metro. Your bill depends on the combined county, city, and ISD 110 school levies and your property's assessed value. For an exact figure, look up the specific parcel on the Carver County property tax portal rather than applying a flat percentage.",
+      },
+      {
+        question: "Does Minnesota have a high income tax?",
+        answer:
+          "Minnesota's state income tax is on the higher side nationally, with four brackets topping out at 9.85%. This applies statewide, including Waconia. There is no separate city income tax in Waconia.",
+      },
+    ],
+  },
+  {
+    slug: "waconia-neighborhoods",
+    title: "Waconia Neighborhoods: Where to Live, Area by Area",
+    metaDescription:
+      "A local's guide to Waconia, MN neighborhoods — downtown and the historic south side, south-shore lakefront, north-side suburban developments, and the rural fringe — with the trade-offs of each.",
+    heroImage:
+      "https://images.unsplash.com/photo-1448630360428-65456885c650?w=1600&q=80",
+    updatedDate: "June 24, 2026",
+    updatedIso: "2026-06-24",
+    publishedIso: "2026-06-24",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Area Types", value: "4" },
+      { label: "School District", value: "ISD 110" },
+      { label: "Lake", value: "3,080 acres" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Waconia's neighborhoods sort into four character types, each with a clear trade-off: the historic downtown and south side (walkable, older, smaller lots), the south-shore lakefront and lake-adjacent areas (the highest values), the north-side suburban developments near the Marketplace (newer construction, family-sized lots), and the rural fringe outside the city limits (acreage and hobby farms). Whichever you choose, you're in the same district — ISD 110 serves the whole city — so the decision comes down to lifestyle, commute, and budget rather than schools. Here's how each area actually lives.",
+      },
+      {
+        type: "heading",
+        heading: "Downtown & the Historic South Side",
+      },
+      {
+        type: "text",
+        body: "The oldest part of Waconia, centered on Main Street and stretching south. Homes here largely date from 1900 to 1960 on smaller, established lots with mature trees. The draw is walkability: you can reach restaurants, breweries, the library, City Square Park, and the Thursday summer farmers market on foot. It's the most urban-feeling part of a small town, and it's where community events like Nickle Dickle Day happen on your doorstep. The trade-off is older housing stock — charm that may come with a renovation list — and smaller lots than the newer developments.",
+      },
+      {
+        type: "heading",
+        heading: "South-Shore Lakefront & Lake-Adjacent",
+      },
+      {
+        type: "text",
+        body: "The top of the Waconia market. Properties with direct Lake Waconia frontage — or a short walk to it — command the highest prices in town, and for good reason: the lake is genuinely usable, with public boat access just minutes from downtown. The key local insight is that 'lake-adjacent' captures most of the lifestyle for far less money than private shoreline. Buyers who widen their search to homes within a five-minute walk of a public access point often find the best value-to-lifestyle ratio in the city.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "Lake-adjacent doesn't have to mean lake-frontage. A short walk to a public access point gets you the lake life without the waterfront price.",
+        attribution: "Local realtor",
+      },
+      {
+        type: "heading",
+        heading: "North-Side Suburban Developments",
+      },
+      {
+        type: "text",
+        body: "North and east of downtown, around the Marketplace shopping area, sits Waconia's newer growth — subdivisions built largely from 2000 onward with larger lots, attached garages, and a family orientation. This is where most relocating families land: it's an easy drive to groceries (Coborn's, Aldi), the national chains, the schools, and the Highway 5 commute corridor. The trade-off is a more conventional suburban feel and a short drive — rather than a walk — to the downtown core and the lake.",
+      },
+      {
+        type: "heading",
+        heading: "The Rural Fringe",
+      },
+      {
+        type: "text",
+        body: "Beyond the city limits, the landscape opens into Carver County farmland. Homes here sit on acreage, often with hobby farms or parcels near the area's vineyards. This is the choice for buyers who want space, privacy, and a rural setting while staying within reach of Waconia's amenities and school district. The trade-offs are the practical ones of country living: well and septic instead of city utilities, a longer drive to everything, and snow removal you handle yourself.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🏫",
+            title: "Same District, Different Schools",
+            body: "All of Waconia is ISD 110, but elementary boundaries (Bayview, Southview, Clearwater) shift as the district grows. Confirm the boundary for a specific address before you buy.",
+            link: { label: "Waconia Schools Guide →", href: "/guides/waconia-schools" },
+          },
+          {
+            icon: "💵",
+            title: "What It Costs",
+            body: "Each area sits in a different price band. Our cost-of-living breakdown covers housing, taxes, and the everyday math.",
+            link: { label: "Cost of Living in Waconia →", href: "/guides/cost-of-living-in-waconia" },
+          },
+        ],
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan Your Move",
+        ctaDescription:
+          "From schools to commute to healthcare, our relocation guide covers everything before you sign.",
+        buttons: [
+          { label: "Moving to Waconia", href: "/guides/moving-to-waconia", variant: "primary" },
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Most walkable", value: "Downtown / south side" },
+      { label: "Highest value", value: "South-shore lakefront" },
+      { label: "Most new builds", value: "North-side (Marketplace)" },
+      { label: "Most space", value: "Rural fringe" },
+      { label: "School district", value: "ISD 110 (all)" },
+    ],
+    keywords: [
+      "Waconia neighborhoods",
+      "where to live in Waconia",
+      "Waconia MN areas",
+      "Waconia lakefront homes",
+      "best neighborhoods in Waconia",
+    ],
+    articleSection: "Living in Waconia",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "ISD 110", anchor: "isd-110" },
+    ],
+    relatedGuides: [
+      { title: "Moving to Waconia", readTime: "8 min read", href: "/guides/moving-to-waconia" },
+      { title: "Cost of Living in Waconia", readTime: "6 min read", href: "/guides/cost-of-living-in-waconia" },
+      { title: "Waconia Schools (ISD 110)", readTime: "6 min read", href: "/guides/waconia-schools" },
+    ],
+    faqs: [
+      {
+        question: "What are the best neighborhoods in Waconia, MN?",
+        answer:
+          "Waconia has four broad areas: downtown and the historic south side (most walkable), south-shore lakefront and lake-adjacent (highest value), north-side suburban developments near the Marketplace (newest construction, most family-oriented), and the rural fringe outside the city limits (most space). The best one depends on whether you prioritize walkability, the lake, new construction, or acreage.",
+      },
+      {
+        question: "Which part of Waconia is closest to the lake?",
+        answer:
+          "The south-shore lakefront and lake-adjacent neighborhoods sit closest to Lake Waconia, with some homes on direct frontage. Homes within a five-minute walk of a public access point offer most of the lake lifestyle at a much lower price than private shoreline.",
+      },
+      {
+        question: "Where do most families move in Waconia?",
+        answer:
+          "Most relocating families land in the north-side suburban developments around the Marketplace area — newer homes from 2000 onward, larger lots, and an easy drive to schools, groceries, and the Highway 5 commute corridor.",
+      },
+      {
+        question: "Do all Waconia neighborhoods go to the same schools?",
+        answer:
+          "All of Waconia is served by ISD 110 (Waconia Public Schools), so the district is the same citywide. Elementary attendance boundaries (Bayview, Southview, Clearwater) do shift as the district grows, so confirm the boundary for a specific address before buying.",
+      },
+    ],
+  },
+  {
+    slug: "nickle-dickle-day",
+    title: "Nickle Dickle Day: Waconia's Street Festival (2026 Guide)",
+    metaDescription:
+      "A local's guide to Nickle Dickle Day in Waconia, MN — the September street festival in City Square Park. What to do, the Friday street dance, parking, and tips for the day.",
+    heroImage:
+      "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1600&q=80",
+    updatedDate: "June 24, 2026",
+    updatedIso: "2026-06-24",
+    publishedIso: "2026-06-24",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "When", value: "Sept (annual)" },
+      { label: "Where", value: "City Square Park" },
+      { label: "Admission", value: "Free" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Nickle Dickle Day is Waconia's signature street festival — a free, all-ages celebration that fills downtown's City Square Park on a Saturday every September, drawing thousands. The main event runs 9am to 5pm with live entertainment, local vendors, food and drink, and kids activities; the night before kicks off with the Nickle Dickle Street Dance. For 2026 it falls on Saturday, September 19 (street dance Friday, September 18). Here's how locals do the day — and how to make a weekend of it.",
+      },
+      {
+        type: "heading",
+        heading: "What Happens on Nickle Dickle Day",
+      },
+      {
+        type: "text",
+        body: "The festival takes over City Square Park and the surrounding downtown blocks. Expect live music and entertainment on stage, rows of local food vendors and artisan booths, and kids activities running throughout the day. It's organized by the Waconia Chamber of Commerce (Destination Waconia) and it's the event residents look forward to all year — the kind of small-town street festival where you'll run into half the people you know. Admission is free; bring cash for vendors and food.",
+      },
+      {
+        type: "heading",
+        heading: "The Friday Street Dance",
+      },
+      {
+        type: "text",
+        body: "The celebration starts the evening before. The Nickle Dickle Street Dance is a Friday-night live-music event with a cash bar at 217 W Main St, with gates opening at 7pm. It's the adult kickoff to the weekend — go Friday night for the music and the bar, then bring the whole family back Saturday morning for the main event.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "📅",
+            title: "2026 Schedule & Details",
+            body: "See the full event listing with map, times, and the official Chamber link — plus add it to your calendar.",
+            link: { label: "Nickle Dickle Day Event Page →", href: "/events/nickle-dickle-day-2026" },
+          },
+          {
+            icon: "🍔",
+            title: "Where to Eat Downtown",
+            body: "The festival has food vendors, but downtown's restaurants and breweries are right there too. Here's the local rundown.",
+            link: { label: "Best Restaurants in Waconia →", href: "/guides/best-restaurants-in-waconia" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Parking & Getting There",
+      },
+      {
+        type: "text",
+        body: "Downtown Waconia has free public parking, but the lots and street spots nearest City Square Park fill early on festival Saturday. Arrive before mid-morning for the closest spots, or park a few blocks out and walk in — downtown is compact and walkable. If you're coming from the Twin Cities, it's about a 45-minute drive via Highway 5; expect heavier-than-usual traffic into town on the morning of the event.",
+      },
+      {
+        type: "heading",
+        heading: "Make a Weekend of It",
+      },
+      {
+        type: "text",
+        body: "Mid-September is one of the best times to visit Waconia — late-summer lake weather without the peak-season crowds. Pair the festival with a morning on Lake Waconia, a stop at one of the downtown breweries or the lakefront wineries, and a walk through downtown. If you're staying over, book lodging early; festival weekend is one of the busier weekends of the year in town.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan Your Waconia Visit",
+        ctaDescription:
+          "Make the festival the centerpiece of a full lake-town weekend.",
+        buttons: [
+          { label: "Things to Do in Waconia", href: "/guides/things-to-do-waconia", variant: "primary" },
+          { label: "All Waconia Events", href: "/events", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "2026 date", value: "Sat, Sept 19" },
+      { label: "Street dance", value: "Fri, Sept 18, 7pm" },
+      { label: "Main event", value: "9am–5pm" },
+      { label: "Venue", value: "City Square Park" },
+      { label: "Admission", value: "Free" },
+    ],
+    keywords: [
+      "Nickle Dickle Day",
+      "Nickle Dickle Day Waconia",
+      "Waconia street festival",
+      "Waconia events September",
+      "City Square Park Waconia",
+    ],
+    articleSection: "Events",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Carver County", anchor: "carver-county" },
+    ],
+    relatedGuides: [
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+      { title: "Best Restaurants in Waconia", readTime: "6 min read", href: "/guides/best-restaurants-in-waconia" },
+      { title: "Waconia in Fall", readTime: "5 min read", href: "/guides/waconia-fall" },
+    ],
+    faqs: [
+      {
+        question: "When is Nickle Dickle Day in Waconia?",
+        answer:
+          "Nickle Dickle Day is held annually on a Saturday in September at City Square Park in downtown Waconia. In 2026 it falls on Saturday, September 19, with the Nickle Dickle Street Dance the evening before on Friday, September 18.",
+      },
+      {
+        question: "Is Nickle Dickle Day free?",
+        answer:
+          "Yes. Nickle Dickle Day is free to attend. The main Saturday festival runs 9am to 5pm with free admission. Bring cash for food vendors, artisan booths, and the cash bar at the Friday street dance.",
+      },
+      {
+        question: "What is there to do at Nickle Dickle Day?",
+        answer:
+          "The festival features live music and entertainment, local food vendors, artisan booths, and kids activities throughout City Square Park and downtown Waconia. The Friday-night street dance adds live music and a cash bar at 217 W Main St starting at 7pm.",
+      },
+      {
+        question: "Where do you park for Nickle Dickle Day?",
+        answer:
+          "Downtown Waconia has free public parking, but spots nearest City Square Park fill early on festival Saturday. Arrive before mid-morning for the closest parking, or park a few blocks out and walk in — downtown is compact and walkable.",
       },
     ],
   },

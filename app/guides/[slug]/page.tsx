@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "../../components/Breadcrumb";
+import { InContentAd } from "../../components/InContentAd";
 import { guides, getGuideBySlug } from "../../lib/guides";
+import { AD_SLOTS } from "../../lib/adSlots";
 import { SITE_URL, buildMetadata } from "../../lib/metadata";
 
 interface PageProps {
@@ -92,13 +95,13 @@ export default async function GuidePage({ params }: PageProps) {
           {/* Left: Article body */}
           <article className="lg:col-span-2 space-y-8">
             {guide.content.map((section, i) => {
+              let rendered: React.ReactNode = null;
               switch (section.type) {
                 case "text": {
                   const useDropCap = isFirstParagraph;
                   if (isFirstParagraph) isFirstParagraph = false;
-                  return (
+                  rendered = (
                     <p
-                      key={i}
                       className={`text-text-muted leading-relaxed ${
                         useDropCap ? "drop-cap" : ""
                       }`}
@@ -106,35 +109,31 @@ export default async function GuidePage({ params }: PageProps) {
                       {section.body}
                     </p>
                   );
+                  break;
                 }
                 case "richText": {
                   const useDropCapRich = isFirstParagraph;
                   if (isFirstParagraph) isFirstParagraph = false;
-                  return (
+                  rendered = (
                     <p
-                      key={i}
                       className={`text-text-muted leading-relaxed [&_a]:text-primary [&_a]:font-medium [&_a]:underline-offset-2 [&_a]:hover:underline ${
                         useDropCapRich ? "drop-cap" : ""
                       }`}
                       dangerouslySetInnerHTML={{ __html: section.body ?? "" }}
                     />
                   );
+                  break;
                 }
                 case "heading":
-                  return (
-                    <h2
-                      key={i}
-                      className="text-2xl font-bold text-text-primary tracking-tight pt-4"
-                    >
+                  rendered = (
+                    <h2 className="text-2xl font-bold text-text-primary tracking-tight pt-4">
                       {section.heading}
                     </h2>
                   );
+                  break;
                 case "pullquote":
-                  return (
-                    <blockquote
-                      key={i}
-                      className="bg-accent-light border-l-4 border-primary rounded-r-xl p-6 my-8"
-                    >
+                  rendered = (
+                    <blockquote className="bg-accent-light border-l-4 border-primary rounded-r-xl p-6 my-8">
                       <p className="text-text-primary italic leading-relaxed mb-2">
                         &ldquo;{section.quote}&rdquo;
                       </p>
@@ -143,9 +142,10 @@ export default async function GuidePage({ params }: PageProps) {
                       </cite>
                     </blockquote>
                   );
+                  break;
                 case "photoGrid":
-                  return (
-                    <div key={i} className="grid grid-cols-2 gap-4 my-8">
+                  rendered = (
+                    <div className="grid grid-cols-2 gap-4 my-8">
                       {section.photos?.map((photo, j) => (
                         <div
                           key={j}
@@ -161,9 +161,10 @@ export default async function GuidePage({ params }: PageProps) {
                       ))}
                     </div>
                   );
+                  break;
                 case "infoCards":
-                  return (
-                    <div key={i} className="grid sm:grid-cols-2 gap-4 my-8">
+                  rendered = (
+                    <div className="grid sm:grid-cols-2 gap-4 my-8">
                       {section.cards?.map((card) => (
                         <div
                           key={card.title}
@@ -192,12 +193,10 @@ export default async function GuidePage({ params }: PageProps) {
                       ))}
                     </div>
                   );
+                  break;
                 case "cta":
-                  return (
-                    <div
-                      key={i}
-                      className="bg-navy rounded-2xl p-8 sm:p-10 text-center my-12"
-                    >
+                  rendered = (
+                    <div className="bg-navy rounded-2xl p-8 sm:p-10 text-center my-12">
                       <h3 className="text-2xl font-bold text-white mb-3">
                         {section.ctaTitle}
                       </h3>
@@ -221,10 +220,23 @@ export default async function GuidePage({ params }: PageProps) {
                       </div>
                     </div>
                   );
+                  break;
                 default:
-                  return null;
+                  rendered = null;
               }
+
+              return (
+                <Fragment key={i}>
+                  {rendered}
+                  {/* In-content ad after the intro paragraph — our highest-
+                      viewability slot on the longest template. */}
+                  {i === 0 && <InContentAd slot={AD_SLOTS.guideInline} />}
+                </Fragment>
+              );
             })}
+
+            {/* Second in-content unit between the body and the FAQ block. */}
+            <InContentAd slot={AD_SLOTS.guideMidArticle} />
 
             {guide.faqs && guide.faqs.length > 0 && (
               <section className="guide-faq pt-8 border-t border-border">

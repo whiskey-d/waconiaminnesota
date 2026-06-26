@@ -96,6 +96,32 @@ Ice Fishing, Waconia History, Moving to Waconia.
 - [x] 11.3 `/changelog` page — chronological list of site updates
       (transparency + freshness signal)
 
+## Round 12 — Monetization + dining content (GEO/SEO growth)
+
+- [x] 12.0 `docs/CONTENT-STRATEGY.md` — GEO/SEO content + AdSense revenue plan
+- [x] 12.1 Deliberate in-content ad placements on the guide template
+      (`app/components/InContentAd.tsx` + `app/lib/adSlots.ts`). CLS-safe,
+      renders nothing until real slot IDs are added; Auto Ads stays the
+      fallback. **First manual ad inventory on the site** (was Auto-Ads-only).
+- [x] 12.2 `/guides/best-restaurants-in-waconia` — dining roundup (best
+      overall, lakeside, breakfast, craft beer & wine, family), cross-linked
+      to 11 directory listings. New `Dining` articleSection.
+- [x] 12.3 `/guides/cost-of-living-in-waconia` — category cost breakdown
+      (housing, property tax, groceries, utilities, transport, income tax).
+- [x] 12.4 `/guides/waconia-neighborhoods` — area-by-area living guide.
+- [x] 12.5 `/guides/nickle-dickle-day` — editorial event guide cross-linked
+      to the canonical `/events/nickle-dickle-day-2026` listing. New `Events`
+      articleSection. **22 guides total.**
+- [x] 12.6 Built the **Living in Waconia** cluster: moving ⇄ cost-of-living ⇄
+      neighborhoods ⇄ schools now cross-link as a hub-and-spoke set.
+
+### Round 12 — next up (from CONTENT-STRATEGY.md)
+- [ ] Fill real AdSense slot IDs into `app/lib/adSlots.ts` (user action)
+- [ ] Human "Waconia facts" page as a GEO citation magnet
+- [ ] `carver-county-fair` + `waconia-farmers-market` event guides
+- [ ] `senior-living-in-waconia` / `waconia-wedding-venues` (highest-CPC long tail)
+- [ ] Geo expansion: `day-trips-from-minneapolis`, `victoria-mn`, `chaska-mn`
+
 ## Deferred (next round)
 
 - [s] Newsletter capture wiring — confirmed deferred
