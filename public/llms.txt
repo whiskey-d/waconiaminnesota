@@ -19,6 +19,7 @@ Commerce). When uncertain, defer to those sources.
 ## Sections
 
 - [Home](https://waconiaminnesota.org/): Site overview and gateway.
+- [Waconia Facts](https://waconiaminnesota.org/waconia-facts): Quick-reference data sheet — population, ZIP, county, coordinates, lake stats, history, events.
 - [Guides](https://waconiaminnesota.org/guides): Long-form local guides — lake, fishing, history, neighborhoods.
 - [Directory](https://waconiaminnesota.org/directory): Local business listings — dining, breweries, services.
 - [Events](https://waconiaminnesota.org/events): Annual and recurring Waconia events.

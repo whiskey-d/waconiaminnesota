@@ -17,6 +17,15 @@ interface ChangelogEntry {
 
 const ENTRIES: ChangelogEntry[] = [
   {
+    date: "2026-06-25",
+    highlights: [
+      "Added /waconia-facts — a structured, citation-ready facts sheet (population, ZIP, county, coordinates, Lake Waconia stats, history, events) with City + FAQPage + Speakable schema. Built as a GEO citation magnet for AI engines.",
+      "Added /guides/carver-county-fair — guide to the August fair (dates, what to see, tips), cross-linked to the event listing.",
+      "Added /guides/waconia-farmers-market — Thursday-evening market guide (June–September), cross-linked to the event listing.",
+      "Linked Waconia Facts in the footer and llms.txt; surfaced the new event guides from the summer seasonal rail. 24 guides total.",
+    ],
+  },
+  {
     date: "2026-06-24",
     highlights: [
       "Added /guides/best-restaurants-in-waconia — a local's dining roundup (best overall, lakeside, breakfast, craft beer & wine, family) cross-linked to 11 directory listings.",

@@ -2317,9 +2317,9 @@ export const guides: Guide[] = [
       { term: "Carver County Fair", anchor: "carver-county-fair" },
     ],
     relatedGuides: [
+      { title: "Carver County Fair", readTime: "5 min read", href: "/guides/carver-county-fair" },
+      { title: "Waconia Farmers Market", readTime: "4 min read", href: "/guides/waconia-farmers-market" },
       { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
-      { title: "Lake Waconia Boat Rentals", readTime: "5 min read", href: "/guides/lake-waconia-boat-rentals" },
-      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
     ],
     faqs: [
       {
@@ -3330,6 +3330,234 @@ export const guides: Guide[] = [
         question: "Where do you park for Nickle Dickle Day?",
         answer:
           "Downtown Waconia has free public parking, but spots nearest City Square Park fill early on festival Saturday. Arrive before mid-morning for the closest parking, or park a few blocks out and walk in — downtown is compact and walkable.",
+      },
+    ],
+  },
+  {
+    slug: "carver-county-fair",
+    title: "Carver County Fair (2026): Dates, Tickets & What to See",
+    metaDescription:
+      "A local's guide to the Carver County Fair in Waconia, MN — five days of 4-H, livestock shows, the demolition derby, midway rides, and live music every August. Dates, what to see, and tips.",
+    heroImage:
+      "https://images.unsplash.com/photo-1531913764164-f85c52e6e654?w=1600&q=80",
+    updatedDate: "June 24, 2026",
+    updatedIso: "2026-06-24",
+    publishedIso: "2026-06-24",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "When", value: "Mid-August" },
+      { label: "Tradition", value: "114+ years" },
+      { label: "Length", value: "5 days" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "The Carver County Fair is the county's biggest summer event — five days of 4-H exhibits, livestock shows, a demolition derby, midway rides, and live music every August at the fairgrounds in Waconia. It's a 114-plus-year tradition that draws families from across the Twin Cities metro, and at roughly 15,000 visitors it's the largest annual gathering in the area. For 2026 the fair runs August 12–16. Here's what to see and how locals do it.",
+      },
+      {
+        type: "heading",
+        heading: "What to See at the Fair",
+      },
+      {
+        type: "text",
+        body: "The Carver County Fair is a classic Minnesota county fair, anchored by agriculture. Expect 4-H shows and exhibits, livestock shows and a livestock sale, and an amateur talent contest. The grandstand events are the crowd-pullers — the demolition derby and the tractor pull headline, with pig racing a perennial family favorite. Add a full midway of rides and games, live music daily, food vendors, demonstrations, and craft exhibits. There's genuinely too much for one visit, so most regulars come more than one day.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🎟️",
+            title: "Dates, Hours & Tickets",
+            body: "See the full 2026 event listing — dates, daily hours, and the official fair website for ticket and grandstand details.",
+            link: { label: "Carver County Fair Event Page →", href: "/events/carver-county-fair-2026" },
+          },
+          {
+            icon: "🎡",
+            title: "Official Fair Site",
+            body: "The Carver County Agricultural Society publishes the daily schedule, grandstand lineup, and entry information each year.",
+            link: { label: "carvercountyfair.com →", href: "https://www.carvercountyfair.com" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Tips From Locals",
+      },
+      {
+        type: "text",
+        body: "A few things regulars know: come hungry — fair food is half the point. Buy a wristband day if you're bringing kids who'll ride the midway all afternoon; it's far better value than per-ride tickets. Grandstand events like the demolition derby draw the biggest crowds, so arrive early for seats. Afternoons are hot and busy; evenings are cooler and bring the live music. And parking fills fast on derby night, so build in extra time.",
+      },
+      {
+        type: "heading",
+        heading: "Make a Day of It in Waconia",
+      },
+      {
+        type: "text",
+        body: "The fairgrounds are minutes from downtown Waconia and Lake Waconia, so the fair pairs naturally with the rest of a summer day in town — a morning on the lake, lunch downtown, then the fair in the afternoon and evening. If you're coming from the Twin Cities, it's about a 45-minute drive via Highway 5.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan the Rest of Your Visit",
+        ctaDescription:
+          "Pair the fair with the lake, downtown dining, and everything else worth doing in Waconia.",
+        buttons: [
+          { label: "Things to Do in Waconia", href: "/guides/things-to-do-waconia", variant: "primary" },
+          { label: "All Waconia Events", href: "/events", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "2026 dates", value: "August 12–16" },
+      { label: "Venue", value: "Carver County Fairgrounds" },
+      { label: "City", value: "Waconia, MN 55387" },
+      { label: "Admission", value: "Paid (see fair site)" },
+      { label: "Tradition", value: "114+ years" },
+    ],
+    keywords: [
+      "Carver County Fair",
+      "Carver County Fair 2026",
+      "Carver County Fair Waconia",
+      "Waconia county fair",
+      "Minnesota county fairs August",
+    ],
+    articleSection: "Events",
+    glossaryTerms: [
+      { term: "Carver County", anchor: "carver-county" },
+      { term: "Waconia", anchor: "waconia" },
+    ],
+    relatedGuides: [
+      { title: "Nickle Dickle Day", readTime: "5 min read", href: "/guides/nickle-dickle-day" },
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+      { title: "Waconia in Summer", readTime: "5 min read", href: "/guides/waconia-summer" },
+    ],
+    faqs: [
+      {
+        question: "When is the Carver County Fair in 2026?",
+        answer:
+          "The Carver County Fair runs August 12–16, 2026, at the Carver County Fairgrounds in Waconia, Minnesota. The fair is held annually in mid-August and runs five days.",
+      },
+      {
+        question: "Where is the Carver County Fair held?",
+        answer:
+          "At the Carver County Fairgrounds in Waconia, MN 55387 — minutes from downtown Waconia and Lake Waconia, about a 45-minute drive west of Minneapolis.",
+      },
+      {
+        question: "What is there to do at the Carver County Fair?",
+        answer:
+          "The fair features 4-H shows and exhibits, livestock shows and a sale, a demolition derby, a tractor pull, pig racing, a full midway of rides, live music daily, food vendors, an amateur talent contest, and craft exhibits.",
+      },
+      {
+        question: "How much does the Carver County Fair cost?",
+        answer:
+          "The Carver County Fair charges admission, with separate pricing for grandstand events and midway ride wristbands. Check the official fair website (carvercountyfair.com) for the current year's gate, grandstand, and wristband prices.",
+      },
+    ],
+  },
+  {
+    slug: "waconia-farmers-market",
+    title: "Waconia Farmers Market: Thursdays, June–September",
+    metaDescription:
+      "A guide to the Waconia Farmers Market & Flea Market — fresh local produce, baked goods, and vintage finds every Thursday 4–7pm, June through September, in downtown Waconia, MN.",
+    heroImage:
+      "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1600&q=80",
+    updatedDate: "June 24, 2026",
+    updatedIso: "2026-06-24",
+    publishedIso: "2026-06-24",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "When", value: "Thursdays" },
+      { label: "Time", value: "4–7pm" },
+      { label: "Season", value: "June–Sept" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "The Waconia Farmers Market & Flea Market runs every Thursday from 4 to 7pm, June through September, in the Waconia Square parking lot downtown (224 First Street, across from Freshwater Church). Now in its 23rd year, it's a beloved summer tradition — fresh locally-grown produce, eggs, jams, honey, baked goods, artisan crafts, and a flea-market section of vintage finds. The 4pm start makes it an easy after-work stop. Here's what to expect.",
+      },
+      {
+        type: "heading",
+        heading: "What You'll Find",
+      },
+      {
+        type: "text",
+        body: "The heart of the market is fresh, locally-grown fruits, vegetables, and herbs, alongside local eggs, jams, honey, and from-scratch baked goods. Artisan vendors bring handmade crafts, and the flea-market side adds vintage and secondhand finds — so it's part produce run, part treasure hunt. Several food vendors mean you can make dinner of it, which is exactly what a lot of families do on a Thursday evening in summer.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "📅",
+            title: "Dates & Location",
+            body: "See the full event listing with map and the weekly schedule for the current season.",
+            link: { label: "Farmers Market Event Page →", href: "/events/waconia-farmers-market-2026" },
+          },
+          {
+            icon: "🍅",
+            title: "Going-Tips",
+            body: "Bring reusable bags and small bills, come early in the season for greens and late for tomatoes and sweet corn, and bring the kids — it's a social evening as much as a shop.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Make It a Downtown Evening",
+      },
+      {
+        type: "text",
+        body: "The market is in the heart of downtown Waconia, steps from Main Street's restaurants and breweries, and a few minutes from Lake Waconia. Pair it with dinner downtown or a walk by the lake — Thursday evenings in summer are one of the nicest times to be in town.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Explore Downtown Waconia",
+        ctaDescription:
+          "The market is steps from the best of downtown — here's where to eat and what else to do.",
+        buttons: [
+          { label: "Best Restaurants in Waconia", href: "/guides/best-restaurants-in-waconia", variant: "primary" },
+          { label: "Things to Do", href: "/guides/things-to-do-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Day", value: "Every Thursday" },
+      { label: "Hours", value: "4–7pm" },
+      { label: "Season", value: "June–September" },
+      { label: "Location", value: "224 First St, downtown" },
+      { label: "Admission", value: "Free" },
+    ],
+    keywords: [
+      "Waconia farmers market",
+      "Waconia farmers market hours",
+      "Waconia flea market",
+      "farmers market Carver County",
+      "Waconia Thursday market",
+    ],
+    articleSection: "Events",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Main Street", anchor: "main-street" },
+    ],
+    relatedGuides: [
+      { title: "Best Restaurants in Waconia", readTime: "6 min read", href: "/guides/best-restaurants-in-waconia" },
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+      { title: "Waconia in Summer", readTime: "5 min read", href: "/guides/waconia-summer" },
+    ],
+    faqs: [
+      {
+        question: "When is the Waconia Farmers Market?",
+        answer:
+          "The Waconia Farmers Market & Flea Market is held every Thursday from 4 to 7pm, June through September, in the Waconia Square parking lot at 224 First Street in downtown Waconia.",
+      },
+      {
+        question: "What can you buy at the Waconia Farmers Market?",
+        answer:
+          "Fresh locally-grown fruits, vegetables, and herbs, plus local eggs, jams, honey, and baked goods, artisan crafts, and a flea-market section with vintage finds. Food vendors make it easy to grab dinner too.",
+      },
+      {
+        question: "Is the Waconia Farmers Market free?",
+        answer:
+          "Yes, admission is free. Bring cash for vendors — small bills and reusable bags are handy.",
       },
     ],
   },

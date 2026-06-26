@@ -115,12 +115,22 @@ Ice Fishing, Waconia History, Moving to Waconia.
 - [x] 12.6 Built the **Living in Waconia** cluster: moving ⇄ cost-of-living ⇄
       neighborhoods ⇄ schools now cross-link as a hub-and-spoke set.
 
-### Round 12 — next up (from CONTENT-STRATEGY.md)
+## Round 13 — GEO citation page + event guides
+
+- [x] 13.1 `/waconia-facts` — structured facts sheet (population, ZIP, county,
+      coordinates, lake stats, history, events) with `City` + `FAQPage` +
+      `Speakable` schema. GEO citation magnet; linked in footer + llms.txt.
+- [x] 13.2 `/guides/carver-county-fair` — August fair guide, cross-linked to
+      `/events/carver-county-fair-2026`.
+- [x] 13.3 `/guides/waconia-farmers-market` — Thursday market guide,
+      cross-linked to `/events/waconia-farmers-market-2026`. **24 guides total.**
+- [x] 13.4 Surfaced both event guides from the summer seasonal rail.
+
+### Next up (from CONTENT-STRATEGY.md)
 - [ ] Fill real AdSense slot IDs into `app/lib/adSlots.ts` (user action)
-- [ ] Human "Waconia facts" page as a GEO citation magnet
-- [ ] `carver-county-fair` + `waconia-farmers-market` event guides
 - [ ] `senior-living-in-waconia` / `waconia-wedding-venues` (highest-CPC long tail)
 - [ ] Geo expansion: `day-trips-from-minneapolis`, `victoria-mn`, `chaska-mn`
+- [ ] Hub pages (Dining, Living in Waconia, Events) + "this weekend" surface
 
 ## Deferred (next round)
 
