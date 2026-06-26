@@ -20,6 +20,10 @@ const ENTRIES: ChangelogEntry[] = [
     date: "2026-06-24",
     highlights: [
       "Added /guides/best-restaurants-in-waconia — a local's dining roundup (best overall, lakeside, breakfast, craft beer & wine, family) cross-linked to 11 directory listings.",
+      "Added /guides/cost-of-living-in-waconia — category breakdown of housing, property taxes, groceries, utilities, transportation, and income tax.",
+      "Added /guides/waconia-neighborhoods — area-by-area guide to downtown, lakefront, north-side, and rural-fringe living.",
+      "Added /guides/nickle-dickle-day — editorial guide to Waconia's September street festival, cross-linked to the event listing.",
+      "New 'Living in Waconia' cluster (moving + cost-of-living + neighborhoods + schools) and a new 'Events' guide section. 22 guides total.",
       "Added deliberate, CLS-safe in-content ad placements on the guide template (configurable via app/lib/adSlots.ts; Auto Ads remains the fallback).",
       "Published docs/CONTENT-STRATEGY.md — GEO/SEO content & AdSense monetization roadmap.",
     ],
