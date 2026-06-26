@@ -29,6 +29,19 @@ based on whether the underlying facts can shift.
 | `waconia-winter` | Annual (fall) | Medium | Refresh Crappie Contest year, igloos |
 | `waconia-fall` | Annual (summer) | Medium | Refresh Scarecrow Tour dates |
 | `waconia-wineries-breweries-tour` | Annual | Medium | Producer hours, pricing band |
+| `best-restaurants-in-waconia` | Annual | Medium | Check for closures; verify "best" picks still open. Bump year in title |
+| `cost-of-living-in-waconia` | Annual | Medium | Tax rates, sales tax, relative cost framing; no hard $ figures to rot |
+| `waconia-neighborhoods` | Biennial | Low | Area character is stable; revisit if a major development opens |
+| `waconia-wedding-venues` | Annual | Medium | Confirm venues still operating + hosting events |
+| `senior-living-in-waconia` | Annual | Medium | Care-level framing stable; verify program names (Elderly Waiver) + verification sources |
+| `nickle-dickle-day` | Annual (Jan) | Medium | Bump the year + dates; mirror `/events/nickle-dickle-day-<year>` |
+| `carver-county-fair` | Annual (Jan) | Medium | Bump dates + "114+ years" count; mirror `/events/carver-county-fair-<year>` |
+| `waconia-farmers-market` | Annual (spring) | Medium | Confirm season dates/hours; mirror `/events/waconia-farmers-market-<year>` |
+
+**Event guides:** `nickle-dickle-day`, `carver-county-fair`, and
+`waconia-farmers-market` are editorial companions to the canonical
+`/events/<slug>` listings. When you bump an event's date/slug in
+`app/lib/events.ts`, update the matching guide's body + `updatedIso` too.
 
 ## Events (`app/lib/events.ts`)
 
@@ -70,6 +83,7 @@ refresh.
 | `/glossary` | Annual | Add new local terms; bump definitions for accuracy |
 | `/best-of-waconia` | **Annual (January)** | Year-stamped; bump `YEAR` constant + review every pick |
 | `/faqs` | Auto-aggregates from guides | Refresh by refreshing the underlying guides |
+| `/waconia-facts` | Annual | GEO citation page (`City` schema). Re-verify population, lake stats, fair year-count. Source: Census, MN DNR, Carver County |
 | `/changelog` | Quarterly | Add an entry per refresh |
 
 ## Configuration files
@@ -81,6 +95,7 @@ refresh.
 | `public/manifest.webmanifest` | When brand changes | PWA metadata |
 | `app/sitemap.ts` | Quarterly | Bump `LAST_CONTENT_UPDATE` |
 | `public/ads.txt` | When AdSense publisher changes | AdSense verification |
+| `app/lib/adSlots.ts` | When ad units change | **Real AdSense slot IDs go here** to activate the in-content guide ad placements. Empty = Auto-Ads-only. |
 
 ## Authoritative external sources
 
