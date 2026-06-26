@@ -115,12 +115,27 @@ Ice Fishing, Waconia History, Moving to Waconia.
 - [x] 12.6 Built the **Living in Waconia** cluster: moving ⇄ cost-of-living ⇄
       neighborhoods ⇄ schools now cross-link as a hub-and-spoke set.
 
-### Round 12 — next up (from CONTENT-STRATEGY.md)
+## Round 13 — GEO citation page + event guides
+
+- [x] 13.1 `/waconia-facts` — structured facts sheet (population, ZIP, county,
+      coordinates, lake stats, history, events) with `City` + `FAQPage` +
+      `Speakable` schema. GEO citation magnet; linked in footer + llms.txt.
+- [x] 13.2 `/guides/carver-county-fair` — August fair guide, cross-linked to
+      `/events/carver-county-fair-2026`.
+- [x] 13.3 `/guides/waconia-farmers-market` — Thursday market guide,
+      cross-linked to `/events/waconia-farmers-market-2026`. **24 guides total.**
+- [x] 13.4 Surfaced both event guides from the summer seasonal rail.
+
+- [x] 13.5 `/guides/waconia-wedding-venues` — high-CPC venue guide (lakefront,
+      vineyard, golf), cross-linked to 4 directory listings.
+- [x] 13.6 `/guides/senior-living-in-waconia` — high-CPC care guide; care
+      levels, Ridgeview anchor, costs, and authoritative verification sources
+      (no fabricated facilities/prices). **26 guides total.**
+
+### Next up (from CONTENT-STRATEGY.md)
 - [ ] Fill real AdSense slot IDs into `app/lib/adSlots.ts` (user action)
-- [ ] Human "Waconia facts" page as a GEO citation magnet
-- [ ] `carver-county-fair` + `waconia-farmers-market` event guides
-- [ ] `senior-living-in-waconia` / `waconia-wedding-venues` (highest-CPC long tail)
 - [ ] Geo expansion: `day-trips-from-minneapolis`, `victoria-mn`, `chaska-mn`
+- [ ] Hub pages (Dining, Living in Waconia, Events) + "this weekend" surface
 
 ## Deferred (next round)
 
@@ -135,23 +150,27 @@ Ice Fishing, Waconia History, Moving to Waconia.
 - [ ] Per-event and per-business OG images
 - [ ] Season-specific event filtering on /events
 
-## Current site shape (after rounds 10+11)
+## Current site shape (after rounds 12+13, 2026-06-25)
 
 - Home + 6 sections (directory, events, guides, hotels, foreclosures)
-- Trust pages: about, contact, glossary, best-of, faqs, changelog (6)
-- Directory: 26 businesses across 6 category landing pages
-- Guides: 18 long-form pieces, organized into 8 topic sections on the
-  guides index
+- Trust / reference pages: about, contact, glossary, best-of, faqs, changelog,
+  **`/waconia-facts`** (GEO citation page) — 7
+- Directory: 46 businesses across 6 category landing pages
+- Guides: **26 long-form pieces**, organized into topic sections on the guides
+  index — including new **Dining**, expanded **Living in Waconia**, and
+  **Events** sections
 - Events: 7 recurring/annual + ICS export
+- Monetization: **deliberate in-content ad slots on the guide template**
+  (`InContentAd` + `adSlots.ts`) + Auto Ads. *Real slot IDs still TODO.*
 - Custom 404
 - OG image generation: root + per-guide
-- Total static + dynamic routes: ~74
+- Total static + dynamic routes: **83**
 
 ## Schema coverage (cumulative)
 
 `Organization`, `WebSite`, `BreadcrumbList`, `Article`, `FAQPage`, `Event`,
 `EventSeries`, `LocalBusiness`, `ItemList`, `CollectionPage`, `AboutPage`,
-`ContactPage`, `ContactPoint`, `Place`, `BodyOfWater`, `DefinedTermSet`,
+`ContactPage`, `ContactPoint`, `Place`, `BodyOfWater`, `City`, `DefinedTermSet`,
 `DefinedTerm`, `Speakable`, `HowTo`, `HowToStep`, `HowToTool`,
 `MonetaryAmount`, `TouristDestination`, `TouristAttraction`.
 

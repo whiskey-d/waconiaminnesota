@@ -5,13 +5,58 @@ clicks, pageviews/session, and dwell time, and convert that traffic into
 **AdSense revenue** as the primary monetization driver.
 
 Owner cadence: revisit this doc each quarter alongside `QUARTERLY-REFRESH.md`.
-Last authored: 2026-06-24.
+Authored: 2026-06-24. Last updated: 2026-06-25 (see §0 progress log).
 
 > **GEOSCO** = the combined discipline of **GEO** (Generative Engine
 > Optimization — getting cited by ChatGPT / Gemini / Perplexity / AI Overviews)
 > and **SEO** (classic Google ranking). They share inputs (entity clarity,
 > schema, freshness, unique data) but reward different formats. This plan plays
 > both.
+
+---
+
+## 0. Progress log — where we left off
+
+**Last worked: 2026-06-25.** Read this first when picking the work back up.
+
+### Shipped so far (PRs #9 + #10, both based on this strategy)
+- **Monetization wired (not yet earning):** `app/components/InContentAd.tsx` +
+  `app/lib/adSlots.ts` add CLS-safe in-content ad slots to the guide template
+  (after intro + before FAQ). They render nothing until real slot IDs exist.
+  **➜ NEXT MANUAL STEP (user): paste real AdSense slot IDs into
+  `app/lib/adSlots.ts`.** Until then the site is still Auto-Ads-only.
+- **Content: 18 → 26 guides.** New clusters:
+  - *Dining:* `best-restaurants-in-waconia`
+  - *Living in Waconia:* `cost-of-living-in-waconia`, `waconia-neighborhoods`,
+    `waconia-wedding-venues`, `senior-living-in-waconia` (joins moving + schools)
+  - *Events:* `nickle-dickle-day`, `carver-county-fair`, `waconia-farmers-market`
+    (each cross-links to its canonical `/events/<slug>` entity — no duplicate
+    Event schema)
+- **GEO citation page:** `/waconia-facts` — structured facts sheet with
+  `City` + `FAQPage` + `Speakable` JSON-LD; linked in footer + `llms.txt`.
+- Site is now 83 static routes (was ~74).
+
+### Next up (in priority order)
+1. **User:** drop real AdSense slot IDs into `app/lib/adSlots.ts`.
+2. **Geo expansion** (multiplies addressable search): `day-trips-from-minneapolis`,
+   `victoria-mn`, `chaska-mn`.
+3. **Hub pages** (Dining / Living in Waconia / Events) to distribute authority
+   + pageviews, plus a **"this weekend in Waconia"** dynamic surface fed by
+   events data (best return-visit + GEO freshness driver).
+4. **More dining/real-estate spokes** from §4 Tier 2/3 (restaurants-on-lake,
+   coffee-shops, property-taxes, renting-in-waconia) as time allows.
+
+### Conventions established this session (keep following)
+- New guides go in `app/lib/guides.ts`; answer-first intro, full Article +
+  FAQPage schema (automatic via template), `keywords` + `articleSection` +
+  `glossaryTerms`, and **cross-link from 1–2 sibling `relatedGuides` rails**.
+- **Never fabricate** prices/hours/stats/facilities. Reuse verified repo data
+  or point to authoritative sources (DNR, Census, Carver County, Care Compare).
+- Event *guides* are editorial companions that link to the canonical
+  `/events/<slug>` page; don't duplicate Event JSON-LD.
+- After shipping: bump `app/sitemap.ts` `LAST_CONTENT_UPDATE`, add a
+  `/changelog` entry, tick the round in `SEO-ROADMAP.md`, add new pages to
+  `CONTENT-INVENTORY.md`, and run `npm run build` + `npx next lint`.
 
 ---
 
