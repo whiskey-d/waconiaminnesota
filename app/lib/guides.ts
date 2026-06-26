@@ -2726,9 +2726,9 @@ export const guides: Guide[] = [
       { term: "Carver County", anchor: "carver-county" },
     ],
     relatedGuides: [
+      { title: "Waconia Wedding Venues", readTime: "5 min read", href: "/guides/waconia-wedding-venues" },
       { title: "Best Restaurants in Waconia", readTime: "6 min read", href: "/guides/best-restaurants-in-waconia" },
       { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
-      { title: "Best of Waconia", readTime: "4 min read", href: "/best-of-waconia" },
     ],
     faqs: [
       {
@@ -3043,7 +3043,7 @@ export const guides: Guide[] = [
     relatedGuides: [
       { title: "Moving to Waconia", readTime: "8 min read", href: "/guides/moving-to-waconia" },
       { title: "Waconia Neighborhoods", readTime: "6 min read", href: "/guides/waconia-neighborhoods" },
-      { title: "Waconia Schools (ISD 110)", readTime: "6 min read", href: "/guides/waconia-schools" },
+      { title: "Senior Living in Waconia", readTime: "6 min read", href: "/guides/senior-living-in-waconia" },
     ],
     faqs: [
       {
@@ -3558,6 +3558,270 @@ export const guides: Guide[] = [
         question: "Is the Waconia Farmers Market free?",
         answer:
           "Yes, admission is free. Bring cash for vendors — small bills and reusable bags are handy.",
+      },
+    ],
+  },
+  {
+    slug: "waconia-wedding-venues",
+    title: "Waconia Wedding Venues: Lakefront, Vineyard & Golf (2026)",
+    metaDescription:
+      "A local's guide to wedding venues in and around Waconia, MN — lakefront ballrooms, vineyard tasting rooms, and golf-club settings on and near Lake Waconia, with booking tips for each.",
+    heroImage:
+      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1600&q=80",
+    updatedDate: "June 25, 2026",
+    updatedIso: "2026-06-25",
+    publishedIso: "2026-06-25",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Venue Styles", value: "3" },
+      { label: "Setting", value: "Lake & vineyard" },
+      { label: "Book Ahead", value: "12–18 mo" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Waconia is one of the most scenic places to get married in the western Twin Cities, and its wedding venues fall into three distinct styles: a dedicated lakefront event center, two estate wineries with tasting-room and patio settings, and a golf club with lake views. The marquee option for a classic ballroom wedding is Bayview Event Center, directly on Lake Waconia. Below is a local's rundown of each venue type, who it suits, and how far ahead to book — summer Saturdays here go 12 to 18 months out.",
+      },
+      {
+        type: "heading",
+        heading: "Lakefront Ballroom: Bayview Event Center",
+      },
+      {
+        type: "richText",
+        body: "<a href=\"/directory/bayview-event-center\">Bayview Event Center</a> ($$$, 615 Lake St E) is Waconia's dedicated wedding-and-events venue — a lakefront ballroom on Lake Waconia with floor-to-ceiling lake views, full in-house catering, a lake-facing ceremony lawn, and on-site lodging packages. The west-facing aisle catches the sunset over the water, which is the single most-requested feature here. It's the natural choice for a full-service, classic wedding where you want one place to handle ceremony, dinner, and reception. Summer Saturdays book 12–18 months in advance, so inquire early.",
+      },
+      {
+        type: "heading",
+        heading: "Vineyard & Winery Weddings",
+      },
+      {
+        type: "richText",
+        body: "For a wine-country setting, two estate producers host events. <a href=\"/directory/schram-vineyards\">Schram Vineyards Winery &amp; Brewery</a> ($$) sits on rolling farmland west of town with sweeping vineyard views, a tasting room, fire pits, and a large lawn — a popular backdrop for ceremonies and receptions. <a href=\"/directory/sovereign-estate-wine\">Sovereign Estate Wine</a> ($$$) offers a more intimate, elegant lakefront setting on the north shore, with a stone-and-glass tasting room and a tiered patio built for sunset. Both suit couples who want a vineyard aesthetic and on-site estate wine; confirm event capacity, buyout options, and catering rules directly, as these vary by season.",
+      },
+      {
+        type: "heading",
+        heading: "Golf-Club Setting: Island View",
+      },
+      {
+        type: "richText",
+        body: "<a href=\"/directory/island-view-golf-club\">Island View Golf Club</a> ($$) hosts weddings and events in a suburban country-club setting just outside Waconia, with a clubhouse and a patio overlooking the 18th green and views toward the lake. It's a good fit for couples who want a golf-course backdrop, a built-in venue for the rehearsal or the guys' morning round, and a more traditional clubhouse reception.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "💍",
+            title: "Booking Checklist",
+            body: "Ask each venue about: peak-season Saturday availability, guest capacity, in-house vs. outside catering, bar/liquor rules, rain plan for outdoor ceremonies, and lodging blocks for out-of-town guests.",
+          },
+          {
+            icon: "🛏️",
+            title: "Where Guests Stay",
+            body: "Waconia's lodging is limited, so reserve room blocks early. Our hotels guide covers the local options and nearby alternatives.",
+            link: { label: "Where to Stay in Waconia →", href: "/hotels" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Planning a Waconia Wedding Weekend",
+      },
+      {
+        type: "text",
+        body: "Beyond the ceremony, Waconia gives guests plenty to do across a weekend — the lake, the downtown breweries and restaurants, and the wineries themselves double as rehearsal-dinner and welcome-party settings. Because hotel capacity in town is modest, lock in lodging blocks as soon as you have a date, and consider nearby Chaska and Chanhassen (8–12 miles east) for overflow rooms.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan the Weekend Around It",
+        ctaDescription:
+          "Give your guests the full lake-town experience — dining, breweries, and the lake.",
+        buttons: [
+          { label: "Best Restaurants in Waconia", href: "/guides/best-restaurants-in-waconia", variant: "primary" },
+          { label: "Wineries & Breweries Tour", href: "/guides/waconia-wineries-breweries-tour", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Lakefront ballroom", value: "Bayview Event Center" },
+      { label: "Vineyard", value: "Schram / Sovereign Estate" },
+      { label: "Golf club", value: "Island View" },
+      { label: "Peak booking", value: "12–18 months out" },
+      { label: "Guest lodging", value: "Reserve blocks early" },
+    ],
+    keywords: [
+      "Waconia wedding venues",
+      "Lake Waconia wedding venue",
+      "Waconia MN weddings",
+      "vineyard wedding Minnesota",
+      "Bayview Event Center Waconia",
+      "lakefront wedding venue Minnesota",
+    ],
+    articleSection: "Living in Waconia",
+    glossaryTerms: [
+      { term: "Lake Waconia", anchor: "lake-waconia" },
+      { term: "Waconia", anchor: "waconia" },
+    ],
+    relatedGuides: [
+      { title: "Wineries & Breweries Tour", readTime: "6 min read", href: "/guides/waconia-wineries-breweries-tour" },
+      { title: "Where to Stay in Waconia", readTime: "5 min read", href: "/hotels" },
+      { title: "Best Restaurants in Waconia", readTime: "6 min read", href: "/guides/best-restaurants-in-waconia" },
+    ],
+    faqs: [
+      {
+        question: "What are the best wedding venues in Waconia, MN?",
+        answer:
+          "The main options are Bayview Event Center (a dedicated lakefront ballroom on Lake Waconia), Schram Vineyards and Sovereign Estate Wine (estate wineries with vineyard and lakefront settings), and Island View Golf Club (a country-club setting with lake views). Bayview is the go-to for a full-service classic wedding.",
+      },
+      {
+        question: "Is there a lakefront wedding venue in Waconia?",
+        answer:
+          "Yes. Bayview Event Center sits directly on Lake Waconia with floor-to-ceiling lake views, a lake-facing ceremony lawn, and a west-facing aisle that catches the sunset. Sovereign Estate Wine also offers a lakefront setting on the north shore.",
+      },
+      {
+        question: "How far in advance should you book a Waconia wedding venue?",
+        answer:
+          "Summer Saturdays at the most popular venues book 12 to 18 months in advance. Reserve your date as early as possible, and lock in guest lodging blocks at the same time — hotel capacity in Waconia is limited.",
+      },
+      {
+        question: "Can you get married at a winery near Waconia?",
+        answer:
+          "Yes. Schram Vineyards Winery & Brewery (rolling farmland west of town) and Sovereign Estate Wine (lakefront, north shore) both host weddings and events with on-site estate wine. Confirm capacity, buyout, and catering details directly with each venue.",
+      },
+    ],
+  },
+  {
+    slug: "senior-living-in-waconia",
+    title: "Senior Living in Waconia, MN: A Family's Guide",
+    metaDescription:
+      "How to navigate senior living in Waconia, Minnesota — the types of care (independent living, assisted living, memory care, 55+), what makes Waconia a fit for retirees, costs, and how to verify options.",
+    heroImage:
+      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1600&q=80",
+    updatedDate: "June 25, 2026",
+    updatedIso: "2026-06-25",
+    publishedIso: "2026-06-25",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Hospital", value: "Ridgeview" },
+      { label: "County", value: "Carver" },
+      { label: "Care Types", value: "4" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Choosing senior living in Waconia, Minnesota usually comes down to matching a level of care to a person's needs, and Waconia's appeal for retirees is concrete: it's anchored by Ridgeview Medical Center, the regional hospital headquartered in town, and it's a quieter lake community within reach of the Twin Cities' specialty care. This guide explains the four main types of senior living, what makes Waconia a fit, the cost factors that matter in Minnesota, and — importantly — how to verify specific communities rather than trust an unvetted list. We don't publish facility names or prices we can't confirm; use the authoritative directories below to build your shortlist.",
+      },
+      {
+        type: "heading",
+        heading: "The Four Levels of Senior Living",
+      },
+      {
+        type: "text",
+        body: "Senior living is a spectrum, not a single product. (1) Active-adult / 55+ communities are for independent seniors who want a low-maintenance home and an age-restricted neighborhood — no care services. (2) Independent living adds conveniences like meals, housekeeping, and activities, still for people who don't need daily help. (3) Assisted living provides help with daily activities (medication, bathing, dressing) while preserving independence. (4) Memory care is a secured, specialized setting for dementia and Alzheimer's. Some campuses offer several levels so a resident can age in place as needs change — worth asking about up front.",
+      },
+      {
+        type: "heading",
+        heading: "Why Families Consider Waconia",
+      },
+      {
+        type: "text",
+        body: "The single biggest draw is Ridgeview Medical Center — a full-service regional hospital headquartered in Waconia with emergency care, surgery, and a network of clinics, so a higher level of medical care is close at hand. Beyond healthcare, Waconia offers a genuinely pleasant setting for later life: a walkable downtown, the lake and regional park for easy outdoor time, the Carver County Library branch, and community events that are easy to attend. For families, the city's location means visiting is a manageable drive from across the metro.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "Proximity to Ridgeview is the reason a lot of families look at Waconia first. The lake and the small-town pace are why parents agree to the move.",
+        attribution: "Local advice",
+      },
+      {
+        type: "heading",
+        heading: "What Drives the Cost",
+      },
+      {
+        type: "text",
+        body: "Senior-living cost in Minnesota depends mostly on the level of care, the size of the unit, and which services are bundled versus billed à la carte. Assisted living and memory care cost more than independent or 55+ living because of staffing. Minnesota offers programs that can help with cost for those who qualify — notably the Elderly Waiver (EW) program through Medical Assistance — and long-term care insurance or VA benefits may apply. Because pricing changes and varies widely by community, get current quotes in writing from each option and ask exactly what's included.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "✅",
+            title: "Verify Before You Tour",
+            body: "Build your shortlist from authoritative sources: Medicare.gov's Care Compare, the Minnesota Board on Aging / Senior LinkAge Line (1-800-333-2433), and the MN Dept. of Health licensing lookup for assisted-living and care facilities.",
+          },
+          {
+            icon: "🏥",
+            title: "Healthcare Anchor",
+            body: "Ridgeview Medical Center, headquartered in Waconia, is the regional hospital — a key factor when a senior's care needs may grow over time.",
+            link: { label: "Moving to Waconia →", href: "/guides/moving-to-waconia" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Questions to Ask on a Tour",
+      },
+      {
+        type: "text",
+        body: "When you visit a community, ask: What levels of care are offered on-site, and can a resident move up a level without relocating? What exactly is included in the monthly fee versus billed separately? What are the staffing ratios, especially overnight? How are medical emergencies handled, and what's the relationship with Ridgeview? What's the policy if funds run low or a resident shifts to a state program? Clear answers — in writing — separate a good fit from a sales pitch.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Researching a Move to Waconia?",
+        ctaDescription:
+          "Our relocation and cost-of-living guides cover the practical side of settling in Waconia.",
+        buttons: [
+          { label: "Moving to Waconia", href: "/guides/moving-to-waconia", variant: "primary" },
+          { label: "Cost of Living", href: "/guides/cost-of-living-in-waconia", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Regional hospital", value: "Ridgeview Medical Center" },
+      { label: "Care levels", value: "55+, independent, assisted, memory" },
+      { label: "State help", value: "Elderly Waiver (if eligible)" },
+      { label: "Verify via", value: "Senior LinkAge Line" },
+      { label: "County", value: "Carver County" },
+    ],
+    keywords: [
+      "senior living Waconia",
+      "Waconia MN assisted living",
+      "Waconia memory care",
+      "55+ communities Waconia",
+      "retirement Waconia Minnesota",
+    ],
+    articleSection: "Living in Waconia",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Ridgeview Medical Center", anchor: "ridgeview" },
+      { term: "Carver County", anchor: "carver-county" },
+    ],
+    relatedGuides: [
+      { title: "Moving to Waconia", readTime: "8 min read", href: "/guides/moving-to-waconia" },
+      { title: "Cost of Living in Waconia", readTime: "6 min read", href: "/guides/cost-of-living-in-waconia" },
+      { title: "Waconia Neighborhoods", readTime: "6 min read", href: "/guides/waconia-neighborhoods" },
+    ],
+    faqs: [
+      {
+        question: "What types of senior living are available in Waconia, MN?",
+        answer:
+          "The main levels are active-adult/55+ communities (no care services), independent living (meals, housekeeping, activities), assisted living (help with daily activities), and memory care (secured dementia/Alzheimer's care). Some campuses offer multiple levels so a resident can age in place. Verify specific communities through Medicare's Care Compare and the Minnesota Senior LinkAge Line.",
+      },
+      {
+        question: "Why is Waconia a good place for senior living?",
+        answer:
+          "Waconia is home to Ridgeview Medical Center, a full-service regional hospital, so higher-level medical care is close by. It also offers a walkable downtown, Lake Waconia and the regional park, a library branch, and community events — a pleasant, lower-key setting within reach of the Twin Cities for visiting family.",
+      },
+      {
+        question: "How much does senior living cost in Minnesota?",
+        answer:
+          "Cost depends mainly on the level of care, unit size, and which services are bundled. Assisted living and memory care cost more than independent or 55+ living due to staffing. Minnesota's Elderly Waiver program can help eligible residents, and long-term care insurance or VA benefits may apply. Get current written quotes from each community.",
+      },
+      {
+        question: "How do I find and vet senior living communities near Waconia?",
+        answer:
+          "Use authoritative sources rather than unvetted lists: Medicare.gov's Care Compare, the Minnesota Board on Aging / Senior LinkAge Line (1-800-333-2433), and the Minnesota Department of Health's licensing lookup for assisted-living and care facilities. Then tour your shortlist and ask about care levels, staffing, costs, and emergency procedures.",
       },
     ],
   },

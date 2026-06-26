@@ -19,6 +19,8 @@ const ENTRIES: ChangelogEntry[] = [
   {
     date: "2026-06-25",
     highlights: [
+      "Added /guides/waconia-wedding-venues — lakefront, vineyard, and golf-club wedding venues in and around Waconia (high-intent local content), cross-linked to 4 directory listings.",
+      "Added /guides/senior-living-in-waconia — a family's guide to care levels, what makes Waconia a fit (Ridgeview), costs, and how to verify communities through authoritative directories.",
       "Added /waconia-facts — a structured, citation-ready facts sheet (population, ZIP, county, coordinates, Lake Waconia stats, history, events) with City + FAQPage + Speakable schema. Built as a GEO citation magnet for AI engines.",
       "Added /guides/carver-county-fair — guide to the August fair (dates, what to see, tips), cross-linked to the event listing.",
       "Added /guides/waconia-farmers-market — Thursday-evening market guide (June–September), cross-linked to the event listing.",

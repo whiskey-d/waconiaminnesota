@@ -126,9 +126,14 @@ Ice Fishing, Waconia History, Moving to Waconia.
       cross-linked to `/events/waconia-farmers-market-2026`. **24 guides total.**
 - [x] 13.4 Surfaced both event guides from the summer seasonal rail.
 
+- [x] 13.5 `/guides/waconia-wedding-venues` — high-CPC venue guide (lakefront,
+      vineyard, golf), cross-linked to 4 directory listings.
+- [x] 13.6 `/guides/senior-living-in-waconia` — high-CPC care guide; care
+      levels, Ridgeview anchor, costs, and authoritative verification sources
+      (no fabricated facilities/prices). **26 guides total.**
+
 ### Next up (from CONTENT-STRATEGY.md)
 - [ ] Fill real AdSense slot IDs into `app/lib/adSlots.ts` (user action)
-- [ ] `senior-living-in-waconia` / `waconia-wedding-venues` (highest-CPC long tail)
 - [ ] Geo expansion: `day-trips-from-minneapolis`, `victoria-mn`, `chaska-mn`
 - [ ] Hub pages (Dining, Living in Waconia, Events) + "this weekend" surface
 
