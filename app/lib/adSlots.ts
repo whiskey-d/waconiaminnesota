@@ -11,8 +11,10 @@
  * highest-dwell template (long-form guides). Auto Ads stays on everywhere else.
  */
 export const AD_SLOTS = {
-  /** In-content unit injected after the guide intro (above the fold of the body). */
-  guideInline: "",
-  /** Second in-content unit between the article body and the FAQ block. */
-  guideMidArticle: "",
+  /** In-content unit injected after the guide intro (above the fold of the body).
+   *  AdSense unit: "Guide – in-content (after intro)". */
+  guideInline: "5317400697",
+  /** Second in-content unit between the article body and the FAQ block.
+   *  AdSense unit: "Guide – mid-article". */
+  guideMidArticle: "4004319023",
 } as const;
