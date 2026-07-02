@@ -17,6 +17,12 @@ interface ChangelogEntry {
 
 const ENTRIES: ChangelogEntry[] = [
   {
+    date: "2026-06-26",
+    highlights: [
+      "Activated the two in-content ad units on every guide page (real AdSense slot IDs added to adSlots.ts). Auto Ads continues to run site-wide.",
+    ],
+  },
+  {
     date: "2026-06-25",
     highlights: [
       "Added /guides/waconia-wedding-venues — lakefront, vineyard, and golf-club wedding venues in and around Waconia (high-intent local content), cross-linked to 4 directory listings.",
