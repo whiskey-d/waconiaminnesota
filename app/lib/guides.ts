@@ -93,12 +93,12 @@ export const guides: Guide[] = [
         type: "photoGrid",
         photos: [
           {
-            src: "https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=600&q=80",
+            src: "/images/fishing-lake-waconia.webp",
             alt: "Angler fishing at sunrise on Lake Waconia",
           },
           {
-            src: "https://images.unsplash.com/photo-1532015644327-311954d1e706?w=600&q=80",
-            alt: "Bass fishing in Lake Waconia weeds",
+            src: "/images/event-fishing-tournament.webp",
+            alt: "Anglers competing in a Lake Waconia fishing tournament",
           },
         ],
       },
