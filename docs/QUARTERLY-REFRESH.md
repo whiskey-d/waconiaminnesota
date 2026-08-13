@@ -12,6 +12,28 @@ without rediscovering the codebase.
 | **Annually (each January)** | Bump year-stamped pages, add next year's events, refresh "Best of [Year]", review all guide `updatedIso`/`updatedDate` for accuracy, refresh seasonal guides | Year-stamped content gets stale fast in search results |
 | **Annually (each spring before Memorial Day)** | Verify all directory hours, especially seasonal businesses; verify boat-rental pricing | Lake season starts |
 | **Event-driven** | Update business listing when a closure / opening / relocation is reported | Trust + accuracy |
+| **Pre-event (2–4 weeks before each marquee event)** | Verify that event's page + companion guide (dates, times, details), fix anything stale | Event searches spike ahead of the date; **events = views = AdSense** (confirmed by the 2026 Carver County Fair-week traffic spike) |
+
+## Event lead-time calendar
+
+Event-driven traffic is the site's biggest spike source (empirically confirmed
+2026-08-13, Carver County Fair week). Search interest starts **2–4 weeks before
+each event**, so verify the event page + companion guide *by* the check date —
+not on the event date. Recurring annual rhythm (shift dates each year):
+
+| Check by | Event (2026 date) | Surfaces to verify |
+|---|---|---|
+| mid-Aug | Deardorff apple season opens ~Labor Day weekend | `deardorff-apple-season-<yr>` event, `apple-orchards-near-waconia`, fall guide |
+| late Aug | Nickle Dickle Day (Sep 19) + Street Dance (Sep 18) | event page, `nickle-dickle-day` guide |
+| mid-Sep | Scarecrow Tour (Oct 8–18) | event page, fall guide |
+| **Sep onward** | **Christkindlsmarkt dates announce** | **Replace "dates TBA" in `events.ts` + `waconia-christmas` the moment christmasinwaconia.com posts them** |
+| mid-Oct | D.E.A.R. Hunting Day (Nov 7, deer-opener Sat) | event page, `waconia-christmas` guide |
+| early Nov | Tree Lighting (Nov 27) + Small Business Saturday (Nov 28) + Pink Friday (Nov 20) | event pages, `waconia-christmas`, winter guide |
+| mid-Nov | Christkindlsmarkt (early Dec) | event page, `waconia-christmas`, homepage surfacing |
+| early Jan | Crappie Contest (typically Feb — date announces in winter) | `lake-waconia-ice-fishing`, winter guide |
+| Mar–Apr | Sister Saturday (May) + boat-rental season | event page, `lake-waconia-boat-rentals` |
+| mid-May | Farmers Market opens (June, Thursdays) | event page, `waconia-farmers-market` guide |
+| mid-Jul | Carver County Fair (mid-Aug) | event page, `carver-county-fair` guide (bump "114+ years") |
 
 ## Quarterly checklist
 

@@ -5,7 +5,7 @@ clicks, pageviews/session, and dwell time, and convert that traffic into
 **AdSense revenue** as the primary monetization driver.
 
 Owner cadence: revisit this doc each quarter alongside `QUARTERLY-REFRESH.md`.
-Authored: 2026-06-24. Last updated: 2026-06-25 (see §0 progress log).
+Authored: 2026-06-24. Last updated: 2026-08-13 (see §0 progress log).
 
 > **GEOSCO** = the combined discipline of **GEO** (Generative Engine
 > Optimization — getting cited by ChatGPT / Gemini / Perplexity / AI Overviews)
@@ -17,7 +17,39 @@ Authored: 2026-06-24. Last updated: 2026-06-25 (see §0 progress log).
 
 ## 0. Progress log — where we left off
 
-**Last worked: 2026-06-25.** Read this first when picking the work back up.
+**Last worked: 2026-08-13.** Read this first when picking the work back up.
+
+### ⭐ Validated insight (2026-08-13): events = views = AdSense
+
+The owner reported a **traffic spike on 2026-08-13 — Carver County Fair week**
+(fair runs Aug 12–16). This empirically confirms pillar C's thesis: event-driven
+searches convert directly into pageviews, and pageviews into AdSense revenue.
+Treat the event calendar as the site's traffic engine:
+
+- **Every marquee event needs its content fresh BEFORE the search spike**, which
+  starts ~2–4 weeks ahead of the event date. See the "Event lead-time calendar"
+  in `QUARTERLY-REFRESH.md` for the per-event refresh triggers.
+- Rest-of-2026 spike windows to be ready for: Nickle Dickle Day (Sep 19),
+  Deardorff apple season (Sep–Oct), Scarecrow Tour (Oct 8–18), D.E.A.R. Day
+  (Nov 7), Tree Lighting + Small Business Saturday (Nov 27–28), and the
+  **Christkindlsmarkt (early Dec — replace the "dates TBA" placeholder the
+  moment dates are announced**; that page targets "Christmas market near
+  Minneapolis" and will be the season's biggest event surface).
+- When measuring RPM by pillar (§8), segment event-week traffic — fair week and
+  Nickle Dickle week are the natural A/B windows for ad-slot experiments.
+
+### Shipped 2026-08-13 (round 14 — rest-of-2026 calendar)
+- **Events grew 7 → 10**: added D.E.A.R. Hunting Day, Small Business Saturday,
+  Waconia Christkindlsmarkt (dates TBA), Deardorff apple season; retired the
+  trivia night at the closed brewery.
+- **Guides 26 → 28**: `apple-orchards-near-waconia`, `waconia-christmas`.
+- **Market correction:** Waconia Brewing Co. (closed Jan 2026) + Schram Haus
+  Brewery (closed Dec 2025) scrubbed site-wide; Parley Lake Winery + Deardorff
+  Orchards added to the directory. Tier 1 #5's "5 producers" premise is now
+  4 producers (3 wineries + distillery) — the tour guide was rebuilt around it.
+- **Staleness zeroed:** `lake-waconia-fishing` refreshed with the walleye
+  special reg (16" min / one over 20") — a strong new query target — and
+  `lake-waconia` refreshed. All 28 guides now inside cadence.
 
 ### Shipped so far (PRs #9 + #10, both based on this strategy)
 - **Monetization wired (not yet earning):** `app/components/InContentAd.tsx` +
@@ -37,14 +69,20 @@ Authored: 2026-06-24. Last updated: 2026-06-25 (see §0 progress log).
 - Site is now 83 static routes (was ~74).
 
 ### Next up (in priority order)
-1. **User:** drop real AdSense slot IDs into `app/lib/adSlots.ts`.
-2. **Geo expansion** (multiplies addressable search): `day-trips-from-minneapolis`,
+1. **Christkindlsmarkt 2026 dates** — replace the TBA placeholder in
+   `app/lib/events.ts` + `waconia-christmas` guide as soon as
+   christmasinwaconia.com announces (watch from September). Highest-leverage
+   single edit of Q4.
+2. **"This weekend in Waconia" surface** fed by events data — now directly
+   justified by the fair-week traffic spike (return visits + GEO freshness).
+3. **Geo expansion** (multiplies addressable search): `day-trips-from-minneapolis`,
    `victoria-mn`, `chaska-mn`.
-3. **Hub pages** (Dining / Living in Waconia / Events) to distribute authority
-   + pageviews, plus a **"this weekend in Waconia"** dynamic surface fed by
-   events data (best return-visit + GEO freshness driver).
-4. **More dining/real-estate spokes** from §4 Tier 2/3 (restaurants-on-lake,
+4. **Hub pages** (Dining / Living in Waconia / Events) to distribute authority
+   + pageviews.
+5. **More dining/real-estate spokes** from §4 Tier 2/3 (restaurants-on-lake,
    coffee-shops, property-taxes, renting-in-waconia) as time allows.
+6. *(Done 2026-06-26 per changelog: real AdSense slot IDs are live in
+   `app/lib/adSlots.ts`.)*
 
 ### Conventions established this session (keep following)
 - New guides go in `app/lib/guides.ts`; answer-first intro, full Article +

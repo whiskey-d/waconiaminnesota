@@ -34,6 +34,27 @@ npm run staleness  # flag guides whose updatedIso is past its cadence threshold
 | robots.txt + llms.txt | `public/` |
 | Schema choices documented inline | Comments in JSON-LD blocks |
 
+## Operating facts (learned in practice — trust these)
+
+- **Events = views = AdSense.** Traffic spikes around marquee events (confirmed
+  2026-08-13, Carver County Fair week). Event pages + companion guides must be
+  fresh 2–4 weeks *before* each event — follow the **Event lead-time calendar**
+  in `docs/QUARTERLY-REFRESH.md`. This is the site's revenue rhythm.
+- **Closed — do not re-add or recommend:** Waconia Brewing Co. (closed Jan 2026,
+  255 W Main St) and Schram Haus Brewery (closed Dec 2025). Verified operating
+  replacements in the directory: Parley Lake Winery + Deardorff Orchards
+  (both on the Parley Lake Rd farmstead). If a buyer reopens the brewery,
+  that's an event-driven update per the runbook.
+- **Open TBA (Q4 2026):** the Waconia Christkindlsmarkt event page +
+  `waconia-christmas` guide carry a "2026 dates TBA" placeholder (typically the
+  first two December weekends). Replace it the moment christmasinwaconia.com
+  announces — highest-leverage single edit of the quarter.
+- **Remote-session network:** many authoritative sources are egress-blocked from
+  the cloud sandbox (destinationwaconia.org, dnr.state.mn.us,
+  christmasinwaconia.com, sovereignestatewine.com, images.unsplash.com…).
+  Use WebSearch to verify facts instead of WebFetch, and prefer repo-proven
+  image URLs over new Unsplash links you can't verify.
+
 ## Conventions
 
 - **All dates** in code use ISO 8601 (`YYYY-MM-DD`) for `updatedIso`,
