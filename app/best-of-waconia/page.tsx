@@ -39,11 +39,11 @@ const PICKS: Pick[] = [
     href: "/directory/egg-cetera-cafe",
   },
   {
-    category: "Best Brewery",
-    title: "Waconia Brewing Co.",
+    category: "Best Craft Beverage Stop",
+    title: "Schram Vineyards Winery & Brewery",
     detail:
-      "Family-owned since 2014, the cornerstone of downtown craft beer. Trivia Wednesdays, live music Fridays, dog-friendly patio.",
-    href: "/directory/waconia-brewing-company",
+      "Estate wines and in-house beer on rolling farmland west of town, with heated igloos all winter. With downtown's Waconia Brewing Co. closed as of early 2026, Schram is where Waconia's craft-beer flag flies.",
+    href: "/directory/schram-vineyards",
     image: "/images/brewing-waconia.webp",
   },
   {

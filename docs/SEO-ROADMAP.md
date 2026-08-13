@@ -132,6 +132,37 @@ Ice Fishing, Waconia History, Moving to Waconia.
       levels, Ridgeview anchor, costs, and authoritative verification sources
       (no fabricated facilities/prices). **26 guides total.**
 
+## Round 14 — Rest-of-2026 calendar + closure corrections (2026-08-13)
+
+- [x] 14.1 Events refresh for Aug–Dec 2026: added `dear-hunting-day-2026`
+      (Nov 7), `small-business-saturday-2026` (Nov 28),
+      `waconia-christkindlsmarkt-2026` (early Dec — **exact dates TBA**, see
+      CONTENT-INVENTORY), and `deardorff-apple-season-2026` (Labor Day
+      weekend–late Oct). **10 events total.**
+- [x] 14.2 Editorial correction: Waconia Brewing Co. (closed Jan 2026) and
+      Schram Haus Brewery (closed Dec 2025) removed from directory, events
+      (weekly trivia night retired), best-of, homepage, FAQs, glossary,
+      schema, llms.txt, and every guide. Closures acknowledged in-content
+      where it adds E-E-A-T (tour guide intro, dining roundup, FAQs).
+- [x] 14.3 Directory: added `parley-lake-winery` + `deardorff-orchards`
+      (both verified operating). Still 32 listings.
+- [x] 14.4 `/guides/apple-orchards-near-waconia` — apple picking guide
+      (Deardorff + Parley Lake, variety timing). Cross-linked from the fall
+      guide, tour guide, and the new season event.
+- [x] 14.5 `/guides/waconia-christmas` — holiday guide (Christkindlsmarkt,
+      Tree Lighting, D.E.A.R./Pink Friday/Small Business Saturday).
+      Targets "Christmas market near Minneapolis" GEO queries.
+      **28 guides total.**
+- [x] 14.6 Seasonal refresh: fall guide (apple season section, Parley Lake,
+      patio fixes) + winter guide (Christkindlsmarkt section, indoor-escape
+      fixes) + wineries tour rebuilt as Schram → Parley Lake → Sovereign →
+      J. Carver.
+- [x] 14.7 Staleness cleanup: refreshed `lake-waconia-fishing` (606d old —
+      added the special walleye regulation: 16" minimum / one over 20",
+      biennial fingerling stocking, late-summer transition note, new
+      regulation FAQ) and `lake-waconia` (585d — Crappie Contest, current
+      town refs). **Staleness report now clean: 0 stale guides.**
+
 ### Next up (from CONTENT-STRATEGY.md)
 - [ ] Fill real AdSense slot IDs into `app/lib/adSlots.ts` (user action)
 - [ ] Geo expansion: `day-trips-from-minneapolis`, `victoria-mn`, `chaska-mn`
@@ -150,7 +181,15 @@ Ice Fishing, Waconia History, Moving to Waconia.
 - [ ] Per-event and per-business OG images
 - [ ] Season-specific event filtering on /events
 
-## Current site shape (after rounds 12+13, 2026-06-25)
+## Current site shape (after round 14, 2026-08-13)
+
+- Guides: **28** (added apple-orchards-near-waconia, waconia-christmas)
+- Events: **10** (added D.E.A.R. Hunting, Small Business Saturday,
+  Christkindlsmarkt, Deardorff apple season; removed trivia night)
+- Directory: 32 listings (swapped closed breweries for Parley Lake Winery +
+  Deardorff Orchards)
+
+## Site shape prior to round 14 (rounds 12+13, 2026-06-25)
 
 - Home + 6 sections (directory, events, guides, hotels, foreclosures)
 - Trust / reference pages: about, contact, glossary, best-of, faqs, changelog,

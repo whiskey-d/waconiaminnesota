@@ -131,7 +131,7 @@ const TERMS: Term[] = [
     id: "main-street",
     term: "Main Street",
     definition:
-      "Waconia's downtown commercial spine, running east-west. Anchored by Iron Tap, Waconia Brewing Co., Mocha Monkey, and a mix of independent shops. Free street parking; walkable end to end.",
+      "Waconia's downtown commercial spine, running east-west. Anchored by Iron Tap, Mocha Monkey, and a mix of independent shops. Free street parking; walkable end to end.",
   },
 ];
 

@@ -17,6 +17,17 @@ interface ChangelogEntry {
 
 const ENTRIES: ChangelogEntry[] = [
   {
+    date: "2026-08-13",
+    highlights: [
+      "Rest-of-2026 events refresh: added D.E.A.R. Hunting Shopping Day (Nov 7), Small Business Saturday (Nov 28), the Waconia Christkindlsmarkt holiday market (early December, 2026 dates TBA), and Deardorff Orchards apple season (Labor Day weekend–late October) to the events calendar.",
+      "Added /guides/apple-orchards-near-waconia — apple picking at Deardorff Orchards + Parley Lake Winery, with variety timing (SweeTango, Zestar!, Honeycrisp, Haralson).",
+      "Added /guides/waconia-christmas — the full holiday guide: Christkindlsmarkt, Tree Lighting, and November's shop-small days.",
+      "Editorial correction: Waconia Brewing Co. (closed January 2026) and Schram Haus Brewery (closed December 2025) removed from the directory and all recommendations; the weekly trivia night listing was retired. Added Parley Lake Winery and Deardorff Orchards listings in their place.",
+      "Refreshed the wineries & breweries day-tour (now Schram → Parley Lake → Sovereign → J. Carver), the fall and winter seasonal guides, best-of picks, and the dining roundup to reflect the 2026 craft-beverage lineup. 28 guides total.",
+      "Refreshed the two oldest guides: the Lake Waconia fishing guide now documents the lake's special walleye regulation (16-inch minimum, one over 20 inches) and biennial fingerling stocking, plus a late-summer transition note; the Lake Waconia complete guide picks up the Crappie Contest and current town references.",
+    ],
+  },
+  {
     date: "2026-06-26",
     highlights: [
       "Activated the two in-content ad units on every guide page (real AdSense slot IDs added to adSlots.ts). Auto Ads continues to run site-wide.",

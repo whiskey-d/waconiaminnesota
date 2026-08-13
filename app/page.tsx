@@ -185,13 +185,13 @@ export default function HomePage() {
                   </span>
                 </Link>
                 <Link
-                  href="/directory/waconia-brewing-company"
+                  href="/directory/j-carver-distillery"
                   className="flex items-center justify-between bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors group"
                 >
                   <div>
-                    <h3 className="text-white font-semibold">Waconia Brewing Co.</h3>
+                    <h3 className="text-white font-semibold">J. Carver Distillery</h3>
                     <p className="text-sm text-gray-400">
-                      Award-winning craft brewery &amp; taproom since 2014
+                      Small-batch spirits &amp; craft cocktail room
                     </p>
                   </div>
                   <span className="text-primary group-hover:translate-x-1 transition-transform">
@@ -213,7 +213,7 @@ export default function HomePage() {
                 <div className="absolute bottom-0 left-0 w-2/3 h-52 rounded-2xl overflow-hidden shadow-2xl border-4 border-navy">
                   <Image
                     src="/images/brewing-waconia.webp"
-                    alt="Craft beer flight at Waconia Brewing Company taproom"
+                    alt="Craft beer flight at a Waconia taproom"
                     fill
                     className="object-cover"
                   />
@@ -400,7 +400,7 @@ const homepageFaqs = [
   {
     question: "What is Waconia known for?",
     answer:
-      "Waconia is best known for Lake Waconia (3,080 acres — one of the largest lakes in the Twin Cities metro), its historic downtown, the annual Carver County Fair, Nickle Dickle Day, Waconia Brewing Company, and the historic Coney Island of Lake Waconia.",
+      "Waconia is best known for Lake Waconia (3,080 acres — one of the largest lakes in the Twin Cities metro), its historic downtown, the annual Carver County Fair, Nickle Dickle Day, its wineries and craft-beverage scene, and the historic Coney Island of Lake Waconia.",
   },
   {
     question: "What does the name 'Waconia' mean?",
@@ -415,7 +415,7 @@ const homepageFaqs = [
   {
     question: "What are the best things to do in Waconia?",
     answer:
-      "Top activities include boating and fishing on Lake Waconia, swimming at Lake Waconia Regional Park, dining downtown at Iron Tap and Egg-Cetera Cafe, craft beer at Waconia Brewing Co., wine and cocktails at Schram Vineyards, the Carver County Fair, and seasonal events like Nickle Dickle Day, the Scarecrow Tour, and Tree Lighting in the Park.",
+      "Top activities include boating and fishing on Lake Waconia, swimming at Lake Waconia Regional Park, dining downtown at Iron Tap and Egg-Cetera Cafe, wine at Schram Vineyards and Sovereign Estate, craft cocktails at J. Carver Distillery, the Carver County Fair, and seasonal events like Nickle Dickle Day, the Scarecrow Tour, and Tree Lighting in the Park.",
   },
   {
     question: "What is the population of Waconia, MN?",

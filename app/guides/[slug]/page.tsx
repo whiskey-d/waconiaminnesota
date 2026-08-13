@@ -555,8 +555,8 @@ export default async function GuidePage({ params }: PageProps) {
                 },
                 {
                   "@type": "TouristAttraction",
-                  name: "Waconia Brewing Co.",
-                  url: `${SITE_URL}/directory/waconia-brewing-company`,
+                  name: "J. Carver Distillery",
+                  url: `${SITE_URL}/directory/j-carver-distillery`,
                 },
                 {
                   "@type": "TouristAttraction",

@@ -37,6 +37,8 @@ based on whether the underlying facts can shift.
 | `nickle-dickle-day` | Annual (Jan) | Medium | Bump the year + dates; mirror `/events/nickle-dickle-day-<year>` |
 | `carver-county-fair` | Annual (Jan) | Medium | Bump dates + "114+ years" count; mirror `/events/carver-county-fair-<year>` |
 | `waconia-farmers-market` | Annual (spring) | Medium | Confirm season dates/hours; mirror `/events/waconia-farmers-market-<year>` |
+| `apple-orchards-near-waconia` | Annual (summer) | Medium | Confirm Deardorff opening weekend + Parley Lake season; mirror `/events/deardorff-apple-season-<year>` |
+| `waconia-christmas` | Annual (fall) | High | Christkindlsmarkt dates announce in fall — replace the "dates TBA" language ASAP; bump D.E.A.R./Pink Friday/Small Business Saturday dates; mirror `/events/waconia-christkindlsmarkt-<year>` |
 
 **Event guides:** `nickle-dickle-day`, `carver-county-fair`, and
 `waconia-farmers-market` are editorial companions to the canonical
@@ -56,23 +58,34 @@ that year's date passes.
 | `sister-saturday-2026` | Annual | destinationwaconia.org |
 | `scarecrow-tour-2026` | Annual | destinationwaconia.org |
 | `tree-lighting-2026` | Annual | destinationwaconia.org |
-| `waconia-trivia-night` | Weekly (no slug bump needed) | Waconia Brewing Co. |
+| `deardorff-apple-season-2026` | Annual (spans season) | deardorfforchards.com |
+| `dear-hunting-day-2026` | Annual | destinationwaconia.org |
+| `small-business-saturday-2026` | Annual | destinationwaconia.org |
+| `waconia-christkindlsmarkt-2026` | Annual — **2026 exact dates TBA**, replace placeholder when announced | christmasinwaconia.com |
+
+*(Removed 2026-08-13: `waconia-trivia-night` — host venue Waconia Brewing Co.
+closed January 2026.)*
 
 ## Directory listings (`app/lib/businesses.ts`)
 
-26 listings as of 2026-05-03. Hours marked `HOURS_VARIES` ("See website")
+32 listings as of 2026-08-13. Hours marked `HOURS_VARIES` ("See website")
 should be re-verified against the business's official source before the next
 refresh.
 
 **Verify hours annually before Memorial Day weekend** (peak lake season):
-- iron-tap, waconia-brewing-company, schram-vineyards, sovereign-estate-wine,
-  j-carver-distillery, lolas-lakehouse, egg-cetera-cafe, mocha-monkey,
+- iron-tap, schram-vineyards, sovereign-estate-wine,
+  j-carver-distillery, parley-lake-winery, deardorff-orchards,
+  lolas-lakehouse, egg-cetera-cafe, mocha-monkey,
   mucho-mexican, emagine-waconia, garage-bowling-bar, island-view-golf-club,
   carver-county-historical-society, waconia-public-library,
   ridgeview-medical-center, great-clips-waconia, aldi-waconia, coborns-waconia,
   westside-liquor-waconia, lake-waconia-marine, amerivu-inn-suites,
-  dmv-waconia-mn, bayview-event-center, schram-haus-brewery,
+  dmv-waconia-mn, bayview-event-center,
   lakeside-tavern-waconia, waconia-public-schools-isd-110
+
+*(Removed 2026-08-13: waconia-brewing-company — closed January 2026;
+schram-haus-brewery — closed December 2025. Replaced with parley-lake-winery
+and deardorff-orchards.)*
 
 ## Trust + hub pages
 

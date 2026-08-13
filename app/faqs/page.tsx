@@ -27,7 +27,7 @@ const HOMEPAGE_FAQS = [
   {
     question: "What is Waconia known for?",
     answer:
-      "Waconia is best known for Lake Waconia (3,080 acres — one of the largest lakes in the Twin Cities metro), its historic downtown, the annual Carver County Fair, Nickle Dickle Day, Waconia Brewing Company, and the historic Coney Island of Lake Waconia.",
+      "Waconia is best known for Lake Waconia (3,080 acres — one of the largest lakes in the Twin Cities metro), its historic downtown, the annual Carver County Fair, Nickle Dickle Day, its wineries and craft-beverage scene, and the historic Coney Island of Lake Waconia.",
   },
   {
     question: "What does the name 'Waconia' mean?",

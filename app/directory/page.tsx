@@ -180,7 +180,7 @@ const DIRECTORY_FAQS = [
   {
     question: "What breweries and wineries are in Waconia?",
     answer:
-      "Waconia has four destination beverage producers: Waconia Brewing Co. (downtown craft brewery), Schram Vineyards Winery & Brewery (estate winery + brewery west of town), Sovereign Estate Wine (lakefront winery on Lake Waconia), and J. Carver Distillery (small-batch craft spirits). All are open to the public during posted hours.",
+      "Waconia has four destination beverage producers: Schram Vineyards Winery & Brewery (estate winery + brewery west of town), Sovereign Estate Wine (lakefront winery on Lake Waconia), Parley Lake Winery (seasonal farm winery on the Deardorff Orchards farmstead), and J. Carver Distillery (small-batch craft spirits). All are open to the public during posted hours; Parley Lake is seasonal.",
   },
   {
     question: "Is there a hospital in Waconia?",
