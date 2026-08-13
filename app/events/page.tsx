@@ -184,7 +184,7 @@ const EVENTS_FAQS = [
   {
     question: "Are Waconia events free?",
     answer:
-      "Most signature Waconia events are free, including Nickle Dickle Day, the Farmers Market, the Scarecrow Tour, Sister Saturday, and the Tree Lighting in the Park. The Carver County Fair charges admission. Trivia Night at Waconia Brewing Co. is free to play.",
+      "Most signature Waconia events are free, including Nickle Dickle Day, the Farmers Market, the Scarecrow Tour, Sister Saturday, the Tree Lighting in the Park, and the Christkindlsmarkt holiday market. The Carver County Fair charges admission.",
   },
   {
     question: "Where is the Tree Lighting in the Park?",

@@ -581,8 +581,8 @@ export const guides: Guide[] = [
       "The definitive list of things to do in Waconia, MN — Lake Waconia activities, breweries and wineries, dining, events, and seasonal favorites by a local.",
     heroImage:
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80",
-    updatedDate: "May 3, 2026",
-    updatedIso: "2026-05-03",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
     author: "WaconiaGuide Editorial",
     authorSlug: "editorial",
@@ -610,7 +610,7 @@ export const guides: Guide[] = [
       },
       {
         type: "text",
-        body: "Waconia is now a legitimate destination on Minnesota's craft beverage map. Waconia Brewing Co. anchors downtown with rotating taps and a seasonal patio. Schram Vineyards Winery & Brewery — fifteen minutes west — has estate wines, in-house beer, live music many weekends, and heated igloos in winter. Sovereign Estate Wine sits directly on Lake Waconia with one of the most photogenic patios in the state. J. Carver Distillery rounds out the spirits side with a small-batch cocktail room.",
+        body: "Waconia is a legitimate destination on Minnesota's craft beverage map, even after downtown's Waconia Brewing Co. closed in early 2026. Schram Vineyards Winery & Brewery — fifteen minutes west — has estate wines, in-house beer, live music many weekends, and heated igloos in winter. Sovereign Estate Wine sits directly on Lake Waconia with one of the most photogenic patios in the state. Parley Lake Winery pours seasonally on the Deardorff Orchards farmstead, and J. Carver Distillery rounds out the spirits side with a small-batch cocktail room.",
       },
       {
         type: "heading",
@@ -694,7 +694,7 @@ export const guides: Guide[] = [
     faqs: [
       {
         question: "What are the best things to do in Waconia, MN?",
-        answer: "The headline activities in Waconia are: Lake Waconia (boating, fishing, swimming at the Regional Park), Schram Vineyards Winery & Brewery, Sovereign Estate Wine on the lakefront, Waconia Brewing Co. downtown, Iron Tap and Lola's Lakehouse for dining, the Emagine Waconia luxury cinema, the Carver County Historical Society, and seasonal events like Nickle Dickle Day, the Carver County Fair, and the Scarecrow Tour.",
+        answer: "The headline activities in Waconia are: Lake Waconia (boating, fishing, swimming at the Regional Park), Schram Vineyards Winery & Brewery, Sovereign Estate Wine on the lakefront, J. Carver Distillery's cocktail room, Iron Tap and Lola's Lakehouse for dining, the Emagine Waconia luxury cinema, the Carver County Historical Society, and seasonal events like Nickle Dickle Day, the Carver County Fair, and the Scarecrow Tour.",
       },
       {
         question: "Is Waconia worth visiting?",
@@ -1015,8 +1015,8 @@ export const guides: Guide[] = [
       "Complete Lake Waconia ice fishing guide — walleye and panfish hotspots, ice safety thresholds, gear list, and the Lake Waconia Crappie Contest.",
     heroImage:
       "https://images.unsplash.com/photo-1518182170546-07661fd94144?w=1600&q=80",
-    updatedDate: "May 3, 2026",
-    updatedIso: "2026-05-03",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
     author: "WaconiaGuide Editorial",
     authorSlug: "editorial",
@@ -1095,7 +1095,7 @@ export const guides: Guide[] = [
         type: "cta",
         ctaTitle: "Get on the Ice",
         ctaDescription:
-          "Pair an early ice morning with breakfast at Egg-Cetera Cafe and a fresh pour at Waconia Brewing — the perfect winter loop.",
+          "Pair an early ice morning with breakfast at Egg-Cetera Cafe and a warm-up cocktail at J. Carver Distillery — the perfect winter loop.",
         buttons: [
           { label: "Lake Waconia Fishing", href: "/guides/lake-waconia-fishing", variant: "primary" },
           { label: "MN DNR LakeFinder", href: "https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900", variant: "outline" },
@@ -2060,8 +2060,8 @@ export const guides: Guide[] = [
       "Lake Waconia or Lake Minnetonka? Side-by-side comparison of size, fishing, boating, beaches, dining, lodging, and the kind of trip each lake is best for.",
     heroImage:
       "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=1600&q=80",
-    updatedDate: "May 3, 2026",
-    updatedIso: "2026-05-03",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
     author: "WaconiaGuide Editorial",
     authorSlug: "editorial",
@@ -2119,7 +2119,7 @@ export const guides: Guide[] = [
       },
       {
         type: "text",
-        body: "Minnetonka has the bigger boat-up restaurant scene by far — Lord Fletcher's, Maynard's, Bayside, and a dozen others all sit on the water with dock space. Waconia's lakefront dining is smaller in scope: Lola's Lakehouse Eatery is the casual lake-view choice, Sovereign Estate Wine has the most elegant lakeside patio in the area. Both downtowns have strong land-based restaurant scenes, but Waconia's craft beverage cluster (Waconia Brewing, Schram, Sovereign, J. Carver) is a destination in its own right.",
+        body: "Minnetonka has the bigger boat-up restaurant scene by far — Lord Fletcher's, Maynard's, Bayside, and a dozen others all sit on the water with dock space. Waconia's lakefront dining is smaller in scope: Lola's Lakehouse Eatery is the casual lake-view choice, Sovereign Estate Wine has the most elegant lakeside patio in the area. Both downtowns have strong land-based restaurant scenes, but Waconia's craft beverage cluster (Schram, Sovereign, Parley Lake, J. Carver) is a destination in its own right.",
       },
       {
         type: "heading",
@@ -2221,8 +2221,8 @@ export const guides: Guide[] = [
       "Everything to do in Waconia, MN during summer — Lake Waconia, the beach, the farmers market, the Carver County Fair, fishing, dining, and seasonal events.",
     heroImage:
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600&q=80",
-    updatedDate: "May 3, 2026",
-    updatedIso: "2026-05-03",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
     author: "WaconiaGuide Editorial",
     authorSlug: "editorial",
@@ -2258,7 +2258,7 @@ export const guides: Guide[] = [
       },
       {
         type: "text",
-        body: "Summer is patio season. Lola's Lakehouse Eatery has the only true lake-view patio in town. Iron Tap's sidewalk patio downtown is the after-work standby. Waconia Brewing Co. sets up its outdoor beer garden with fire pits. Schram Vineyards' vineyard lawn and Sovereign Estate Wine's tiered lake patio both deliver scenic outdoor sipping. Mocha Monkey's sidewalk seating handles the morning rotation.",
+        body: "Summer is patio season. Lola's Lakehouse Eatery has the only true lake-view patio in town. Iron Tap's sidewalk patio downtown is the after-work standby. Schram Vineyards' vineyard lawn and Sovereign Estate Wine's tiered lake patio both deliver scenic outdoor sipping, and Parley Lake Winery's wrap-around deck adds a farm-country option. Mocha Monkey's sidewalk seating handles the morning rotation.",
       },
       {
         type: "infoCards",
@@ -2342,13 +2342,13 @@ export const guides: Guide[] = [
   },
   {
     slug: "waconia-winter",
-    title: "Winter in Waconia, Minnesota: Ice Fishing, Skiing & Tree Lighting",
+    title: "Winter in Waconia, Minnesota: Ice Fishing, Christkindlsmarkt & Tree Lighting",
     metaDescription:
-      "Winter in Waconia, MN — ice fishing on Lake Waconia, the Crappie Contest, cross-country ski trails, the Tree Lighting in the Park, and indoor escapes.",
+      "Winter in Waconia, MN — ice fishing on Lake Waconia, the Crappie Contest, the Christkindlsmarkt holiday market, cross-country ski trails, the Tree Lighting in the Park, and indoor escapes.",
     heroImage:
       "https://images.unsplash.com/photo-1518182170546-07661fd94144?w=1600&q=80",
-    updatedDate: "May 3, 2026",
-    updatedIso: "2026-05-03",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
     author: "WaconiaGuide Editorial",
     authorSlug: "editorial",
@@ -2360,7 +2360,7 @@ export const guides: Guide[] = [
     content: [
       {
         type: "text",
-        body: "Winter in Waconia isn't a quiet season — it's a different one. The lake freezes over and becomes a 3,080-acre walking, fishing, and snowmobiling surface. The Tree Lighting in the Park kicks off the holidays the night after Thanksgiving. Cross-country skiers run the groomed regional park trails. Inside, the breweries, wineries, and cocktail rooms turn into the social anchors of cold weekends. This is the guide to making the most of the off-season.",
+        body: "Winter in Waconia isn't a quiet season — it's a different one. The lake freezes over and becomes a 3,080-acre walking, fishing, and snowmobiling surface. The Tree Lighting in the Park kicks off the holidays the night after Thanksgiving, and the German-style Christkindlsmarkt turns City Square Park into an open-air holiday market in early December. Cross-country skiers run the groomed regional park trails. Inside, the wineries and the distillery's cocktail room turn into the social anchors of cold weekends. This is the guide to making the most of the off-season.",
       },
       {
         type: "heading",
@@ -2380,11 +2380,11 @@ export const guides: Guide[] = [
       },
       {
         type: "heading",
-        heading: "Tree Lighting & Holiday Events",
+        heading: "Tree Lighting, Christkindlsmarkt & Holiday Events",
       },
       {
         type: "text",
-        body: "The Tree Lighting in the Park is Waconia's official kickoff to the holiday season. On the Friday after Thanksgiving (Black Friday) at 6pm, the community gathers at the City Square Park Gazebo for free hot cocoa, fire pits, and the official lighting of the community Christmas tree. Dress warmly. Surrounding downtown businesses run holiday hours and seasonal specials throughout December.",
+        body: "The Tree Lighting in the Park is Waconia's official kickoff to the holiday season. On the Friday after Thanksgiving (Black Friday) at 6pm, the community gathers at the City Square Park Gazebo for free hot cocoa, fire pits, and the official lighting of the community Christmas tree. Then in early December, the Christkindlsmarkt — a German-style open-air holiday market that relocated from Excelsior in 2025 — fills the same park with wooden vendor stalls, Glühwein, live reindeer, and a children's lantern parade, typically across the first two weekends of the month. Add November's shop-small days (D.E.A.R. Hunting Day, Pink Friday, Small Business Saturday) and downtown carries the holidays start to finish. See our full Christmas in Waconia guide for the complete holiday calendar.",
       },
       {
         type: "infoCards",
@@ -2397,7 +2397,7 @@ export const guides: Guide[] = [
           {
             icon: "🎬",
             title: "Indoor Escapes",
-            body: "Emagine Waconia's reclining-seat luxury cinema and Garage Bowling & Bar are the local cold-weather defaults. Iron Tap and Waconia Brewing Co. handle the rest of the indoor evening rotation.",
+            body: "Emagine Waconia's reclining-seat luxury cinema and Garage Bowling & Bar are the local cold-weather defaults. Iron Tap and J. Carver Distillery's cocktail room handle the rest of the indoor evening rotation.",
           },
         ],
       },
@@ -2431,6 +2431,7 @@ export const guides: Guide[] = [
       "Waconia winter",
       "Lake Waconia ice fishing",
       "Waconia Christmas",
+      "Waconia Christkindlsmarkt",
       "Tree Lighting Waconia",
       "cross-country skiing Waconia",
       "Crappie Contest Waconia",
@@ -2442,8 +2443,8 @@ export const guides: Guide[] = [
       { term: "Lake Waconia Regional Park", anchor: "regional-park" },
     ],
     relatedGuides: [
+      { title: "Christmas in Waconia", readTime: "6 min read", href: "/guides/waconia-christmas" },
       { title: "Lake Waconia Ice Fishing", readTime: "7 min read", href: "/guides/lake-waconia-ice-fishing" },
-      { title: "Lake Waconia Regional Park", readTime: "6 min read", href: "/guides/lake-waconia-regional-park" },
       { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
     ],
     faqs: [
@@ -2467,13 +2468,13 @@ export const guides: Guide[] = [
   },
   {
     slug: "waconia-fall",
-    title: "Fall in Waconia, Minnesota: Trophy Walleye, Scarecrows & Cool-Weather Patios",
+    title: "Fall in Waconia, Minnesota: Apple Season, Scarecrows & Trophy Walleye",
     metaDescription:
-      "Autumn in Waconia, MN — fall walleye, the Scarecrow Tour, harvest at Schram Vineyards, fall colors on Coney Island, and the best cold-weather patios.",
+      "Autumn in Waconia, MN — apple picking at Deardorff Orchards, the Scarecrow Tour, fall walleye, vineyard harvest, fall colors on Coney Island, and the best cool-weather patios.",
     heroImage:
       "https://images.unsplash.com/photo-1503416997304-7f8bf166c121?w=1600&q=80",
-    updatedDate: "May 3, 2026",
-    updatedIso: "2026-05-03",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
     author: "WaconiaGuide Editorial",
     authorSlug: "editorial",
@@ -2485,7 +2486,7 @@ export const guides: Guide[] = [
     content: [
       {
         type: "text",
-        body: "Fall is the underrated season in Waconia. The walleye bite turns trophy-grade. The hardwoods around Coney Island light up in mid-October. The Scarecrow Tour turns the whole town into an outdoor art gallery. Schram Vineyards is in harvest. The patios stay open with fire pits well into November. If you can only visit Waconia once, October is the smart bet.",
+        body: "Fall is the underrated season in Waconia. Apple season opens at Deardorff Orchards over Labor Day weekend. The walleye bite turns trophy-grade. The hardwoods around Coney Island light up in mid-October. The Scarecrow Tour turns the whole town into an outdoor art gallery. The vineyards are in harvest. The patios stay open with fire pits well into November. If you can only visit Waconia once, October is the smart bet.",
       },
       {
         type: "heading",
@@ -2494,6 +2495,14 @@ export const guides: Guide[] = [
       {
         type: "text",
         body: "Autumn is trophy walleye season on Lake Waconia. As water temperatures drop, walleye move from summer patterns to fall feeding binges, staging on deep structure and rock piles before winter sets in. Crankbaits worked along the 15-to-25-foot breaklines are deadly effective. Focus on the main lake points and the deep sunken island off the south shore. Pre-spawn staging areas see heavy concentrations of fish; many anglers catch their personal-best walleye during the October and November bite.",
+      },
+      {
+        type: "heading",
+        heading: "Apple Season at Deardorff Orchards",
+      },
+      {
+        type: "text",
+        body: "Waconia's biggest fall draw opens around Labor Day weekend: pick-your-own apples at Deardorff Orchards, an 1888 family farm ten minutes west of downtown on Parley Lake Road. More than 3,000 trees grow SweeTango, Zestar!, Honeycrisp, and Haralson — with complimentary tractor rides for pickers, pumpkins and mums as October arrives, and Parley Lake Winery pouring estate wine on the same farmstead. The season runs until the trees are picked out, typically late October. See our full apple picking guide for variety timing and tips.",
       },
       {
         type: "heading",
@@ -2517,7 +2526,7 @@ export const guides: Guide[] = [
       },
       {
         type: "text",
-        body: "Schram Vineyards Winery & Brewery is in harvest mode through September and into October. Tasting-room visits during harvest are particularly worthwhile — fresh pressings on tap, the vineyard in full late-season color, and the heated igloos start opening up by mid-October. Sovereign Estate Wine on the lakefront pairs naturally with a fall lake-shore walk.",
+        body: "Schram Vineyards Winery & Brewery is in harvest mode through September and into October. Tasting-room visits during harvest are particularly worthwhile — fresh pressings on tap, the vineyard in full late-season color, and the heated igloos start opening up by mid-October. Sovereign Estate Wine on the lakefront pairs naturally with a fall lake-shore walk, and Parley Lake Winery's deck at the orchard is at its liveliest during apple season.",
       },
       {
         type: "infoCards",
@@ -2541,7 +2550,7 @@ export const guides: Guide[] = [
       },
       {
         type: "text",
-        body: "Most Waconia patios stay open with fire pits well into November. Waconia Brewing Co.'s outdoor beer garden, Iron Tap's sidewalk patio (briefly), and Schram Vineyards' fire-pit lawn all carry the season. By early November, the heated igloos at Schram start booking out for the winter months.",
+        body: "Most Waconia patios stay open with fire pits well into November. Iron Tap's sidewalk patio (briefly) and Schram Vineyards' fire-pit lawn carry the season, and Sovereign Estate's tiered lake patio earns its keep on the warm October afternoons. By early November, the heated igloos at Schram start booking out for the winter months.",
       },
       {
         type: "cta",
@@ -2555,9 +2564,9 @@ export const guides: Guide[] = [
       },
     ],
     sidebarFacts: [
+      { label: "Apple season", value: "Labor Day–late Oct" },
       { label: "Peak color", value: "Mid–late Oct" },
       { label: "Avg Oct high", value: "55°F" },
-      { label: "Avg Oct low", value: "37°F" },
       { label: "Trophy walleye", value: "Oct–Nov" },
       { label: "Scarecrow Tour", value: "Oct 8–18 (2026)" },
     ],
@@ -2565,6 +2574,7 @@ export const guides: Guide[] = [
       "Waconia fall",
       "Lake Waconia fall colors",
       "Scarecrow Tour Waconia",
+      "apple picking Waconia",
       "fall walleye Lake Waconia",
       "Waconia October events",
       "Schram Vineyards harvest",
@@ -2575,8 +2585,8 @@ export const guides: Guide[] = [
       { term: "Coney Island of Lake Waconia", anchor: "coney-island" },
     ],
     relatedGuides: [
+      { title: "Apple Picking Near Waconia", readTime: "6 min read", href: "/guides/apple-orchards-near-waconia" },
       { title: "Nickle Dickle Day", readTime: "5 min read", href: "/guides/nickle-dickle-day" },
-      { title: "Coney Island of Lake Waconia", readTime: "5 min read", href: "/guides/coney-island-lake-waconia" },
       { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
     ],
     faqs: [
@@ -2605,11 +2615,11 @@ export const guides: Guide[] = [
     slug: "waconia-wineries-breweries-tour",
     title: "Waconia Wineries & Breweries: A Day-Tour Guide",
     metaDescription:
-      "Plan a Waconia wine, beer, and spirits tour — Schram Vineyards, Sovereign Estate, Waconia Brewing, J. Carver Distillery. Routes, hours, and what to order.",
+      "Plan a Waconia wine, beer, and spirits tour — Schram Vineyards, Parley Lake Winery, Sovereign Estate, J. Carver Distillery. Routes, hours, and what to order.",
     heroImage:
       "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=1600&q=80",
-    updatedDate: "May 3, 2026",
-    updatedIso: "2026-05-03",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
     author: "WaconiaGuide Editorial",
     authorSlug: "editorial",
@@ -2621,7 +2631,7 @@ export const guides: Guide[] = [
     content: [
       {
         type: "text",
-        body: "In a thirty-mile radius, Waconia has quietly become one of Minnesota's denser craft-beverage clusters — two wineries, two breweries, and a craft distillery, all open to the public, all within a short drive of one another. This is the local-first day-tour guide: the order to visit, what to order, where to eat between stops, and how to do it without driving impaired.",
+        body: "Waconia remains one of Minnesota's denser craft-beverage clusters — three wineries (one with an in-house brewery) and a craft distillery, all open to the public, all within a short drive of one another. The lineup shifted in early 2026 when both downtown taprooms, Waconia Brewing Co. and Schram Haus, closed — but the countryside producers that made this a destination are all still pouring. This is the local-first day-tour guide: the order to visit, what to order, where to eat between stops, and how to do it without driving impaired.",
       },
       {
         type: "heading",
@@ -2629,7 +2639,7 @@ export const guides: Guide[] = [
       },
       {
         type: "text",
-        body: "Most locals run this tour in a clockwise loop: start at Schram Vineyards in the morning, head to Sovereign Estate Wine on Lake Waconia for late afternoon, drop into downtown for Waconia Brewing Co. early evening, and finish at J. Carver Distillery for after-dinner drinks. The total drive is about fifteen miles. Plan a designated driver, rideshare, or — better — book a local tour service that runs the loop for you.",
+        body: "Most locals run this tour as a west-to-east loop: start at Schram Vineyards late morning, hop five minutes to Parley Lake Winery on the Deardorff Orchards farmstead for early afternoon, head to Sovereign Estate Wine on Lake Waconia for the sunset window, and finish at J. Carver Distillery for after-dinner drinks. The total drive is about fifteen miles. Plan a designated driver, rideshare, or — better — book a local tour service that runs the loop for you.",
       },
       {
         type: "heading",
@@ -2641,11 +2651,11 @@ export const guides: Guide[] = [
       },
       {
         type: "heading",
-        heading: "Stop 2: Sovereign Estate Wine",
+        heading: "Stop 2: Parley Lake Winery",
       },
       {
         type: "text",
-        body: "Drive twenty minutes back toward the lake. Sovereign sits on Lake Waconia's north shore — a stone-and-glass tasting room with a tiered west-facing patio that catches the sunset. Try the Marquette and Frontenac (Minnesota cold-climate red varieties). If you're arriving by boat, dock space is available in summer. Allow an hour.",
+        body: "Five minutes from Schram, Parley Lake Winery shares an 1888 farmstead with Deardorff Orchards. It's a seasonal operation — open roughly May through December, weekends especially — with estate wines from cold-climate grapes, a wrap-around deck overlooking the Lake View Stage and Itasca vineyard, and an art gallery of local work. In September and October, pair the tasting with pick-your-own apples next door; it's the stop that works even for the designated driver. Check current days and hours before you go. Allow an hour.",
       },
       {
         type: "pullquote",
@@ -2655,11 +2665,11 @@ export const guides: Guide[] = [
       },
       {
         type: "heading",
-        heading: "Stop 3: Waconia Brewing Company",
+        heading: "Stop 3: Sovereign Estate Wine",
       },
       {
         type: "text",
-        body: "Head into downtown. Waconia Brewing has been the cornerstone of the local craft scene since 2014. Open Friday through Sunday only, so plan accordingly. Get the flight to sample the rotating taps; the patio is dog-friendly and has fire pits. Trivia Wednesdays (when open) and live music Fridays add to the energy. Allow an hour. Pair with takeout from one of the downtown restaurants since the brewery has no kitchen.",
+        body: "Drive back toward the lake. Sovereign sits on Lake Waconia's north shore — a stone-and-glass tasting room with a tiered west-facing patio that catches the sunset, which is exactly why it's the late-afternoon stop. Try the Marquette and Frontenac (Minnesota cold-climate red varieties). If you're arriving by boat, dock space is available in summer. Allow an hour.",
       },
       {
         type: "heading",
@@ -2691,7 +2701,7 @@ export const guides: Guide[] = [
       },
       {
         type: "text",
-        body: "If you only have an afternoon, pair Schram (1 hour) with Sovereign (1 hour) — the two wineries cover the bulk of the experience. If you only have an evening, Waconia Brewing + J. Carver (downtown adjacent) make a solid two-stop walking tour. If you're with a wedding party or larger group, Bayview Event Center and Schram both handle group bookings well; reserve weeks ahead.",
+        body: "If you only have an afternoon, pair Schram (1 hour) with Sovereign (1 hour) — those two cover the bulk of the experience. In fall, swap in Parley Lake + Deardorff Orchards for the Schram slot and you get apples, pumpkins, and wine in one stop. If you only have an evening, J. Carver's cocktail room is the single best short visit. If you're with a wedding party or larger group, Bayview Event Center and Schram both handle group bookings well; reserve weeks ahead.",
       },
       {
         type: "cta",
@@ -2705,7 +2715,7 @@ export const guides: Guide[] = [
       },
     ],
     sidebarFacts: [
-      { label: "Producers", value: "4 (2 wineries, 1 brewery, 1 distillery)" },
+      { label: "Producers", value: "4 (3 wineries, 1 distillery)" },
       { label: "Loop length", value: "~15 miles" },
       { label: "Best season", value: "May–October" },
       { label: "Designated driver", value: "Required" },
@@ -2716,6 +2726,7 @@ export const guides: Guide[] = [
       "Waconia breweries",
       "Schram Vineyards",
       "Sovereign Estate Wine",
+      "Parley Lake Winery",
       "Waconia wine tour",
       "Carver County wineries",
     ],
@@ -2733,11 +2744,11 @@ export const guides: Guide[] = [
     faqs: [
       {
         question: "How many wineries are in Waconia, MN?",
-        answer: "Two: Schram Vineyards Winery & Brewery on the rolling farmland west of town, and Sovereign Estate Wine on the north shore of Lake Waconia. Both are open to the public and produce estate wines from cold-climate Minnesota grape varieties.",
+        answer: "Three: Schram Vineyards Winery & Brewery on the rolling farmland west of town, Sovereign Estate Wine on the north shore of Lake Waconia, and Parley Lake Winery, a seasonal farm winery on the Deardorff Orchards farmstead. All are open to the public and produce estate wines from cold-climate Minnesota grape varieties.",
       },
       {
         question: "Are there breweries in Waconia, MN?",
-        answer: "Yes. Waconia Brewing Company anchors downtown and is the city's main craft brewery. Schram Vineyards also operates an in-house brewery alongside its winery. Both are open to the public; Waconia Brewing's hours are weekend-focused.",
+        answer: "Waconia's two downtown taprooms — Waconia Brewing Company and Schram Haus Brewery — both closed in early 2026. The remaining craft-beer experience in town is Schram Vineyards, which brews in-house beer alongside its estate wines, so you can still get a locally brewed pint with a vineyard view.",
       },
       {
         question: "Can I do a Waconia wine tour without a car?",
@@ -2745,7 +2756,7 @@ export const guides: Guide[] = [
       },
       {
         question: "How long does a Waconia winery and brewery tour take?",
-        answer: "Plan five to seven hours for the full four-stop loop (Schram → Sovereign → Waconia Brewing → J. Carver). A shorter two-stop afternoon (Schram + Sovereign) takes about three hours. A downtown-only evening (Waconia Brewing + J. Carver) takes about two hours.",
+        answer: "Plan five to seven hours for the full four-stop loop (Schram → Parley Lake → Sovereign → J. Carver). A shorter two-stop afternoon (Schram + Sovereign) takes about three hours. An evening at J. Carver's cocktail room takes about an hour.",
       },
       {
         question: "Is there a craft distillery in Waconia?",
@@ -2760,8 +2771,8 @@ export const guides: Guide[] = [
       "The best restaurants in Waconia, Minnesota — where to eat downtown and on Lake Waconia. Local picks for dinner, breakfast, lakeside patios, and craft beer, with prices and what to order.",
     heroImage:
       "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80",
-    updatedDate: "June 24, 2026",
-    updatedIso: "2026-06-24",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
     publishedIso: "2026-06-24",
     author: "WaconiaGuide Editorial",
     authorSlug: "editorial",
@@ -2805,7 +2816,7 @@ export const guides: Guide[] = [
       },
       {
         type: "richText",
-        body: "Waconia punches well above its weight on craft beverages. <a href=\"/directory/waconia-brewing-company\">Waconia Brewing Co.</a> ($$) anchors downtown with award-winning beer, a big patio with fire pits, and live music on Fridays — no kitchen, but you can order delivery in. <a href=\"/directory/schram-haus-brewery\">Schram Haus Brewery</a> ($$) is the second downtown taproom. Just outside town, <a href=\"/directory/schram-vineyards\">Schram Vineyards Winery &amp; Brewery</a> ($$) pours estate wines and house beer with sweeping views (and heated igloos in winter), and <a href=\"/directory/j-carver-distillery\">J. Carver Distillery</a> ($$) makes small-batch whiskey, gin, and vodka with a full cocktail room. Want to string several together? See our <a href=\"/guides/waconia-wineries-breweries-tour\">Waconia wineries &amp; breweries tour</a>.",
+        body: "Waconia punches well above its weight on craft beverages, though the scene shifted in early 2026 when both downtown taprooms — Waconia Brewing Co. and Schram Haus Brewery — closed. The countryside producers carry on. <a href=\"/directory/schram-vineyards\">Schram Vineyards Winery &amp; Brewery</a> ($$) pours estate wines and house-brewed beer with sweeping views (and heated igloos in winter), <a href=\"/directory/sovereign-estate-wine\">Sovereign Estate Wine</a> ($$$) owns the lakefront sunset, <a href=\"/directory/parley-lake-winery\">Parley Lake Winery</a> ($$) is the seasonal farm winery on the Deardorff Orchards farmstead, and <a href=\"/directory/j-carver-distillery\">J. Carver Distillery</a> ($$) makes small-batch whiskey, gin, and vodka with a full cocktail room. Want to string several together? See our <a href=\"/guides/waconia-wineries-breweries-tour\">Waconia wineries &amp; breweries tour</a>.",
       },
       {
         type: "heading",
@@ -2821,7 +2832,7 @@ export const guides: Guide[] = [
           {
             icon: "🍔",
             title: "What to Order",
-            body: "Iron Tap: the Father Bob Burger. Lola's: the walleye dinner. Egg-Cetera: the specialty omelet of the day. Lakeside Tavern: the Friday fish fry. Waconia Brewing: a 4-pour flight.",
+            body: "Iron Tap: the Father Bob Burger. Lola's: the walleye dinner. Egg-Cetera: the specialty omelet of the day. Lakeside Tavern: the Friday fish fry. J. Carver: an old fashioned with the house whiskey.",
           },
           {
             icon: "🗺️",
@@ -2837,7 +2848,7 @@ export const guides: Guide[] = [
       },
       {
         type: "richText",
-        body: "<strong>Special-occasion dinner:</strong> Iron Tap (downtown) or Sovereign Estate Wine (lakefront). <strong>Lunch on the water:</strong> Lola's Lakehouse. <strong>Breakfast:</strong> Egg-Cetera Cafe. <strong>Coffee &amp; remote work:</strong> Mocha Monkey. <strong>Craft beer:</strong> Waconia Brewing Co. or Schram Haus. <strong>Wine with a view:</strong> Sovereign Estate or Schram Vineyards. <strong>Family &amp; groups:</strong> Mucho Mexican, Lakeside Tavern, or Garage Bowling &amp; Bar. Prices run from $ (Egg-Cetera, Mocha Monkey) through $$ for most of downtown, up to $$$ at Sovereign Estate.",
+        body: "<strong>Special-occasion dinner:</strong> Iron Tap (downtown) or Sovereign Estate Wine (lakefront). <strong>Lunch on the water:</strong> Lola's Lakehouse. <strong>Breakfast:</strong> Egg-Cetera Cafe. <strong>Coffee &amp; remote work:</strong> Mocha Monkey. <strong>Craft beer:</strong> Schram Vineyards' in-house brewery. <strong>Wine with a view:</strong> Sovereign Estate, Schram Vineyards, or Parley Lake. <strong>Cocktails:</strong> J. Carver Distillery. <strong>Family &amp; groups:</strong> Mucho Mexican, Lakeside Tavern, or Garage Bowling &amp; Bar. Prices run from $ (Egg-Cetera, Mocha Monkey) through $$ for most of downtown, up to $$$ at Sovereign Estate.",
       },
       {
         type: "cta",
@@ -2906,7 +2917,7 @@ export const guides: Guide[] = [
       {
         question: "Does Waconia have good breweries and wineries?",
         answer:
-          "Yes. Waconia Brewing Co. and Schram Haus Brewery anchor downtown, while Schram Vineyards (winery and brewery) and Sovereign Estate Wine (lakefront winery) sit just outside town. J. Carver Distillery rounds it out with small-batch spirits and a cocktail room. Together they make Waconia a notable craft-beverage destination in the Twin Cities metro.",
+          "Yes, though the lineup changed in early 2026 when downtown's two taprooms (Waconia Brewing Co. and Schram Haus Brewery) closed. Schram Vineyards (winery with an in-house brewery), Sovereign Estate Wine (lakefront winery), and Parley Lake Winery (seasonal farm winery) sit just outside town, and J. Carver Distillery rounds it out with small-batch spirits and a cocktail room. Together they keep Waconia a notable craft-beverage destination in the Twin Cities metro.",
       },
       {
         question: "Are Waconia restaurants family-friendly?",
@@ -3822,6 +3833,280 @@ export const guides: Guide[] = [
         question: "How do I find and vet senior living communities near Waconia?",
         answer:
           "Use authoritative sources rather than unvetted lists: Medicare.gov's Care Compare, the Minnesota Board on Aging / Senior LinkAge Line (1-800-333-2433), and the Minnesota Department of Health's licensing lookup for assisted-living and care facilities. Then tour your shortlist and ask about care levels, staffing, costs, and emergency procedures.",
+      },
+    ],
+  },
+  // ────────────────────────────────────────────────────────────────────
+  // Round 14 — added 2026-08-13 (rest-of-year events content)
+  // ────────────────────────────────────────────────────────────────────
+  {
+    slug: "apple-orchards-near-waconia",
+    title: "Apple Picking Near Waconia, MN: Deardorff Orchards & Parley Lake Winery",
+    metaDescription:
+      "Apple picking near Waconia, Minnesota — Deardorff Orchards' 1888 farm with SweeTango, Honeycrisp, Zestar! and Haralson, plus Parley Lake Winery on the same farmstead. Season dates, variety timing, and tips.",
+    heroImage: "/images/event-harvest-festival.webp",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
+    publishedIso: "2026-08-13",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Farm Established", value: "1888" },
+      { label: "Apple Trees", value: "3,000+" },
+      { label: "Season", value: "Labor Day–Oct" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Ask a Waconia local what fall smells like and they'll tell you: apples. Deardorff Orchards, a working family farm on Parley Lake Road dating to 1888, is the west metro's closest thing to a complete Minnesota fall outing — pick-your-own apples across 120 acres, tractor rides, pumpkins and mums as October arrives, and a farm winery pouring estate wine on the same property. The orchard opens around Labor Day weekend and runs until the trees are picked out, typically late October. This guide covers when to go, which varieties ripen when, and how to turn the trip into a full fall day.",
+      },
+      {
+        type: "heading",
+        heading: "Deardorff Orchards: The Farm",
+      },
+      {
+        type: "text",
+        body: "Deardorff grows more than 3,000 trees of Minnesota-bred varieties — the University of Minnesota's SweeTango and Zestar!, the beloved Honeycrisp, and the old-school baking standby Haralson. Tractor rides out to the picking rows are complimentary when you pick your own apples, and the farm stand fills out with pumpkins, mums, and local honey as the season turns. It's a genuine working farm rather than an agritainment park: the draw is the orchard itself, the views over Parley Lake country, and apples that were on the tree an hour before they're in your trunk.",
+      },
+      {
+        type: "heading",
+        heading: "What Ripens When",
+      },
+      {
+        type: "text",
+        body: "Minnesota apple season moves fast, and picking availability shifts week to week with the crop — always check the orchard's website or social pages before driving out. As a rule of thumb: Zestar! and SweeTango lead the season in early-to-mid September, Honeycrisp peaks from mid-to-late September, and Haralson — the tart pie apple — carries October. The most popular varieties pick out fastest; if SweeTango is the mission, go the first two weekends after Labor Day and go early in the day.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "Labor Day weekend to late October, that farm is the best free show in Carver County — and the apples are the ticket price.",
+        attribution: "Local advice",
+      },
+      {
+        type: "heading",
+        heading: "Parley Lake Winery: On the Same Farmstead",
+      },
+      {
+        type: "text",
+        body: "The rare orchard trip that works for every generation of the car: Parley Lake Winery shares the Deardorff farmstead, pouring estate wines from cold-climate Minnesota grapes in a tasting room with a wrap-around deck overlooking the Lake View Stage and the Itasca vineyard. It operates seasonally — roughly May through December, weekends especially — and apple season is its peak atmosphere, often with live music. Pick apples first, then let one adult taste while the kids run the farmyard. Check current days and hours before you go.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🍎",
+            title: "Go Early for SweeTango",
+            body: "The U of M's flagship variety picks out fastest. Early-to-mid September, mornings, weekdays if you can swing it.",
+          },
+          {
+            icon: "🍷",
+            title: "Two Stops, One Farm",
+            body: "Deardorff Orchards and Parley Lake Winery share the same 1888 farmstead on Parley Lake Road — apples for the kids, a tasting for the adults.",
+            link: { label: "Parley Lake Winery listing →", href: "/directory/parley-lake-winery" },
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Make It a Full Fall Day",
+      },
+      {
+        type: "text",
+        body: "The orchard sits ten minutes west of downtown Waconia, which makes the classic fall Saturday easy: morning picking at Deardorff, lunch downtown (Iron Tap or Mucho Mexican), then the Scarecrow Tour route through town in October, and a sunset glass at Sovereign Estate on the lake. If you're building a bigger weekend, the full wineries-and-distillery loop and the fall-colors drive around the lake both start from the same square mile.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan Your Fall Visit",
+        ctaDescription:
+          "Apple picking, the Scarecrow Tour, fall colors, and trophy walleye — October is Waconia's best month.",
+        buttons: [
+          { label: "Fall in Waconia Guide", href: "/guides/waconia-fall", variant: "primary" },
+          { label: "Wineries & Distillery Tour", href: "/guides/waconia-wineries-breweries-tour", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Orchard", value: "Deardorff Orchards, est. 1888" },
+      { label: "Address", value: "8282 Parley Lake Rd" },
+      { label: "Season opens", value: "~Labor Day weekend" },
+      { label: "Season ends", value: "When picked out (late Oct)" },
+      { label: "Winery on-site", value: "Parley Lake Winery" },
+    ],
+    keywords: [
+      "apple orchard near Waconia",
+      "apple picking Waconia MN",
+      "Deardorff Orchards",
+      "Parley Lake Winery",
+      "apple orchards Carver County",
+      "apple picking west metro Minneapolis",
+      "SweeTango apple picking Minnesota",
+    ],
+    articleSection: "Seasonal",
+    glossaryTerms: [
+      { term: "Waconia", anchor: "waconia" },
+      { term: "Carver County", anchor: "carver-county" },
+    ],
+    relatedGuides: [
+      { title: "Fall in Waconia", readTime: "6 min read", href: "/guides/waconia-fall" },
+      { title: "Waconia Wineries & Breweries Tour", readTime: "6 min read", href: "/guides/waconia-wineries-breweries-tour" },
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+    ],
+    faqs: [
+      {
+        question: "Where can you pick apples near Waconia, MN?",
+        answer:
+          "Deardorff Orchards at 8282 Parley Lake Road, about ten minutes west of downtown Waconia, is the local pick-your-own orchard — an 1888 family farm with more than 3,000 trees growing SweeTango, Zestar!, Honeycrisp, and Haralson. The season runs from around Labor Day weekend until the trees are picked out, typically late October.",
+      },
+      {
+        question: "When does apple season start at Deardorff Orchards?",
+        answer:
+          "Deardorff typically opens for pick-your-own around Labor Day weekend. Zestar! and SweeTango ripen first in early-to-mid September, Honeycrisp peaks mid-to-late September, and Haralson carries October. Check the orchard's website or social pages for current open days and picking availability before visiting — it shifts with the crop each week.",
+      },
+      {
+        question: "Is there a winery at Deardorff Orchards?",
+        answer:
+          "Yes — Parley Lake Winery shares the same farmstead. It pours estate wines from cold-climate Minnesota grapes in a seasonal tasting room with a deck overlooking the vineyard, generally open weekends from roughly May through December. Apple season is its liveliest stretch, often with live music.",
+      },
+      {
+        question: "Does Deardorff Orchards have pumpkins and fall activities?",
+        answer:
+          "Yes. Alongside pick-your-own apples, the farm offers complimentary tractor rides for pickers, and the farm stand adds pumpkins, mums, and local honey as October arrives. It pairs naturally with Waconia's other fall traditions like the Scarecrow Tour (October 8–18 in 2026).",
+      },
+    ],
+  },
+  {
+    slug: "waconia-christmas",
+    title: "Christmas in Waconia, MN: Christkindlsmarkt, Tree Lighting & Holiday Guide",
+    metaDescription:
+      "The complete Waconia holiday guide — the German-style Christkindlsmarkt in City Square Park, the Tree Lighting, D.E.A.R. Hunting Day, Small Business Saturday, and where to warm up.",
+    heroImage:
+      "https://images.unsplash.com/photo-1518182170546-07661fd94144?w=1600&q=80",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
+    publishedIso: "2026-08-13",
+    author: "WaconiaGuide Editorial",
+    authorSlug: "editorial",
+    stats: [
+      { label: "Christkindlsmarkt", value: "Early Dec" },
+      { label: "Tree Lighting", value: "Black Friday" },
+      { label: "Admission", value: "Free" },
+    ],
+    content: [
+      {
+        type: "text",
+        body: "Waconia's holiday season got a serious upgrade in 2025, when the Christkindlsmarkt — a German-style open-air Christmas market with more than two decades of history in Excelsior — relocated to City Square Park. Add the long-running Tree Lighting in the Park on Black Friday evening and a November full of shop-small days, and downtown Waconia now carries the holidays the way it carries summer. This guide covers every event on the calendar from early November through the market's final weekend, plus where to warm up in between.",
+      },
+      {
+        type: "heading",
+        heading: "The Waconia Christkindlsmarkt",
+      },
+      {
+        type: "text",
+        body: "The centerpiece. The Christkindlsmarkt turns City Square Park (104 E Main St) into an old-world holiday village: wooden vendor stalls with handmade gifts, German food and drink — including mugs of warm Glühwein — live music, storytelling, a magic show, and appearances by the Christkind, Saint Nicholas, and the mischievous Krampus. Kids can meet live reindeer, and the St. Martin's children's lantern parade lights up Saturday evenings. Admission is free. The market typically runs Friday through Sunday across the first two weekends of December; 2026 dates hadn't been announced when this guide was last updated — confirm at christmasinwaconia.com.",
+      },
+      {
+        type: "pullquote",
+        quote:
+          "Glühwein in one hand, a lantern parade going by, snow starting to fall on the gazebo — City Square Park in December makes its case pretty quickly.",
+        attribution: "Local advice",
+      },
+      {
+        type: "heading",
+        heading: "Tree Lighting in the Park",
+      },
+      {
+        type: "text",
+        body: "Waconia's official holiday kickoff hasn't changed: on the Friday after Thanksgiving (November 27 in 2026), the community gathers at the City Square Park Gazebo at 6pm for free hot cocoa, fire pits, festive music, and the ceremonial lighting of the community Christmas tree. Dress warmly, bring the whole family, and note that Small Business Saturday follows the very next morning — Thanksgiving weekend is effectively a two-day downtown holiday festival.",
+      },
+      {
+        type: "heading",
+        heading: "November's Shop-Small Days",
+      },
+      {
+        type: "text",
+        body: "Waconia runs three distinct shop-local days before December even starts. D.E.A.R. Hunting Day (Divas Enjoying Awesome Retail) lands on Minnesota's deer-opener Saturday — November 7 in 2026, its 19th year — with downtown businesses hiding the letters D-E-A-R for a chance at the $400+ Basket of Waconia, plus extra deals for anyone in blaze orange. Pink Friday (November 20 in 2026) is the shop-small answer to Black Friday, one week early. And Small Business Saturday (November 28) closes Thanksgiving weekend with specials across downtown's independent shops. Between the three, you can finish a holiday list without leaving town.",
+      },
+      {
+        type: "infoCards",
+        cards: [
+          {
+            icon: "🏮",
+            title: "Go on a Saturday",
+            body: "The Christkindlsmarkt's children's lantern parade and fullest entertainment slate land on Saturdays — and evening, when the stall lights come on, is peak atmosphere.",
+            link: { label: "Event details →", href: "/events/waconia-christkindlsmarkt-2026" },
+          },
+          {
+            icon: "🥶",
+            title: "Book the Igloos Early",
+            body: "Schram Vineyards' heated see-through igloos start booking out weeks ahead for December. Reserve before Thanksgiving if you want a holiday-season slot.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        heading: "Between Events: Where to Warm Up",
+      },
+      {
+        type: "text",
+        body: "December in Waconia is genuinely cold — plan indoor anchors between outdoor events. Mocha Monkey handles the hot-drink rotation a block from the park. Iron Tap and Lakeside Tavern cover lunch and dinner downtown. J. Carver Distillery's cocktail room is the best adults-only warm-up in town, and Emagine Waconia's reclining-seat cinema is the family fallback when the wind picks up. If the lake has safe ice by late December, the ice-fishing season opener rounds out a full winter weekend.",
+      },
+      {
+        type: "cta",
+        ctaTitle: "Plan Your Holiday Visit",
+        ctaDescription:
+          "The Christkindlsmarkt, the Tree Lighting, and a lakeside winter town doing its best Hallmark impression — December is worth the drive.",
+        buttons: [
+          { label: "Winter in Waconia Guide", href: "/guides/waconia-winter", variant: "primary" },
+          { label: "All Waconia Events", href: "/events", variant: "outline" },
+        ],
+      },
+    ],
+    sidebarFacts: [
+      { label: "Christkindlsmarkt", value: "First two weekends of Dec (typ.)" },
+      { label: "Location", value: "City Square Park, 104 E Main St" },
+      { label: "Tree Lighting", value: "Nov 27, 2026 · 6pm" },
+      { label: "D.E.A.R. Hunting Day", value: "Nov 7, 2026" },
+      { label: "Small Business Saturday", value: "Nov 28, 2026" },
+    ],
+    keywords: [
+      "Waconia Christkindlsmarkt",
+      "Christkindlmarkt Minnesota",
+      "Christmas in Waconia",
+      "Waconia holiday events",
+      "Christmas market near Minneapolis",
+      "Waconia Tree Lighting",
+      "D.E.A.R. Hunting Waconia",
+    ],
+    articleSection: "Seasonal",
+    glossaryTerms: [
+      { term: "City Square Park", anchor: "city-square-park" },
+      { term: "Waconia", anchor: "waconia" },
+    ],
+    relatedGuides: [
+      { title: "Winter in Waconia", readTime: "6 min read", href: "/guides/waconia-winter" },
+      { title: "Waconia Wineries & Breweries Tour", readTime: "6 min read", href: "/guides/waconia-wineries-breweries-tour" },
+      { title: "Things to Do in Waconia", readTime: "7 min read", href: "/guides/things-to-do-waconia" },
+    ],
+    faqs: [
+      {
+        question: "When is the Waconia Christkindlsmarkt?",
+        answer:
+          "The Christkindlsmarkt typically runs Friday through Sunday across the first two weekends of December in City Square Park, downtown Waconia. Exact 2026 dates had not been announced when this guide was last updated — check christmasinwaconia.com for the current schedule before you go.",
+      },
+      {
+        question: "Is the Waconia Christkindlsmarkt free?",
+        answer:
+          "Yes, admission is free. You'll pay for food, Glühwein, and anything you buy from the vendor stalls, but entry to the market — including the live music, lantern parade, and visits with the Christkind, Saint Nicholas, and Krampus — costs nothing.",
+      },
+      {
+        question: "Is there a Christmas market near Minneapolis?",
+        answer:
+          "Yes — the Waconia Christkindlsmarkt is a German-style open-air Christmas market about 35 miles west of Minneapolis in City Square Park, Waconia. It relocated from Excelsior in 2025 after more than two decades there, and features wooden vendor stalls, Glühwein, live reindeer, and a children's lantern parade. Admission is free.",
+      },
+      {
+        question: "What is D.E.A.R. Hunting Day in Waconia?",
+        answer:
+          "D.E.A.R. Hunting Day (Divas Enjoying Awesome Retail) is Waconia's annual shopping event held on Minnesota's deer-opener Saturday — November 7 in 2026, its 19th year. Downtown businesses hide the letters D-E-A-R; find all four to enter a drawing for the Basket of Waconia ($400+ in local gift cards and goodies), with extra deals for shoppers wearing blaze orange.",
       },
     ],
   },
