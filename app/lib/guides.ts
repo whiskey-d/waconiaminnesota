@@ -49,11 +49,11 @@ export const guides: Guide[] = [
     slug: "lake-waconia-fishing",
     title: "Fishing Guide for Lake Waconia: Seasonal Tips & Hotspots",
     metaDescription:
-      "Complete seasonal fishing guide for Lake Waconia. Expert tips for walleye, bass, pike, and muskie across all four seasons.",
+      "Complete seasonal fishing guide for Lake Waconia. Expert tips for walleye, bass, pike, and muskie across all four seasons — plus the special walleye regulation every angler should know.",
     heroImage:
       "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1600",
-    updatedDate: "December 15, 2024",
-    updatedIso: "2024-12-15",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
     publishedIso: "2024-08-01",
     author: "WaconiaGuide Editorial",
     authorSlug: "editorial",
@@ -108,7 +108,7 @@ export const guides: Guide[] = [
       },
       {
         type: "text",
-        body: "Autumn is trophy walleye time on Lake Waconia. As water temperatures drop, walleye move from summer patterns to fall feeding binges, staging on deep structure and rock piles before winter sets in. Crankbaits worked along the 15-to-25 foot breaklines are deadly effective. Focus on the main lake points and the deep sunken island off the south shore. Pre-spawn staging areas see heavy concentrations of fish, and it's not uncommon to catch your personal best walleye during the October and November bite.",
+        body: "Autumn is trophy walleye time on Lake Waconia. As water temperatures drop, walleye move from summer patterns to fall feeding binges, staging on deep structure and rock piles before winter sets in. The transition starts earlier than most anglers fish it: by late August and September, fish begin sliding off the mid-summer weed edges onto the deeper breaks, and the first cold fronts flip the switch. Crankbaits worked along the 15-to-25 foot breaklines are deadly effective. Focus on the main lake points and the deep sunken island off the south shore. Pre-spawn staging areas see heavy concentrations of fish, and it's not uncommon to catch your personal best walleye during the October and November bite.",
       },
       {
         type: "heading",
@@ -147,7 +147,15 @@ export const guides: Guide[] = [
       },
       {
         type: "richText",
-        body: "Lake Waconia supports an impressive variety of game fish. Walleye is the primary target species and the lake is regularly stocked by the MN DNR — review the complete <a href=\"https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900\" target=\"_blank\" rel=\"noopener noreferrer\">Lake Waconia fish survey reports and DNR stocking history</a> on the Minnesota DNR LakeFinder. Largemouth bass thrive in the extensive weed cover along the shoreline. Northern pike patrol the weed edges and can reach impressive sizes. Bluegill and crappie provide excellent panfish action, especially in spring and early summer. The lake also holds a small but growing population of muskie, making it a sleeper destination for trophy hunters willing to put in the time.",
+        body: "Lake Waconia supports an impressive variety of game fish. Walleye is the primary target species — the lake is managed for walleye by the MN DNR, with fingerlings stocked on a biennial cycle. Review the complete <a href=\"https://www.dnr.state.mn.us/lakefind/showreport.html?downum=10005900\" target=\"_blank\" rel=\"noopener noreferrer\">Lake Waconia fish survey reports and DNR stocking history</a> on the Minnesota DNR LakeFinder. Largemouth bass thrive in the extensive weed cover along the shoreline. Northern pike patrol the weed edges and can reach impressive sizes. Bluegill, pumpkinseed, and black crappie provide excellent panfish action, especially in spring and early summer. The lake also holds a small but growing population of muskie, making it a sleeper destination for trophy hunters willing to put in the time.",
+      },
+      {
+        type: "heading",
+        heading: "Know the Walleye Regulation",
+      },
+      {
+        type: "text",
+        body: "Lake Waconia carries a special walleye regulation: a 16-inch minimum size limit, with only one walleye over 20 inches allowed in possession. The rule exists to let the stocked fishery mature — and it's a big part of why the lake produces the size structure it does. Regulations can change between seasons, so confirm the current rules in the Minnesota fishing regulations booklet or the DNR's special regulations list before you keep fish.",
       },
       {
         type: "infoCards",
@@ -161,7 +169,7 @@ export const guides: Guide[] = [
           {
             icon: "🏙️",
             title: "Plan Your Visit",
-            body: "After a great day on the water, Waconia's downtown has you covered — waterfront dining, local breweries, and seasonal events all within minutes of the boat launch.",
+            body: "After a great day on the water, Waconia has you covered — waterfront dining downtown, wineries and a craft cocktail room minutes away, and seasonal events all within reach of the boat launch.",
             link: { label: "Explore Waconia →", href: "/directory" },
           },
         ],
@@ -212,6 +220,7 @@ export const guides: Guide[] = [
       "Lake Waconia walleye",
       "Lake Waconia bass fishing",
       "Lake Waconia muskie",
+      "Lake Waconia walleye regulations",
       "Carver County fishing",
       "DOW 10-0059-00",
     ],
@@ -242,7 +251,11 @@ export const guides: Guide[] = [
     faqs: [
       {
         question: "What fish are in Lake Waconia?",
-        answer: "Lake Waconia (DOW 10-0059-00) supports walleye, largemouth bass, northern pike, muskie, bluegill, crappie, and yellow perch. Walleye is the most-sought species and is regularly stocked by the Minnesota DNR.",
+        answer: "Lake Waconia (DOW 10-0059-00) supports walleye, largemouth bass, northern pike, muskie, bluegill, pumpkinseed, crappie, and yellow perch. Walleye is the most-sought species — the lake is managed for walleye by the Minnesota DNR, with fingerlings stocked on a biennial cycle.",
+      },
+      {
+        question: "What is the walleye size limit on Lake Waconia?",
+        answer: "Lake Waconia has a special walleye regulation: a 16-inch minimum size limit, with only one walleye over 20 inches allowed in possession. Confirm current rules in the Minnesota fishing regulations or the DNR special regulations list before keeping fish, as regulations can change between seasons.",
       },
       {
         question: "Do you need a license to fish Lake Waconia?",
@@ -269,8 +282,8 @@ export const guides: Guide[] = [
       "Everything you need to know about Lake Waconia — boating, swimming, parks, and lakeside activities in Waconia, Minnesota.",
     heroImage:
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80",
-    updatedDate: "January 5, 2025",
-    updatedIso: "2025-01-05",
+    updatedDate: "August 13, 2026",
+    updatedIso: "2026-08-13",
     publishedIso: "2024-08-01",
     author: "WaconiaGuide Editorial",
     authorSlug: "editorial",
@@ -333,7 +346,7 @@ export const guides: Guide[] = [
       },
       {
         type: "text",
-        body: "Lake Waconia is equally spectacular in winter. Ice fishing is the marquee winter activity, with walleye and panfish drawing anglers from across the metro. The lake also offers excellent snowmobiling access and nearby cross-country ski trails. The annual ice fishing contests are community highlights that bring together experienced anglers and newcomers alike.",
+        body: "Lake Waconia is equally spectacular in winter. Ice fishing is the marquee winter activity, with walleye and panfish drawing anglers from across the metro — and the annual Lake Waconia Crappie Contest, typically held in February, is one of the most popular ice tournaments in the western Twin Cities. The lake also offers excellent snowmobiling access and groomed cross-country ski trails at the regional park.",
       },
       {
         type: "heading",
@@ -341,7 +354,7 @@ export const guides: Guide[] = [
       },
       {
         type: "text",
-        body: "Lake Waconia is located in Carver County, approximately 35 miles west of Minneapolis via Highway 5. The main public access is at Lake Waconia Regional Park on the south shore. Downtown Waconia's restaurants, breweries, and shops are just a five-minute drive from the lake, making it easy to combine a day on the water with an evening downtown.",
+        body: "Lake Waconia is located in Carver County, approximately 35 miles west of Minneapolis via Highway 5. The main public access is at Lake Waconia Regional Park on the south shore. Downtown Waconia's restaurants and shops are a five-minute drive from the lake — and the area's wineries and craft cocktail room are only a few minutes further — making it easy to combine a day on the water with an evening out.",
       },
       {
         type: "heading",

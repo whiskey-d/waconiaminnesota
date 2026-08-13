@@ -157,6 +157,11 @@ Ice Fishing, Waconia History, Moving to Waconia.
       patio fixes) + winter guide (Christkindlsmarkt section, indoor-escape
       fixes) + wineries tour rebuilt as Schram → Parley Lake → Sovereign →
       J. Carver.
+- [x] 14.7 Staleness cleanup: refreshed `lake-waconia-fishing` (606d old —
+      added the special walleye regulation: 16" minimum / one over 20",
+      biennial fingerling stocking, late-summer transition note, new
+      regulation FAQ) and `lake-waconia` (585d — Crappie Contest, current
+      town refs). **Staleness report now clean: 0 stale guides.**
 
 ### Next up (from CONTENT-STRATEGY.md)
 - [ ] Fill real AdSense slot IDs into `app/lib/adSlots.ts` (user action)
