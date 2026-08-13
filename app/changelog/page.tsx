@@ -25,6 +25,7 @@ const ENTRIES: ChangelogEntry[] = [
       "Editorial correction: Waconia Brewing Co. (closed January 2026) and Schram Haus Brewery (closed December 2025) removed from the directory and all recommendations; the weekly trivia night listing was retired. Added Parley Lake Winery and Deardorff Orchards listings in their place.",
       "Refreshed the wineries & breweries day-tour (now Schram → Parley Lake → Sovereign → J. Carver), the fall and winter seasonal guides, best-of picks, and the dining roundup to reflect the 2026 craft-beverage lineup. 28 guides total.",
       "Refreshed the two oldest guides: the Lake Waconia fishing guide now documents the lake's special walleye regulation (16-inch minimum, one over 20 inches) and biennial fingerling stocking, plus a late-summer transition note; the Lake Waconia complete guide picks up the Crappie Contest and current town references.",
+      "Image correction: replaced every stock guide hero image with photos from the site's local Waconia image set — several stock images depicted subjects that don't exist here (mountain ranges, a lion).",
     ],
   },
   {

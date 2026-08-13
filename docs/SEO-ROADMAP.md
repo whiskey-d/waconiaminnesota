@@ -174,7 +174,12 @@ Ice Fishing, Waconia History, Moving to Waconia.
 - [s] Outreach / backlink campaigns
 - [s] favicon.ico and apple-touch-icon.png — need raster export
 - [s] Real `?page=` directory pagination — works until ~50 listings
-- [ ] Replace remaining Unsplash hero images with locally-shot WebP
+- [~] Replace remaining Unsplash hero images with locally-shot WebP —
+      **2026-08-13: all guide heroes + photoGrids now use the local
+      `public/images/*.webp` set** (several Unsplash IDs rendered wrong
+      subjects — mountains, a lion). Directory listing images
+      (`app/lib/businesses.ts`) are still stock Unsplash and should be
+      reviewed/replaced with real local photos next.
 - [ ] Hire/credit a named human author with sameAs (LinkedIn / X)
 - [ ] OpenStreetMap → interactive map upgrade (Mapbox or Leaflet)
 - [ ] More directory listings (additional restaurants, retail, services)

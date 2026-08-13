@@ -51,7 +51,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Complete seasonal fishing guide for Lake Waconia. Expert tips for walleye, bass, pike, and muskie across all four seasons — plus the special walleye regulation every angler should know.",
     heroImage:
-      "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1600",
+      "/images/fishing-lake-waconia.webp",
     updatedDate: "August 13, 2026",
     updatedIso: "2026-08-13",
     publishedIso: "2024-08-01",
@@ -281,7 +281,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Everything you need to know about Lake Waconia — boating, swimming, parks, and lakeside activities in Waconia, Minnesota.",
     heroImage:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80",
+      "/images/hero-lake-waconia.webp",
     updatedDate: "August 13, 2026",
     updatedIso: "2026-08-13",
     publishedIso: "2024-08-01",
@@ -331,11 +331,11 @@ export const guides: Guide[] = [
         type: "photoGrid",
         photos: [
           {
-            src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80",
+            src: "/images/conservation-lake-waconia.webp",
             alt: "Scenic view of Lake Waconia shoreline",
           },
           {
-            src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&q=80",
+            src: "/images/boating-lake-waconia.webp",
             alt: "Nature trails near Lake Waconia",
           },
         ],
@@ -462,7 +462,7 @@ export const guides: Guide[] = [
     metaDescription:
       "The forgotten resort island in Lake Waconia. How a 31-acre island became a Gilded-Age destination, what's there today, and how to visit.",
     heroImage:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=80",
+      "/images/conservation-lake-waconia.webp",
     updatedDate: "May 3, 2026",
     updatedIso: "2026-05-03",
     publishedIso: "2026-05-03",
@@ -593,7 +593,7 @@ export const guides: Guide[] = [
     metaDescription:
       "The definitive list of things to do in Waconia, MN — Lake Waconia activities, breweries and wineries, dining, events, and seasonal favorites by a local.",
     heroImage:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80",
+      "/images/boating-lake-waconia.webp",
     updatedDate: "August 13, 2026",
     updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
@@ -729,7 +729,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Complete guide to Lake Waconia Regional Park — swimming beach, boat ramp, hiking trails, picnic shelters, and seasonal activities on the south shore.",
     heroImage:
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600&q=80",
+      "/images/conservation-lake-waconia.webp",
     updatedDate: "May 3, 2026",
     updatedIso: "2026-05-03",
     publishedIso: "2026-05-03",
@@ -1027,7 +1027,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Complete Lake Waconia ice fishing guide — walleye and panfish hotspots, ice safety thresholds, gear list, and the Lake Waconia Crappie Contest.",
     heroImage:
-      "https://images.unsplash.com/photo-1518182170546-07661fd94144?w=1600&q=80",
+      "/images/event-fishing-tournament.webp",
     updatedDate: "August 13, 2026",
     updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
@@ -1211,7 +1211,7 @@ export const guides: Guide[] = [
     metaDescription:
       "The history of Waconia, Minnesota — the meaning of the Dakota name, German settlement in the 1850s, the Coney Island resort era, and the modern lakeside city.",
     heroImage:
-      "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1600&q=80",
+      "/images/hero-lake-waconia.webp",
     updatedDate: "May 3, 2026",
     updatedIso: "2026-05-03",
     publishedIso: "2026-05-03",
@@ -1352,7 +1352,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Everything to know before moving to Waconia, Minnesota — neighborhoods, schools (District 110), commute, taxes, healthcare, and the real cost of lakeside living.",
     heroImage:
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80",
+      "/images/hero-lake-waconia.webp",
     updatedDate: "May 3, 2026",
     updatedIso: "2026-05-03",
     publishedIso: "2026-05-03",
@@ -1518,7 +1518,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Independent School District 110 — Waconia Public Schools. High school, middle school, three elementaries, ratings, boundaries, and what local parents say.",
     heroImage:
-      "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=80",
+      "/images/hero-lake-waconia.webp",
     updatedDate: "May 3, 2026",
     updatedIso: "2026-05-03",
     publishedIso: "2026-05-03",
@@ -1662,7 +1662,7 @@ export const guides: Guide[] = [
     metaDescription:
       "How to drive to Waconia, MN from Minneapolis-St. Paul, the airport, and surrounding cities. Routes, times, traffic patterns, and parking once you arrive.",
     heroImage:
-      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1600&q=80",
+      "/images/boating-lake-waconia.webp",
     updatedDate: "May 3, 2026",
     updatedIso: "2026-05-03",
     publishedIso: "2026-05-03",
@@ -1798,7 +1798,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Every park in Waconia, MN — Lake Waconia Regional Park, City Square Park, Bayview Park, Coney Island, neighborhood parks, and trail connections.",
     heroImage:
-      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&q=80",
+      "/images/conservation-lake-waconia.webp",
     updatedDate: "May 3, 2026",
     updatedIso: "2026-05-03",
     publishedIso: "2026-05-03",
@@ -1934,7 +1934,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Lake Waconia depth map and bathymetry — maximum depth, average depth, key structure, basin shape, and how to read the official MN DNR LakeFinder data.",
     heroImage:
-      "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1600&q=80",
+      "/images/hero-lake-waconia.webp",
     updatedDate: "May 3, 2026",
     updatedIso: "2026-05-03",
     publishedIso: "2026-05-03",
@@ -2072,7 +2072,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Lake Waconia or Lake Minnetonka? Side-by-side comparison of size, fishing, boating, beaches, dining, lodging, and the kind of trip each lake is best for.",
     heroImage:
-      "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=1600&q=80",
+      "/images/boating-lake-waconia.webp",
     updatedDate: "August 13, 2026",
     updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
@@ -2233,7 +2233,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Everything to do in Waconia, MN during summer — Lake Waconia, the beach, the farmers market, the Carver County Fair, fishing, dining, and seasonal events.",
     heroImage:
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600&q=80",
+      "/images/boating-lake-waconia.webp",
     updatedDate: "August 13, 2026",
     updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
@@ -2359,7 +2359,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Winter in Waconia, MN — ice fishing on Lake Waconia, the Crappie Contest, the Christkindlsmarkt holiday market, cross-country ski trails, the Tree Lighting in the Park, and indoor escapes.",
     heroImage:
-      "https://images.unsplash.com/photo-1518182170546-07661fd94144?w=1600&q=80",
+      "/images/event-fishing-tournament.webp",
     updatedDate: "August 13, 2026",
     updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
@@ -2485,7 +2485,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Autumn in Waconia, MN — apple picking at Deardorff Orchards, the Scarecrow Tour, fall walleye, vineyard harvest, fall colors on Coney Island, and the best cool-weather patios.",
     heroImage:
-      "https://images.unsplash.com/photo-1503416997304-7f8bf166c121?w=1600&q=80",
+      "/images/event-harvest-festival.webp",
     updatedDate: "August 13, 2026",
     updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
@@ -2630,7 +2630,7 @@ export const guides: Guide[] = [
     metaDescription:
       "Plan a Waconia wine, beer, and spirits tour — Schram Vineyards, Parley Lake Winery, Sovereign Estate, J. Carver Distillery. Routes, hours, and what to order.",
     heroImage:
-      "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=1600&q=80",
+      "/images/brewing-waconia.webp",
     updatedDate: "August 13, 2026",
     updatedIso: "2026-08-13",
     publishedIso: "2026-05-03",
@@ -2783,7 +2783,7 @@ export const guides: Guide[] = [
     metaDescription:
       "The best restaurants in Waconia, Minnesota — where to eat downtown and on Lake Waconia. Local picks for dinner, breakfast, lakeside patios, and craft beer, with prices and what to order.",
     heroImage:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80",
+      "/images/dining-iron-tap.webp",
     updatedDate: "August 13, 2026",
     updatedIso: "2026-08-13",
     publishedIso: "2026-06-24",
@@ -2945,7 +2945,7 @@ export const guides: Guide[] = [
     metaDescription:
       "A local's breakdown of the cost of living in Waconia, Minnesota — housing, property taxes, groceries, utilities, transportation, and income tax — and how it compares to the Twin Cities metro.",
     heroImage:
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1600&q=80",
+      "/images/hero-lake-waconia.webp",
     updatedDate: "June 24, 2026",
     updatedIso: "2026-06-24",
     publishedIso: "2026-06-24",
@@ -3098,7 +3098,7 @@ export const guides: Guide[] = [
     metaDescription:
       "A local's guide to Waconia, MN neighborhoods — downtown and the historic south side, south-shore lakefront, north-side suburban developments, and the rural fringe — with the trade-offs of each.",
     heroImage:
-      "https://images.unsplash.com/photo-1448630360428-65456885c650?w=1600&q=80",
+      "/images/hero-lake-waconia.webp",
     updatedDate: "June 24, 2026",
     updatedIso: "2026-06-24",
     publishedIso: "2026-06-24",
@@ -3234,7 +3234,7 @@ export const guides: Guide[] = [
     metaDescription:
       "A local's guide to Nickle Dickle Day in Waconia, MN — the September street festival in City Square Park. What to do, the Friday street dance, parking, and tips for the day.",
     heroImage:
-      "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1600&q=80",
+      "/images/event-acoustic-sessions.webp",
     updatedDate: "June 24, 2026",
     updatedIso: "2026-06-24",
     publishedIso: "2026-06-24",
@@ -3363,7 +3363,7 @@ export const guides: Guide[] = [
     metaDescription:
       "A local's guide to the Carver County Fair in Waconia, MN — five days of 4-H, livestock shows, the demolition derby, midway rides, and live music every August. Dates, what to see, and tips.",
     heroImage:
-      "https://images.unsplash.com/photo-1531913764164-f85c52e6e654?w=1600&q=80",
+      "/images/event-harvest-festival.webp",
     updatedDate: "June 24, 2026",
     updatedIso: "2026-06-24",
     publishedIso: "2026-06-24",
@@ -3484,7 +3484,7 @@ export const guides: Guide[] = [
     metaDescription:
       "A guide to the Waconia Farmers Market & Flea Market — fresh local produce, baked goods, and vintage finds every Thursday 4–7pm, June through September, in downtown Waconia, MN.",
     heroImage:
-      "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1600&q=80",
+      "/images/event-farmers-market.webp",
     updatedDate: "June 24, 2026",
     updatedIso: "2026-06-24",
     publishedIso: "2026-06-24",
@@ -3591,7 +3591,7 @@ export const guides: Guide[] = [
     metaDescription:
       "A local's guide to wedding venues in and around Waconia, MN — lakefront ballrooms, vineyard tasting rooms, and golf-club settings on and near Lake Waconia, with booking tips for each.",
     heroImage:
-      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1600&q=80",
+      "/images/hero-lake-waconia.webp",
     updatedDate: "June 25, 2026",
     updatedIso: "2026-06-25",
     publishedIso: "2026-06-25",
@@ -3720,7 +3720,7 @@ export const guides: Guide[] = [
     metaDescription:
       "How to navigate senior living in Waconia, Minnesota — the types of care (independent living, assisted living, memory care, 55+), what makes Waconia a fit for retirees, costs, and how to verify options.",
     heroImage:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1600&q=80",
+      "/images/conservation-lake-waconia.webp",
     updatedDate: "June 25, 2026",
     updatedIso: "2026-06-25",
     publishedIso: "2026-06-25",
@@ -3993,7 +3993,7 @@ export const guides: Guide[] = [
     metaDescription:
       "The complete Waconia holiday guide — the German-style Christkindlsmarkt in City Square Park, the Tree Lighting, D.E.A.R. Hunting Day, Small Business Saturday, and where to warm up.",
     heroImage:
-      "https://images.unsplash.com/photo-1518182170546-07661fd94144?w=1600&q=80",
+      "/images/event-acoustic-sessions.webp",
     updatedDate: "August 13, 2026",
     updatedIso: "2026-08-13",
     publishedIso: "2026-08-13",
