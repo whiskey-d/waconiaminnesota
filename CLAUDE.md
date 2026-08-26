@@ -11,6 +11,18 @@ If you're picking up a fresh session, read these in order:
    or anything similar.
 3. **`docs/CONTENT-INVENTORY.md`** — every content surface mapped to its
    refresh cadence and authoritative source.
+4. **`docs/CONTENT-STRATEGY.md`** — the GEO/SEO growth plan and monetization
+   priorities. Check this before proposing new content beyond a refresh.
+
+## Search Console
+
+The site is verified in Google Search Console as a **URL-prefix property**
+(`https://waconiaminnesota.org/`) — not a `sc-domain:` property. If a GSC tool
+or script is available in your session, query real search data (top queries,
+top pages, position) before deciding what content to add — Round 15 found
+6 real local businesses with unmet search demand that guesswork would have
+missed (see `docs/SEO-ROADMAP.md`). Don't guess the property identifier; a
+`sc-domain:` query against this property will 403.
 
 ## Quick commands
 
@@ -53,6 +65,8 @@ npm run staleness  # flag guides whose updatedIso is past its cadence threshold
 
 ## Branch strategy
 
-Default development branch is `claude/seo-geo-audit-XwLIB` per the existing
-session config. PRs go to `main`. Each round of work commits cleanly with a
-prefixed message (`feat(seo):`, `feat(content):`, `chore:`, etc.).
+Each round of work gets its own branch off `main`, named `claude/<short-description>`
+(e.g. `claude/gsc-directory-events-round15`). Commit cleanly with a prefixed
+message (`feat(content):`, `feat(seo):`, `chore:`, etc.), open a PR to `main`,
+and delete the branch after merge. Don't reuse an old round's branch name —
+there is no single standing "default" branch.
