@@ -59,16 +59,20 @@ that year's date passes.
 | `scarecrow-tour-2026` | Annual | destinationwaconia.org |
 | `tree-lighting-2026` | Annual | destinationwaconia.org |
 | `deardorff-apple-season-2026` | Annual (spans season) | deardorfforchards.com |
+| `art-wander-2026` | Annual | artwander.com |
+| `fall-on-the-farm-2026` | Annual | Carver County Historical Society |
 | `dear-hunting-day-2026` | Annual | destinationwaconia.org |
+| `pink-friday-2026` | Annual | destinationwaconia.org |
 | `small-business-saturday-2026` | Annual | destinationwaconia.org |
 | `waconia-christkindlsmarkt-2026` | Annual — **2026 exact dates TBA**, replace placeholder when announced | christmasinwaconia.com |
 
 *(Removed 2026-08-13: `waconia-trivia-night` — host venue Waconia Brewing Co.
-closed January 2026.)*
+closed January 2026. Added 2026-08-26: Art Wander, Fall on the Farm, Pink
+Friday — verified against Destination Waconia's official 2026 calendar PDF.)*
 
 ## Directory listings (`app/lib/businesses.ts`)
 
-32 listings as of 2026-08-13. Hours marked `HOURS_VARIES` ("See website")
+38 listings as of 2026-08-26. Hours marked `HOURS_VARIES` ("See website")
 should be re-verified against the business's official source before the next
 refresh.
 
@@ -86,6 +90,11 @@ refresh.
 *(Removed 2026-08-13: waconia-brewing-company — closed January 2026;
 schram-haus-brewery — closed December 2025. Replaced with parley-lake-winery
 and deardorff-orchards.)*
+
+*(Added 2026-08-26, GSC-driven — verified real/operating via independent
+sources before adding: d-vincis-restaurant, bode-grays, the-brass-hat,
+green-fox-grille, culvers-waconia, caribou-coffee-waconia. Also corrected
+island-view-golf-club's address, which was wrong.)*
 
 ## Trust + hub pages
 
