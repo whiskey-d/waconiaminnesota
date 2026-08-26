@@ -168,6 +168,32 @@ Ice Fishing, Waconia History, Moving to Waconia.
 - [ ] Geo expansion: `day-trips-from-minneapolis`, `victoria-mn`, `chaska-mn`
 - [ ] Hub pages (Dining, Living in Waconia, Events) + "this weekend" surface
 
+## Round 15 — GSC-driven directory + events expansion (2026-08-26)
+
+First round using real Search Console data (site verified in GSC as of
+2026-08-26 via `mlighthouse.agency@gmail.com`; see `~/clawd/scripts/gsc-query.py`
+with `--site "https://waconiaminnesota.org/"` — it's a URL-prefix property,
+not `sc-domain:`).
+
+- [x] 15.1 GSC query analysis (90-day window) surfaced dozens of
+      `"[business name] waconia"` queries ranking position 40–90 — real named
+      businesses not yet in the directory. Verified each against independent
+      sources (Yelp, Tripadvisor, Tock, official sites) before adding.
+- [x] 15.2 Added 6 directory listings: `d-vincis-restaurant`, `bode-grays`,
+      `the-brass-hat` (attached speakeasy), `green-fox-grille`,
+      `culvers-waconia`, `caribou-coffee-waconia`. **38 listings total.**
+- [x] 15.3 Editorial correction: `island-view-golf-club`'s address was wrong
+      (9320 Klein Cir); corrected to 7795 Laketown Parkway (verified via the
+      club's own site) — also the site of the new Green Fox Grille listing.
+- [x] 15.4 Updated `/guides/best-restaurants-in-waconia` with the new
+      additions — new Italian section, Green Fox Grille under lakeside
+      dining, Caribou Coffee under breakfast, The Brass Hat under cocktails,
+      Culver's under family spots. 17 restaurants reviewed (was 11).
+- [x] 15.5 Added 3 events verified against Destination Waconia's official
+      2026 calendar PDF: `art-wander-2026` (Sept 25–27), `fall-on-the-farm-2026`
+      (Sept 26, cross-linked to the Carver County Historical Society listing),
+      `pink-friday-2026` (Nov 20). **13 events total.**
+
 ## Deferred (next round)
 
 - [s] Newsletter capture wiring — confirmed deferred
@@ -181,7 +207,15 @@ Ice Fishing, Waconia History, Moving to Waconia.
 - [ ] Per-event and per-business OG images
 - [ ] Season-specific event filtering on /events
 
-## Current site shape (after round 14, 2026-08-13)
+## Current site shape (after round 15, 2026-08-26)
+
+- Guides: **28** (best-restaurants-in-waconia updated with 6 new listings)
+- Events: **13** (added Art Wander, Fall on the Farm, Pink Friday Shopping)
+- Directory: **38 listings** (added D'Vinci's, Bode Gray's, The Brass Hat,
+  Green Fox Grille, Culver's, Caribou Coffee; corrected Island View Golf
+  Club's address)
+
+## Site shape after round 14 (2026-08-13)
 
 - Guides: **28** (added apple-orchards-near-waconia, waconia-christmas)
 - Events: **10** (added D.E.A.R. Hunting, Small Business Saturday,

@@ -17,6 +17,15 @@ interface ChangelogEntry {
 
 const ENTRIES: ChangelogEntry[] = [
   {
+    date: "2026-08-26",
+    highlights: [
+      "GSC-driven directory expansion: added 6 verified restaurants/bars with real unmet search demand — D'Vinci's Restaurant, Bode Gray's (and its attached speakeasy, The Brass Hat), Green Fox Grille, Culver's, and Caribou Coffee. 38 directory listings total.",
+      "Editorial correction: Island View Golf Club's address was wrong (9320 Klein Cir); corrected to 7795 Laketown Parkway, the club's actual site — also home to its Green Fox Grille restaurant, now a separate listing.",
+      "Updated /guides/best-restaurants-in-waconia with the new additions — a new Italian section (D'Vinci's & Bode Gray's), Green Fox Grille under lakeside dining, Caribou Coffee under breakfast/coffee, The Brass Hat under cocktails, and Culver's under family spots. 17 restaurants reviewed, up from 11.",
+      "Events refresh: added the Edge of the Big Woods Art Wander (Sept 25–27), Fall on the Farm at the Historic Andrew Peterson Farmstead (Sept 26, cross-linked to the Carver County Historical Society listing), and Pink Friday Shopping (Nov 20) — all verified against Destination Waconia's official 2026 calendar. 13 events total.",
+    ],
+  },
+  {
     date: "2026-08-13",
     highlights: [
       "Rest-of-2026 events refresh: added D.E.A.R. Hunting Shopping Day (Nov 7), Small Business Saturday (Nov 28), the Waconia Christkindlsmarkt holiday market (early December, 2026 dates TBA), and Deardorff Orchards apple season (Labor Day weekend–late October) to the events calendar.",

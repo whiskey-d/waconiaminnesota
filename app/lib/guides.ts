@@ -2784,20 +2784,20 @@ export const guides: Guide[] = [
       "The best restaurants in Waconia, Minnesota — where to eat downtown and on Lake Waconia. Local picks for dinner, breakfast, lakeside patios, and craft beer, with prices and what to order.",
     heroImage:
       "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80",
-    updatedDate: "August 13, 2026",
-    updatedIso: "2026-08-13",
+    updatedDate: "August 26, 2026",
+    updatedIso: "2026-08-26",
     publishedIso: "2026-06-24",
     author: "WaconiaGuide Editorial",
     authorSlug: "editorial",
     stats: [
-      { label: "Restaurants Reviewed", value: "11" },
+      { label: "Restaurants Reviewed", value: "17" },
       { label: "Price Range", value: "$ – $$$" },
       { label: "Best For", value: "Lake + Downtown" },
     ],
     content: [
       {
         type: "text",
-        body: "The best restaurants in Waconia, Minnesota cluster in two places: along West Main Street downtown and on the south shore of Lake Waconia. For a sit-down dinner, Iron Tap is the local standout; for a meal with a lake view, it's Lola's Lakehouse; for breakfast, Egg-Cetera Cafe wins almost every time. Below is a local's guide to where to eat in Waconia — organized by the way people actually search for it: best overall, best on the water, best breakfast, best craft beer and wine, and best casual family spots — with price levels and what to order at each.",
+        body: "The best restaurants in Waconia, Minnesota cluster in two places: along West Main Street downtown and on the south shore of Lake Waconia. For a sit-down dinner, Iron Tap is the local standout; for a meal with a lake view, it's Lola's Lakehouse; for breakfast, Egg-Cetera Cafe wins almost every time. Below is a local's guide to where to eat in Waconia — organized by the way people actually search for it: best overall, best Italian, best on the water, best breakfast, best craft beer and cocktails, and best casual family spots — with price levels and what to order at each.",
       },
       {
         type: "heading",
@@ -2809,11 +2809,19 @@ export const guides: Guide[] = [
       },
       {
         type: "heading",
+        heading: "Best Italian: D'Vinci's & Bode Gray's",
+      },
+      {
+        type: "richText",
+        body: "Waconia's Italian scene spans two generations. <a href=\"/directory/d-vincis-restaurant\">D'Vinci's Restaurant</a> (540 S Elm St, $$) has been the family-run standby since 1986 — pizza, pasta, and subs in a casual dining room that's fed the same Waconia families for decades. For something newer, <a href=\"/directory/bode-grays\">Bode Gray's</a> (125 W 1st St, $$) has been a downtown standout since 2022, pairing wood-fired artisan pizza with craft cocktails in a stylish room — reserve ahead for weekends. Its attached speakeasy, <a href=\"/directory/the-brass-hat\">The Brass Hat</a>, is the natural after-dinner stop for cocktails.",
+      },
+      {
+        type: "heading",
         heading: "Best Lakeside Dining: Lola's Lakehouse",
       },
       {
         type: "richText",
-        body: "Waconia is a lake town, and <a href=\"/directory/lolas-lakehouse\">Lola's Lakehouse Eatery</a> (201 Lake St E, $$) is the easiest place to eat with the water in view. It's one of the few true sit-down restaurants in town with a real Lake Waconia view and a sprawling patio that fills first on summer evenings. American comfort plates and rotating seafood specials, including a lake-classic walleye dinner. There's a public dock steps away, so you can arrive by boat. For a wine-country version of the same idea, <a href=\"/directory/sovereign-estate-wine\">Sovereign Estate Wine</a> ($$$) serves cold-climate estate wines on a west-facing lakefront patio built for sunset — book the last seating.",
+        body: "Waconia is a lake town, and <a href=\"/directory/lolas-lakehouse\">Lola's Lakehouse Eatery</a> (201 Lake St E, $$) is the easiest place to eat with the water in view. It's one of the few true sit-down restaurants in town with a real Lake Waconia view and a sprawling patio that fills first on summer evenings. American comfort plates and rotating seafood specials, including a lake-classic walleye dinner. There's a public dock steps away, so you can arrive by boat. For a wine-country version of the same idea, <a href=\"/directory/sovereign-estate-wine\">Sovereign Estate Wine</a> ($$$) serves cold-climate estate wines on a west-facing lakefront patio built for sunset — book the last seating. <a href=\"/directory/green-fox-grille\">Green Fox Grille</a> ($$), the clubhouse restaurant at Island View Golf Club, is a third option — custom-blend burgers and sandwiches on a deck overlooking the lake and course, open to the public even if you're not golfing.",
       },
       {
         type: "heading",
@@ -2821,15 +2829,15 @@ export const guides: Guide[] = [
       },
       {
         type: "richText",
-        body: "<a href=\"/directory/egg-cetera-cafe\">Egg-Cetera Cafe</a> ($) is Waconia's most beloved breakfast spot — all-day breakfast, fresh ingredients, and rotating specialty omelets worth ordering. It's a community staple, which means the wait can stretch past 30 minutes by 9am on Saturdays; arrive early. For coffee and a from-scratch pastry instead of a full sit-down breakfast, <a href=\"/directory/mocha-monkey\">Mocha Monkey</a> ($) on West Main is the local coffeehouse, with reliable Wi-Fi if you're working.",
+        body: "<a href=\"/directory/egg-cetera-cafe\">Egg-Cetera Cafe</a> ($) is Waconia's most beloved breakfast spot — all-day breakfast, fresh ingredients, and rotating specialty omelets worth ordering. It's a community staple, which means the wait can stretch past 30 minutes by 9am on Saturdays; arrive early. For coffee and a from-scratch pastry instead of a full sit-down breakfast, <a href=\"/directory/mocha-monkey\">Mocha Monkey</a> ($) on West Main is the local coffeehouse, with reliable Wi-Fi if you're working. <a href=\"/directory/caribou-coffee-waconia\">Caribou Coffee</a> ($) has two locations in town (Marketplace Drive and Hwy 5 West) if you want a fast drive-thru option instead.",
       },
       {
         type: "heading",
-        heading: "Best Craft Beer, Wine & Spirits",
+        heading: "Best Craft Beer, Wine & Cocktails",
       },
       {
         type: "richText",
-        body: "Waconia punches well above its weight on craft beverages, though the scene shifted in early 2026 when both downtown taprooms — Waconia Brewing Co. and Schram Haus Brewery — closed. The countryside producers carry on. <a href=\"/directory/schram-vineyards\">Schram Vineyards Winery &amp; Brewery</a> ($$) pours estate wines and house-brewed beer with sweeping views (and heated igloos in winter), <a href=\"/directory/sovereign-estate-wine\">Sovereign Estate Wine</a> ($$$) owns the lakefront sunset, <a href=\"/directory/parley-lake-winery\">Parley Lake Winery</a> ($$) is the seasonal farm winery on the Deardorff Orchards farmstead, and <a href=\"/directory/j-carver-distillery\">J. Carver Distillery</a> ($$) makes small-batch whiskey, gin, and vodka with a full cocktail room. Want to string several together? See our <a href=\"/guides/waconia-wineries-breweries-tour\">Waconia wineries &amp; breweries tour</a>.",
+        body: "Waconia punches well above its weight on craft beverages, though the scene shifted in early 2026 when both downtown taprooms — Waconia Brewing Co. and Schram Haus Brewery — closed. The countryside producers carry on. <a href=\"/directory/schram-vineyards\">Schram Vineyards Winery &amp; Brewery</a> ($$) pours estate wines and house-brewed beer with sweeping views (and heated igloos in winter), <a href=\"/directory/sovereign-estate-wine\">Sovereign Estate Wine</a> ($$$) owns the lakefront sunset, <a href=\"/directory/parley-lake-winery\">Parley Lake Winery</a> ($$) is the seasonal farm winery on the Deardorff Orchards farmstead, and <a href=\"/directory/j-carver-distillery\">J. Carver Distillery</a> ($$) makes small-batch whiskey, gin, and vodka with a full cocktail room. Downtown, <a href=\"/directory/the-brass-hat\">The Brass Hat</a> ($$) is the closest thing Waconia has to a proper speakeasy — an intimate cocktail lounge attached to Bode Gray's. Want to string several together? See our <a href=\"/guides/waconia-wineries-breweries-tour\">Waconia wineries &amp; breweries tour</a>.",
       },
       {
         type: "heading",
@@ -2837,7 +2845,7 @@ export const guides: Guide[] = [
       },
       {
         type: "richText",
-        body: "For an easy family meal, <a href=\"/directory/mucho-mexican\">Mucho Mexican Restaurant</a> ($$) does generous fajitas, enchiladas, and margaritas with mix-and-match family combos. <a href=\"/directory/lakeside-tavern-waconia\">Lakeside Tavern</a> ($$) is the classic neighborhood pub — burgers, wings, and a Friday cod fry that's a genuine Waconia weekend tradition. And <a href=\"/directory/garage-bowling-bar\">Garage Bowling &amp; Bar</a> ($$) pairs a scratch kitchen with bowling lanes, which makes it the default for groups, birthdays, and rainy-day afternoons with kids.",
+        body: "For an easy family meal, <a href=\"/directory/mucho-mexican\">Mucho Mexican Restaurant</a> ($$) does generous fajitas, enchiladas, and margaritas with mix-and-match family combos. <a href=\"/directory/lakeside-tavern-waconia\">Lakeside Tavern</a> ($$) is the classic neighborhood pub — burgers, wings, and a Friday cod fry that's a genuine Waconia weekend tradition. <a href=\"/directory/garage-bowling-bar\">Garage Bowling &amp; Bar</a> ($$) pairs a scratch kitchen with bowling lanes, which makes it the default for groups, birthdays, and rainy-day afternoons with kids. And for the fastest option with kids in tow, <a href=\"/directory/culvers-waconia\">Culver's</a> ($) does ButterBurgers and a rotating Flavor of the Day frozen custard.",
       },
       {
         type: "infoCards",
@@ -2861,7 +2869,7 @@ export const guides: Guide[] = [
       },
       {
         type: "richText",
-        body: "<strong>Special-occasion dinner:</strong> Iron Tap (downtown) or Sovereign Estate Wine (lakefront). <strong>Lunch on the water:</strong> Lola's Lakehouse. <strong>Breakfast:</strong> Egg-Cetera Cafe. <strong>Coffee &amp; remote work:</strong> Mocha Monkey. <strong>Craft beer:</strong> Schram Vineyards' in-house brewery. <strong>Wine with a view:</strong> Sovereign Estate, Schram Vineyards, or Parley Lake. <strong>Cocktails:</strong> J. Carver Distillery. <strong>Family &amp; groups:</strong> Mucho Mexican, Lakeside Tavern, or Garage Bowling &amp; Bar. Prices run from $ (Egg-Cetera, Mocha Monkey) through $$ for most of downtown, up to $$$ at Sovereign Estate.",
+        body: "<strong>Special-occasion dinner:</strong> Iron Tap (downtown) or Sovereign Estate Wine (lakefront). <strong>Italian:</strong> D'Vinci's (classic) or Bode Gray's (upscale pizza + cocktails). <strong>Lunch on the water:</strong> Lola's Lakehouse or Green Fox Grille. <strong>Breakfast:</strong> Egg-Cetera Cafe. <strong>Coffee &amp; remote work:</strong> Mocha Monkey or Caribou Coffee. <strong>Craft beer:</strong> Schram Vineyards' in-house brewery. <strong>Wine with a view:</strong> Sovereign Estate, Schram Vineyards, or Parley Lake. <strong>Cocktails:</strong> J. Carver Distillery or The Brass Hat. <strong>Family &amp; groups:</strong> Mucho Mexican, Lakeside Tavern, Garage Bowling &amp; Bar, or Culver's. Prices run from $ (Egg-Cetera, Mocha Monkey, Culver's, Caribou) through $$ for most of downtown, up to $$$ at Sovereign Estate.",
       },
       {
         type: "cta",
@@ -2935,7 +2943,12 @@ export const guides: Guide[] = [
       {
         question: "Are Waconia restaurants family-friendly?",
         answer:
-          "Many are. Mucho Mexican Restaurant offers family combos, Lakeside Tavern is a casual neighborhood pub with a Friday fish fry, and Garage Bowling & Bar pairs a scratch kitchen with bowling lanes — a popular choice for families and groups.",
+          "Many are. Mucho Mexican Restaurant offers family combos, Lakeside Tavern is a casual neighborhood pub with a Friday fish fry, Garage Bowling & Bar pairs a scratch kitchen with bowling lanes, and Culver's is the fast, reliable option with kids in tow — all popular choices for families and groups.",
+      },
+      {
+        question: "Where can you get Italian food in Waconia?",
+        answer:
+          "D'Vinci's Restaurant (540 S Elm St) has been Waconia's family-run Italian spot since 1986 — pizza, pasta, and subs. Bode Gray's (125 W 1st St) is the newer downtown option, serving wood-fired artisan pizza and craft cocktails since 2022, with its attached speakeasy The Brass Hat next door.",
       },
     ],
   },
