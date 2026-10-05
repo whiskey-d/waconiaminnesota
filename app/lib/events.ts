@@ -18,7 +18,6 @@ export interface Event {
   category: 'Festival' | 'Market' | 'Community' | 'Entertainment' | 'Sports' | 'Holiday';
   free: boolean;
   website?: string;
-  attendees: number;
   highlights: string[];
 }
 
@@ -41,7 +40,6 @@ export const events: Event[] = [
     category: 'Festival',
     free: true,
     website: 'https://destinationwaconia.org/events/chamber-hosted-community-events/nickle-dickle-day/',
-    attendees: 2400,
     highlights: [
       'Free admission all day',
       'Live music and entertainment',
@@ -69,7 +67,6 @@ export const events: Event[] = [
     image: '/images/event-farmers-market.webp',
     category: 'Market',
     free: true,
-    attendees: 400,
     highlights: [
       'Fresh local produce — fruits, vegetables, herbs',
       'Local eggs, jams, honey, and baked goods',
@@ -97,7 +94,6 @@ export const events: Event[] = [
     category: 'Festival',
     free: false,
     website: 'https://www.carvercountyfair.com',
-    attendees: 15000,
     highlights: [
       '4-H shows and exhibits',
       'Livestock shows and sale',
@@ -125,7 +121,6 @@ export const events: Event[] = [
     category: 'Community',
     free: true,
     website: 'https://destinationwaconia.org/events/chamber-hosted-community-events/sister-saturday/',
-    attendees: 600,
     highlights: [
       'Deals at downtown businesses all day',
       'Special promotions at local restaurants',
@@ -151,7 +146,6 @@ export const events: Event[] = [
     category: 'Community',
     free: true,
     website: 'https://artwander.com/',
-    attendees: 600,
     highlights: [
       '15+ art studios and 40+ artists across Carver County',
       'Self-guided — pick your own route and pace',
@@ -177,7 +171,6 @@ export const events: Event[] = [
     image: '/images/event-harvest-festival.webp',
     category: 'Community',
     free: true,
-    attendees: 300,
     highlights: [
       'Farmyard animals and outdoor cooking demonstrations',
       'Hands-on 19th-century farm life activities for kids',
@@ -203,13 +196,36 @@ export const events: Event[] = [
     category: 'Community',
     free: true,
     website: 'https://destinationwaconia.org/events/chamber-hosted-community-events/scarecrows-tour/',
-    attendees: 800,
     highlights: [
       'Scarecrows at businesses all over town',
       'Self-guided walking or driving tour',
       'Vote for your favorite scarecrow',
       'Free to participate',
       'Perfect fall family activity',
+    ],
+  },
+  {
+    slug: 'trunk-or-treat-2026',
+    title: 'Trunk or Treat at the Carver County Fairgrounds',
+    date: 'October 25, 2026',
+    dateSort: '2026-10-25',
+    startTime: '14:00',
+    endTime: '16:00',
+    recurring: false,
+    venue: 'Carver County Fairgrounds, Main Gate',
+    address: '501 West 3rd Street, Waconia, MN 55387',
+    description: 'Free Halloween trunk-or-treat at the fairgrounds, 2 to 4pm. Bring kids in costume, or sign up to decorate a trunk.',
+    longDescription: "The Carver County Junior Fair Board hosts a free Trunk or Treat at the Carver County Fairgrounds on Sunday, October 25, 2026, from 2pm to 4pm, at the Main Gate on West 3rd Street. Families can bring children in costume to collect candy from decorated vehicle trunks. If you want to decorate a trunk and hand out candy, the organizers ask you to sign up in advance; families who are only bringing kids do not need to register. Details and the trunk sign-up are on the Waconia Chamber's community calendar.",
+    image: '/images/event-harvest-festival.webp',
+    category: 'Community',
+    free: true,
+    website: 'https://waconia.destinationwaconia.org/events/details/trunk-or-treat-carver-county-fairgrounds-10-25-2026-11415',
+    highlights: [
+      'Sunday, October 25, 2026, 2pm to 4pm',
+      'Carver County Fairgrounds, Main Gate',
+      'Free; no registration needed to bring kids',
+      'Trunk decorators sign up in advance',
+      'Hosted by the Carver County Junior Fair Board',
     ],
   },
   {
@@ -230,7 +246,6 @@ export const events: Event[] = [
     category: 'Holiday',
     free: true,
     website: 'https://destinationwaconia.org/events/chamber-hosted-community-events/tree-lighting-in-the-park/',
-    attendees: 500,
     highlights: [
       'Official community Christmas tree lighting',
       'Free hot cocoa',
@@ -255,7 +270,6 @@ export const events: Event[] = [
     category: 'Market',
     free: true,
     website: 'https://www.deardorfforchards.com/',
-    attendees: 3000,
     highlights: [
       'Pick-your-own SweeTango, Zestar!, Honeycrisp & Haralson apples',
       'Complimentary tractor rides when you pick',
@@ -282,7 +296,6 @@ export const events: Event[] = [
     category: 'Community',
     free: true,
     website: 'https://destinationwaconia.org/events/chamber-hosted-community-events/dear-divas-enjoying-awesome-retail/',
-    attendees: 500,
     highlights: [
       'Find the letters D-E-A-R to enter the Basket of Waconia drawing ($400+ value)',
       'One-day deals at participating downtown businesses',
@@ -308,7 +321,6 @@ export const events: Event[] = [
     image: '/images/event-acoustic-sessions.webp',
     category: 'Community',
     free: true,
-    attendees: 300,
     highlights: [
       'Specials at downtown Waconia boutiques and shops',
       'The Friday before Black Friday — skip the big-box crowds',
@@ -334,7 +346,6 @@ export const events: Event[] = [
     category: 'Community',
     free: true,
     website: 'https://destinationwaconia.org/',
-    attendees: 400,
     highlights: [
       'Specials at independent downtown businesses',
       'The Saturday after Thanksgiving — day after the Tree Lighting',
@@ -358,7 +369,6 @@ export const events: Event[] = [
     category: 'Holiday',
     free: true,
     website: 'https://www.christmasinwaconia.com/',
-    attendees: 2000,
     highlights: [
       'German-style open-air market with wooden vendor stalls',
       'Warm Glühwein, old-world food, and handmade gifts',

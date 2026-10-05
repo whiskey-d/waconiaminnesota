@@ -131,11 +131,11 @@ export default async function DirectorySlugPage({ params }: PageProps) {
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-2">
               {biz.name}
             </h1>
-            <div className="flex items-center gap-3 text-white/90 text-sm">
-              <span>⭐ {biz.rating} ({biz.reviewCount} reviews)</span>
-              <span>·</span>
-              <span>{biz.priceLevel}</span>
-            </div>
+            {biz.priceLevel && (
+              <div className="flex items-center gap-3 text-white/90 text-sm">
+                <span>{biz.priceLevel}</span>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -387,10 +387,9 @@ export default async function DirectorySlugPage({ params }: PageProps) {
         </section>
       </div>
 
-      {/* JSON-LD LocalBusiness — no aggregateRating because the review count
-          and star rating are editorial summaries of third-party sources, not
-          first-party reviews on this site. Shipping them as Schema.org
-          aggregateRating is a Google-manual-action risk. */}
+      {/* JSON-LD LocalBusiness — no aggregateRating: this site collects no
+          reviews. Star ratings summarized from third-party sources were
+          removed from the pages too (round 16, 2026-10-05). */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

@@ -17,6 +17,16 @@ interface ChangelogEntry {
 
 const ENTRIES: ChangelogEntry[] = [
   {
+    date: "2026-10-05",
+    highlights: [
+      "Removed star ratings and review counts from directory and lodging pages. They were summaries of other sites' reviews with no date or source; this site collects no reviews of its own.",
+      "Removed the \"interested\" counts from the events calendar. They were estimates, not measured attendance.",
+      "Directory: added 7 places people look up by name, each checked against the business's own website: Johnson Funeral Home, Lakeview Clinic, Safari Island Community Center, Waconia Ice Arena, Pangea Cafe, Mackenthun's Fine Foods and Target. 39 directory listings total.",
+      "Events: added Trunk or Treat at the Carver County Fairgrounds (Oct 25, 2 to 4pm, free), from the Waconia Chamber's community calendar. 14 events total.",
+      "Old links from the previous version of this site (/listing/... pages) now redirect to the matching directory page instead of returning an error.",
+    ],
+  },
+  {
     date: "2026-08-26",
     highlights: [
       "GSC-driven directory expansion: added 6 verified restaurants/bars with real unmet search demand — D'Vinci's Restaurant, Bode Gray's (and its attached speakeasy, The Brass Hat), Green Fox Grille, Culver's, and Caribou Coffee. 38 directory listings total.",

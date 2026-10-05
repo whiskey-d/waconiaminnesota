@@ -65,9 +65,6 @@ export function CategoryPage({ category, businesses: items }: Props) {
                   <h3 className="font-semibold text-text-primary group-hover:text-primary transition-colors">
                     {biz.name}
                   </h3>
-                  <span className="flex items-center gap-1 text-sm text-text-muted">
-                    ⭐ {biz.rating}
-                  </span>
                 </div>
                 <p className="text-sm text-text-muted line-clamp-2 mb-2">
                   {biz.shortDescription}

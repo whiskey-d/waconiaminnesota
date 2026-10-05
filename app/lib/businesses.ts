@@ -81,8 +81,6 @@ export interface Business {
   category: string;            // legacy display string (e.g. "DINING")
   categoryLabel: string;       // legacy display label (e.g. "Restaurant & Bar")
   categorySlugs: CategorySlug[]; // canonical category memberships
-  rating: number;
-  reviewCount: string;
   priceLevel: string;
   shortDescription: string;
   description: string;
@@ -129,8 +127,6 @@ export const businesses: Business[] = [
     category: "DINING",
     categoryLabel: "Restaurant & Bar",
     categorySlugs: ["restaurants"],
-    rating: 4.8,
-    reviewCount: "980",
     priceLevel: "$$",
     shortDescription: "Modern American, downtown Waconia",
     description:
@@ -168,8 +164,6 @@ export const businesses: Business[] = [
     category: "BARS",
     categoryLabel: "Winery",
     categorySlugs: ["breweries-wineries", "things-to-do"],
-    rating: 4.6,
-    reviewCount: "350",
     priceLevel: "$$",
     shortDescription: "Seasonal farm winery on a historic orchard",
     description:
@@ -199,8 +193,6 @@ export const businesses: Business[] = [
     category: "BARS",
     categoryLabel: "Winery & Brewery",
     categorySlugs: ["breweries-wineries", "things-to-do"],
-    rating: 4.7,
-    reviewCount: "1.5k",
     priceLevel: "$$",
     shortDescription: "Estate winery + brewery on rolling farmland",
     description:
@@ -230,8 +222,6 @@ export const businesses: Business[] = [
     category: "BARS",
     categoryLabel: "Lakefront Winery",
     categorySlugs: ["breweries-wineries", "things-to-do"],
-    rating: 4.7,
-    reviewCount: "950",
     priceLevel: "$$$",
     shortDescription: "Lakefront winery on Lake Waconia",
     description:
@@ -261,8 +251,6 @@ export const businesses: Business[] = [
     category: "BARS",
     categoryLabel: "Craft Distillery",
     categorySlugs: ["breweries-wineries"],
-    rating: 4.6,
-    reviewCount: "420",
     priceLevel: "$$",
     shortDescription: "Small-batch craft spirits & cocktail room",
     description:
@@ -292,8 +280,6 @@ export const businesses: Business[] = [
     category: "DINING",
     categoryLabel: "Lakeside Restaurant",
     categorySlugs: ["restaurants"],
-    rating: 4.5,
-    reviewCount: "1.1k",
     priceLevel: "$$",
     shortDescription: "Casual lakeside dining with a view",
     description:
@@ -323,8 +309,6 @@ export const businesses: Business[] = [
     category: "DINING",
     categoryLabel: "Breakfast & Brunch",
     categorySlugs: ["restaurants"],
-    rating: 4.9,
-    reviewCount: "720",
     priceLevel: "$",
     shortDescription: "All-day breakfast, local favorite",
     description:
@@ -362,8 +346,6 @@ export const businesses: Business[] = [
     category: "DINING",
     categoryLabel: "Coffee Shop",
     categorySlugs: ["restaurants"],
-    rating: 4.7,
-    reviewCount: "510",
     priceLevel: "$",
     shortDescription: "Local coffee shop & bakery",
     description:
@@ -393,8 +375,6 @@ export const businesses: Business[] = [
     category: "DINING",
     categoryLabel: "Mexican Restaurant",
     categorySlugs: ["restaurants"],
-    rating: 4.4,
-    reviewCount: "640",
     priceLevel: "$$",
     shortDescription: "Family Mexican, generous portions",
     description:
@@ -424,8 +404,6 @@ export const businesses: Business[] = [
     category: "RETAIL",
     categoryLabel: "Luxury Cinema",
     categorySlugs: ["things-to-do"],
-    rating: 4.7,
-    reviewCount: "850",
     priceLevel: "$$",
     shortDescription: "Luxury movie theater, recliners",
     description:
@@ -463,8 +441,6 @@ export const businesses: Business[] = [
     category: "BARS",
     categoryLabel: "Entertainment",
     categorySlugs: ["things-to-do", "restaurants"],
-    rating: 4.6,
-    reviewCount: "540",
     priceLevel: "$$",
     shortDescription: "Bowling + full bar + food",
     description:
@@ -502,8 +478,6 @@ export const businesses: Business[] = [
     category: "RETAIL",
     categoryLabel: "Golf Course",
     categorySlugs: ["things-to-do"],
-    rating: 4.5,
-    reviewCount: "480",
     priceLevel: "$$",
     shortDescription: "18-hole public golf, lake views",
     description:
@@ -533,8 +507,6 @@ export const businesses: Business[] = [
     category: "RETAIL",
     categoryLabel: "Museum",
     categorySlugs: ["things-to-do"],
-    rating: 4.6,
-    reviewCount: "85",
     priceLevel: "$",
     shortDescription: "Local history museum & archives",
     description:
@@ -565,8 +537,6 @@ export const businesses: Business[] = [
     category: "LOCAL SERVICES",
     categoryLabel: "Library",
     categorySlugs: ["services", "things-to-do"],
-    rating: 4.8,
-    reviewCount: "210",
     priceLevel: "$",
     shortDescription: "Carver County library branch",
     description:
@@ -596,8 +566,6 @@ export const businesses: Business[] = [
     category: "LOCAL SERVICES",
     categoryLabel: "Hospital",
     categorySlugs: ["services"],
-    rating: 4.5,
-    reviewCount: "320",
     priceLevel: "$$",
     shortDescription: "Full-service hospital & clinics",
     description:
@@ -627,8 +595,6 @@ export const businesses: Business[] = [
     category: "LOCAL SERVICES",
     categoryLabel: "Hair Salon",
     categorySlugs: ["services"],
-    rating: 4.5,
-    reviewCount: "320",
     priceLevel: "$",
     shortDescription: "Walk-in haircuts, online check-in",
     description:
@@ -666,8 +632,6 @@ export const businesses: Business[] = [
     category: "LOCAL SERVICES",
     categoryLabel: "Grocery Store",
     categorySlugs: ["shopping"],
-    rating: 4.4,
-    reviewCount: "280",
     priceLevel: "$",
     shortDescription: "Grocery store, everyday low prices",
     description:
@@ -705,8 +669,6 @@ export const businesses: Business[] = [
     category: "LOCAL SERVICES",
     categoryLabel: "Grocery Store",
     categorySlugs: ["shopping"],
-    rating: 4.4,
-    reviewCount: "390",
     priceLevel: "$$",
     shortDescription: "Full-service grocery store",
     description:
@@ -736,8 +698,6 @@ export const businesses: Business[] = [
     category: "RETAIL",
     categoryLabel: "Liquor Store",
     categorySlugs: ["shopping"],
-    rating: 4.5,
-    reviewCount: "180",
     priceLevel: "$$",
     shortDescription: "Wine, beer & spirits",
     description:
@@ -767,8 +727,6 @@ export const businesses: Business[] = [
     category: "RETAIL",
     categoryLabel: "Marina & Boat Sales",
     categorySlugs: ["services", "things-to-do"],
-    rating: 4.6,
-    reviewCount: "140",
     priceLevel: "$$$",
     shortDescription: "Boat sales, service & storage",
     description:
@@ -798,8 +756,6 @@ export const businesses: Business[] = [
     category: "RETAIL",
     categoryLabel: "Hotel & Lodging",
     categorySlugs: ["lodging"],
-    rating: 4.3,
-    reviewCount: "190",
     priceLevel: "$$",
     shortDescription: "Waconia's only hotel",
     description:
@@ -829,8 +785,6 @@ export const businesses: Business[] = [
     category: "LOCAL SERVICES",
     categoryLabel: "Government Services",
     categorySlugs: ["services"],
-    rating: 4.0,
-    reviewCount: "150",
     priceLevel: "$",
     shortDescription: "Vehicle tabs, titles, driver's licenses",
     description:
@@ -868,8 +822,6 @@ export const businesses: Business[] = [
     category: "THINGS TO DO",
     categoryLabel: "Orchard & Farm",
     categorySlugs: ["things-to-do", "shopping"],
-    rating: 4.7,
-    reviewCount: "290",
     priceLevel: "$",
     shortDescription: "Pick-your-own apples on an 1888 family farm",
     description:
@@ -899,8 +851,6 @@ export const businesses: Business[] = [
     category: "DINING",
     categoryLabel: "Tavern & Pub",
     categorySlugs: ["restaurants"],
-    rating: 4.4,
-    reviewCount: "420",
     priceLevel: "$$",
     shortDescription: "Casual tavern fare, full bar, lake adjacent",
     description:
@@ -930,8 +880,6 @@ export const businesses: Business[] = [
     category: "DINING",
     categoryLabel: "Italian Restaurant",
     categorySlugs: ["restaurants"],
-    rating: 4.5,
-    reviewCount: "760",
     priceLevel: "$$",
     shortDescription: "Family-run Italian since 1986",
     description:
@@ -961,8 +909,6 @@ export const businesses: Business[] = [
     category: "DINING",
     categoryLabel: "Italian Restaurant & Cocktail Bar",
     categorySlugs: ["restaurants"],
-    rating: 4.7,
-    reviewCount: "480",
     priceLevel: "$$",
     shortDescription: "Artisan pizza & craft cocktails, downtown",
     description:
@@ -992,8 +938,6 @@ export const businesses: Business[] = [
     category: "BARS",
     categoryLabel: "Speakeasy Bar",
     categorySlugs: ["restaurants", "things-to-do"],
-    rating: 4.6,
-    reviewCount: "150",
     priceLevel: "$$",
     shortDescription: "Speakeasy bar attached to Bode Gray's",
     description:
@@ -1023,8 +967,6 @@ export const businesses: Business[] = [
     category: "DINING",
     categoryLabel: "Golf Course Grille",
     categorySlugs: ["restaurants", "things-to-do"],
-    rating: 4.5,
-    reviewCount: "220",
     priceLevel: "$$",
     shortDescription: "Clubhouse grille at Island View Golf Club",
     description:
@@ -1054,8 +996,6 @@ export const businesses: Business[] = [
     category: "DINING",
     categoryLabel: "Fast Casual",
     categorySlugs: ["restaurants"],
-    rating: 4.4,
-    reviewCount: "610",
     priceLevel: "$",
     shortDescription: "ButterBurgers & frozen custard",
     description:
@@ -1093,8 +1033,6 @@ export const businesses: Business[] = [
     category: "DINING",
     categoryLabel: "Coffee Shop",
     categorySlugs: ["restaurants"],
-    rating: 4.4,
-    reviewCount: "340",
     priceLevel: "$",
     shortDescription: "Minnesota coffee chain, two Waconia locations",
     description:
@@ -1132,8 +1070,6 @@ export const businesses: Business[] = [
     category: "LOCAL SERVICES",
     categoryLabel: "School District",
     categorySlugs: ["services"],
-    rating: 4.6,
-    reviewCount: "210",
     priceLevel: "$",
     shortDescription: "Independent School District 110",
     description:
@@ -1163,8 +1099,6 @@ export const businesses: Business[] = [
     category: "RETAIL",
     categoryLabel: "Event Venue",
     categorySlugs: ["things-to-do"],
-    rating: 4.7,
-    reviewCount: "260",
     priceLevel: "$$$",
     shortDescription: "Lakefront wedding & event venue",
     description:
@@ -1187,6 +1121,249 @@ export const businesses: Business[] = [
       outdoorSeating: "Lake-facing patio & ceremony lawn",
     },
     image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80",
+  },
+  {
+    slug: "johnson-funeral-home",
+    name: "Johnson Funeral Home",
+    category: "LOCAL SERVICES",
+    categoryLabel: "Funeral Home",
+    categorySlugs: ["services"],
+    priceLevel: "",
+    shortDescription: "Funeral home in downtown Waconia",
+    description:
+      "Johnson Funeral Home is a funeral home on 1st Street East in downtown Waconia. Current obituaries and service times are posted on the funeral home's own website.",
+    address: "141 1st St E, Waconia, MN 55387",
+    lat: 44.8491,
+    lng: -93.7834,
+    phone: "(952) 442-2121",
+    website: "johnsonfh.com",
+    hours: HOURS_VARIES,
+    tips: [
+      { title: "Obituaries", description: "Recent obituaries and service details are listed at johnsonfh.com." },
+      { title: "Call Directly", description: "For arrangements or questions about a service, call (952) 442-2121." },
+      { title: "Flowers", description: "The funeral home's website has a Send Flowers link." },
+    ],
+    whatToExpect: {
+      atmosphere: "Funeral home in downtown Waconia",
+      crowd: "Families and friends attending services",
+      liveEvents: "N/A",
+      outdoorSeating: "N/A",
+    },
+    image: "/images/hero-lake-waconia.webp",
+  },
+  {
+    slug: "lakeview-clinic-waconia",
+    name: "Lakeview Clinic",
+    category: "LOCAL SERVICES",
+    categoryLabel: "Medical Clinic",
+    categorySlugs: ["services"],
+    priceLevel: "",
+    shortDescription: "Medical clinic on Highway 5, open Saturday mornings",
+    description:
+      "Lakeview Clinic's Waconia location is a medical clinic on Highway 5 West. It is open weekdays and Saturday mornings, and the clinic lists same-day services.",
+    address: "424 State Hwy 5 W, Waconia, MN 55387",
+    lat: 44.8416,
+    lng: -93.7937,
+    phone: "(952) 442-4461",
+    website: "lakeviewclinic.com",
+    hours: [
+      { day: "Monday", hours: "8am–5pm" },
+      { day: "Tuesday", hours: "8am–5pm" },
+      { day: "Wednesday", hours: "8am–5pm" },
+      { day: "Thursday", hours: "8am–5pm" },
+      { day: "Friday", hours: "8am–5pm" },
+      { day: "Saturday", hours: "8am–12pm" },
+      { day: "Sunday", hours: "Closed" },
+    ],
+    tips: [
+      { title: "Same-Day Care", description: "The clinic lists same-day services. Call (952) 442-4461 to check availability." },
+      { title: "Saturday Mornings", description: "Open 8am to noon on Saturdays; closed Sundays." },
+      { title: "Emergencies", description: "Ridgeview Medical Center's emergency department in Waconia is open 24/7." },
+    ],
+    whatToExpect: {
+      atmosphere: "Medical clinic",
+      crowd: "Patients from Waconia and nearby towns",
+      liveEvents: "N/A",
+      outdoorSeating: "N/A",
+    },
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+  },
+  {
+    slug: "safari-island-community-center",
+    name: "Safari Island Community Center",
+    category: "LOCAL SERVICES",
+    categoryLabel: "Community Center & Indoor Pool",
+    categorySlugs: ["things-to-do", "services"],
+    priceLevel: "",
+    shortDescription: "Indoor pool with a 175-foot slide, play structure, gym and track",
+    description:
+      "Safari Island is Waconia's community center. It has an indoor zero-depth entry pool with a 175-foot slide, a lap pool with one-meter diving boards, a spa, the Lion's Den four-level indoor play structure, a fitness center, an indoor track, a four-court gymnasium and batting cages.",
+    address: "1600 Community Dr, Waconia, MN 55387",
+    lat: 44.8362,
+    lng: -93.8197,
+    phone: "(952) 442-0695",
+    website: "safariislandcommunitycenter.com",
+    hours: [
+      { day: "Monday", hours: "5:30am–9pm" },
+      { day: "Tuesday", hours: "5:30am–9pm" },
+      { day: "Wednesday", hours: "5:30am–9pm" },
+      { day: "Thursday", hours: "5:30am–9pm" },
+      { day: "Friday", hours: "5:30am–9pm" },
+      { day: "Saturday", hours: "7am–6pm" },
+      { day: "Sunday", hours: "8am–6pm" },
+    ],
+    tips: [
+      { title: "Check Pool Times", description: "Pool and slide hours can differ from building hours. Check the center's website before you go." },
+      { title: "Lion's Den", description: "The four-level indoor play structure is the draw for younger kids on cold days." },
+      { title: "Passes and Rates", description: "Day pass and membership prices are on the center's website." },
+    ],
+    whatToExpect: {
+      atmosphere: "Busy family recreation center",
+      crowd: "Families, swimmers and gym members",
+      liveEvents: "See website",
+      outdoorSeating: "N/A",
+    },
+    image: "/images/conservation-lake-waconia.webp",
+  },
+  {
+    slug: "waconia-ice-arena",
+    name: "Waconia Ice Arena",
+    category: "LOCAL SERVICES",
+    categoryLabel: "Ice Arena",
+    categorySlugs: ["things-to-do"],
+    priceLevel: "",
+    shortDescription: "Open skate, open hockey and skating lessons",
+    description:
+      "Waconia Ice Arena is owned by the City of Waconia and operated by Sports Facilities Companies. It runs open skate sessions, open hockey and Learn to Skate lessons.",
+    address: "1250 Oak Ave, Waconia, MN 55387",
+    lat: 44.836,
+    lng: -93.8085,
+    phone: "(952) 442-7465",
+    website: "waconiaicearena.com",
+    hours: HOURS_VARIES,
+    tips: [
+      { title: "Open Skate Schedule", description: "Open skate times change through the season. The current schedule is on the arena's website." },
+      { title: "Learn to Skate", description: "The arena runs skating lessons; sign-up details are on its website." },
+      { title: "Open Hockey", description: "Open hockey sessions are listed on the arena's schedule." },
+    ],
+    whatToExpect: {
+      atmosphere: "Indoor ice rink",
+      crowd: "Skaters, hockey players and families",
+      liveEvents: "See website",
+      outdoorSeating: "N/A",
+    },
+    image: "/images/hero-lake-waconia.webp",
+  },
+  {
+    slug: "pangea-cafe",
+    name: "Pangea Cafe",
+    category: "DINING",
+    categoryLabel: "Breakfast & Lunch Cafe",
+    categorySlugs: ["restaurants"],
+    priceLevel: "",
+    shortDescription: "Downtown breakfast and lunch, all-day breakfast",
+    description:
+      "Pangea Cafe serves breakfast and lunch on West 1st Street in downtown Waconia. Breakfast is available all day; lunch is served Monday through Saturday from 11am to 2pm, and Sunday is breakfast only.",
+    address: "37 W 1st St, Waconia, MN 55387",
+    lat: 44.8493,
+    lng: -93.7867,
+    phone: "(952) 300-8604",
+    website: "pangeacafemn.com",
+    hours: [
+      { day: "Monday", hours: "8am–2pm" },
+      { day: "Tuesday", hours: "8am–2pm" },
+      { day: "Wednesday", hours: "8am–2pm" },
+      { day: "Thursday", hours: "8am–2pm" },
+      { day: "Friday", hours: "8am–2pm" },
+      { day: "Saturday", hours: "8am–2pm" },
+      { day: "Sunday", hours: "8am–2pm" },
+    ],
+    tips: [
+      { title: "Reserve on Weekends", description: "The cafe encourages reservations, especially on weekends. Walk-ins are also taken." },
+      { title: "Sunday Is Breakfast Only", description: "Lunch is served Monday through Saturday, 11am to 2pm." },
+      { title: "Takeout", description: "The menus are available for takeout. The cafe asks you to call ahead: (952) 300-8604." },
+    ],
+    whatToExpect: {
+      atmosphere: "Downtown breakfast and lunch cafe",
+      crowd: "Locals and weekend visitors",
+      liveEvents: "See website",
+      outdoorSeating: "See website",
+    },
+    image: "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80",
+  },
+  {
+    slug: "mackenthuns-fine-foods",
+    name: "Mackenthun's Fine Foods",
+    category: "LOCAL SERVICES",
+    categoryLabel: "Grocery Store",
+    categorySlugs: ["shopping"],
+    priceLevel: "",
+    shortDescription: "Full-service grocery with pharmacy and Caribou Coffee",
+    description:
+      "Mackenthun's Fine Foods is a full-service grocery store on Marketplace Drive with produce, a meat department and a scratch bakery. The store also has a pharmacy and a Caribou Coffee, and offers online ordering for pickup or delivery.",
+    address: "851 Marketplace Dr, Waconia, MN 55387",
+    lat: 44.8363,
+    lng: -93.8,
+    phone: "(952) 442-2512",
+    website: "mackenthuns.com",
+    hours: [
+      { day: "Monday", hours: "6am–10pm" },
+      { day: "Tuesday", hours: "6am–10pm" },
+      { day: "Wednesday", hours: "6am–10pm" },
+      { day: "Thursday", hours: "6am–10pm" },
+      { day: "Friday", hours: "6am–10pm" },
+      { day: "Saturday", hours: "6am–10pm" },
+      { day: "Sunday", hours: "6am–10pm" },
+    ],
+    tips: [
+      { title: "Pharmacy Hours", description: "The in-store pharmacy is open Monday to Friday 8am–7pm and Saturday 9am–3pm; closed Sunday." },
+      { title: "Caribou Coffee", description: "The in-store Caribou is open 6am to 5pm." },
+      { title: "Order Online", description: "Groceries can be ordered online for pickup or delivery." },
+    ],
+    whatToExpect: {
+      atmosphere: "Full-service neighborhood grocery",
+      crowd: "Local shoppers",
+      liveEvents: "N/A",
+      outdoorSeating: "N/A",
+    },
+    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80",
+  },
+  {
+    slug: "target-waconia",
+    name: "Target",
+    category: "LOCAL SERVICES",
+    categoryLabel: "Department Store",
+    categorySlugs: ["shopping"],
+    priceLevel: "",
+    shortDescription: "Target with CVS pharmacy, MinuteClinic and Starbucks",
+    description:
+      "The Waconia Target is on East Main Street. The store has a CVS pharmacy, a MinuteClinic and a Starbucks Cafe, and offers Order Pickup, Drive Up and same-day delivery.",
+    address: "875 E Main St, Waconia, MN 55387",
+    lat: 44.8406,
+    lng: -93.7712,
+    phone: "(952) 442-9333",
+    website: "target.com/sl/waconia/2449",
+    hours: [
+      { day: "Monday", hours: "7am–10pm" },
+      { day: "Tuesday", hours: "7am–10pm" },
+      { day: "Wednesday", hours: "7am–10pm" },
+      { day: "Thursday", hours: "7am–10pm" },
+      { day: "Friday", hours: "7am–10pm" },
+      { day: "Saturday", hours: "7am–10pm" },
+      { day: "Sunday", hours: "7am–10pm" },
+    ],
+    tips: [
+      { title: "CVS Pharmacy", description: "The pharmacy keeps shorter hours than the store and closes for a midday break. Its direct line is (952) 442-9334." },
+      { title: "Drive Up", description: "Order in the Target app and have it brought to your car." },
+      { title: "Holiday Hours", description: "Hours change around holidays. Check the store page before you go." },
+    ],
+    whatToExpect: {
+      atmosphere: "Standard Target store",
+      crowd: "Shoppers from Waconia and western Carver County",
+      liveEvents: "N/A",
+      outdoorSeating: "N/A",
+    },
+    image: "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80",
   },
 ];
 
