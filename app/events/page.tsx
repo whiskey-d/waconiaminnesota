@@ -20,6 +20,10 @@ const categoryColors: Record<string, string> = {
   Holiday:       "bg-red-100 text-red-700",
 };
 
+// The order depends on today's date, so re-render a few times a day instead of
+// freezing it at whatever day the site was last deployed.
+export const revalidate = 21600;
+
 export default function EventsPage() {
   const events = getUpcomingEvents();
 

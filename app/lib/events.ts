@@ -383,11 +383,17 @@ export function getEventBySlug(slug: string): Event | undefined {
   return events.find(e => e.slug === slug);
 }
 
+/**
+ * Events still to come (or still running) first, soonest at the top. Annual
+ * events that have already happened this year follow, so the page keeps them
+ * as "returns next year" entries without opening on last spring's calendar.
+ */
 export function getUpcomingEvents(): Event[] {
   const today = new Date().toISOString().split('T')[0];
+  const over = (e: Event) => (e.endDateSort ?? e.dateSort) < today;
   return [...events]
-    .filter(e => e.recurring || e.dateSort >= today)
-    .sort((a, b) => a.dateSort.localeCompare(b.dateSort));
+    .filter(e => e.recurring || !over(e))
+    .sort((a, b) => Number(over(a)) - Number(over(b)) || a.dateSort.localeCompare(b.dateSort));
 }
 
 /**
