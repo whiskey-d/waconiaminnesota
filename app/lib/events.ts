@@ -368,7 +368,7 @@ export const events: Event[] = [
     image: '/images/event-harvest-festival.webp',
     category: 'Holiday',
     free: true,
-    website: 'https://www.christmasinwaconia.com/',
+    website: 'https://waconia.destinationwaconia.org/list/member/waconia-christkindlsmarkt-inc-1937',
     highlights: [
       'German-style open-air market with wooden vendor stalls',
       'Warm Glühwein, old-world food, and handmade gifts',
