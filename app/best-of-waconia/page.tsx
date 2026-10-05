@@ -26,23 +26,23 @@ const PICKS: Pick[] = [
     category: "Best Restaurant",
     title: "Iron Tap",
     detail:
-      "Father Bob Burger, craft cocktails, the lively downtown corner that the locals send every visitor to. The 2026 default for dinner.",
+      "Craft beer and barbecue on West Main Street downtown, with 38 taps. Closed Mondays.",
     href: "/directory/iron-tap",
     cta: "View listing",
     image: "/images/dining-iron-tap.webp",
   },
   {
     category: "Best Breakfast",
-    title: "Egg-Cetera Cafe",
+    title: "Pangea Cafe",
     detail:
-      "All-day breakfast, rotating omelet specials, weekend waits that prove the point. The only correct answer when someone asks where to eat eggs in Waconia.",
-    href: "/directory/egg-cetera-cafe",
+      "Breakfast and lunch on West 1st Street downtown, with breakfast served all day. Reservations are encouraged on weekends.",
+    href: "/directory/pangea-cafe",
   },
   {
     category: "Best Craft Beverage Stop",
     title: "Schram Vineyards Winery & Brewery",
     detail:
-      "Estate wines and in-house beer on rolling farmland west of town, with heated igloos all winter. With downtown's Waconia Brewing Co. closed as of early 2026, Schram is where Waconia's craft-beer flag flies.",
+      "A 32-acre winery, brewery and restaurant west of town with 10 acres of its own grapes. House-brewed beer is poured at Bonfire & Barrel, and there is live music nearly every weekend.",
     href: "/directory/schram-vineyards",
     image: "/images/brewing-waconia.webp",
   },
@@ -50,14 +50,14 @@ const PICKS: Pick[] = [
     category: "Best Winery",
     title: "Sovereign Estate Wine",
     detail:
-      "Lakefront tiered patio, cold-climate estate wines, west-facing for sunsets. The single most photogenic outdoor seat in Waconia.",
+      "A winery on the north shore of Lake Waconia with a patio over the water and cold-climate wines.",
     href: "/directory/sovereign-estate-wine",
   },
   {
     category: "Best Lake Experience",
     title: "Lake Waconia Regional Park Beach",
     detail:
-      "Free, sandy entry, lifeguards in season, ample free parking, Coney Island in view from the water. The most-used outdoor space in Waconia.",
+      "The county park's sandy swim beach, open Memorial Day to Labor Day. There are no lifeguards, so swim at your own risk. Coney Island is in view from the shore.",
     href: "/guides/lake-waconia-regional-park",
     cta: "Read the guide",
   },
@@ -65,7 +65,7 @@ const PICKS: Pick[] = [
     category: "Best Hidden Gem",
     title: "Coney Island of Lake Waconia",
     detail:
-      "31-acre wooded island, foundations of a Gilded-Age resort, accessible only by boat. Bring a kayak and a sense of history.",
+      "A 34-acre island that held a resort from 1889 to the late 1930s, now part of the county park. Reach it by boat; there is a dock, picnic tables, grills and a half-mile trail.",
     href: "/guides/coney-island-lake-waconia",
     cta: "Read the guide",
   },
@@ -73,7 +73,7 @@ const PICKS: Pick[] = [
     category: "Best Family Outing",
     title: "Carver County Fair",
     detail:
-      "Five days every August. Demolition derby, midway, livestock, live music. Plan multiple visits — one day is not enough.",
+      "Five days every August at the fairgrounds on West 3rd Street. Demolition derby, tractor pull, midway and livestock. The 2027 fair runs August 11 to 15.",
     href: "/events/carver-county-fair-2026",
     cta: "Event details",
   },
@@ -81,29 +81,22 @@ const PICKS: Pick[] = [
     category: "Best Free Event",
     title: "Nickle Dickle Day",
     detail:
-      "The flagship community festival every September. Free, all-day, downtown, with the Friday-night street dance kicking it off.",
+      "The Chamber's downtown festival, held since 1961 on the second Saturday after Labor Day, 8am to 5pm. Free. The 2027 date is September 18.",
     href: "/events/nickle-dickle-day-2026",
     cta: "Event details",
-  },
-  {
-    category: "Best Cocktail Room",
-    title: "J. Carver Distillery",
-    detail:
-      "Small-batch craft spirits, weekend distillery tours, a serious old fashioned. The grown-up alternative to a brewery night.",
-    href: "/directory/j-carver-distillery",
   },
   {
     category: "Best Coffee",
     title: "Mocha Monkey",
     detail:
-      "Local coffeehouse, fresh pastries, reliable Wi-Fi, sidewalk seating. The morning anchor of downtown.",
+      "A downtown coffee shop on Olive Street since 2006 that roasts its own beans, with a Sunday bluegrass jam.",
     href: "/directory/mocha-monkey",
   },
   {
     category: "Best Movie Night",
     title: "Emagine Waconia",
     detail:
-      "Reclining leather seats, EMAX large-format screen, food and drink to your seat. Tuesdays are discounted.",
+      "Downtown on West 1st Street. Leather power recliners in every auditorium, reserved seating and a theater bar. Rewards members get $5 tickets on Tuesdays.",
     href: "/directory/emagine-waconia",
   },
   {

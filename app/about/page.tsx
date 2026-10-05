@@ -20,7 +20,7 @@ export default function AboutPage() {
       </h1>
       <p className="text-text-muted leading-relaxed text-lg mb-8">
         WaconiaGuide is an independent local guide to Waconia, Minnesota — the
-        lakeside Carver County city of about 13,500 residents on the south
+        lakeside Carver County city of about 14,100 residents on the south
         shore of Lake Waconia, 35 miles west of Minneapolis. We exist to help
         residents and visitors get the most out of the lake, downtown, and the
         rhythm of small-town Minnesota life.

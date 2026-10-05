@@ -32,12 +32,12 @@ const HOMEPAGE_FAQS = [
   {
     question: "What does the name 'Waconia' mean?",
     answer:
-      "'Waconia' is derived from the Dakota language, generally translated as 'fountain' or 'spring of water' — a reference to the lake's clear spring-fed waters.",
+      "'Waconia' is derived from the Dakota language, generally translated as 'fountain' or 'spring of water' — a reference to the lake.",
   },
   {
     question: "What is the population of Waconia, MN?",
     answer:
-      "Waconia has a population of approximately 13,500 residents and continues to be one of the fastest-growing communities in Carver County.",
+      "Waconia has a population of about 14,100 residents (2025 Census estimate).",
   },
 ];
 

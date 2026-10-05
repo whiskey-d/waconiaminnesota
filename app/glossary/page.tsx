@@ -22,7 +22,7 @@ const TERMS: Term[] = [
     id: "waconia",
     term: "Waconia",
     definition:
-      "City of approximately 13,500 in Carver County, Minnesota, on the south shore of Lake Waconia. The name derives from the Dakota language, generally translated as 'fountain' or 'spring of water', a reference to the lake's clear, spring-fed character. Settled by German immigrants in 1856; incorporated in 1882.",
+      "City of about 14,100 in Carver County, Minnesota, on the south shore of Lake Waconia. The name derives from the Dakota language, generally translated as 'fountain' or 'spring of water', a reference to the lake character. Settled by German immigrants in 1856; incorporated in 1882.",
     links: [
       { label: "Waconia History →", href: "/guides/waconia-history" },
     ],
@@ -31,7 +31,7 @@ const TERMS: Term[] = [
     id: "lake-waconia",
     term: "Lake Waconia",
     definition:
-      "3,080-acre lake with a maximum depth of 37 feet and over 12 miles of shoreline. Minnesota DNR lake number DOW 10-0059-00. One of the largest lakes in the Twin Cities metropolitan area; spring-fed, with consistently strong water clarity.",
+      "3,080-acre lake with a maximum depth of 37 feet and about 11 miles of shoreline. Minnesota DNR lake number DOW 10-0059-00. One of the largest lakes in the Twin Cities metropolitan area. Zebra mussels and Eurasian watermilfoil are present, so clean, drain and dry boats and gear.",
     links: [
       { label: "Lake Waconia Guide →", href: "/guides/lake-waconia" },
       { label: "Depth Map →", href: "/guides/lake-waconia-depth-map" },
@@ -41,7 +41,7 @@ const TERMS: Term[] = [
     id: "coney-island",
     term: "Coney Island of Lake Waconia",
     definition:
-      "31-acre wooded island in the middle of Lake Waconia. Site of the 'Coney Island of the West' resort from 1884 through the late 1910s — the largest tourism destination in Minnesota at its peak. Today part of the Lake Waconia Regional Park system, accessible only by boat.",
+      "A 34-acre island in Lake Waconia, listed on the National Register of Historic Places in 1976. The Zeglin family ran a resort there from 1889 to the late 1930s. Today it is part of Lake Waconia Regional Park and is reached by boat.",
     links: [
       { label: "Coney Island Guide →", href: "/guides/coney-island-lake-waconia" },
     ],
@@ -56,7 +56,7 @@ const TERMS: Term[] = [
     id: "isd-110",
     term: "ISD 110",
     definition:
-      "Independent School District 110 — Waconia Public Schools. Includes Waconia High School, Waconia Middle School, and three elementary schools (Bayview, Southview, Clearwater). Mascot: Wildcats. Conference: Wright County.",
+      "Independent School District 110, Waconia Public Schools: Waconia High School, Waconia Middle School, and three elementary schools (Bayview, Laketown and Southview). Mascot: Wildcats. Conference: Metro West.",
     links: [
       { label: "Waconia Schools Guide →", href: "/guides/waconia-schools" },
     ],
@@ -71,7 +71,7 @@ const TERMS: Term[] = [
     id: "nickle-dickle",
     term: "Nickle Dickle Day",
     definition:
-      "Waconia's flagship community festival, held annually on the third Saturday of September at City Square Park downtown. Free, all-day, family-oriented; kicks off the Friday evening before with the Nickle Dickle Street Dance.",
+      "Waconia's flagship community festival, held since 1961 on the second Saturday after Labor Day at City Square Park downtown. Free, all-day, family-oriented; the Friday night before has a 21+ street dance at 1st and Vine Streets.",
     links: [
       { label: "Event Details →", href: "/events/nickle-dickle-day-2026" },
     ],
@@ -104,7 +104,7 @@ const TERMS: Term[] = [
     id: "regional-park",
     term: "Lake Waconia Regional Park",
     definition:
-      "245-acre Carver County park on the south shore of Lake Waconia. Free swim beach with summer lifeguards, free public boat ramp, picnic shelters, hiking and biking trails, groomed cross-country ski trails in winter.",
+      "A 164-acre Carver County park on the south shore of Lake Waconia, open 6am to 10pm. It has a swim beach (no lifeguards; open Memorial Day to Labor Day), the DNR public boat access, and the Paradise Commons building.",
     links: [
       { label: "Park Guide →", href: "/guides/lake-waconia-regional-park" },
     ],

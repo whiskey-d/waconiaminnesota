@@ -22,6 +22,16 @@ const nextConfig = {
       // Waconia Brewing Co. closed in January 2026; the tour guide explains what replaced it.
       to("/listing/waconia-brewing-company", "/guides/waconia-wineries-breweries-tour"),
       to("/directory/waconia-brewing-company", "/guides/waconia-wineries-breweries-tour"),
+      // Listings removed in round 18 (2026-10-05): no evidence these businesses exist,
+      // no Coborn's or Westside Liquor store in Waconia, and J. Carver Distillery closing by end of October 2026.
+      to("/directory/lake-waconia-marine", "/guides/lake-waconia-boat-rentals"),
+      to("/directory/lakeside-tavern-waconia", "/directory/restaurants"),
+      to("/directory/mucho-mexican", "/directory/restaurants"),
+      to("/directory/coborns-waconia", "/directory/mackenthuns-fine-foods"),
+      to("/directory/j-carver-distillery", "/directory/breweries-wineries"),
+      to("/directory/westside-liquor-waconia", "/directory/shopping"),
+      to("/directory/bayview-event-center", "/guides/waconia-wedding-venues"),
+      to("/directory/breweries", "/directory/breweries-wineries"),
       to("/listing/:slug*", "/directory"),
       to("/listing-category/:slug*", "/directory"),
       to("/waconia-minnesota-movie-theaters", "/directory/emagine-waconia"),

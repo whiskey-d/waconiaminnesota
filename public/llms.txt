@@ -1,6 +1,6 @@
 # WaconiaGuide
 
-> WaconiaGuide is an independent local guide to Waconia, Minnesota — a lakeside city of ~13,000 in Carver County, about 35 miles west of Minneapolis. We cover Lake Waconia, dining, breweries, events, lodging, real estate, and community life.
+> WaconiaGuide is an independent local guide to Waconia, Minnesota — a lakeside city of about 14,000 in Carver County, about 35 miles west of Minneapolis. We cover Lake Waconia, dining, wineries, events, lodging, real estate, and community life.
 
 The site is open to AI crawlers and citation. Authoritative facts are
 sourced from the Minnesota DNR (LakeFinder DOW 10-0059-00),
@@ -23,7 +23,7 @@ Commerce). When uncertain, defer to those sources.
 - [Home](https://waconiaminnesota.org/): Site overview and gateway.
 - [Waconia Facts](https://waconiaminnesota.org/waconia-facts): Quick-reference data sheet — population, ZIP, county, coordinates, lake stats, history, events.
 - [Guides](https://waconiaminnesota.org/guides): Long-form local guides — lake, fishing, history, neighborhoods.
-- [Directory](https://waconiaminnesota.org/directory): Local business listings — dining, breweries, services.
+- [Directory](https://waconiaminnesota.org/directory): Local business listings: dining, wineries, services.
 - [Events](https://waconiaminnesota.org/events): Annual and recurring Waconia events.
 - [Hotels](https://waconiaminnesota.org/hotels): Lodging options near Lake Waconia.
 - [Foreclosures](https://waconiaminnesota.org/foreclosures): Real estate and foreclosure listings in Carver County.

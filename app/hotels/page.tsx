@@ -35,12 +35,12 @@ const LODGING_OPTIONS = [
     badge: "Lakefront options",
   },
   {
-    name: "Hotels in Chaska (8 mi)",
+    name: "Hotels in Chaska and Chanhassen",
     type: "Nearby Hotels",
     priceRange: "$$",
-    address: "Chaska, MN 55318",
+    address: "Chaska and Chanhassen, MN",
     phone: null,
-    highlights: ["Hampton Inn, Comfort Inn, Best Western", "10 min drive to Waconia", "More availability", "Lower prices"],
+    highlights: ["A short drive east on Highway 5", "More hotels to choose from", "Search current availability"],
     href: EXPEDIA_SEARCH_URL,
     badge: "Most options nearby",
   },
@@ -142,10 +142,10 @@ export default function HotelsPage() {
         <h3 className="text-xl font-bold mb-4">Waconia Lodging Tips</h3>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { icon: "📅", tip: "Book summer weekends 4–6 weeks early — lake weekends fill fast" },
-            { icon: "🚗", tip: "Chaska hotels (8 mi) offer more availability and lower prices" },
-            { icon: "🏖", tip: "Lakefront Airbnbs book out months in advance for July 4th weekend" },
-            { icon: "🐕", tip: "AmeriVu Inn & Suites is pet-friendly — best option for dog owners" },
+            { icon: "📅", tip: "Book early for fair week in August and Nickle Dickle Day in September" },
+            { icon: "🚗", tip: "Chaska and Chanhassen, a short drive east, have more hotels" },
+            { icon: "🏖", tip: "Lakefront rentals for July 4th go early, so search well ahead" },
+            { icon: "🐕", tip: "AmeriVu Inn & Suites allows pets for a fee" },
           ].map((t) => (
             <div key={t.icon} className="flex items-start gap-3">
               <span className="text-xl shrink-0">{t.icon}</span>
@@ -209,21 +209,21 @@ const HOTELS_FAQS = [
   {
     question: "Is there a hotel in Waconia, MN?",
     answer:
-      "Yes — AmeriVu Inn & Suites at 550 Cherry Drive is in Waconia. It offers free breakfast and free parking, and allows pets for a fee. For more chain hotel options, Chaska is eight miles east and has a Hampton Inn, Comfort Inn, and Best Western, all about a 10-minute drive from downtown Waconia.",
+      "Yes — AmeriVu Inn & Suites at 550 Cherry Drive is in Waconia. It offers free breakfast and free parking, and allows pets for a fee. For more hotel options, look in Chaska and Chanhassen, a short drive east on Highway 5.",
   },
   {
     question: "Are there lakefront Airbnbs on Lake Waconia?",
     answer:
-      "Yes, lakefront short-term rentals are available on Lake Waconia through Airbnb and VRBO, including properties with private docks, lake access, and full kitchens. These book out months in advance for July 4th weekend and other summer holidays — reserve early.",
+      "Yes. Lakefront short-term rentals on Lake Waconia are listed on Airbnb and VRBO. What is available changes through the year, so search the live listings for your dates.",
   },
   {
     question: "When should I book hotels for a Lake Waconia weekend?",
     answer:
-      "Book summer weekends 4–6 weeks ahead. Lake weekends, the Carver County Fair (mid-August), Nickle Dickle Day (third Saturday of September), and the July 4th holiday week all fill quickly. Lakefront Airbnbs for July 4th typically book 3–6 months out.",
+      "Book early for the busiest weekends: the Carver County Fair in mid-August, Nickle Dickle Day (the second Saturday after Labor Day) and the July 4th holiday. Lakefront rentals for July 4th go especially early.",
   },
   {
     question: "Are Waconia hotels pet-friendly?",
     answer:
-      "AmeriVu Inn & Suites in Waconia is pet-friendly — the best in-town option for travelers with dogs. Many Lake Waconia Airbnbs are also pet-friendly; filter for the pet-friendly amenity in the booking platform.",
+      "AmeriVu Inn & Suites in Waconia allows pets for a fee. Many Lake Waconia Airbnbs are also pet-friendly; filter for the pet-friendly amenity in the booking platform.",
   },
 ];

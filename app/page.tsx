@@ -166,8 +166,8 @@ export default function HomePage() {
               </h2>
               <p className="text-gray-400 leading-relaxed mb-8">
                 Waconia&apos;s dining scene blends lakeside ambiance with
-                farm-to-table freshness. From craft breweries to beloved burger
-                joints, downtown delivers flavor with every visit.
+                farm-to-table freshness. From barbecue and burgers downtown to
+                lakefront dining on Lake Waconia.
               </p>
               <div className="space-y-4">
                 <Link
@@ -177,7 +177,7 @@ export default function HomePage() {
                   <div>
                     <h3 className="text-white font-semibold">Iron Tap</h3>
                     <p className="text-sm text-gray-400">
-                      Downtown&apos;s favorite burger &amp; craft cocktails
+                      Craft beer and barbecue on West Main Street
                     </p>
                   </div>
                   <span className="text-primary group-hover:translate-x-1 transition-transform">
@@ -185,13 +185,13 @@ export default function HomePage() {
                   </span>
                 </Link>
                 <Link
-                  href="/directory/j-carver-distillery"
+                  href="/directory/lolas-lakehouse"
                   className="flex items-center justify-between bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors group"
                 >
                   <div>
-                    <h3 className="text-white font-semibold">J. Carver Distillery</h3>
+                    <h3 className="text-white font-semibold">Lola&apos;s Lakehouse</h3>
                     <p className="text-sm text-gray-400">
-                      Small-batch spirits &amp; craft cocktail room
+                      Lakefront dining with a patio on Lake Waconia
                     </p>
                   </div>
                   <span className="text-primary group-hover:translate-x-1 transition-transform">
@@ -405,21 +405,21 @@ const homepageFaqs = [
   {
     question: "What does the name 'Waconia' mean?",
     answer:
-      "'Waconia' is derived from the Dakota language, generally translated as 'fountain' or 'spring of water' — a reference to the lake's clear spring-fed waters.",
+      "'Waconia' is derived from the Dakota language, generally translated as 'fountain' or 'spring of water' — a reference to the lake.",
   },
   {
     question: "How big is Lake Waconia?",
     answer:
-      "Lake Waconia covers 3,080 acres with a maximum depth of 37 feet and over 12 miles of shoreline. The DNR lake number is DOW 10-0059-00.",
+      "Lake Waconia covers 3,080 acres with a maximum depth of 37 feet and about 11 miles of shoreline. The DNR lake number is DOW 10-0059-00.",
   },
   {
     question: "What are the best things to do in Waconia?",
     answer:
-      "Top activities include boating and fishing on Lake Waconia, swimming at Lake Waconia Regional Park, dining downtown at Iron Tap and Egg-Cetera Cafe, wine at Schram Vineyards and Sovereign Estate, craft cocktails at J. Carver Distillery, the Carver County Fair, and seasonal events like Nickle Dickle Day, the Scarecrow Tour, and Tree Lighting in the Park.",
+      "Top activities include boating and fishing on Lake Waconia, swimming at Lake Waconia Regional Park, dining downtown at Iron Tap, Pangea Cafe and Bode Gray's, wine at Schram Vineyards, Sovereign Estate and Parley Lake, the Carver County Fair, and seasonal events like Nickle Dickle Day, the Scarecrow Tour, and Tree Lighting in the Park.",
   },
   {
     question: "What is the population of Waconia, MN?",
     answer:
-      "Waconia has a population of approximately 13,500 residents and continues to be one of the fastest-growing communities in Carver County.",
+      "Waconia has a population of about 14,100 residents (2025 Census estimate).",
   },
 ];

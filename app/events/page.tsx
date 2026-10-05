@@ -163,17 +163,17 @@ const EVENTS_FAQS = [
   {
     question: "When is Nickle Dickle Day in Waconia?",
     answer:
-      "Nickle Dickle Day is held annually on the third Saturday of September at City Square Park in downtown Waconia. The main event runs 9am to 5pm, and the Nickle Dickle Street Dance kicks off Friday evening at 7pm.",
+      "Nickle Dickle Day is held on the second Saturday after Labor Day at City Square Park, 8am to 5pm. The 2027 date is Saturday, September 18. A street dance at 1st and Vine Streets ($10, 21+) runs the night before.",
   },
   {
     question: "When is the Carver County Fair?",
     answer:
-      "The Carver County Fair is held annually for five days in mid-August at the Carver County Fairgrounds in Waconia. The 2026 fair runs August 12–16. The fair has run for over 114 years.",
+      "The Carver County Fair runs for five days in mid-August at the fairgrounds in Waconia. The 2026 fair (August 12–16) was the 114th. The 2027 fair runs August 11–15.",
   },
   {
     question: "When does the Waconia Farmers Market run?",
     answer:
-      "The Waconia Farmers Market & Flea Market runs every Thursday from 4–7pm, June through September, in the Waconia Square parking lot at 224 First Street.",
+      "The Waconia Farmers Market & Flea Market meets every Thursday from 4 to 7pm in the Waconia Square parking lot at 224 W 1st St. The 2026 season ran June 4 to October 15.",
   },
   {
     question: "Are Waconia events free?",

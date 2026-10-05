@@ -534,7 +534,7 @@ export default async function GuidePage({ params }: PageProps) {
               "@id": `${SITE_URL}/guides/things-to-do-waconia#destination`,
               name: "Waconia, Minnesota",
               description:
-                "Lakeside city of approximately 13,500 in Carver County, Minnesota — destination for boating and fishing on Lake Waconia, four destination craft-beverage producers, downtown dining, and the historic Coney Island of Lake Waconia.",
+                "Lakeside city of about 14,100 in Carver County, Minnesota — destination for boating and fishing on Lake Waconia, four destination craft-beverage producers, downtown dining, and the historic Coney Island of Lake Waconia.",
               url: `${SITE_URL}/guides/things-to-do-waconia`,
               touristType: ["Family", "Couple", "Outdoor enthusiast", "Foodie"],
               includesAttraction: [
@@ -552,11 +552,6 @@ export default async function GuidePage({ params }: PageProps) {
                   "@type": "TouristAttraction",
                   name: "Lake Waconia Regional Park",
                   url: `${SITE_URL}/guides/lake-waconia-regional-park`,
-                },
-                {
-                  "@type": "TouristAttraction",
-                  name: "J. Carver Distillery",
-                  url: `${SITE_URL}/directory/j-carver-distillery`,
                 },
                 {
                   "@type": "TouristAttraction",
