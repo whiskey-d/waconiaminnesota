@@ -22,7 +22,7 @@ const LODGING_OPTIONS = [
     phone: "(952) 442-8787",
     highlights: ["Free breakfast", "Free parking", "Indoor pool, hot tub and sauna", "Pets allowed (fee applies)"],
     href: "/directory/amerivu-inn-suites",
-    badge: "Only hotel in Waconia",
+    badge: "In Waconia",
   },
   {
     name: "Airbnb Rentals",
@@ -55,7 +55,7 @@ export default function HotelsPage() {
           Hotels &amp; Lodging Near Waconia, MN
         </h1>
         <p className="text-text-muted mt-3 text-lg max-w-2xl">
-          From the only hotel in Waconia to lakefront Airbnb cabins — find the
+          From a hotel in Waconia to lakefront Airbnb cabins — find the
           perfect place to stay for your Lake Waconia visit.
         </p>
       </div>
@@ -209,7 +209,7 @@ const HOTELS_FAQS = [
   {
     question: "Is there a hotel in Waconia, MN?",
     answer:
-      "Yes — AmeriVu Inn & Suites at 550 Cherry Drive is the only hotel located in Waconia. It offers complimentary breakfast, free parking, and is pet-friendly. For more chain hotel options, Chaska is eight miles east and has a Hampton Inn, Comfort Inn, and Best Western, all about a 10-minute drive from downtown Waconia.",
+      "Yes — AmeriVu Inn & Suites at 550 Cherry Drive is in Waconia. It offers free breakfast and free parking, and allows pets for a fee. For more chain hotel options, Chaska is eight miles east and has a Hampton Inn, Comfort Inn, and Best Western, all about a 10-minute drive from downtown Waconia.",
   },
   {
     question: "Are there lakefront Airbnbs on Lake Waconia?",
