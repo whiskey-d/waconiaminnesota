@@ -34,7 +34,7 @@ export default function DirectoryPage() {
         Waconia Business Directory
       </h1>
       <p className="text-text-muted leading-relaxed max-w-2xl mb-10">
-        From lakeside dining to estate wineries to the only hotel in town —
+        From lakeside dining to estate wineries to places to stay —
         every Waconia business worth knowing, organized by what you&apos;re
         looking for.
       </p>

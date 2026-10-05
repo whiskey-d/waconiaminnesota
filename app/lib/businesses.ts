@@ -757,9 +757,9 @@ export const businesses: Business[] = [
     categoryLabel: "Hotel & Lodging",
     categorySlugs: ["lodging"],
     priceLevel: "$$",
-    shortDescription: "Waconia's only hotel",
+    shortDescription: "Hotel off Highway 5 with indoor pool",
     description:
-      "Waconia's only in-town hotel, off Highway 5. The non-smoking property has free breakfast, free WiFi and free parking, plus an indoor pool, hot tub and sauna. Pets are allowed for a fee.",
+      "A hotel in Waconia, off Highway 5. The non-smoking property has free breakfast, free WiFi and free parking, plus an indoor pool, hot tub and sauna. Pets are allowed for a fee.",
     address: "550 Cherry Dr, Waconia, MN 55387",
     lat: 44.8408,
     lng: -93.7979,
