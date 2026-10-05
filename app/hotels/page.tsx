@@ -18,7 +18,6 @@ const LODGING_OPTIONS = [
     name: "AmeriVu Inn & Suites",
     type: "Hotel",
     priceRange: "$$",
-    rating: 4.3,
     address: "493 Holiday Dr, Waconia, MN 55387",
     phone: "(952) 442-0000",
     highlights: ["Complimentary breakfast", "Free parking", "Near Lake Waconia", "Pet friendly"],
@@ -29,7 +28,6 @@ const LODGING_OPTIONS = [
     name: "Airbnb Rentals",
     type: "Short-Term Rental",
     priceRange: "$–$$$",
-    rating: 4.7,
     address: "Various locations, Waconia MN",
     phone: null,
     highlights: ["Lakefront properties available", "Full kitchens", "Great for families", "Private docks"],
@@ -40,7 +38,6 @@ const LODGING_OPTIONS = [
     name: "Hotels in Chaska (8 mi)",
     type: "Nearby Hotels",
     priceRange: "$$",
-    rating: 4.2,
     address: "Chaska, MN 55318",
     phone: null,
     highlights: ["Hampton Inn, Comfort Inn, Best Western", "10 min drive to Waconia", "More availability", "Lower prices"],
@@ -108,8 +105,6 @@ export default function HotelsPage() {
                   <span>{option.type}</span>
                   <span>·</span>
                   <span>{option.priceRange}</span>
-                  <span>·</span>
-                  <span>⭐ {option.rating}</span>
                   {option.address && <span>· 📍 {option.address}</span>}
                 </div>
                 <div className="flex flex-wrap gap-2">

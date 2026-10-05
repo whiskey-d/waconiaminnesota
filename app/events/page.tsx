@@ -106,17 +106,7 @@ export default function EventsPage() {
                   {event.description}
                 </p>
 
-                <div className="mt-auto flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className="flex -space-x-2">
-                      {[...Array(3)].map((_, j) => (
-                        <div key={j} className="w-7 h-7 rounded-full bg-accent-light border-2 border-white flex items-center justify-center text-[10px] font-bold text-primary">
-                          {String.fromCharCode(65 + j)}
-                        </div>
-                      ))}
-                    </div>
-                    <span className="text-xs text-text-muted">+{event.attendees.toLocaleString()} interested</span>
-                  </div>
+                <div className="mt-auto flex items-center justify-end">
                   <span className="text-sm font-medium text-primary group-hover:text-primary/80 inline-flex items-center gap-1">
                     View Details <span aria-hidden="true">→</span>
                   </span>

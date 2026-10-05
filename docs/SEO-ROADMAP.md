@@ -194,6 +194,37 @@ not `sc-domain:`).
       (Sept 26, cross-linked to the Carver County Historical Society listing),
       `pink-friday-2026` (Nov 20). **13 events total.**
 
+## Round 16 — Audit fixes + demand-backed directory additions (2026-10-05)
+
+Driven by a data pull (GSC 90d, Bing Webmaster, GA4 US-only, DataForSEO, the
+Chamber calendar). Real US audience is ~1,150 sessions a quarter, almost all
+from Bing/Yahoo/DuckDuckGo and almost all on event guides. Google ranks the
+site at positions 45–85.
+
+- [x] 16.1 Redirects for old WordPress URLs (`next.config.js`). Bing's top URL
+      for the domain, `/listing/johnsons-funeral-home-waconia-mn/` (16.7k
+      impressions, position ~6), returned 404.
+- [x] 16.2 Removed star ratings + review counts (directory, category pages,
+      /hotels) and the "+N interested" counts on /events. Neither was sourced.
+      `rating`, `reviewCount` and `attendees` are gone from the data types;
+      don't reintroduce them.
+- [x] 16.3 Directory: 7 listings for places with name-search demand, each
+      verified on the business's own site (two phone numbers from search
+      snippets were wrong): Johnson Funeral Home, Lakeview Clinic, Safari
+      Island, Waconia Ice Arena, Pangea Cafe, Mackenthun's, Target.
+      **39 listings.** Walgreens skipped (couldn't verify from walgreens.com).
+- [x] 16.4 Events: Trunk or Treat at the fairgrounds (Oct 25). **14 events.**
+      Boos & Brews (Oct 23) skipped: it is in Chanhassen.
+- [ ] Christkindlsmarkt 2026 dates still unannounced as of 2026-10-05 (search
+      results showing Dec 5–14 are 2025's dates). Check monthly.
+- [ ] Not a Waconia event any more: the Midwest Ride-In moved to French Lake
+      (2027: Jan 29–30). Don't build an event page; a line in the winter guide
+      saying it moved would be fair.
+- [ ] /hotels lists AmeriVu's phone as (952) 442-0000, which looks like a
+      placeholder. Verify.
+- [ ] New listings without a relevant photo use a Lake Waconia image. The
+      listing templates require an image; making it optional is the real fix.
+
 ## Deferred (next round)
 
 - [s] Newsletter capture wiring — confirmed deferred
