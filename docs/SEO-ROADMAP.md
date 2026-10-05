@@ -220,8 +220,10 @@ site at positions 45–85.
 - [ ] Not a Waconia event any more: the Midwest Ride-In moved to French Lake
       (2027: Jan 29–30). Don't build an event page; a line in the winter guide
       saying it moved would be fair.
-- [ ] /hotels lists AmeriVu's phone as (952) 442-0000, which looks like a
-      placeholder. Verify.
+- [x] Round 17 (2026-10-05): AmeriVu's listing had a placeholder phone AND the
+      wrong address. Corrected from amerivuinn.com/waconia: 550 Cherry Dr,
+      (952) 442-8787. Three invented example rentals removed from /hotels.
+      /events now lists upcoming events first (revalidates every 6 hours).
 - [ ] New listings without a relevant photo use a Lake Waconia image. The
       listing templates require an image; making it optional is the real fix.
 

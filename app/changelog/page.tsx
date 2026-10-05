@@ -24,6 +24,8 @@ const ENTRIES: ChangelogEntry[] = [
       "Directory: added 7 places people look up by name, each checked against the business's own website: Johnson Funeral Home, Lakeview Clinic, Safari Island Community Center, Waconia Ice Arena, Pangea Cafe, Mackenthun's Fine Foods and Target. 39 directory listings total.",
       "Events: added Trunk or Treat at the Carver County Fairgrounds (Oct 25, 2 to 4pm, free), from the Waconia Chamber's community calendar. 14 events total.",
       "Old links from the previous version of this site (/listing/... pages) now redirect to the matching directory page instead of returning an error.",
+      "Correction: AmeriVu Inn & Suites was listed with the wrong address and phone number. It is at 550 Cherry Drive, (952) 442-8787, per the hotel's own website. Example rental names were removed from the lodging page; it now links to live listings only.",
+      "The events calendar now lists upcoming events first.",
     ],
   },
   {

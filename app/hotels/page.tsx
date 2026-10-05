@@ -18,9 +18,9 @@ const LODGING_OPTIONS = [
     name: "AmeriVu Inn & Suites",
     type: "Hotel",
     priceRange: "$$",
-    address: "493 Holiday Dr, Waconia, MN 55387",
-    phone: "(952) 442-0000",
-    highlights: ["Complimentary breakfast", "Free parking", "Near Lake Waconia", "Pet friendly"],
+    address: "550 Cherry Dr, Waconia, MN 55387",
+    phone: "(952) 442-8787",
+    highlights: ["Free breakfast", "Free parking", "Indoor pool, hot tub and sauna", "Pets allowed (fee applies)"],
     href: "/directory/amerivu-inn-suites",
     badge: "Only hotel in Waconia",
   },
@@ -44,12 +44,6 @@ const LODGING_OPTIONS = [
     href: EXPEDIA_SEARCH_URL,
     badge: "Most options nearby",
   },
-];
-
-const CABINS = [
-  { name: "Lake Waconia Lakefront Cabin", guests: "Up to 8", lake: true },
-  { name: "Cozy Lakeview Cottage", guests: "Up to 4", lake: true },
-  { name: "Downtown Waconia Apartment", guests: "Up to 2", lake: false },
 ];
 
 export default function HotelsPage() {
@@ -131,17 +125,8 @@ export default function HotelsPage() {
         <h2 className="text-2xl font-bold text-text-primary mb-6">Lakefront Cabin Rentals</h2>
         <p className="text-text-muted mb-6">
           The best Waconia experience is waking up to Lake Waconia outside your window.
-          These short-term rental options offer private lake access, docks, and stunning views.
+          Short-term rentals around the lake change through the year, so we link to the live listings rather than naming individual properties.
         </p>
-        <div className="grid md:grid-cols-3 gap-4 mb-6">
-          {CABINS.map((c) => (
-            <div key={c.name} className="bg-white rounded-xl border border-border p-4">
-              <div className="text-2xl mb-2">{c.lake ? "🌊" : "🏠"}</div>
-              <h3 className="font-semibold text-text-primary text-sm mb-1">{c.name}</h3>
-              <p className="text-xs text-text-muted">{c.guests} · {c.lake ? "Lakefront" : "Downtown"}</p>
-            </div>
-          ))}
-        </div>
         <a
           href="https://www.airbnb.com/s/Waconia--Minnesota/homes?amenities=12"
           target="_blank"
@@ -224,7 +209,7 @@ const HOTELS_FAQS = [
   {
     question: "Is there a hotel in Waconia, MN?",
     answer:
-      "Yes — AmeriVu Inn & Suites at 493 Holiday Drive is the only hotel located in Waconia. It offers complimentary breakfast, free parking, and is pet-friendly. For more chain hotel options, Chaska is eight miles east and has a Hampton Inn, Comfort Inn, and Best Western, all about a 10-minute drive from downtown Waconia.",
+      "Yes — AmeriVu Inn & Suites at 550 Cherry Drive is the only hotel located in Waconia. It offers complimentary breakfast, free parking, and is pet-friendly. For more chain hotel options, Chaska is eight miles east and has a Hampton Inn, Comfort Inn, and Best Western, all about a 10-minute drive from downtown Waconia.",
   },
   {
     question: "Are there lakefront Airbnbs on Lake Waconia?",
