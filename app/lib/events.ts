@@ -364,11 +364,11 @@ export const events: Event[] = [
     venue: 'City Square Park',
     address: '104 E Main St, Waconia, MN 55387',
     description: 'A free German-style open-air Christmas market in City Square Park — Glühwein, live reindeer, a lantern parade, Krampus, and the Christkind.',
-    longDescription: "The Christkindlsmarkt is a German-style open-air Christmas market that transformed City Square Park into a holiday village for the first time in 2025, after more than two decades as a beloved tradition in Excelsior. Wooden vendor stalls sell handmade gifts and old-world food and drink — including mugs of warm Glühwein — while the entertainment lineup runs from live music, storytelling, and a magic show to visits with the Christkind, Saint Nicholas, and the mischievous Krampus. Kids can meet live reindeer, and the St. Martin's children's lantern parade lights up Saturday evenings. Admission is free. The market typically runs Friday through Sunday across the first two weekends of December; 2026 dates had not been announced when this page was last updated — confirm at christmasinwaconia.com before you go.",
+    longDescription: "The Christkindlsmarkt is a German-style open-air Christmas market that transformed City Square Park into a holiday village for the first time in 2025, after 19 years in Excelsior. Wooden vendor stalls sell handmade gifts and old-world food and drink — including mugs of warm Glühwein — while the entertainment lineup runs from live music, storytelling, and a magic show to visits with the Christkind, Saint Nicholas, and the mischievous Krampus. Kids can meet live reindeer, and the St. Martin's children's lantern parade lights up Saturday evenings. Admission is free. The market typically runs Friday through Sunday across the first two weekends of December; 2026 dates had not been announced when this page was last updated — check the organizer's listing on the Waconia Chamber website (destinationwaconia.org) before you go.",
     image: '/images/event-harvest-festival.webp',
     category: 'Holiday',
     free: true,
-    website: 'https://www.christmasinwaconia.com/',
+    website: 'https://waconia.destinationwaconia.org/list/member/waconia-christkindlsmarkt-inc-1937',
     highlights: [
       'German-style open-air market with wooden vendor stalls',
       'Warm Glühwein, old-world food, and handmade gifts',

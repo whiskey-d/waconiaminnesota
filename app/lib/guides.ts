@@ -4028,7 +4028,7 @@ export const guides: Guide[] = [
       },
       {
         type: "text",
-        body: "The centerpiece. The Christkindlsmarkt turns City Square Park (104 E Main St) into an old-world holiday village: wooden vendor stalls with handmade gifts, German food and drink — including mugs of warm Glühwein — live music, storytelling, a magic show, and appearances by the Christkind, Saint Nicholas, and the mischievous Krampus. Kids can meet live reindeer, and the St. Martin's children's lantern parade lights up Saturday evenings. Admission is free. The market typically runs Friday through Sunday across the first two weekends of December; 2026 dates hadn't been announced when this guide was last updated — confirm at christmasinwaconia.com.",
+        body: "The centerpiece. The Christkindlsmarkt turns City Square Park (104 E Main St) into an old-world holiday village: wooden vendor stalls with handmade gifts, German food and drink — including mugs of warm Glühwein — live music, storytelling, a magic show, and appearances by the Christkind, Saint Nicholas, and the mischievous Krampus. Kids can meet live reindeer, and the St. Martin's children's lantern parade lights up Saturday evenings. Admission is free. The market typically runs Friday through Sunday across the first two weekends of December; 2026 dates hadn't been announced when this guide was last updated — check the organizer's listing on the Waconia Chamber website (destinationwaconia.org).",
       },
       {
         type: "pullquote",
@@ -4117,7 +4117,7 @@ export const guides: Guide[] = [
       {
         question: "When is the Waconia Christkindlsmarkt?",
         answer:
-          "The Christkindlsmarkt typically runs Friday through Sunday across the first two weekends of December in City Square Park, downtown Waconia. Exact 2026 dates had not been announced when this guide was last updated — check christmasinwaconia.com for the current schedule before you go.",
+          "The Christkindlsmarkt typically runs Friday through Sunday across the first two weekends of December in City Square Park, downtown Waconia. Exact 2026 dates had not been announced when this guide was last updated — check the organizer's listing on the Waconia Chamber website (destinationwaconia.org) before you go.",
       },
       {
         question: "Is the Waconia Christkindlsmarkt free?",
