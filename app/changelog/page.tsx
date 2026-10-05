@@ -17,6 +17,17 @@ interface ChangelogEntry {
 
 const ENTRIES: ChangelogEntry[] = [
   {
+    date: "2026-10-06",
+    highlights: [
+      "Fact-checked every directory listing and guide against the businesses' and agencies' own websites. Many older entries had wrong addresses, phone numbers, hours or invented details; all are corrected.",
+      "Removed listings for businesses we could not find any evidence of in Waconia (Lakeside Tavern, Mucho Mexican Restaurant, Lake Waconia Marine, Bayview Event Center, a Coborn's and a Westside Liquor), and for J. Carver Distillery, which is closing by the end of October 2026.",
+      "Corrected the town's population (13,033 at the 2020 Census; about 14,100 estimated for 2025) and Lake Waconia's shoreline (about 11 miles, per the DNR).",
+      "Lake Waconia Regional Park: corrected the size (164 acres), hours (6am to 10pm) and beach details. There are no lifeguards; swimming is at your own risk.",
+      "Boat rentals guide rewritten: In Towne Marina rents pontoons, Carver County rents kayaks, paddleboards and canoes at the park, and the boating permit section now follows the DNR's phase-in schedule.",
+      "Removed quotes and attributions we could not source, and removed the claim that Deardorff Orchards is pick-your-own, which the orchard's own site does not say.",
+    ],
+  },
+  {
     date: "2026-10-05",
     highlights: [
       "Removed star ratings and review counts from directory and lodging pages. They were summaries of other sites' reviews with no date or source; this site collects no reviews of its own.",

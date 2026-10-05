@@ -43,8 +43,8 @@ const FACT_GROUPS: FactGroup[] = [
   {
     heading: "People",
     facts: [
-      { label: "Population", value: "~13,500 (13,461 at the 2020 Census)" },
-      { label: "Growth", value: "One of the fastest-growing cities in Carver County" },
+      { label: "Population", value: "~14,100 (2025 Census estimate; 13,033 at the 2020 Census)" },
+      { label: "Growth", value: "+8.3% from April 2020 to July 2025 (Census estimate)" },
     ],
   },
   {
@@ -68,9 +68,9 @@ const FACT_GROUPS: FactGroup[] = [
     facts: [
       { label: "Surface area", value: "3,080 acres", href: "/guides/lake-waconia" },
       { label: "Maximum depth", value: "37 feet", href: "/guides/lake-waconia-depth-map" },
-      { label: "Shoreline", value: "12+ miles" },
+      { label: "Shoreline", value: "About 11 miles (DNR: 10.88)" },
       { label: "MN DNR lake number", value: "DOW 10-0059-00", href: "/glossary#dow-number" },
-      { label: "Notable", value: "One of the largest lakes in the Twin Cities metro; spring-fed" },
+      { label: "Notable", value: "One of the largest lakes in the Twin Cities metro" },
     ],
   },
   {
@@ -87,7 +87,7 @@ const FAQS: { question: string; answer: string }[] = [
   {
     question: "What is the population of Waconia, MN?",
     answer:
-      "Waconia has approximately 13,500 residents. The 2020 Census recorded 13,461, and the city has continued to grow modestly since — it's one of the fastest-growing cities in Carver County.",
+      "The Census Bureau estimates Waconia's population at about 14,100 (July 2025), up 8.3% since the 2020 Census counted 13,033.",
   },
   {
     question: "What county is Waconia, MN in?",
@@ -106,12 +106,12 @@ const FAQS: { question: string; answer: string }[] = [
   {
     question: "What does the name 'Waconia' mean?",
     answer:
-      "The name derives from the Dakota language and is generally translated as 'fountain' or 'spring of water,' a reference to Lake Waconia's clear, spring-fed character. The city was settled by German immigrants in 1856 and incorporated in 1882.",
+      "The name derives from the Dakota language and is generally translated as 'fountain' or 'spring of water,' a reference to the lake. The city was settled by German immigrants in 1856 and incorporated in 1882.",
   },
   {
     question: "How big is Lake Waconia?",
     answer:
-      "Lake Waconia covers 3,080 acres with a maximum depth of 37 feet and more than 12 miles of shoreline. Its Minnesota DNR lake number is DOW 10-0059-00, and it's one of the largest lakes in the Twin Cities metro.",
+      "Lake Waconia covers 3,080 acres with a maximum depth of 37 feet and about 11 miles of shoreline. Its Minnesota DNR lake number is DOW 10-0059-00, and it's one of the largest lakes in the Twin Cities metro.",
   },
 ];
 
@@ -124,7 +124,7 @@ export default function WaconiaFactsPage() {
         Waconia, Minnesota: Key Facts
       </h1>
       <p className="waconia-facts-intro text-text-muted leading-relaxed text-lg mb-10">
-        Waconia is a lakeside city of approximately 13,500 in Carver County,
+        Waconia is a lakeside city of about 14,100 in Carver County,
         Minnesota, about 35 miles west of Minneapolis on the south shore of the
         3,080-acre Lake Waconia. This is a quick-reference data sheet — the
         numbers people and search engines ask for most, drawn from the US
@@ -210,7 +210,7 @@ export default function WaconiaFactsPage() {
             name: "Waconia",
             alternateName: "Waconia, Minnesota",
             description:
-              "Waconia is a lakeside city of approximately 13,500 in Carver County, Minnesota, about 35 miles west of Minneapolis on the south shore of Lake Waconia.",
+              "Waconia is a lakeside city of about 14,100 in Carver County, Minnesota, about 35 miles west of Minneapolis on the south shore of Lake Waconia.",
             url: `${SITE_URL}/waconia-facts`,
             foundingDate: "1882",
             geo: {
@@ -223,7 +223,7 @@ export default function WaconiaFactsPage() {
               name: "Carver County, Minnesota",
             },
             additionalProperty: [
-              { "@type": "PropertyValue", name: "Population", value: "13,461 (2020 Census)" },
+              { "@type": "PropertyValue", name: "Population", value: "13,033 (2020 Census)" },
               { "@type": "PropertyValue", name: "ZIP code", value: "55387" },
               { "@type": "PropertyValue", name: "Area code", value: "952" },
               { "@type": "PropertyValue", name: "School district", value: "ISD 110 — Waconia Public Schools" },

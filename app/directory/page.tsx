@@ -172,26 +172,26 @@ const DIRECTORY_FAQS = [
   {
     question: "What are the best restaurants in Waconia, MN?",
     answer:
-      "Iron Tap is the downtown dinner standout (the Father Bob Burger is a local legend). Egg-Cetera Cafe is the beloved breakfast spot. Lola's Lakehouse Eatery offers casual lakeside dining with a patio on Lake Waconia. Mocha Monkey is the local coffee shop. Mucho Mexican handles family Mexican. See the Restaurants category for the full list.",
+      "Iron Tap serves craft beer and barbecue downtown. Lola's Lakehouse is the lakefront option, with a patio on Lake Waconia. Pangea Cafe does breakfast and lunch downtown, D'Vinci's has been serving Italian since 1986, and Mocha Monkey is the downtown coffee shop. See the Restaurants category for the full list.",
   },
   {
     question: "What breweries and wineries are in Waconia?",
     answer:
-      "Waconia has four destination beverage producers: Schram Vineyards Winery & Brewery (estate winery + brewery west of town), Sovereign Estate Wine (lakefront winery on Lake Waconia), Parley Lake Winery (seasonal farm winery on the Deardorff Orchards farmstead), and J. Carver Distillery (small-batch craft spirits). All are open to the public during posted hours; Parley Lake is seasonal.",
+      "Three wineries: Schram Vineyards (west of town, which also brews its own beer), Sovereign Estate Wine (on the north shore of Lake Waconia) and Parley Lake Winery (seasonal, at Deardorff Orchards). Downtown's Waconia Brewing Co. closed in January 2026, and J. Carver Distillery announced it will close by the end of October 2026.",
   },
   {
     question: "Is there a hospital in Waconia?",
     answer:
-      "Yes — Ridgeview Medical Center is the regional hospital, headquartered in Waconia at 500 South Maple Street. It offers a 24/7 emergency department, surgery, women's health, primary care, and specialty clinics for the broader Carver County area.",
+      "Yes — Ridgeview Medical Center is the regional hospital, headquartered in Waconia at 500 South Maple Street. It offers an emergency department, surgery, women's health, primary care, and specialty clinics for the broader Carver County area.",
   },
   {
     question: "Where is the DMV in Waconia, MN?",
     answer:
-      "The Waconia Deputy Registrar handles vehicle tabs, titles, registration, and driver's licenses for Carver County residents at 217 Vine Street S in downtown Waconia. Hours are 8am–4:30pm most weekdays, with extended hours Wednesdays and Saturday-morning service.",
+      "The Waconia deputy registrar is at 222 W Main St, (952) 442-4038, open Monday to Thursday 7:30am to 5pm and Friday 7:30am to 1pm. It handles tabs, titles, registration and DNR licenses. First-time driver's licenses, renewals and REAL ID go to the Carver County License Center in Chaska.",
   },
   {
     question: "Is there a movie theater in Waconia?",
     answer:
-      "Yes — Emagine Waconia at 325 Bevens Street is a luxury cinema with fully reclining leather seats, an EMAX large-format screen, full bar service, and food delivery to your seat. Reserved seating online; Tuesdays are discounted.",
+      "Yes. Emagine Waconia is at 101 W 1st St downtown. Every auditorium has leather power-reclining seats, seats are reserved online or in the app, and the theater bar serves cocktails, beer and wine.",
   },
 ];
