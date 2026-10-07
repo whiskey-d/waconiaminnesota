@@ -5,6 +5,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { InContentAd } from "../../components/InContentAd";
+import { SponsorSlot } from "../../components/SponsorSlot";
+import { sponsorsFor } from "../../lib/sponsors";
 import { guides, getGuideBySlug } from "../../lib/guides";
 import { AD_SLOTS } from "../../lib/adSlots";
 import { SITE_URL, buildMetadata } from "../../lib/metadata";
@@ -237,6 +239,13 @@ export default async function GuidePage({ params }: PageProps) {
 
             {/* Second in-content unit between the body and the FAQ block. */}
             <InContentAd slot={AD_SLOTS.guideMidArticle} />
+
+            <SponsorSlot
+              className="my-10"
+              sponsors={sponsorsFor(
+                (p) => p.kind === "guide" && p.slug === guide.slug,
+              )}
+            />
 
             {guide.faqs && guide.faqs.length > 0 && (
               <section className="guide-faq pt-8 border-t border-border">

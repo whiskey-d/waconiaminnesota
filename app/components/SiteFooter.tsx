@@ -13,6 +13,7 @@ const exploreLinks: FooterLink[] = [
   { href: "/foreclosures", label: "Real Estate" },
   { href: "/about", label: "About WaconiaGuide" },
   { href: "/contact", label: "Contact" },
+  { href: "/advertise", label: "Advertise" },
   { href: "/glossary", label: "Glossary" },
   { href: "/waconia-facts", label: "Waconia Facts" },
   { href: "/faqs", label: "All FAQs" },
