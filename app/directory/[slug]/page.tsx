@@ -14,6 +14,8 @@ import {
 } from "../../lib/businesses";
 import { SITE_URL, buildMetadata } from "../../lib/metadata";
 import { CategoryPage } from "../CategoryPage";
+import { SponsorSlot } from "../../components/SponsorSlot";
+import { sponsorsFor } from "../../lib/sponsors";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -335,6 +337,27 @@ export default async function DirectorySlugPage({ params }: PageProps) {
                   </svg>
                   Bookmark
                 </button>
+              </div>
+
+              <SponsorSlot
+                sponsors={sponsorsFor(
+                  (p) =>
+                    p.kind === "directory" &&
+                    biz.categorySlugs.includes(p.category),
+                )}
+              />
+
+              {/* Owner links: corrections stay free; advertising is separate. */}
+              <div className="rounded-xl border border-border p-5 text-sm text-text-muted leading-relaxed">
+                Own {biz.name}?{" "}
+                <Link href="/contact" className="text-primary hover:underline">
+                  Send us updates
+                </Link>{" "}
+                or{" "}
+                <Link href="/advertise" className="text-primary hover:underline">
+                  advertise on WaconiaGuide
+                </Link>
+                .
               </div>
             </div>
           </aside>
