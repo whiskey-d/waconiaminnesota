@@ -41,4 +41,4 @@ export function sponsorsFor(
   return sponsors.filter((s) => isActive(s, today) && match(s.placement));
 }
 
-export const ADVERTISE_EMAIL = "hello@waconiaminnesota.org";
+export const ADVERTISE_EMAIL = "hello@mlighthouse.com";
